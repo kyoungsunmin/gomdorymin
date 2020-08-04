@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>NHmall</title>
+		<meta name="description" content="NHmall">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="../img/logo_favicon.ico">
+		<link rel="apple-touch-icon" href="../img/logo_favicon.ico">
+		
+		<link href="../../css/reset.css" type="text/css" rel="stylesheet">
+		<link href="../../css/font.css" type="text/css" rel="stylesheet">
+		<link href="../../css/adm.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="../../js/jquery-1.11.1.min.js"></script>
+		<script src="../../js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="../../js/jquery-migrate-1.4.1.min.js"></script>
+		<script src="../../js/function.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap">
+            <!-- header -->
+            <header class="header">
+                <h1 class="not_view">header</h1>
+                
+                <div class="header_top cf">
+                    <div class="top_logo">
+                        <a href="../index.html"><img src="../img/top_logo.png" alt="top_logo"></a>
+                    </div>
+                    
+                    <ul class="top_menu cf">
+                        <li class="top_menu_item">
+                            <!-- top_menu_drop 클래스 안의 top_menu_drop_tit 클릭시 top_menu_drop_area 보이기/숨기기 -->
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">전체관리자(poirao)</p>
+                                <div class="top_menu_drop_area">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    운영자정보
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    로그아웃
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" onclick="openLayer('topBell');"><img src="../img/top_bell_icon.png" alt="top_bell_icon" class="top_bell"></a>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+                                    <img src="../img/top_new_icon.png" alt="top_new_icon" class="top_new">
+                                    주문현황
+                                    <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                                </p>
+                                <div class="top_menu_drop_area top_gray_tit">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li class="tit">
+                                            <div class="left_item">
+                                                주문상태설정
+                                            </div>
+                                            <div class="right_item">
+                                                <a href="javascript:void(0);" onclick="openLayer('topOrder');"><img src="../img/top_setting_icon.png" alt="top_setting_icon"></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    입금대기
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    결제완료
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    상품준비중
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    배송중
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    배송완료
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    반품접수
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    교환접수
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    환불접수
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+                                    자주쓰는메뉴
+                                    <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                                </p>
+                                <div class="top_menu_drop_area top_gray_tit">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li class="tit">
+                                            <div class="left_item">
+                                                메뉴설정
+                                            </div>
+                                            <div class="right_item">
+                                                <a href="javascript:void(0);" onclick="openLayer('topMenu');"><img src="../img/top_setting_icon.png" alt="top_setting_icon"></a>
+                                            </div>
+                                        </li>
+                                        <li class="empty">
+                                            <div class="center_item">
+                                                자주쓰는 메뉴를<br>설정해주세요.
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+                                    더보기
+                                    <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                                </p>
+                                <div class="top_menu_drop_area">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    마이HN
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    메뉴얼
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    사이트맵
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_search">
+                                <form id="" name="" method="" action="" class="cf">
+                                    <input type="text" name="" class="top_search_input" placeholder="메뉴검색">
+                                    <input type="submit" class="top_search_btn">
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- nav -->
+                <nav class="nav">
+                    <h2 class="not_view">nav</h2>
+                    
+                    <ul class="nav_list cf">
+                        <li class="active">
+                            <a href="#">기본설정</a>
+                        </li>
+                        <li>
+                            <a href="#">상품관리</a>
+                        </li>
+                        <li>
+                            <a href="#">상품연동관리</a>
+                        </li>
+                        <li>
+                            <a href="#">주문/배송관리</a>
+                        </li>
+                        <li>
+                            <a href="#">입점업체관리</a>
+                        </li>
+                        <li>
+                            <a href="#">공급사관리</a>
+                        </li>
+                        <li>
+                            <a href="#">정산관리</a>
+                        </li>
+                        <li>
+                            <a href="#">재고관리</a>
+                        </li>
+                        <li>
+                            <a href="#">통계관리</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+			
+            <div class="fk_header"></div>
+            
+            <div class="content_wrap cf">
+                <!-- aside -->
+                <aside class="aside">
+                    <h1 class="not_view">aside</h1>
+                    
+                    <div class="aside_top">
+                        <img src="../img/basic_menu_icon.png" alt="basic_menu_icon">
+                        <p>기본설정</p>
+                    </div>
+                    
+                    <ul class="aside_list cf">
+                        <li>
+							<p class="aside_list_tit on">API 쇼핑몰 관리</p>
+							<ul class="aside_sub_list cf">
+								<li>
+									<a href="#">쇼핑몰 등록 관리</a>
+								</li>
+								<li class="active">
+									<a href="#">고객사 카테고리 설정</a>
+								</li>
+								<li>
+									<a href="#">쇼핑몰 카테고리 매핑</a>
+								</li>
+								<li>
+									<a href="#">입점사 정보 관리</a>
+								</li>
+								<li>
+									<a href="#">공급사 정보 관리</a>
+								</li>
+								<li>
+									<a href="#">쇼핑몰 SCM 로그인</a>
+								</li>
+							</ul>
+						</li>
+                    </ul>
+                </aside>
+                
+                <!-- content -->
+                <div class="content_area content_basic_client_category">
+                    <div class="content_top">
+                        기본설정 &gt; API 쇼핑몰 관리 &gt; 고객사 카테고리 설정
+                    </div>
+                    
+                    <div class="content_main">
+                        <!-- 콘텐츠 타이틀 start -->
+						<div class="content_header cf">
+							<div class="content_header_txt">
+								<p class="tit">
+									고객사 카테고리 설정
+									<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+								</p>
+							</div>
+							<div class="content_header_btn">
+								<input type="button" class="btn2" value="엑셀 다운로드">
+								<input type="button" class="btn2" value="샘플파일 다운로드">
+								<input type="button" class="btn" value="카테고리 업로드" onclick="window.open('basic_clca_upload_popup.html','','width=500,height=300,top=50,left=50,resizable=no,scrollbars=no'); return false;">
+							</div>
+						</div>
+						<!-- 콘텐츠 타이틀 end -->
+                    	
+                    	<!-- 도움말 콘텐츠 start -->
+						<div class="content_advice_area">
+							<p class="text_list">고객사 카테고리는 자사의 상황에 맞게 카테고리를 직접분류 즉, 입력함으로써 상품의 관리를 용이하게 할 수 있습니다.</p>
+							<p class="text_list">예) 대/중/소/세분류를 '신발&gt;운동화&gt;나이키&gt;2007년'형식으로 만들어 이용할 수 있습니다.</p>
+							<p class="text_list">상품군이 많지 않은 전문 카테고리 벤더사의 경우 사용하시면 관리가 편리합니다.</p>
+							<p class="text_list">[고객사 카테고리]를 사용할 경우 [표준 카테고리]를 사용하지 않아도 됩니다.</p>
+							<p class="text_list">카테고리매핑 등의 작업은 표준 카테고리를 사용했을 경우와 동일합니다.</p>
+							<p class="text_list">먼저 대분류 카테고리 생성시 '카테고리추가' 버튼을 눌러 카테고리 명과 카테고리 코드 값을 저장합니다.</p>
+							<p class="text_list">다음 분류의 카테고리 생성시 상위 카테고리 분류명을 클릭하면 오른쪽에 동일한 '카테고리추가' 버튼이 생성되며 이와 동일한 방식으로 분류를 추가 할 수 있습니다.</p>
+							<p class="text_list">대분류명은 영문8자이내 이며, 한글은 등록되지 않습니다.</p>
+						</div>
+					    <!-- 도움말 콘텐츠 end -->
+                    	
+                    	<div class="client_category_list cf">
+                    		<div class="client_category_item on">
+                    			<!-- 콘텐츠 테이블 start -->
+								<div class="content_table_area">
+									<table class="content_table">
+										<colgroup>
+											<col class="th00" width="20%">
+											<col class="th01" width="*">
+											<col class="th02" width="30%">
+										</colgroup>
+										<thead class="thead">
+											<tr>
+												<th class="th00" colspan="2">대분류</th>
+												<th class="th02">
+													<button type="button" class="content_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">추가</button>
+												</th>
+											</tr>
+										</thead>
+										<tbody class="tbody">
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A001</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">대분류1</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A002</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">대분류2</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A003</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">대분류3</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A004</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">대분류4</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A005</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">대분류5</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- 콘텐츠 테이블 end -->
+							</div>
+							
+							<div class="client_category_item on">
+                    			<!-- 콘텐츠 테이블 start -->
+								<div class="content_table_area">
+									<table class="content_table">
+										<colgroup>
+											<col class="th00" width="20%">
+											<col class="th01" width="*">
+											<col class="th02" width="30%">
+										</colgroup>
+										<thead class="thead">
+											<tr>
+												<th class="th00" colspan="2">중분류</th>
+												<th class="th02">
+													<button type="button" class="content_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">추가</button>
+												</th>
+											</tr>
+										</thead>
+										<tbody class="tbody">
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A0011</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">중분류1</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A0012</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">중분류2</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A0013</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">중분류3</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A0014</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">중분류4</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A0015</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">중분류5</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- 콘텐츠 테이블 end -->
+							</div>
+							
+							<div class="client_category_item on">
+                    			<!-- 콘텐츠 테이블 start -->
+								<div class="content_table_area">
+									<table class="content_table">
+										<colgroup>
+											<col class="th00" width="20%">
+											<col class="th01" width="*">
+											<col class="th02" width="30%">
+										</colgroup>
+										<thead class="thead">
+											<tr>
+												<th class="th00" colspan="2">소분류</th>
+												<th class="th02">
+													<button type="button" class="content_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">추가</button>
+												</th>
+											</tr>
+										</thead>
+										<tbody class="tbody">
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A00111</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">소분류1</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A00112</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">소분류2</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A00113</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">소분류3</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A00114</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">소분류4</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A00115</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">소분류5</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- 콘텐츠 테이블 end -->
+							</div>
+							
+							<div class="client_category_item">
+                    			<!-- 콘텐츠 테이블 start -->
+								<div class="content_table_area">
+									<table class="content_table">
+										<colgroup>
+											<col class="th00" width="20%">
+											<col class="th01" width="*">
+											<col class="th02" width="30%">
+										</colgroup>
+										<thead class="thead">
+											<tr>
+												<th class="th00" colspan="2">세분류</th>
+												<th class="th02">
+													<button type="button" class="content_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">추가</button>
+												</th>
+											</tr>
+										</thead>
+										<tbody class="tbody">
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A00111001</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">세분류1</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A00111002</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">세분류2</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A00111003</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">세분류3</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A00111004</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">세분류4</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 text_center">
+													<a href="#">A00111005</a>
+												</td>
+												<td class="th01 text_center">
+													<a href="#">세분류5</a>
+												</td>
+												<td class="th02 text_center">
+													<button type="button" class="content_btn mod_btn" onclick="window.open('basic_clca_register_popup.html','','width=500,height=500,top=50,left=50,resizable=no,scrollbars=no'); return false;">수정</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- 콘텐츠 테이블 end -->
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+           
+            <!-- footer -->
+            <footer class="footer">
+                <h1 class="not_view">footer</h1>
+                
+                <p>© HN : Corp All Rights Reserved.</p>
+            </footer>
+		</div>
+	</body>
+</html>
