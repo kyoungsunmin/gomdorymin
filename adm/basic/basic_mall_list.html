@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>NHmall</title>
+		<meta name="description" content="NHmall">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="../img/logo_favicon.ico">
+		<link rel="apple-touch-icon" href="../img/logo_favicon.ico">
+		
+		<link href="../../css/reset.css" type="text/css" rel="stylesheet">
+		<link href="../../css/font.css" type="text/css" rel="stylesheet">
+		<link href="../../css/adm.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="../../js/jquery-1.11.1.min.js"></script>
+		<script src="../../js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="../../js/jquery-migrate-1.4.1.min.js"></script>
+		<script src="../../js/function.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap">
+            <!-- header -->
+            <header class="header">
+                <h1 class="not_view">header</h1>
+                
+                <div class="header_top cf">
+                    <div class="top_logo">
+                        <a href="../index.html"><img src="../img/top_logo.png" alt="top_logo"></a>
+                    </div>
+                    
+                    <ul class="top_menu cf">
+                        <li class="top_menu_item">
+                            <!-- top_menu_drop 클래스 안의 top_menu_drop_tit 클릭시 top_menu_drop_area 보이기/숨기기 -->
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">전체관리자(poirao)</p>
+                                <div class="top_menu_drop_area">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    운영자정보
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    로그아웃
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" onclick="openLayer('topBell');"><img src="../img/top_bell_icon.png" alt="top_bell_icon" class="top_bell"></a>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+                                    <img src="../img/top_new_icon.png" alt="top_new_icon" class="top_new">
+                                    주문현황
+                                    <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                                </p>
+                                <div class="top_menu_drop_area top_gray_tit">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li class="tit">
+                                            <div class="left_item">
+                                                주문상태설정
+                                            </div>
+                                            <div class="right_item">
+                                                <a href="javascript:void(0);" onclick="openLayer('topOrder');"><img src="../img/top_setting_icon.png" alt="top_setting_icon"></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    입금대기
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    결제완료
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    상품준비중
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    배송중
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    배송완료
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    반품접수
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    교환접수
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    환불접수
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+                                    자주쓰는메뉴
+                                    <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                                </p>
+                                <div class="top_menu_drop_area top_gray_tit">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li class="tit">
+                                            <div class="left_item">
+                                                메뉴설정
+                                            </div>
+                                            <div class="right_item">
+                                                <a href="javascript:void(0);" onclick="openLayer('topMenu');"><img src="../img/top_setting_icon.png" alt="top_setting_icon"></a>
+                                            </div>
+                                        </li>
+                                        <li class="empty">
+                                            <div class="center_item">
+                                                자주쓰는 메뉴를<br>설정해주세요.
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+                                    더보기
+                                    <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                                </p>
+                                <div class="top_menu_drop_area">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    마이HN
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    메뉴얼
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    사이트맵
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_search">
+                                <form id="" name="" method="" action="" class="cf">
+                                    <input type="text" name="" class="top_search_input" placeholder="메뉴검색">
+                                    <input type="submit" class="top_search_btn">
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- nav -->
+                <nav class="nav">
+                    <h2 class="not_view">nav</h2>
+                    
+                    <ul class="nav_list cf">
+                        <li class="active">
+                            <a href="basic_mall_list.html">기본설정</a>
+                        </li>
+                        <li>
+                            <a href="#">상품관리</a>
+                        </li>
+                        <li>
+                            <a href="#">상품연동관리</a>
+                        </li>
+                        <li>
+                            <a href="#">주문/배송관리</a>
+                        </li>
+                        <li>
+                            <a href="#">입점업체관리</a>
+                        </li>
+                        <li>
+                            <a href="#">공급사관리</a>
+                        </li>
+                        <li>
+                            <a href="#">CS/클레임관리</a>
+                        </li>
+                        <li>
+                            <a href="#">정산관리</a>
+                        </li>
+                        <li>
+                            <a href="#">재고관리</a>
+                        </li>
+                        <li>
+                            <a href="#">통계관리</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+			
+            <div class="fk_header"></div>
+            
+            <div class="content_wrap cf">
+                <!-- aside -->
+                <aside class="aside">
+                    <h1 class="not_view">aside</h1>
+                    
+                    <div class="aside_top">
+                        <img src="../img/basic_menu_icon.png" alt="basic_menu_icon">
+                        <p>기본설정</p>
+                    </div>
+                    
+                    <ul class="aside_list cf">
+                        <li>
+							<p class="aside_list_tit on">API 쇼핑몰 관리</p>
+							<ul class="aside_sub_list cf">
+								<li class="active">
+									<a href="basic_mall_list.html">쇼핑몰 등록 관리</a>
+								</li>
+								<li>
+									<a href="basic_client_category.html">고객사 카테고리 설정</a>
+								</li>
+								<li>
+									<a href="basic_category_mapping.html">쇼핑몰 카테고리 매핑</a>
+								</li>
+								<li>
+									<a href="basic_store_information.html">입점사 정보 관리</a>
+								</li>
+								<li>
+									<a href="basic_supplier_information.html">공급사 정보 관리</a>
+								</li>
+								<li>
+									<a href="basic_scm_login.html">쇼핑몰 SCM 로그인</a>
+								</li>
+							</ul>
+						</li>
+                    </ul>
+                </aside>
+                
+                <!-- content -->
+                <div class="content_area">
+                    <div class="content_top">
+                        기본설정 &gt; API 쇼핑몰 관리 &gt; 쇼핑몰 등록 관리
+                    </div>
+                    
+                    <div class="content_main">
+                        <!-- 콘텐츠 타이틀 start -->
+						<div class="content_header cf">
+							<div class="content_header_txt">
+								<p class="tit">
+									쇼핑몰 등록 관리
+									<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+								</p>
+							</div>
+							<div class="content_header_btn">
+								<input type="button" class="btn" value="쇼핑몰별 서비스현황">
+							</div>
+						</div>
+						<!-- 콘텐츠 타이틀 end -->
+                    	
+                    	<!-- 도움말 콘텐츠 start -->
+						<div class="content_advice_area">
+							<p class="text_list">오피스 관리자 진행시 <span class="text_bold">가장 먼저 선행되야 하는 기능</span>으로 각 <span class="text_bold">쇼핑몰의 정보(판매자 관리 SCM 로그인정보)</span>를 기입합니다.</p>
+							<p class="text_list">신규 입점 세팅시 쇼핑몰명을 클릭하여 기본정보 및 추가정보를 기입한 후 저장합니다.</p>
+							<p class="text_list">입점 세팅 후 해당 쇼핑몰의 정보가 변경 되었을 경우 동일한 방법으로 수정 저장합니다.</p>
+							<p class="text_list">입점 세팅 상태
+								<span class="text_indent">- <span class="text_blue text_bold">쇼핑몰 입점 세팅 가능</span> : 해당 쇼핑몰의 정보가 미등록된 상태입니다.</span>
+								<span class="text_indent">- <span class="text_orange text_bold">쇼핑몰 입점 세팅 완료</span> : 해당 쇼핑몰의 정보가 등록된 상태입니다.</span>
+								<span class="text_indent">- <span class="text_green text_bold">쇼핑몰 아이디 재세팅 요망</span> : 해당 쇼핑몰의 정보가 변경되어 정보를 수정 후 진행해야 하는 상태입니다.</span>
+							</p>
+							<p class="text_list">서비스 현황
+								<span class="text_indent">- <span class="text_blue_btn">완료</span> 기능구현이 완료되어 연동이 가능합니다.</span>
+								<span class="text_indent">- <span class="text_orange_btn">작업중</span> 기능구현을 위한 작업중으로 오픈 예정입니다.</span>
+								<span class="text_indent">- <span class="text_green_btn">미지원</span> 해당 쇼핑몰에서 지원하지 않는 기능으로 서비스 하지 않습니다.</span>
+							</p>
+						</div>
+					    <!-- 도움말 콘텐츠 end -->
+                    	
+                    	<!-- 콘텐츠 리스트 테이블 start -->
+						<section class="content_main_item">
+							<div class="content_list_table_header cf">
+								<div class="content_left_txt">
+									세팅한 쇼핑몰 아이디 개수 <span>10</span>건
+								</div>
+							</div>
+
+							<!-- 콘텐츠 탭 start -->
+							<section class="content_tab_area">
+								<!-- content_tab 클래스 안의 li 클릭시 tab-data 값과 동일한 tab-data 값을 가진 콘텐츠가 보인다 -->
+								<ul class="content_tab cf">
+									<li tab-data="tab1" class="active"><span>전체 목록</span></li>
+									<li tab-data="tab2"><span>쇼핑몰 입점완료</span></li>
+									<li tab-data="tab3"><span>쇼핑몰 입점미완료</span></li>
+								</ul>
+
+								<div class="content_tab_con" tab-data="tab1">
+									<div class="content_list_table_area">
+										<table class="content_list_table">
+											<colgroup>
+												<col class="th00" width="8%">
+												<col class="th01" width="*">
+												<col class="th02" width="8%">
+												<col class="th03" width="12%">
+												<col class="th04" width="10%">
+												<col class="th05" width="10%">
+												<col class="th06" width="10%">
+												<col class="th07" width="10%">
+												<col class="th08" width="10%">
+												<col class="th09" width="10%">
+											</colgroup>
+											<thead class="thead">
+												<tr>
+													<th class="th00" rowspan="2">No</th>
+													<th class="th01" rowspan="2">쇼핑몰명</th>
+													<th class="th02" rowspan="2">유형</th>
+													<th class="th03" rowspan="2">입점세팅상태 (아이디갯수)</th>
+													<th class="th04" colspan="6">서비스현황</th>
+												</tr>
+												<tr>
+													<th class="th00 not_view"></th>
+													<th class="th04">상품등록</th>
+													<th class="th05">상품수정</th>
+													<th class="th06">주문수집</th>
+													<th class="th07">송장전송</th>
+													<th class="th08">문의/후기</th>
+													<th class="th09">클레임</th>
+												</tr>
+											</thead>
+											<tbody class="tbody">
+												<tr>
+													<td class="th00">1</td>
+													<td class="th01"><a href="basic_mall_register.html">(주)옥션</a></td>
+													<td class="th02">오픈마켓</td>
+													<td class="th03"><span class="text_blue text_bold">쇼핑몰 입점 세팅 가능</span></td>
+													<td class="th04"><span class="text_blue_btn">완료</span></td>
+													<td class="th05"><span class="text_blue_btn">완료</span></td>
+													<td class="th06"><span class="text_blue_btn">완료</span></td>
+													<td class="th07"><span class="text_blue_btn">완료</span></td>
+													<td class="th08"><span class="text_blue_btn">완료</span></td>
+													<td class="th09"><span class="text_blue_btn">완료</span></td>
+												</tr>
+												<tr>
+													<td class="th00">2</td>
+													<td class="th01"><a href="basic_mall_register.html">지마켓</a></td>
+													<td class="th02">오픈마켓</td>
+													<td class="th03"><span class="text_orange text_bold">쇼핑몰 입점 세팅 완료</span> (1)</td>
+													<td class="th04"><span class="text_blue_btn">완료</span></td>
+													<td class="th05"><span class="text_blue_btn">완료</span></td>
+													<td class="th06"><span class="text_blue_btn">완료</span></td>
+													<td class="th07"><span class="text_blue_btn">완료</span></td>
+													<td class="th08"><span class="text_orange_btn">작업중</span></td>
+													<td class="th09"><span class="text_blue_btn">완료</span></td>
+												</tr>
+												<tr>
+													<td class="th00">3</td>
+													<td class="th01"><a href="basic_mall_register.html">11번가</a></td>
+													<td class="th02">오픈마켓</td>
+													<td class="th03"><span class="text_green text_bold">쇼핑몰 아이디 재세팅 요망</span></td>
+													<td class="th04"><span class="text_blue_btn">완료</span></td>
+													<td class="th05"><span class="text_blue_btn">완료</span></td>
+													<td class="th06"><span class="text_blue_btn">완료</span></td>
+													<td class="th07"><span class="text_blue_btn">완료</span></td>
+													<td class="th08"><span class="text_green_btn">미지원</span></td>
+													<td class="th09"><span class="text_blue_btn">완료</span></td>
+												</tr>
+												<tr>
+													<td class="th00">4</td>
+													<td class="th01"><a href="basic_mall_register.html">위메프</a></td>
+													<td class="th02">오픈마켓</td>
+													<td class="th03"><span class="text_blue text_bold">쇼핑몰 입점 세팅 가능</span></td>
+													<td class="th04"><span class="text_blue_btn">완료</span></td>
+													<td class="th05"><span class="text_blue_btn">완료</span></td>
+													<td class="th06"><span class="text_blue_btn">완료</span></td>
+													<td class="th07"><span class="text_blue_btn">완료</span></td>
+													<td class="th08"><span class="text_blue_btn">완료</span></td>
+													<td class="th09"><span class="text_blue_btn">완료</span></td>
+												</tr>
+												<tr>
+													<td class="th00">5</td>
+													<td class="th01"><a href="basic_mall_register.html">카페24</a></td>
+													<td class="th02">오픈마켓</td>
+													<td class="th03"><span class="text_orange text_bold">쇼핑몰 입점 세팅 완료</span> (2)</td>
+													<td class="th04"><span class="text_blue_btn">완료</span></td>
+													<td class="th05"><span class="text_blue_btn">완료</span></td>
+													<td class="th06"><span class="text_blue_btn">완료</span></td>
+													<td class="th07"><span class="text_blue_btn">완료</span></td>
+													<td class="th08"><span class="text_orange_btn">작업중</span></td>
+													<td class="th09"><span class="text_blue_btn">완료</span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="content_tab_con" tab-data="tab2">
+									<div class="content_list_table_area">
+										<table class="content_list_table">
+											<colgroup>
+												<col class="th00" width="8%">
+												<col class="th01" width="*">
+												<col class="th02" width="8%">
+												<col class="th03" width="12%">
+												<col class="th04" width="10%">
+												<col class="th05" width="10%">
+												<col class="th06" width="10%">
+												<col class="th07" width="10%">
+												<col class="th08" width="10%">
+												<col class="th09" width="10%">
+											</colgroup>
+											<thead class="thead">
+												<tr>
+													<th class="th00" rowspan="2">No</th>
+													<th class="th01" rowspan="2">쇼핑몰명</th>
+													<th class="th02" rowspan="2">유형</th>
+													<th class="th03" rowspan="2">입점세팅상태 (아이디갯수)</th>
+													<th class="th04" colspan="6">서비스현황</th>
+												</tr>
+												<tr>
+													<th class="th00 not_view"></th>
+													<th class="th04">상품등록</th>
+													<th class="th05">상품수정</th>
+													<th class="th06">주문수집</th>
+													<th class="th07">송장전송</th>
+													<th class="th08">문의/후기</th>
+													<th class="th09">클레임</th>
+												</tr>
+											</thead>
+											<tbody class="tbody">
+												<tr>
+													<td class="th00">1</td>
+													<td class="th01"><a href="basic_mall_register.html">(주)옥션</a></td>
+													<td class="th02">오픈마켓</td>
+													<td class="th03"><span class="text_orange text_bold">쇼핑몰 입점 세팅 완료</span> (1)</td>
+													<td class="th04"><span class="text_blue_btn">완료</span></td>
+													<td class="th05"><span class="text_blue_btn">완료</span></td>
+													<td class="th06"><span class="text_blue_btn">완료</span></td>
+													<td class="th07"><span class="text_blue_btn">완료</span></td>
+													<td class="th08"><span class="text_blue_btn">완료</span></td>
+													<td class="th09"><span class="text_blue_btn">완료</span></td>
+												</tr>
+												<tr>
+													<td class="th00">2</td>
+													<td class="th01"><a href="basic_mall_register.html">지마켓</a></td>
+													<td class="th02">오픈마켓</td>
+													<td class="th03"><span class="text_orange text_bold">쇼핑몰 입점 세팅 완료</span> (1)</td>
+													<td class="th04"><span class="text_blue_btn">완료</span></td>
+													<td class="th05"><span class="text_blue_btn">완료</span></td>
+													<td class="th06"><span class="text_blue_btn">완료</span></td>
+													<td class="th07"><span class="text_blue_btn">완료</span></td>
+													<td class="th08"><span class="text_blue_btn">완료</span></td>
+													<td class="th09"><span class="text_blue_btn">완료</span></td>
+												</tr>
+												<tr>
+													<td class="th00">3</td>
+													<td class="th01"><a href="basic_mall_register.html">11번가</a></td>
+													<td class="th02">오픈마켓</td>
+													<td class="th03"><span class="text_orange text_bold">쇼핑몰 입점 세팅 완료</span> (1)</td>
+													<td class="th04"><span class="text_blue_btn">완료</span></td>
+													<td class="th05"><span class="text_blue_btn">완료</span></td>
+													<td class="th06"><span class="text_blue_btn">완료</span></td>
+													<td class="th07"><span class="text_blue_btn">완료</span></td>
+													<td class="th08"><span class="text_blue_btn">완료</span></td>
+													<td class="th09"><span class="text_blue_btn">완료</span></td>
+												</tr>
+												<tr>
+													<td class="th00">4</td>
+													<td class="th01"><a href="basic_mall_register.html">위메프</a></td>
+													<td class="th02">오픈마켓</td>
+													<td class="th03"><span class="text_orange text_bold">쇼핑몰 입점 세팅 완료</span> (1)</td>
+													<td class="th04"><span class="text_blue_btn">완료</span></td>
+													<td class="th05"><span class="text_blue_btn">완료</span></td>
+													<td class="th06"><span class="text_blue_btn">완료</span></td>
+													<td class="th07"><span class="text_blue_btn">완료</span></td>
+													<td class="th08"><span class="text_blue_btn">완료</span></td>
+													<td class="th09"><span class="text_blue_btn">완료</span></td>
+												</tr>
+												<tr>
+													<td class="th00">5</td>
+													<td class="th01"><a href="basic_mall_register.html">카페24</a></td>
+													<td class="th02">오픈마켓</td>
+													<td class="th03"><span class="text_orange text_bold">쇼핑몰 입점 세팅 완료</span> (1)</td>
+													<td class="th04"><span class="text_blue_btn">완료</span></td>
+													<td class="th05"><span class="text_blue_btn">완료</span></td>
+													<td class="th06"><span class="text_blue_btn">완료</span></td>
+													<td class="th07"><span class="text_blue_btn">완료</span></td>
+													<td class="th08"><span class="text_blue_btn">완료</span></td>
+													<td class="th09"><span class="text_blue_btn">완료</span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								
+								<div class="content_tab_con" tab-data="tab3">
+									<div class="content_list_table_area">
+										<table class="content_list_table">
+											<colgroup>
+												<col class="th00" width="8%">
+												<col class="th01" width="*">
+												<col class="th02" width="8%">
+												<col class="th03" width="12%">
+												<col class="th04" width="10%">
+												<col class="th05" width="10%">
+												<col class="th06" width="10%">
+												<col class="th07" width="10%">
+												<col class="th08" width="10%">
+												<col class="th09" width="10%">
+											</colgroup>
+											<thead class="thead">
+												<tr>
+													<th class="th00" rowspan="2">No</th>
+													<th class="th01" rowspan="2">쇼핑몰명</th>
+													<th class="th02" rowspan="2">유형</th>
+													<th class="th03" rowspan="2">입점세팅상태 (아이디갯수)</th>
+													<th class="th04" colspan="6">서비스현황</th>
+												</tr>
+												<tr>
+													<th class="th00 not_view"></th>
+													<th class="th04">상품등록</th>
+													<th class="th05">상품수정</th>
+													<th class="th06">주문수집</th>
+													<th class="th07">송장전송</th>
+													<th class="th08">문의/후기</th>
+													<th class="th09">클레임</th>
+												</tr>
+											</thead>
+											<tbody class="tbody">
+												<tr>
+													<td class="th00">1</td>
+													<td class="th01"><a href="basic_mall_register.html">(주)옥션</a></td>
+													<td class="th02">오픈마켓</td>
+													<td class="th03"><span class="text_blue text_bold">쇼핑몰 입점 세팅 가능</span></td>
+													<td class="th04"><span class="text_blue_btn">완료</span></td>
+													<td class="th05"><span class="text_blue_btn">완료</span></td>
+													<td class="th06"><span class="text_blue_btn">완료</span></td>
+													<td class="th07"><span class="text_blue_btn">완료</span></td>
+													<td class="th08"><span class="text_orange_btn">작업중</span></td>
+													<td class="th09"><span class="text_blue_btn">완료</span></td>
+												</tr>
+												<tr>
+													<td class="th00">2</td>
+													<td class="th01"><a href="basic_mall_register.html">지마켓</a></td>
+													<td class="th02">오픈마켓</td>
+													<td class="th03"><span class="text_blue text_bold">쇼핑몰 입점 세팅 가능</span></td>
+													<td class="th04"><span class="text_blue_btn">완료</span></td>
+													<td class="th05"><span class="text_blue_btn">완료</span></td>
+													<td class="th06"><span class="text_blue_btn">완료</span></td>
+													<td class="th07"><span class="text_blue_btn">완료</span></td>
+													<td class="th08"><span class="text_orange_btn">작업중</span></td>
+													<td class="th09"><span class="text_blue_btn">완료</span></td>
+												</tr>
+												<tr>
+													<td class="th00">3</td>
+													<td class="th01"><a href="basic_mall_register.html">11번가</a></td>
+													<td class="th02">오픈마켓</td>
+													<td class="th03"><span class="text_blue text_bold">쇼핑몰 입점 세팅 가능</span></td>
+													<td class="th04"><span class="text_blue_btn">완료</span></td>
+													<td class="th05"><span class="text_blue_btn">완료</span></td>
+													<td class="th06"><span class="text_blue_btn">완료</span></td>
+													<td class="th07"><span class="text_blue_btn">완료</span></td>
+													<td class="th08"><span class="text_orange_btn">작업중</span></td>
+													<td class="th09"><span class="text_blue_btn">완료</span></td>
+												</tr>
+												<tr>
+													<td class="th00">4</td>
+													<td class="th01"><a href="basic_mall_register.html">위메프</a></td>
+													<td class="th02">오픈마켓</td>
+													<td class="th03"><span class="text_blue text_bold">쇼핑몰 입점 세팅 가능</span></td>
+													<td class="th04"><span class="text_blue_btn">완료</span></td>
+													<td class="th05"><span class="text_blue_btn">완료</span></td>
+													<td class="th06"><span class="text_blue_btn">완료</span></td>
+													<td class="th07"><span class="text_blue_btn">완료</span></td>
+													<td class="th08"><span class="text_orange_btn">작업중</span></td>
+													<td class="th09"><span class="text_blue_btn">완료</span></td>
+												</tr>
+												<tr>
+													<td class="th00">5</td>
+													<td class="th01"><a href="basic_mall_register.html">카페24</a></td>
+													<td class="th02">오픈마켓</td>
+													<td class="th03"><span class="text_blue text_bold">쇼핑몰 입점 세팅 가능</span></td>
+													<td class="th04"><span class="text_blue_btn">완료</span></td>
+													<td class="th05"><span class="text_blue_btn">완료</span></td>
+													<td class="th06"><span class="text_blue_btn">완료</span></td>
+													<td class="th07"><span class="text_blue_btn">완료</span></td>
+													<td class="th08"><span class="text_orange_btn">작업중</span></td>
+													<td class="th09"><span class="text_blue_btn">완료</span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</section>
+							<!-- 콘텐츠 탭 end -->
+                    	</section>
+						<!-- 콘텐츠 리스트 테이블 end -->
+                    </div>
+                </div>
+            </div>
+           
+            <!-- footer -->
+            <footer class="footer">
+                <h1 class="not_view">footer</h1>
+                
+                <p>© HN : Corp All Rights Reserved.</p>
+            </footer>
+		</div>
+	</body>
+</html>
