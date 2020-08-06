@@ -2227,186 +2227,6 @@ footer.footer>p {
 }
 
 
-
-/************************************************
-					claim - 진
-*************************************************/
-
-/* set */
-.bn {
-    display: inline-block;
-    height: 25px;
-    line-height: 23px;
-    font-size: 12px;
-    background-color: #353535;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    color: #fff !important;
-    overflow: visible;
-    padding: 0px 10px;
-    border-width: 0px;
-    border-style: initial;
-    border-color: initial;
-    border-image: initial;
-    text-decoration: none !important;
-}
-.bn_big{
-    height:40px;
-    padding:0 15px;
-    font-size:14px;
-    background:#ff3600;
-}
-.bn_small{
-    height:23px;
-    font-size:13px;
-    padding:0 5px;
-}
-.bn_on{
-    background:#2b4f66;
-}
-.bn_w{
-    background:#666;
-}
-.bn_wh{
-    background:#fff;
-    border:1px solid #ccc;
-    color:#777 !important;
-}
-.select_date{
-    height: 23px;
-    padding: 2px;
-    -webkit-appearance: auto;
-    appearance:auto !important;
-}
-.t_left {
-    text-align: left !important;
-}
-.t_right {
-    text-align: right !important;
-}
-.t_center {
-    text-align: center !important;
-}
-.m_t_20 {
-    margin-top: 20px;
-}
-.txt_data {
-    overflow: hidden;
-    margin-top: 20px;
-    width: 100%;
-}
-.txt_data > p {
-    float: left;
-    font-size:13px;
-    margin-top:10px;
-}
-.txt_data > p > span{
-    font-weight: bold;
-    color:#ff3600;
-}
-.txt_data > div {
-    float: right;
-}
-.content_main .cl_table2 tr th{
-    background:#f6f6f6;
-    color:#555;
-    padding:0;
-}
-.content_main .sel_small{
-    min-width:auto;
-}
-
-
-/* 달력 날짜 선택 */
-.date_box {
-    display:inline;
-    margin-right:10px;
-}
-.date_box .input-date {
-    display: inline-block;
-    padding-right: 4px;
-    border: 1px solid #ccc;
-    background-color: #fefefe;
-}
-.date_box .input-date input[type="text"] {
-    width: 70px;
-    border: 0 none;
-    text-align: left;
-    line-height: 22px;
-    vertical-align: middle;
-    background-color: #fefefe;
-    color: #555;
-    font-size: 11px;
-}
-.date_box .input-date img{
-    margin-bottom:2px;
-}
-.date_box p{
-    display:inline;
-}
-
-
-/* claim_inquiry_collect */
-#claim_inquiry_collect .content_list_table_header,
-#claim_inquiry_proc .content_list_table_header,
-#claim_cs_collect .content_list_table_header,
-#claim_cs_handle .content_list_table_header{
-    border:0;
-}
-#claim_inquiry_collect .mall_icon{
-    width:50px;
-    height:20px;
-}
-#claim_inquiry_collect #inquiry_bottom_btn{
-    margin-bottom:30px;
-}
-#claim_inquiry_collect #inquiry_bottom_btn .bn_w{
-    margin-left:10px;
-}
-
-
-/* claim_inquiry_proc */
-}
-#claim_inquiry_proc select{
-    float:left;
-    margin-right:5px;
-}
-#claim_inquiry_proc #err_msg_chk + label{
-    margin-left: 5px;
-}
-#claim_inquiry_proc .chk_span{
-    position: relative;
-    top:5px;
-    left:5px;
-}
-
-/* claim_cs_collect */
-#claim_cs_collect #cs_stat + label{
-    left:10px;
-}
-
-/* claim_cs_handle */
-#claim_cs_handle #cs_handle_type .content_select{
-    min-width:auto;
-}
-#claim_cs_handle .chk_span{
-    position:relative;
-    top:1px;
-}
-#claim_cs_handle #no_finish + label{
-    margin-left:5px;
-}
-
-
-
-@media screen and (max-width: 1700px) {
-    #claim_inquiry_proc .content_list_table thead .content_select{
-        display:block;
-        margin: auto;
-    }
-}
-
 /************************************************
 
 					minkis - content
@@ -2713,4 +2533,192 @@ footer.footer>p {
 		margin: 0 20px 20px 0;
 	}
 }
+
+
+
+/************************************************
+
+					jin - claim
+
+*************************************************/
+
+/* set */
+.bn {
+    display: inline-block;
+    height: 25px;
+    line-height: 23px;
+    font-size: 12px;
+    background-color: #353535;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #fff !important;
+    overflow: visible;
+    padding: 0px 10px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    text-decoration: none !important;
+}
+.bn_big{
+    height:40px;
+    padding:0 15px;
+    font-size:14px;
+    background:#ff3600;
+}
+.bn_small{
+    height:23px;
+    font-size:13px;
+    padding:0 5px;
+}
+.bn_on{
+    background:#2b4f66;
+}
+.bn_w{
+    background:#666;
+}
+.bn_wh{
+    background:#fff;
+    border:1px solid #ccc;
+    color:#777 !important;
+}
+.select_date{
+    height: 23px;
+    padding: 2px;
+    -webkit-appearance: auto;
+    appearance:auto !important;
+}
+.t_left {
+    text-align: left !important;
+}
+.t_right {
+    text-align: right !important;
+}
+.t_center {
+    text-align: center !important;
+}
+.m_t_20 {
+    margin-top: 20px;
+}
+.txt_data {
+    overflow: hidden;
+    margin-top: 20px;
+    width: 100%;
+}
+.txt_data > p {
+    float: left;
+    font-size:13px;
+    margin-top:10px;
+}
+.txt_data > p > span{
+    font-weight: bold;
+    color:#ff3600;
+}
+.txt_data > div {
+    float: right;
+}
+.content_main .cl_table2 tr th{
+    background:#f6f6f6;
+    color:#555;
+    padding:0;
+}
+.content_main .cl_table2 .content_chk_area input[type="checkbox"] + label:before{
+    top:0;
+    left:3px;
+}
+.content_main .sel_small{
+    min-width:auto;
+}
+
+
+/* 달력 날짜 선택 */
+.date_box {
+    display:inline;
+    margin-right:10px;
+}
+.date_box .input-date {
+    display: inline-block;
+    padding-right: 4px;
+    border: 1px solid #ccc;
+    background-color: #fefefe;
+}
+.date_box .input-date input[type="text"] {
+    width: 70px;
+    border: 0 none;
+    text-align: left;
+    line-height: 22px;
+    vertical-align: middle;
+    background-color: #fefefe;
+    color: #555;
+    font-size: 11px;
+}
+.date_box .input-date img{
+    margin-bottom:2px;
+}
+.date_box p{
+    display:inline;
+}
+
+
+/* claim_inquiry_collect */
+#claim_inquiry_collect .content_list_table_header,
+#claim_inquiry_proc .content_list_table_header,
+#claim_cs_collect .content_list_table_header,
+#claim_cs_handle .content_list_table_header{
+    border:0;
+}
+#claim_inquiry_collect .mall_icon{
+    width:50px;
+    height:20px;
+}
+#claim_inquiry_collect #inquiry_bottom_btn{
+    margin-bottom:30px;
+}
+#claim_inquiry_collect #inquiry_bottom_btn .bn_w{
+    margin-left:10px;
+}
+
+
+/* claim_inquiry_proc */
+}
+#claim_inquiry_proc select{
+    float:left;
+    margin-right:5px;
+}
+#claim_inquiry_proc #err_msg_chk + label{
+    margin-left: 5px;
+}
+#claim_inquiry_proc .chk_span{
+    position: relative;
+    top:5px;
+    left:5px;
+}
+
+/* claim_cs_collect */
+#claim_cs_collect #cs_stat + label{
+    left:10px;
+}
+
+/* claim_cs_handle */
+#claim_cs_handle #cs_handle_type .content_select{
+    min-width:auto;
+}
+#claim_cs_handle .chk_span{
+    position:relative;
+    top:1px;
+}
+#claim_cs_handle #no_finish + label{
+    margin-left:5px;
+}
+
+
+
+@media screen and (max-width: 1700px) {
+    #claim_inquiry_proc .content_list_table thead .content_select{
+        display:block;
+        margin: auto;
+    }
+}
+
 
