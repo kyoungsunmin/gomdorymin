@@ -1,0 +1,3875 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>NHmall</title>
+		<meta name="description" content="NHmall">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="../img/logo_favicon.ico">
+		<link rel="apple-touch-icon" href="../img/logo_favicon.ico">
+		
+		<link href="../../css/reset.css" type="text/css" rel="stylesheet">
+		<link href="../../css/font.css" type="text/css" rel="stylesheet">
+		<link href="../../css/adm.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="../../js/jquery-1.11.1.min.js"></script>
+		<script src="../../js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="../../js/jquery-migrate-1.4.1.min.js"></script>
+		<script src="../../js/function.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap">
+            <!-- header -->
+            <header class="header">
+                <h1 class="not_view">header</h1>
+                
+                <div class="header_top cf">
+                    <div class="top_logo">
+                        <a href="../index.html"><img src="../img/top_logo.png" alt="top_logo"></a>
+                    </div>
+                    
+                    <ul class="top_menu cf">
+                        <li class="top_menu_item">
+                            <!-- top_menu_drop 클래스 안의 top_menu_drop_tit 클릭시 top_menu_drop_area 보이기/숨기기 -->
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">전체관리자(poirao)</p>
+                                <div class="top_menu_drop_area">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    운영자정보
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    로그아웃
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" onclick="openLayer('topBell');"><img src="../img/top_bell_icon.png" alt="top_bell_icon" class="top_bell"></a>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+                                    <img src="../img/top_new_icon.png" alt="top_new_icon" class="top_new">
+                                    주문현황
+                                    <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                                </p>
+                                <div class="top_menu_drop_area top_gray_tit">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li class="tit">
+                                            <div class="left_item">
+                                                주문상태설정
+                                            </div>
+                                            <div class="right_item">
+                                                <a href="javascript:void(0);" onclick="openLayer('topOrder');"><img src="../img/top_setting_icon.png" alt="top_setting_icon"></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    입금대기
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    결제완료
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    상품준비중
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    배송중
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    배송완료
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    반품접수
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    교환접수
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    환불접수
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+                                    자주쓰는메뉴
+                                    <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                                </p>
+                                <div class="top_menu_drop_area top_gray_tit">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li class="tit">
+                                            <div class="left_item">
+                                                메뉴설정
+                                            </div>
+                                            <div class="right_item">
+                                                <a href="javascript:void(0);" onclick="openLayer('topMenu');"><img src="../img/top_setting_icon.png" alt="top_setting_icon"></a>
+                                            </div>
+                                        </li>
+                                        <li class="empty">
+                                            <div class="center_item">
+                                                자주쓰는 메뉴를<br>설정해주세요.
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+                                    더보기
+                                    <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                                </p>
+                                <div class="top_menu_drop_area">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    마이HN
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    메뉴얼
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    사이트맵
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_search">
+                                <form id="" name="" method="" action="" class="cf">
+                                    <input type="text" name="" class="top_search_input" placeholder="메뉴검색">
+                                    <input type="submit" class="top_search_btn">
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- nav -->
+                <nav class="nav">
+                    <h2 class="not_view">nav</h2>
+                    
+                    <ul class="nav_list cf">
+                        <li>
+                            <a href="../basic/basic_mall_list.html">기본설정</a>
+                        </li>
+                        <li class="active">
+                            <a href="../goods/goods_goods_list.html">상품관리</a>
+                        </li>
+                        <li>
+                            <a href="#">상품연동관리</a>
+                        </li>
+                        <li>
+                            <a href="#">주문/배송관리</a>
+                        </li>
+                        <li>
+                            <a href="#">입점업체관리</a>
+                        </li>
+                        <li>
+                            <a href="#">공급사관리</a>
+                        </li>
+                        <li>
+                            <a href="#">CS/클레임관리</a>
+                        </li>
+                        <li>
+                            <a href="#">정산관리</a>
+                        </li>
+                        <li>
+                            <a href="#">재고관리</a>
+                        </li>
+                        <li>
+                            <a href="#">통계관리</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+			
+            <div class="fk_header"></div>
+            
+            <div class="content_wrap cf">
+                <!-- aside -->
+                <aside class="aside">
+                    <h1 class="not_view">aside</h1>
+                    
+                    <div class="aside_top">
+                        <img src="../img/goods_menu_icon.png" alt="goods_menu_icon">
+                        <p>상품관리</p>
+                    </div>
+                    
+                    <ul class="aside_list cf">
+                        <li>
+							<p class="aside_list_tit on">상품 관리</p>
+							<ul class="aside_sub_list cf">
+								<li>
+									<a href="goods_goods_list.html">상품 조회/수정</a>
+								</li>
+								<li class="active">
+									<a href="#">신규 상품 등록</a>
+								</li>
+								<li>
+									<a href="#">품목고시 일괄 등록 및 수정</a>
+								</li>
+								<li>
+									<a href="#">추가 옵션 관리</a>
+								</li>
+								<li>
+									<a href="#">쇼핑몰별 판매가 조회/수정</a>
+								</li>
+								<li>
+									<a href="#">쇼핑몰별 판매가 등록</a>
+								</li>
+								<li>
+									<a href="#">쇼핑몰별 옵션 매치</a>
+								</li>
+								<li>
+									<a href="#">상품 엑셀 대량 등록</a>
+								</li>
+								<li>
+									<a href="#">상품 엑셀 대량 수정</a>
+								</li>
+								<li>
+									<a href="#">상품 판매 상태 수정</a>
+								</li>
+								<li>
+									<a href="#">옵션 관리 코드 변경</a>
+								</li>
+								<li>
+									<a href="#">상품 삭제/복원 관리</a>
+								</li>
+								<li>
+									<a href="#">상품 이력 현황</a>
+								</li>
+								<li>
+									<a href="#">공유 상품 조회/복사</a>
+								</li>
+								<li>
+									<a href="#">공유 상품 품절 관리</a>
+								</li>
+							</ul>
+						</li>
+                    </ul>
+                </aside>
+                
+                <!-- content -->
+                <div class="content_area">
+                    <div class="content_top">
+                        상품관리 &gt; 상품 관리 &gt; 신규 상품 등록
+                    </div>
+                    
+                    <div class="content_main content_goods_goods_register">
+                        <form name="" method="" action="">
+							<!-- 콘텐츠 타이틀 start -->
+							<div class="content_header cf">
+								<div class="content_header_txt">
+									<p class="tit">
+										신규 상품 등록
+										<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+									</p>
+								</div>
+								<div class="content_header_btn">
+									<input type="button" class="btn2" value="목록" onclick="location.href='goods_goods_list.html';">
+									<input type="button" class="btn2" value="기존 상품 복사">
+									<input type="submit" class="btn" value="저장">
+								</div>
+							</div>
+							<!-- 콘텐츠 타이틀 end -->
+
+							<!-- 도움말 콘텐츠 start -->
+							<div class="content_advice_area">
+								<p class="text_list"><span class="text_required">*</span> 는 필수 입력 항목입니다.</p>
+								<p class="text_list">신규상품 등록시 항목별 유의사항을 체크한 후 등록하셔야 합니다.</p>
+								<p class="text_list">등록한 상품은 상품조회/수정 메뉴에서 검색할 수 있습니다.</p>
+							</div>
+							<!-- 도움말 콘텐츠 end -->
+							
+							<!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item">
+                                <div class="content_table_top cf">
+                                	<p class="content_table_tit">API연동 및 자사쇼핑몰 기본 정보</p>
+								</div>
+                                
+                                <div class="content_table_area">
+									<table class="content_table content_table_col4">
+										<colgroup>
+											<col class="th00">
+											<col class="th01">
+											<col class="th02">
+											<col class="th03">
+										</colgroup>
+										<tr>
+											<th class="th00">
+												<span class="text_required">*</span> 상품명
+											</th>
+											<td class="th01 input_td">
+												<!-- content_chk_limit 클래스는 글자수 체크할 때 사용 -->
+												<div class="content_chk_limit w400">
+													<!-- content_text_limit : 텍스트 박스, input_size : 입력한 글자수, limit_size : 제한 글자수 -->
+													<input type="text" name="" class="content_text content_text_limit w400">
+													<div class="content_text_size">
+														<span class="input_size">0</span>/<span class="limit_size">30</span>
+													</div>
+												</div>
+											</td>
+											<th class="th02">브랜드명</th>
+											<td class="th03 input_td">
+												<select name="" class="content_select">
+													<option value="">브랜드명선택</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">상품 약어</th>
+											<td class="th01 input_td">
+												<!-- content_chk_limit 클래스는 글자수 체크할 때 사용 -->
+												<div class="content_chk_limit w400">
+													<!-- content_text_limit : 텍스트 박스, input_size : 입력한 글자수, limit_size : 제한 글자수 -->
+													<input type="text" name="" class="content_text content_text_limit w400">
+													<div class="content_text_size">
+														<span class="input_size">0</span>/<span class="limit_size">30</span>
+													</div>
+												</div>
+												<div class="content_table_explain">
+													<p class="content_explain">인터파크,인터파크도서,디앤샵,신세계,롯데닷컴의 검색 키워드, 옥션의 희망검색어로 등록되는 내용입니다. (쉼표[,]로 구분)</p>
+													<p class="content_explain">옥션의 경우 띄어쓰기, 한자, /, %, ★ 등의 특수문자는 피해주세요. 쇼핑몰로 상품 등록시 키워드에 해당합니다.</p>
+													<p class="content_explain">옥션의 경우 띄어쓰기, 한자, /, %, ★ 등의 특수문자는 피해주세요. 쇼핑몰로 상품 등록시 키워드에 해당합니다.</p>
+												</div>
+											</td>
+											<th class="th02">모델명</th>
+											<td class="th03 input_td">
+												<!-- content_chk_limit 클래스는 글자수 체크할 때 사용 -->
+												<div class="content_chk_limit w400">
+													<!-- content_text_limit : 텍스트 박스, input_size : 입력한 글자수, limit_size : 제한 글자수 -->
+													<input type="text" name="" class="content_text content_text_limit w400">
+													<div class="content_text_size">
+														<span class="input_size">0</span>/<span class="limit_size">30</span>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">모델 No</th>
+											<td class="th01 input_td">
+												<div class="content_search">
+													<input type="text" name="" class="content_text w120">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="isbn_chk1">
+														<label for="isbn_chk1">ISBN로 사용</label>
+													</div>
+												</div>
+											</td>
+											<th class="th02">발행일 (제조일)</th>
+											<td class="th03 input_td">
+												<input type="text" name="" class="content_text w120">
+												<div class="content_table_explain">
+													<p class="content_explain">(예:20160101)</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">인증번호</th>
+											<td class="th01 input_td">
+												<input type="text" name="" class="content_text w120">
+											</td>
+											<th class="th02">유효기간</th>
+											<td class="th03 input_td">
+												<input type="text" name="" class="content_text w120">
+												<div class="content_table_explain">
+													<p class="content_explain">(예:20160101)</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">
+												재고관리 사용여부
+												<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+											</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_chk_area">
+													<input type="checkbox" name="" value="" id="inventory_chk1">
+													<label for="inventory_chk1">재고관리 사용함</label>
+												</div>
+												<button type="button" class="content_btn">상품 재고관리 기록 초기화</button>
+												<div class="content_table_explain">
+													<p class="content_explain">이 상품의 재고관리를 사용하시려면 체크해 주세요.</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">주의사항</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_table_explain">
+													<p class="content_explain"><span class="text_orange">스마트스토어의 경우 예외카테고리중 도서_유아동전집, 도서_중고에 해당할 경우 필수 입력</span></p>
+													<p class="content_explain"><span class="text_orange">isbn(도서코드)사용시 반드시 "isbn-"으로 시작하여야 합니다.</span></p>
+													<p class="content_explain"><span class="text_orange">도서 상품의 경우 발행일을 입력하여야 합니다.</span></p>
+													<p class="content_explain"><span class="text_orange">상품명은 150자 이내, 브랜드명은 10자이내</span>로 제한되어 있습니다. 옥션의 경우 글자수 초과시 홍보문구로 등록이 됩니다.</p>
+													<p class="content_explain">상품명 글자수 제한으로 인해 상품 등록이 실패되는 경우 또는 상품명이 짤리는 경우가 있을 수 있습니다.</p>
+													<p class="content_explain">상품약어의 활용<br><span class="text_indent">- 택배사 송장출력을 위하여 간결한 상품명으로 활용하시면 됩니다.</span><span class="text_indent">- 인터파크,디앤샵등에서 검색키워드로 등록됩니다(단어간 쉼표[,]로 구분)</span></p>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+                            
+                            <!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item">
+                                <div class="content_table_top cf">
+                                	<p class="content_table_tit">상품 부가 정보</p>
+								</div>
+                                
+                                <div class="content_table_area">
+									<table class="content_table content_table_col4">
+										<colgroup>
+											<col class="th00">
+											<col class="th01">
+											<col class="th02">
+											<col class="th03">
+										</colgroup>
+										<tr>
+											<th class="th00">
+												<span class="text_required">*</span> 애드위너 카테고리
+											</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_search">
+													<select name="" class="content_select">
+														<option value="">대분류선택</option>
+														<option value="대분류1">대분류1</option>
+														<option value="대분류2">대분류2</option>
+														<option value="대분류3">대분류3</option>
+														<option value="대분류4">대분류4</option>
+														<option value="대분류5">대분류5</option>
+													</select>
+													<select name="" class="content_select">
+														<option value="">중분류선택</option>
+														<option value="중분류1">중분류1</option>
+														<option value="중분류2">중분류2</option>
+														<option value="중분류3">중분류3</option>
+														<option value="중분류4">중분류4</option>
+														<option value="중분류5">중분류5</option>
+													</select>
+													<select name="" class="content_select">
+														<option value="">소분류선택</option>
+														<option value="소분류1">소분류1</option>
+														<option value="소분류2">소분류2</option>
+														<option value="소분류3">소분류3</option>
+														<option value="소분류4">소분류4</option>
+														<option value="소분류5">소분류5</option>
+													</select>
+													<select name="" class="content_select">
+														<option value="">상세분류선택</option>
+														<option value="상세분류1">상세분류1</option>
+														<option value="상세분류2">상세분류2</option>
+														<option value="상세분류3">상세분류3</option>
+														<option value="상세분류4">상세분류4</option>
+														<option value="상세분류5">상세분류5</option>
+													</select>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">고객사 카테고리</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_search">
+													<select name="" class="content_select">
+														<option value="">대분류선택</option>
+														<option value="대분류1">대분류1</option>
+														<option value="대분류2">대분류2</option>
+														<option value="대분류3">대분류3</option>
+														<option value="대분류4">대분류4</option>
+														<option value="대분류5">대분류5</option>
+													</select>
+													<select name="" class="content_select">
+														<option value="">중분류선택</option>
+														<option value="중분류1">중분류1</option>
+														<option value="중분류2">중분류2</option>
+														<option value="중분류3">중분류3</option>
+														<option value="중분류4">중분류4</option>
+														<option value="중분류5">중분류5</option>
+													</select>
+													<select name="" class="content_select">
+														<option value="">소분류선택</option>
+														<option value="소분류1">소분류1</option>
+														<option value="소분류2">소분류2</option>
+														<option value="소분류3">소분류3</option>
+														<option value="소분류4">소분류4</option>
+														<option value="소분류5">소분류5</option>
+													</select>
+													<select name="" class="content_select">
+														<option value="">상세분류선택</option>
+														<option value="상세분류1">상세분류1</option>
+														<option value="상세분류2">상세분류2</option>
+														<option value="상세분류3">상세분류3</option>
+														<option value="상세분류4">상세분류4</option>
+														<option value="상세분류5">상세분류5</option>
+													</select>
+												</div>
+												<div class="content_table_explain">
+													<p class="content_explain"><span class="text_orange">고객사, 애드위너 카테고리 모두 등록 된 상품은 쇼핑몰 연동 후 고객사 카테고리만 연동 상품에 등록 됩니다.</span></p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">
+												<span class="text_required">*</span> 상품 판매 상태
+											</th>
+											<td class="th01 input_td">
+												<select name="" class="content_select">
+													<option value="판매중">판매중</option>
+													<option value="대기중">대기중</option>
+													<option value="판매중지">판매중지</option>
+													<option value="품절">품절</option>
+													<option value="삭제">삭제</option>
+													<option value="판매종료">판매종료</option>
+												</select>
+											</td>
+											<th class="th02">매입처</th>
+											<td class="th03 input_td">
+												<select name="" class="content_select">
+													<option value="">매입처</option>
+													<option value="매입처선택없음">매입처선택없음</option>
+												</select>
+												<button type="button" class="content_btn" onclick="window.open('../basic/basic_stin_register_popup.html','stin_register','width=1320,height=800,top=50,left=50,resizable=no,scrollbars=yes'); return false;">매입처 등록</button>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">
+												<span class="text_required">*</span> 제조업체</th>
+											<td class="th01 input_td">
+												<input type="text" name="" class="content_text">
+											</td>
+											<th class="th02">무게</th>
+											<td class="th03 input_td">
+												<input type="text" name="" class="content_text">
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">고객사 상품코드</th>
+											<td class="th01 input_td" colspan="3">
+												<!-- content_chk_limit 클래스는 글자수 체크할 때 사용 -->
+												<div class="content_chk_limit w400">
+													<!-- content_text_limit : 텍스트 박스, input_size : 입력한 글자수, limit_size : 제한 글자수 -->
+													<input type="text" name="" class="content_text content_text_limit w400">
+													<div class="content_text_size">
+														<span class="input_size">0</span>/<span class="limit_size">150</span>
+													</div>
+												</div>
+												<div class="content_table_explain">
+													<p class="content_explain"><span class="text_orange">고객사 상품코드는 영문 / 숫자 150자 이내 입니다.</span></p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">판매지역</th>
+											<td class="th01 input_td">
+												<select name="" class="content_select">
+													<option value="전국">전국</option>
+													<option value="서울/경기">서울/경기</option>
+													<option value="서울">서울</option>
+													<option value="경기">경기</option>
+													<option value="강원">강원</option>
+													<option value="충청">충청</option>
+													<option value="전라">전라</option>
+													<option value="경상">경상</option>
+													<option value="제주">제주</option>
+													<option value="전국(제주,도서지역 제외)">전국(제주,도서지역 제외)</option>
+													<option value="기타">기타</option>
+												</select>
+											</td>
+											<th class="th02">
+												<span class="text_required">*</span> 원산지
+											</th>
+											<td class="th03 input_td">
+												<select name="" class="content_select">
+													<option value="">원산지</option>
+													<option value="BANGLADESH">BANGLADESH</option>
+													<option value="BRASIL">BRASIL</option>
+													<option value="CAMBODIA">CAMBODIA</option>
+													<option value="CHINA">CHINA</option>
+													<option value="COLOMBIA">COLOMBIA</option>
+												</select>
+											</td>
+										</tr>
+									</table>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+                            
+                            <!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item">
+                                <div class="content_table_top cf">
+                                	<p class="content_table_tit">품목 정보</p>
+								</div>
+                                
+                                <div class="content_table_area">
+									<table class="content_table">
+										<colgroup>
+											<col class="th00" width="150">
+											<col class="th01" width="*">
+											<col class="th02" width="200">
+										</colgroup>
+										<tbody class="tbody">
+											<tr>
+												<th class="th00">
+													<span class="text_required">*</span> 품목
+												</th>
+												<td class="th01 input_td">
+													<select name="" class="content_select">
+														<option value="">선택</option>
+														<option value="[i01] 의류">[i01] 의류</option>
+														<option value="[i02] 구두/신발">[i02] 구두/신발</option>
+														<option value="[i03] 가방">[i03] 가방</option>
+														<option value="[i04] 패션잡화(모자/벨트/액세서리)">[i04] 패션잡화(모자/벨트/액세서리)</option>
+														<option value="[i05] 침구류/커튼">[i05] 침구류/커튼</option>
+													</select>
+												</td>
+												<td class="th02 input_td">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="detail_all_chk">
+														<label for="detail_all_chk">전체 상품 상세 참조</label>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+										<tbody class="tbody">
+											<tr>
+												<th class="th00">(1) 제품 소재</th>
+												<td class="th01 input_td">
+													<input type="text" name="" class="content_text">
+													<div class="content_table_explain">
+														<p class="content_explain"><span class="text_red">섬유의 조성 또는 혼용률 백분율로 표시</span></p>
+													</div>
+												</td>
+												<td class="th02 input_td">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="detail_chk1">
+														<label for="detail_chk1">상품 상세 참조</label>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th class="th00">(2) 색상</th>
+												<td class="th01 input_td">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th02 input_td">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="detail_chk2">
+														<label for="detail_chk2">상품 상세 참조</label>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th class="th00">(3) 치수</th>
+												<td class="th01 input_td">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th02 input_td">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="detail_chk3">
+														<label for="detail_chk3">상품 상세 참조</label>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th class="th00">(4) 제조자,수입품의 경우 수입자를 함께 표기</th>
+												<td class="th01 input_td">
+													<input type="text" name="" class="content_text">
+													<div class="content_table_explain">
+														<p class="content_explain"><span class="text_red">수입품의 경우 수입자 표기 (병행수입의 경우 병행수입 여부로 대체)</span></p>
+													</div>
+												</td>
+												<td class="th02 input_td">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="detail_chk4">
+														<label for="detail_chk4">상품 상세 참조</label>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th class="th00">(5) 제조국</th>
+												<td class="th01 input_td">
+													<input type="text" name="" class="content_text">
+													<div class="content_table_explain">
+														<p class="content_explain"><span class="text_red">제조국은 법률상 중요정보이니 정확히 입력하십시오.</span></p>
+													</div>
+												</td>
+												<td class="th02 input_td">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="detail_chk5">
+														<label for="detail_chk5">상품 상세 참조</label>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th class="th00">(6) 세탁방법 및 취급시 주의사항</th>
+												<td class="th01 input_td">
+													<textarea name="" class="content_textarea" rows="5"></textarea>
+												</td>
+												<td class="th02 input_td">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="detail_chk6">
+														<label for="detail_chk6">상품 상세 참조</label>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th class="th00">(7) 제조년월</th>
+												<td class="th01 input_td">
+													<input type="text" name="" class="content_text">
+													<div class="content_table_explain">
+														<p class="content_explain"><span class="text_red">(ex 201211)</span></p>
+													</div>
+												</td>
+												<td class="th02 input_td">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="detail_chk7">
+														<label for="detail_chk7">상품 상세 참조</label>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th class="th00">(8) 품질 보증 기준</th>
+												<td class="th01 input_td">
+													<textarea name="" class="content_textarea" rows="5"></textarea>
+												</td>
+												<td class="th02 input_td">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="detail_chk8">
+														<label for="detail_chk8">상품 상세 참조</label>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th class="th00">(9) A/S 책임자와 전화번호</th>
+												<td class="th01 input_td">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th02 input_td">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="detail_chk9">
+														<label for="detail_chk9">상품 상세 참조</label>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+                            
+                            <!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item">
+                                <div class="content_table_top cf">
+                                	<p class="content_table_tit">상품 이미지</p>
+								</div>
+                                
+                                <div class="content_table_area">
+									<table class="content_table">
+										<colgroup>
+											<col class="th00" width="25%">
+											<col class="th01" width="150">
+											<col class="th02" width="*">
+											<col class="th03" width="150">
+											<col class="th04" width="*">
+										</colgroup>
+										<tbody class="tbody">
+											<tr>
+												<td class="th00 img_td text_center" rowspan="9">
+													<img src="../img/no_img.png" alt="no_img">
+												</td>
+												<th class="th01">
+													<span class="content_num_icon required_num_icon">1</span>기본이미지
+												</th>
+												<td class="th02 input_td">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file1" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file1">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+													<div class="content_table_explain">
+														<p class="content_explain">( 700 x 700 or 500 x 500 )</p>
+													</div>
+												</td>
+												<th class="th03">
+													<span class="content_num_icon">2</span>옥션&amp;지마켓
+												</th>
+												<td class="th04 input_td">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file2" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file2">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+													<div class="content_table_explain">
+														<p class="content_explain">( 600 x 600 )</p>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 not_view"></td>
+												<th class="th01">
+													<span class="content_num_icon">3</span>쿠팡 외
+												</th>
+												<td class="th02 input_td">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file3" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file3">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+													<div class="content_table_explain">
+														<p class="content_explain">( 1000 x 1000 )</p>
+													</div>
+												</td>
+												<th class="th03">
+													<span class="content_num_icon">4</span>11번가목록용
+												</th>
+												<td class="th04 input_td">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file4" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file4">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+													<div class="content_table_explain">
+														<p class="content_explain">( 600 x 600 )</p>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 not_view"></td>
+												<th class="th01">
+													<span class="content_num_icon">5</span>종합몰/홈쇼핑
+												</th>
+												<td class="th02 input_td">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file5" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file5">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+													<div class="content_table_explain">
+														<p class="content_explain">( 700 x 700 or 500 x 500, jpg )</p>
+													</div>
+												</td>
+												<th class="th03">
+													<span class="content_num_icon">6</span>부가이미지
+												</th>
+												<td class="th04 input_td">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file6" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file6">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 not_view"></td>
+												<th class="th01">
+													<span class="content_num_icon">7</span>부가이미지
+												</th>
+												<td class="th02 input_td">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file7" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file7">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+												</td>
+												<th class="th03">
+													<span class="content_num_icon">8</span>부가이미지
+												</th>
+												<td class="th04 input_td">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file8" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file8">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 not_view"></td>
+												<th class="th01">
+													<span class="content_num_icon">9</span>부가이미지
+												</th>
+												<td class="th02 input_td">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file9" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file9">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+												</td>
+												<th class="th03">
+													<span class="content_num_icon">10</span>부가이미지
+												</th>
+												<td class="th04 input_td">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file10" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file10">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 not_view"></td>
+												<th class="th01">
+													<span class="content_num_icon">11</span>부가이미지
+												</th>
+												<td class="th02 input_td">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file11" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file11">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+												</td>
+												<th class="th03">
+													<span class="content_num_icon">12</span>부가이미지
+												</th>
+												<td class="th04 input_td">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file12" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file12">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 not_view"></td>
+												<th class="th01">
+													<span class="content_num_icon">13</span> 600*600<br>옥션&amp;지마켓 추가이미지1
+												</th>
+												<td class="th02 input_td">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file13" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file13">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+												</td>
+												<th class="th03">
+													<span class="content_num_icon">14</span>600*600<br>옥션&amp;지마켓 추가이미지2
+												</th>
+												<td class="th04 input_td">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file14" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file14">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 not_view"></td>
+												<th class="th01">
+													<span class="content_num_icon">15</span>위메프 (460*460, 500*500)
+												</th>
+												<td class="th02 input_td">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file15" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file15">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+												</td>
+												<th class="th03">
+													<span class="content_num_icon">16</span>위메프2.0 필수 (580*320)
+												</th>
+												<td class="th04 input_td">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file16" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file16">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 not_view"></td>
+												<th class="th01">
+													<span class="content_num_icon">17</span>960*1280<br>W컨셉기본
+												</th>
+												<td class="th02 input_td">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file17" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file17">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+												</td>
+												<th class="th03">
+													<span class="content_num_icon">18</span>640*320<br>하프클럽 가로배너 이미지<br>GS/이지웰 모바일 이미지
+												</th>
+												<td class="th04 input_td">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file18" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file18">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+                            	
+                            	<ul class="goods_img_list cf">
+									<li>
+										<div class="goods_img_img">
+											<span class="content_num_icon">2</span>
+											<img src="../img/no_img2.png" alt="no_img2">
+										</div>
+										<div class="goods_img_tit">
+											옥션&amp;지마켓
+										</div>
+										<div class="goods_img_btn">
+											<button type="button" class="content_btn del_btn">삭제</button>
+										</div>
+									</li>
+									<li>
+										<div class="goods_img_img">
+											<span class="content_num_icon">3</span>
+											<img src="../img/no_img2.png" alt="no_img2">
+										</div>
+										<div class="goods_img_tit">
+											쿠팡 외
+										</div>
+										<div class="goods_img_btn">
+											<button type="button" class="content_btn del_btn">삭제</button>
+										</div>
+									</li>
+									<li>
+										<div class="goods_img_img">
+											<span class="content_num_icon">4</span>
+											<img src="../img/no_img2.png" alt="no_img2">
+										</div>
+										<div class="goods_img_tit">
+											11번가목록용
+										</div>
+										<div class="goods_img_btn">
+											<button type="button" class="content_btn del_btn">삭제</button>
+										</div>
+									</li>
+									<li>
+										<div class="goods_img_img">
+											<span class="content_num_icon">5</span>
+											<img src="../img/no_img2.png" alt="no_img2">
+										</div>
+										<div class="goods_img_tit">
+											종합몰/홈쇼핑
+										</div>
+										<div class="goods_img_btn">
+											<button type="button" class="content_btn del_btn">삭제</button>
+										</div>
+									</li>
+									<li>
+										<div class="goods_img_img">
+											<span class="content_num_icon">16</span>
+											<img src="../img/no_img2.png" alt="no_img2">
+										</div>
+										<div class="goods_img_tit">
+											위메프2.0 필수 (580*320)
+										</div>
+										<div class="goods_img_btn">
+											<button type="button" class="content_btn del_btn">삭제</button>
+										</div>
+									</li>
+									<li>
+										<div class="goods_img_img">
+											<span class="content_num_icon">17</span>
+											<img src="../img/no_img2.png" alt="no_img2">
+										</div>
+										<div class="goods_img_tit">
+											960*1280<br>W컨셉기본
+										</div>
+										<div class="goods_img_btn">
+											<button type="button" class="content_btn del_btn">삭제</button>
+										</div>
+									</li>
+									<li>
+										<div class="goods_img_img">
+											<span class="content_num_icon">18</span>
+											<img src="../img/no_img2.png" alt="no_img2">
+										</div>
+										<div class="goods_img_tit">
+											640*320<br>하프클럽 가로배너 이미지<br>GS/이지웰 모바일 이미지
+										</div>
+										<div class="goods_img_btn">
+											<button type="button" class="content_btn del_btn">삭제</button>
+										</div>
+									</li>
+									<li>
+										<div class="goods_img_img">
+											<span class="content_num_icon">6</span>
+											<img src="../img/no_img2.png" alt="no_img2">
+										</div>
+										<div class="goods_img_tit">
+											부가이미지
+										</div>
+									</li>
+									<li>
+										<div class="goods_img_img">
+											<span class="content_num_icon">7</span>
+											<img src="../img/no_img2.png" alt="no_img2">
+										</div>
+										<div class="goods_img_tit">
+											부가이미지
+										</div>
+									</li>
+									<li>
+										<div class="goods_img_img">
+											<span class="content_num_icon">8</span>
+											<img src="../img/no_img2.png" alt="no_img2">
+										</div>
+										<div class="goods_img_tit">
+											부가이미지
+										</div>
+									</li>
+									<li>
+										<div class="goods_img_img">
+											<span class="content_num_icon">9</span>
+											<img src="../img/no_img2.png" alt="no_img2">
+										</div>
+										<div class="goods_img_tit">
+											부가이미지
+										</div>
+									</li>
+									<li>
+										<div class="goods_img_img">
+											<span class="content_num_icon">10</span>
+											<img src="../img/no_img2.png" alt="no_img2">
+										</div>
+										<div class="goods_img_tit">
+											부가이미지
+										</div>
+									</li>
+									<li>
+										<div class="goods_img_img">
+											<span class="content_num_icon">11</span>
+											<img src="../img/no_img2.png" alt="no_img2">
+										</div>
+										<div class="goods_img_tit">
+											부가이미지
+										</div>
+									</li>
+									<li>
+										<div class="goods_img_img">
+											<span class="content_num_icon">12</span>
+											<img src="../img/no_img2.png" alt="no_img2">
+										</div>
+										<div class="goods_img_tit">
+											부가이미지
+										</div>
+									</li>
+									<li>
+										<div class="goods_img_img">
+											<span class="content_num_icon">13</span>
+											<img src="../img/no_img2.png" alt="no_img2">
+										</div>
+										<div class="goods_img_tit">
+											600*600<br>옥션&amp;지마켓 추가이미지1
+										</div>
+									</li>
+									<li>
+										<div class="goods_img_img">
+											<span class="content_num_icon">14</span>
+											<img src="../img/no_img2.png" alt="no_img2">
+										</div>
+										<div class="goods_img_tit">
+											600*600<br>옥션&amp;지마켓 추가이미지2
+										</div>
+									</li>
+									<li>
+										<div class="goods_img_img">
+											<span class="content_num_icon">15</span>
+											<img src="../img/no_img2.png" alt="no_img2">
+										</div>
+										<div class="goods_img_tit">
+											위메프 (460*460, 500*500)
+										</div>
+									</li>
+								</ul>
+                           
+                            	<div class="content_explain_area cf">
+									<p class="content_explain">각 이미지가 제대로 보이지 않으면 이미지가 잘못 등록되었을 수 있습니다. 특히 엑셀 대량등록하신 경우 이런 경우가 많습니다.<br>이 경우 그대로 연동하시면 이미지 오류로 실패 할 수 있습니다. 확인해주세요.</p>
+									<p class="content_explain"><span class="text_orange">종합쇼핑몰기본 은 jpg 이미지로 업로드하여 주십시오.</span></p>
+									<p class="content_explain"><span class="text_orange">기본이미지 사이즈가 500이하인 경우 쇼핑몰 반영에 따라 이미지가 깨질 수 있습니다.</span></p>
+									<p class="content_explain"><span class="text_orange">위메프 파트너 2.0은 16번 부가이미지 등록이 필수입니다.</span></p>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+                            
+                            <!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item goods_price_item">
+                                <div class="content_table_top cf">
+                                	<p class="content_table_tit">상품 가격 정보</p>
+                                	<div class="content_table_right">
+										<button type="button" class="content_table_btn">쇼핑몰별 판매가 등록</button>
+									</div>
+								</div>
+                                
+                                <div class="content_table_area">
+									<table class="content_table">
+										<colgroup>
+											<col class="th00" width="150">
+											<col class="th01" width="15%">
+											<col class="th02" width="15%">
+											<col class="th03" width="15%">
+											<col class="th04" width="15%">
+											<col class="th05" width="*">
+										</colgroup>
+										<thead class="thead">
+											<tr>
+												<th class="th00"></th>
+												<th class="th01">시중가</th>
+												<th class="th02">판매가</th>
+												<th class="th03">공급가</th>
+												<th class="th04">마진율</th>
+												<th class="th05">가격 정보 안내</th>
+											</tr>
+										</thead>
+										<tbody class="tbody">
+											<tr>
+												<th class="th00 text_center">매입처 권장가</th>
+												<td class="th01 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 원
+												</td>
+												<td class="th02 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 원
+												</td>
+												<td class="th03 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 원
+												</td>
+												<td class="th04 input_td text_center">
+													<input type="text" name="" class="content_text w68"> %
+												</td>
+												<td class="th05 input_td" rowspan="2">
+													<div class="content_table_explain">
+														<p class="content_explain">매입처권장가는 매입처에서 관리하는 상품 가격입니다.</p>
+														<p class="content_explain">쇼핑몰판매가는 쇼핑몰에서 판매할 상품 판매 가격입니다.</p>
+														<p class="content_explain">판매가,공급가를 입력하시면 자동 마진율이 계산됩니다.</p>
+														<p class="content_explain">체크박스 선택을 하시면, 매입처의 가격이 복사됩니다.</p>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th class="th00 text_center">
+													쇼핑몰판매가<br>
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="copy_chk1">
+														<label for="copy_chk1">복사</label>
+													</div>
+												</th>
+												<td class="th01 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 원
+												</td>
+												<td class="th02 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 원
+												</td>
+												<td class="th03 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 원
+												</td>
+												<td class="th04 input_td text_center">
+													<input type="text" name="" class="content_text w68"> %
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+                            	
+                            	<div class="content_explain_area cf">
+									<p class="content_explain">제품의 모든가격은 100원 단위로 입력해주시기 바랍니다. [필수]</p>
+									<p class="content_explain">쇼핑몰판매가는 판매방법이 경매인경우 즉시 구매가로 등록되며, 고정가 판매인 경우 판매가격으로 노출됩니다.</p>
+									<p class="content_explain">옥션의 즉시구매가(애드위너기준-판매가)는 일 3회만 수정(연동시)이 가능합니다. 주의하시기 바랍니다.</p>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+                            
+                            <!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item">
+                                <div class="content_table_area">
+									<table class="content_table content_table_col4">
+										<colgroup>
+											<col class="th00">
+											<col class="th01">
+											<col class="th02">
+											<col class="th03">
+										</colgroup>
+										<tr>
+											<th class="th00">
+												<span class="text_required">*</span> 과세
+											</th>
+											<td class="th01 input_td">
+												<select name="" class="content_select">
+													<option value="">과세여부</option>
+													<option value="과세">과세</option>
+													<option value="면세">면세</option>
+													<option value="영수증여부">영수증여부</option>
+													<option value="비과세">비과세</option>
+													<option value="영세">영세</option>
+												</select>
+											</td>
+											<th class="th02">
+												<span class="text_required">*</span> 공급가능 수량
+											</th>
+											<td class="th03 input_td">
+												<input type="text" name="" class="content_text w120">
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">남여상품</th>
+											<td class="th01 input_td">
+												<select name="" class="content_select">
+													<option value="">남녀상품</option>
+													<option value="공용">공용</option>
+													<option value="남성용">남성용</option>
+													<option value="여성용">여성용</option>
+												</select>
+											</td>
+											<th class="th02">
+												<span class="text_required">*</span> 배송비 형태
+											</th>
+											<td class="th03 input_td">
+												<select name="" class="content_select">
+													<option value="">배송비</option>
+													<option value="무료">무료</option>
+													<option value="착불">착불</option>
+													<option value="착불선결제">착불선결제</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">성인상품</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name1" value="" id="select_radio_name11" checked>
+													<label for="select_radio_name11">예</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name1" value="" id="select_radio_name12">
+													<label for="select_radio_name12">아니오</label>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+                            
+                            <!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item goods_option_item">
+                                <div class="content_table_top cf">
+                                	<p class="content_table_tit">옵션 정보</p>
+								</div>
+                                
+                                <div class="content_table_area">
+									<table class="content_table">
+										<colgroup>
+											<col class="th00" width="150">
+											<col class="th01" width="200">
+											<col class="th02" width="*">
+										</colgroup>
+										<thead class="thead">
+											<tr>
+												<th class="th00">옵션 구분</th>
+												<th class="th01">옵션명</th>
+												<th class="th02">옵션 항목</th>
+											</tr>
+										</thead>
+										<tbody class="tbody">
+											<tr>
+												<th class="th00 text_center">옵션1</th>
+												<td class="th01 input_td">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th02 input_td">
+													<input type="text" name="" class="content_text w400">
+													<button type="button" class="content_btn">옵션 매치 등록</button>
+												</td>
+											</tr>
+											<tr>
+												<th class="th00 text_center">옵션2</th>
+												<td class="th01 input_td">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th02 input_td">
+													<input type="text" name="" class="content_text w400">
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+                            	
+                            	<div class="content_explain_area cf">
+									<p class="content_explain"><span class="text_orange">옵션항목에 '/' , '(' , ')', '|', 공백 등의 문자를 사용하시면 상품연동시 오류가 발생</span>합니다.</p>
+									<p class="content_explain"><span class="text_orange">옵션은 쇼핑몰 별 특성이 다르니 "옵션2" 까지만 사용을 권장 합니다.</span></p>
+								</div>
+                            	
+                            	<div class="content_table_middle cf">
+                                	<p class="content_table_tit">옵션별 수량/코드 입력</p>
+								</div>
+                               
+                                <div class="content_explain_area cf">
+									<p class="content_explain">옵션명을 먼저 기입하고, 옵션 항목을 기입하시면 옵션이 등록되며, 항목은 쉼표[,] 구분입력하면 됩니다.</p>
+									<p class="content_explain">입력후 반드시 옵션 확정을 클릭하셔야 옵션수량이 확정됩니다.</p>
+									<p class="content_explain not_explain"><button type="button" class="content_btn mod_btn">개별 수량 입력</button> : 수량을 입력하지 않으면, 기본500개로 자동 설정됩니다. (<span class="text_blue">아래 개별수량을 입력하시기 바랍니다.</span>)</p>
+									<p class="content_explain not_explain"><button type="button" class="content_btn mod_btn">일괄 수량 입력</button> : 옵션별 일괄 수량을 입력할 수 있습니다. (<span class="text_blue">일괄 <input type="text" name="" class="content_text w68"> 개</span>) <button type="button" class="content_btn">수량 입력</button></p>
+								</div>
+                                
+                                <div class="content_table_area goods_option_setting_area">
+									<table class="content_table">
+										<colgroup>
+											<col class="th00" width="5%">
+											<col class="th01" width="*">
+											<col class="th02" width="10%">
+											<col class="th03" width="10%">
+											<col class="th04" width="10%">
+											<col class="th05" width="10%">
+											<col class="th06" width="10%">
+											<col class="th07" width="10%">
+											<col class="th08" width="10%">
+											<col class="th09" width="10%">
+										</colgroup>
+										<thead class="thead">
+											<tr>
+												<th class="th00">No</th>
+												<th class="th01">옵션 항목명</th>
+												<th class="th02">수량</th>
+												<th class="th03">추가 가격</th>
+												<th class="th04">옵션 약어</th>
+												<th class="th05">옵션 관리 코드</th>
+												<th class="th06">옵션 표준 코드</th>
+												<th class="th07">매입처</th>
+												<th class="th08">공급가</th>
+												<th class="th09">안전 재고</th>
+											</tr>
+										</thead>
+										<tbody class="tbody">
+											<tr>
+												<td class="th00 input_td text_center">1</td>
+												<td class="th01 input_td text_center">옵션1/옵션2-1</td>
+												<td class="th02 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 개
+												</td>
+												<td class="th03 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 원
+												</td>
+												<td class="th04 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+												<td class="th05 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+												<td class="th06 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+												<td class="th07 input_td text_center">
+													<select name="" class="content_select">
+														<option value="">매입처선택</option>
+													</select>
+												</td>
+												<td class="th08 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 원
+												</td>
+												<td class="th09 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 input_td text_center">2</td>
+												<td class="th01 input_td text_center">옵션1/옵션2-2</td>
+												<td class="th02 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 개
+												</td>
+												<td class="th03 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 원
+												</td>
+												<td class="th04 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+												<td class="th05 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+												<td class="th06 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+												<td class="th07 input_td text_center">
+													<select name="" class="content_select">
+														<option value="">매입처선택</option>
+													</select>
+												</td>
+												<td class="th08 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 원
+												</td>
+												<td class="th09 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 input_td text_center">3</td>
+												<td class="th01 input_td text_center">옵션1/옵션2-3</td>
+												<td class="th02 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 개
+												</td>
+												<td class="th03 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 원
+												</td>
+												<td class="th04 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+												<td class="th05 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+												<td class="th06 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+												<td class="th07 input_td text_center">
+													<select name="" class="content_select">
+														<option value="">매입처선택</option>
+													</select>
+												</td>
+												<td class="th08 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 원
+												</td>
+												<td class="th09 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 input_td text_center">4</td>
+												<td class="th01 input_td text_center">옵션1/옵션2-4</td>
+												<td class="th02 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 개
+												</td>
+												<td class="th03 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 원
+												</td>
+												<td class="th04 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+												<td class="th05 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+												<td class="th06 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+												<td class="th07 input_td text_center">
+													<select name="" class="content_select">
+														<option value="">매입처선택</option>
+													</select>
+												</td>
+												<td class="th08 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 원
+												</td>
+												<td class="th09 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 input_td text_center">5</td>
+												<td class="th01 input_td text_center">옵션1/옵션2-5</td>
+												<td class="th02 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 개
+												</td>
+												<td class="th03 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 원
+												</td>
+												<td class="th04 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+												<td class="th05 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+												<td class="th06 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+												<td class="th07 input_td text_center">
+													<select name="" class="content_select">
+														<option value="">매입처선택</option>
+													</select>
+												</td>
+												<td class="th08 input_td text_center">
+													<input type="text" name="" class="content_text w68"> 원
+												</td>
+												<td class="th09 input_td text_center">
+													<input type="text" name="" class="content_text w68">
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									
+									<div class="goods_option_setting_fix">
+										<div class="gosf_txt">
+											총 <input type="text" name="" class="content_text w68"> 개의 옵션에서 공급 가능 수량은 총 <input type="text" name="" class="content_text w68"> 개
+										</div>
+										<div class="gosf_btn">
+											<button type="button" class="content_btn mod_btn">옵션 확정</button>
+										</div>
+									</div>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+                            
+                            <!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item goods_explain_item">
+                                <div class="content_table_top cf">
+                                	<p class="content_table_tit">상품 설명 정보</p>
+								</div>
+                                
+                                <div class="content_table_area">
+									<table class="content_table content_table_col4">
+										<colgroup>
+											<col class="th00">
+											<col class="th01">
+											<col class="th02">
+											<col class="th03">
+										</colgroup>
+										<tr>
+											<th class="th00">
+												상품 요약설명 <span class="text_red">(ssf 사이즈조건표)</span>
+											</th>
+											<td class="th01 input_td" colspan="3">
+												<textarea name="" class="content_textarea wall" rows="5"></textarea>
+												<div class="content_table_explain">
+													<p class="content_explain">ak몰 주재료원산지명 기재요망</p>
+													<p class="content_explain"><span class="text_orange">GS홈쇼핑일 경우 (인증구분##인증번호##모델명##인증기관##인증일) 기재요망 인증구분, 인증기관은 GS홈쇼핑 그룹정보에서 확인 인증일은 20131004 형태로 입력</span></p>
+													<p class="content_explain"><span class="text_blue">현대백화점인 경우 [전체바코드]를 입력해주시기 바랍니다.</span></p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00" rowspan="2">
+												<span class="text_required">*</span> 상품 상세설명
+											</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_table_block_txt">
+													<span class="text_indent">* 기본설정은 [소스 모드]입니다. [HTML] 버튼을 클릭하시면 [HTML 모드]/[소스 모드]로 전환됩니다.</span>
+													<span class="text_orange">(구) 상품상세설명은 필수입력사항입니다. 옥션/지마켓 2.0 전용입니다.</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00 not_view"></th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_table_block_txt">
+													<span class="text_orange">(신) 상품상세설명은 옥션/지마켓 전용입니다.</span>
+													<a href="#"><img src="../img/manual_icon.png" alt="manual_icon" title="이미지 호스팅이란?"></a>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name2" value="" id="select_radio_name21" checked>
+													<label for="select_radio_name21">(구) 상품상세설명</label>
+													<button type="button" class="content_btn">미리보기</button>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name2" value="" id="select_radio_name22">
+													<label for="select_radio_name22">(신) 상품상세설명</label>
+													<button type="button" class="content_btn">미리보기</button>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">
+												상품 상세 설명<br>
+												<button type="button" class="content_btn">Byte 계산</button>
+											</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="extra_editor_area">에디터 영역</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">
+												품질 표시 TAG <span class="text_red">(현대백화점용,SSF 라벨이미지)</span><br>
+												<button type="button" class="content_btn">미리보기</button>
+												<button type="button" class="content_btn">Byte 계산</button>
+											</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="extra_editor_area">에디터 영역</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">반품지 주소</th>
+											<td class="th01 input_td" colspan="3">
+												<!-- content_zipcode 클래스는 우편번호를 입력할 경우 사용 -->
+												<div class="content_zipcode">
+													<input type="text" name="" class="content_text w68">
+													<button type="button" class="content_btn" onclick="window.open('../zipcode_popup.html','zipcode','width=520,height=500,top=50,left=50,resizable=no,scrollbars=yes'); return false;">우편번호 찾기</button>
+												</div>
+												<input type="text" name="" class="content_text w400">
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">츨고지 주소</th>
+											<td class="th01 input_td" colspan="3">
+												<!-- content_zipcode 클래스는 우편번호를 입력할 경우 사용 -->
+												<div class="content_zipcode">
+													<input type="text" name="" class="content_text w68">
+													<button type="button" class="content_btn" onclick="window.open('../zipcode_popup.html','zipcode','width=520,height=500,top=50,left=50,resizable=no,scrollbars=yes'); return false;">우편번호 찾기</button>
+												</div>
+												<input type="text" name="" class="content_text w400">
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">배송정보/교환/반품안내</th>
+											<td class="th01 input_td" colspan="3">
+												<textarea name="" class="content_textarea wall" rows="5"></textarea>
+												<div class="content_table_explain">
+													<p class="content_explain">(상품 상세설명에 배송관련 정보를 입력하셨으면 배송정보에 다시 입력하지 않으셔도 됩니다.)</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">A/S정보</th>
+											<td class="th01 input_td" colspan="3">
+												<textarea name="" class="content_textarea wall" rows="5"></textarea>
+												<div class="content_table_explain">
+													<p class="content_explain">(상품 상세설명에 A/S관련 정보를 입력하셨으면 A/S정보에 다시 입력하지 않으셔도 됩니다.) 옥션,GS,인터파크 연동시 이용되며, 옥션은 40자 GS는 100자, 인터파크는 40로 글자수 제한이 있습니다.</p>
+													<p class="content_explain">(이지웰 최저가 링크)</p>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+                            
+                            <!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item goods_confirm_item">
+                                <div class="content_table_top cf">
+                                	<p class="content_table_tit">
+                                		인증 정보 입력
+                                		<a href="#"><img src="../img/manual_icon.png" alt="manual_icon" title="통합 인증 세팅 방법"></a>
+                                	</p>
+								</div>
+                                
+                                <div class="content_table_area">
+									<table class="content_table">
+										<colgroup>
+											<col class="th00" width="5%">
+											<col class="th01" width="10%">
+											<col class="th02" width="10%">
+											<col class="th03" width="10%">
+											<col class="th04" width="10%">
+											<col class="th05" width="13%">
+											<col class="th06" width="13%">
+											<col class="th07" width="13%">
+											<col class="th08" width="*">
+										</colgroup>
+										<thead class="thead">
+											<tr>
+												<th class="th00">No</th>
+												<th class="th01">
+													<span class="text_required">*</span> 인증 항목
+												</th>
+												<th class="th02">기관명</th>
+												<th class="th03">
+													<span class="text_required">*</span> 인증번호 (심의번호)
+												</th>
+												<th class="th04">신고번호</th>
+												<th class="th05">인증발급일자</th>
+												<th class="th06">유효시작일자</th>
+												<th class="th07">유효만료날짜</th>
+												<th class="th08">첨부파일</th>
+											</tr>
+										</thead>
+										<tbody class="tbody">
+											<tr>
+												<td class="th00 input_td text_center">1</td>
+												<td class="th01 input_td text_center">
+													<select name="" class="content_select">
+														<option value="">선택하세요</option>
+														<option value="[공산품]안전인증">[공산품]안전인증</option>
+														<option value="[공산품]자율안전확인">[공산품]자율안전확인</option>
+														<option value="[공산품]안전/품질표시">[공산품]안전/품질표시</option>
+														<option value="[공산품]어린이보호포장">[공산품]어린이보호포장</option>
+														<option value="[전기용품]안전인증">[전기용품]안전인증</option>
+													</select>
+												</td>
+												<td class="th02 input_td text_center">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th03 input_td text_center">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th04 input_td text_center">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th05 input_td text_center">
+													<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+													<div class="content_calendar">
+														<input type="text" name="" class="content_text">
+														<span class="content_calendar_btn"></span>
+													</div>
+												</td>
+												<td class="th06 input_td text_center">
+													<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+													<div class="content_calendar">
+														<input type="text" name="" class="content_text">
+														<span class="content_calendar_btn"></span>
+													</div>
+												</td>
+												<td class="th07 input_td text_center">
+													<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+													<div class="content_calendar">
+														<input type="text" name="" class="content_text">
+														<span class="content_calendar_btn"></span>
+													</div>
+												</td>
+												<td class="th08 input_td text_center">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file19" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file19">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 input_td text_center">2</td>
+												<td class="th01 input_td text_center">
+													<select name="" class="content_select">
+														<option value="">선택하세요</option>
+														<option value="[공산품]안전인증">[공산품]안전인증</option>
+														<option value="[공산품]자율안전확인">[공산품]자율안전확인</option>
+														<option value="[공산품]안전/품질표시">[공산품]안전/품질표시</option>
+														<option value="[공산품]어린이보호포장">[공산품]어린이보호포장</option>
+														<option value="[전기용품]안전인증">[전기용품]안전인증</option>
+													</select>
+												</td>
+												<td class="th02 input_td text_center">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th03 input_td text_center">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th04 input_td text_center">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th05 input_td text_center">
+													<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+													<div class="content_calendar">
+														<input type="text" name="" class="content_text">
+														<span class="content_calendar_btn"></span>
+													</div>
+												</td>
+												<td class="th06 input_td text_center">
+													<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+													<div class="content_calendar">
+														<input type="text" name="" class="content_text">
+														<span class="content_calendar_btn"></span>
+													</div>
+												</td>
+												<td class="th07 input_td text_center">
+													<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+													<div class="content_calendar">
+														<input type="text" name="" class="content_text">
+														<span class="content_calendar_btn"></span>
+													</div>
+												</td>
+												<td class="th08 input_td text_center">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file20" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file20">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 input_td text_center">3</td>
+												<td class="th01 input_td text_center">
+													<select name="" class="content_select">
+														<option value="">선택하세요</option>
+														<option value="[공산품]안전인증">[공산품]안전인증</option>
+														<option value="[공산품]자율안전확인">[공산품]자율안전확인</option>
+														<option value="[공산품]안전/품질표시">[공산품]안전/품질표시</option>
+														<option value="[공산품]어린이보호포장">[공산품]어린이보호포장</option>
+														<option value="[전기용품]안전인증">[전기용품]안전인증</option>
+													</select>
+												</td>
+												<td class="th02 input_td text_center">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th03 input_td text_center">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th04 input_td text_center">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th05 input_td text_center">
+													<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+													<div class="content_calendar">
+														<input type="text" name="" class="content_text">
+														<span class="content_calendar_btn"></span>
+													</div>
+												</td>
+												<td class="th06 input_td text_center">
+													<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+													<div class="content_calendar">
+														<input type="text" name="" class="content_text">
+														<span class="content_calendar_btn"></span>
+													</div>
+												</td>
+												<td class="th07 input_td text_center">
+													<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+													<div class="content_calendar">
+														<input type="text" name="" class="content_text">
+														<span class="content_calendar_btn"></span>
+													</div>
+												</td>
+												<td class="th08 input_td text_center">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file21" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file21">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 input_td text_center">4</td>
+												<td class="th01 input_td text_center">
+													<select name="" class="content_select">
+														<option value="">선택하세요</option>
+														<option value="[공산품]안전인증">[공산품]안전인증</option>
+														<option value="[공산품]자율안전확인">[공산품]자율안전확인</option>
+														<option value="[공산품]안전/품질표시">[공산품]안전/품질표시</option>
+														<option value="[공산품]어린이보호포장">[공산품]어린이보호포장</option>
+														<option value="[전기용품]안전인증">[전기용품]안전인증</option>
+													</select>
+												</td>
+												<td class="th02 input_td text_center">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th03 input_td text_center">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th04 input_td text_center">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th05 input_td text_center">
+													<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+													<div class="content_calendar">
+														<input type="text" name="" class="content_text">
+														<span class="content_calendar_btn"></span>
+													</div>
+												</td>
+												<td class="th06 input_td text_center">
+													<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+													<div class="content_calendar">
+														<input type="text" name="" class="content_text">
+														<span class="content_calendar_btn"></span>
+													</div>
+												</td>
+												<td class="th07 input_td text_center">
+													<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+													<div class="content_calendar">
+														<input type="text" name="" class="content_text">
+														<span class="content_calendar_btn"></span>
+													</div>
+												</td>
+												<td class="th08 input_td text_center">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file22" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file22">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00 input_td text_center">5</td>
+												<td class="th01 input_td text_center">
+													<select name="" class="content_select">
+														<option value="">선택하세요</option>
+														<option value="[공산품]안전인증">[공산품]안전인증</option>
+														<option value="[공산품]자율안전확인">[공산품]자율안전확인</option>
+														<option value="[공산품]안전/품질표시">[공산품]안전/품질표시</option>
+														<option value="[공산품]어린이보호포장">[공산품]어린이보호포장</option>
+														<option value="[전기용품]안전인증">[전기용품]안전인증</option>
+													</select>
+												</td>
+												<td class="th02 input_td text_center">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th03 input_td text_center">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th04 input_td text_center">
+													<input type="text" name="" class="content_text">
+												</td>
+												<td class="th05 input_td text_center">
+													<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+													<div class="content_calendar">
+														<input type="text" name="" class="content_text">
+														<span class="content_calendar_btn"></span>
+													</div>
+												</td>
+												<td class="th06 input_td text_center">
+													<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+													<div class="content_calendar">
+														<input type="text" name="" class="content_text">
+														<span class="content_calendar_btn"></span>
+													</div>
+												</td>
+												<td class="th07 input_td text_center">
+													<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+													<div class="content_calendar">
+														<input type="text" name="" class="content_text">
+														<span class="content_calendar_btn"></span>
+													</div>
+												</td>
+												<td class="th08 input_td text_center">
+													<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+													<div class="content_file_area">
+														<label for="upload_file23" class="content_file_btn">찾아보기</label>
+														<input type="file" name="" id="upload_file23">
+														<input type="text" class="content_text content_file_name" disabled>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+                            	
+                            	<div class="content_explain_area cf">
+									<p class="content_explain"><span class="text_orange">인증 항목과 인증번호(심의번호)는 필수로 입력해주셔야 저장됩니다.</span></p>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+                            
+                            <!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item">
+                                <div class="content_table_top cf">
+                                	<p class="content_table_tit">
+                                		카테고리 연결
+                                		<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+                                	</p>
+								</div>
+                                
+                                <div class="content_table_area">
+									<table class="content_table">
+										<colgroup>
+											<col class="th00" width="150">
+											<col class="th01" width="*">
+											<col class="th02" width="200">
+										</colgroup>
+										<tbody class="tbody">
+											<tr>
+												<th class="th00">
+													카테고리 선택<br>
+													<button type="button" class="content_btn">카테고리일괄선택</button>
+												</th>
+												<td class="th01 input_td">
+													<div class="content_search">
+														<select name="" class="content_select multiple_select" multiple="multiple">
+															<option value="">카테고리선택</option>
+															<option value="대분류1">대분류1</option>
+															<option value="대분류2">대분류2</option>
+															<option value="대분류3">대분류3</option>
+															<option value="대분류4">대분류4</option>
+															<option value="대분류5">대분류5</option>
+														</select>
+														<select name="" class="content_select multiple_select" multiple="multiple">
+															<option value="">카테고리선택</option>
+															<option value="중분류1">중분류1</option>
+															<option value="중분류2">중분류2</option>
+															<option value="중분류3">중분류3</option>
+															<option value="중분류4">중분류4</option>
+															<option value="중분류5">중분류5</option>
+														</select>
+														<select name="" class="content_select multiple_select" multiple="multiple">
+															<option value="">카테고리선택</option>
+															<option value="소분류1">소분류1</option>
+															<option value="소분류2">소분류2</option>
+															<option value="소분류3">소분류3</option>
+															<option value="소분류4">소분류4</option>
+															<option value="소분류5">소분류5</option>
+														</select>
+														<select name="" class="content_select multiple_select" multiple="multiple">
+															<option value="">카테고리선택</option>
+															<option value="상세분류1">상세분류1</option>
+															<option value="상세분류2">상세분류2</option>
+															<option value="상세분류3">상세분류3</option>
+															<option value="상세분류4">상세분류4</option>
+															<option value="상세분류5">상세분류5</option>
+														</select>
+													</div>
+												</td>
+												<td class="th02 input_td">
+													<button type="button" class="content_btn">선택</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+                            	
+                            	<div class="content_explain_area cf">
+									<p class="content_explain">카테고리가 먼저 등록되어 있어야 카테고리 연결이 가능합니다. <a href="#">카테고리 등록하기&gt;</a></p>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+                            
+                            <!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item">
+                                <div class="content_table_top cf">
+                                	<p class="content_table_tit">
+                                		선택된 카테고리
+                                		<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+                                	</p>
+								</div>
+                                
+                                <div class="content_table_area">
+                                	<!-- content_outer_table 클래스는 내용 안에 테이블이 있을 경우 추가 -->
+									<table class="content_table content_table_col4 content_outer_table">
+										<colgroup>
+											<col class="th00">
+											<col class="th01">
+											<col class="th02">
+											<col class="th03">
+										</colgroup>
+										<tr>
+											<th class="th00">선택된 카테고리</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_table_explain">
+													<p class="content_explain">카테고리 등록 시 상위카테고리는 자동 등록되며, 등록된 카테고리에 상품이 노출됩니다.<br>상품 노출을 원하지 않는 카테고리는 ‘삭제’버튼을 이용하여 삭제할 수 있습니다.<br>등록하신 카테고리들 중 체크된 카테고리가 대표 카테고리로 설정됩니다.</p>
+												</div>
+												<!-- 테이블 안에 테이블 start -->
+												<div class="content_inner_table">
+													<!-- 콘텐츠 리스트 테이블 start -->
+													<table class="content_list_table">
+														<colgroup>
+															<col class="th00" width="10%">
+															<col class="th01" width="*">
+															<col class="th02" width="15%">
+															<col class="th03" width="10%">
+														</colgroup>
+														<thead class="thead">
+															<tr>
+																<th class="th00">대표 설정</th>
+																<th class="th01">연결된 카테고리</th>
+																<th class="th02">카테고리 코드</th>
+																<th class="th03">연결 해제</th>
+															</tr>
+														</thead>
+														<tbody class="tbody">
+															<tr>
+																<td class="th00">
+																	<div class="content_radio_area">
+																		<input type="radio" name="radio_name3" value="" id="select_radio_name31" checked>
+																		<label for="select_radio_name31"></label>
+																	</div>
+																</td>
+																<td class="th01 text_left">대분류1</td>
+																<td class="th02">001</td>
+																<td class="th03">
+																	<button type="button" class="content_btn del_icon_btn">삭제</button>
+																</td>
+															</tr>
+															<tr>
+																<td class="th00">
+																	<div class="content_radio_area">
+																		<input type="radio" name="radio_name3" value="" id="select_radio_name32">
+																		<label for="select_radio_name32"></label>
+																	</div>
+																</td>
+																<td class="th01 text_left">대분류1 &gt; 중분류1</td>
+																<td class="th02">001001</td>
+																<td class="th03">
+																	<button type="button" class="content_btn del_icon_btn">삭제</button>
+																</td>
+															</tr>
+															<tr>
+																<td class="th00">
+																	<div class="content_radio_area">
+																		<input type="radio" name="radio_name3" value="" id="select_radio_name33">
+																		<label for="select_radio_name33"></label>
+																	</div>
+																</td>
+																<td class="th01 text_left">대분류1 &gt; 중분류1 &gt; 소분류1</td>
+																<td class="th02">001001001</td>
+																<td class="th03">
+																	<button type="button" class="content_btn del_icon_btn">삭제</button>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+													<!-- 콘텐츠 리스트 테이블 end -->
+												</div>
+												<!-- 테이블 안에 테이블 end -->
+												<div class="content_chk_area">
+													<input type="checkbox" name="" value="" id="fix_chk1">
+													<label for="fix_chk1"><b class="text_bold">상단 고정진열 적용</b> (체크 시 선택된 모든 카테고리의 쇼핑몰 상품 페이지 최상단에 진열됩니다.)</label>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+                            
+                            <!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item goods_exposure_item">
+                                <div class="content_table_top cf">
+                                	<p class="content_table_tit">
+                                		노출 및 판매상태 설정
+                                		<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+                                	</p>
+								</div>
+                                
+                                <div class="content_table_area">
+                                	<!-- content_outer_table 클래스는 내용 안에 테이블이 있을 경우 추가 -->
+									<table class="content_table content_table_col4 content_outer_table">
+										<colgroup>
+											<col class="th00">
+											<col class="th01">
+											<col class="th02">
+											<col class="th03">
+										</colgroup>
+										<tr>
+											<th class="th00">PC쇼핑몰 노출상태</th>
+											<td class="th01 input_td">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name4" value="" id="select_radio_name41" checked>
+													<label for="select_radio_name41">노출함</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name4" value="" id="select_radio_name42">
+													<label for="select_radio_name42">노출안함</label>
+												</div>
+											</td>
+											<th class="th02">PC쇼핑몰 판매상태</th>
+											<td class="th03 input_td">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name5" value="" id="select_radio_name51" checked>
+													<label for="select_radio_name51">판매함</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name5" value="" id="select_radio_name52">
+													<label for="select_radio_name52">판매안함</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">모바일쇼핑몰 노출상태</th>
+											<td class="th01 input_td">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name6" value="" id="select_radio_name61" checked>
+													<label for="select_radio_name61">노출함</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name6" value="" id="select_radio_name62">
+													<label for="select_radio_name62">노출안함</label>
+												</div>
+											</td>
+											<th class="th02">모바일쇼핑몰 판매상태</th>
+											<td class="th03 input_td">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name7" value="" id="select_radio_name71" checked>
+													<label for="select_radio_name71">판매함</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name7" value="" id="select_radio_name72">
+													<label for="select_radio_name72">판매안함</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">메인상품 진열 상태</th>
+											<td class="th01 input_td" colspan="3">
+												<!-- 테이블 안에 테이블 start -->
+												<div class="content_inner_table">
+													<!-- 콘텐츠 테이블 start -->
+													<table class="content_table">
+														<colgroup>
+															<col class="th00" width="50%">
+															<col class="th01" width="50%">
+														</colgroup>
+														<thead class="thead">
+															<tr>
+																<th class="th00">PC쇼핑몰</th>
+																<th class="th01">모바일쇼핑몰</th>
+															</tr>
+														</thead>
+														<tbody class="tbody">
+															<tr>
+																<td class="th00 input_td">
+																	<div class="content_chk_area">
+																		<input type="checkbox" name="" value="" id="pc_chk1">
+																		<label for="pc_chk1">MD 강력추천 | 단독 최저가 진행</label>
+																	</div><br>
+																	<div class="content_chk_area">
+																		<input type="checkbox" name="" value="" id="pc_chk2">
+																		<label for="pc_chk2">인기상품 | 최다 판매율</label>
+																	</div><br>
+																	<div class="content_chk_area">
+																		<input type="checkbox" name="" value="" id="pc_chk3">
+																		<label for="pc_chk3">신규상품 | 최근 등록된 상품</label>
+																	</div>
+																</td>
+																<td class="th01 input_td">
+																	<div class="content_chk_area">
+																		<input type="checkbox" name="" value="" id="mobile_chk1">
+																		<label for="mobile_chk1">MD 강력추천 | 단독 최저가 진행</label>
+																	</div><br>
+																	<div class="content_chk_area">
+																		<input type="checkbox" name="" value="" id="mobile_chk2">
+																		<label for="mobile_chk2">추천상품</label>
+																	</div><br>
+																	<div class="content_chk_area">
+																		<input type="checkbox" name="" value="" id="mobile_chk3">
+																		<label for="mobile_chk3">인기상품</label>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+													<!-- 콘텐츠 테이블 end -->
+												</div>
+												<!-- 테이블 안에 테이블 end -->
+												<div class="content_table_explain">
+													<p class="content_explain">자동진열로 설정된 메인분류는 체크(진열)상태가 기본이며, 체크해제시 해당 메인분류의 진열 예외 상품으로 저장됩니다.<br>메인분류는 <a href="#">상품 &gt; 상품 진열 관리 &gt; 메인페이지 상품진열</a>에서 설정할 수 있습니다.</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">인기상품 포함 상태</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_chk_area">
+													<input type="checkbox" name="" value="" id="popular_chk1">
+													<label for="popular_chk1">드라이버 인기상품</label>
+												</div>
+												<div class="content_table_explain">
+													<p class="content_explain">인기상품 수집 범위가 전체 상품으로 설정된 경우 체크(포함) 상태가 기본이며, 체크 해제 시 해당 인기상품의 수집 예외 상품으로 저장됩니다.<br>인기상품은 <a href="#">상품 &gt; 상품 노출형태 관리 &gt; 인기상품 노출 관리</a>에서 설정할 수 있습니다.</p>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+                            
+                            <!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item">
+                                <div class="content_table_top cf">
+                                	<p class="content_table_tit">
+                                		기본 정보
+                                		<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+                                	</p>
+								</div>
+                                
+                                <div class="content_table_area">
+									<table class="content_table content_table_col4">
+										<colgroup>
+											<col class="th00">
+											<col class="th01">
+											<col class="th02">
+											<col class="th03">
+										</colgroup>
+										<tr>
+											<th class="th00" rowspan="2">선택사 구분</th>
+											<td class="th01 input_td" rowspan="2">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name8" value="" id="select_radio_name81" checked>
+													<label for="select_radio_name81">본사</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name8" value="" id="select_radio_name82">
+													<label for="select_radio_name82">분양사</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name8" value="" id="select_radio_name83">
+													<label for="select_radio_name83">유통사</label>
+												</div>
+												<button type="button" class="content_btn">선택사 선택</button>
+												<div class="input_bottom_td">
+													<div class="content_table_txt">
+														<span class="text_bold">선택된 입점사</span> : 진골프
+														<button type="button" class="item_close_btn">
+															<img src="../img/color_close_btn.png" alt="color_close_btn">
+														</button>
+													</div>
+												</div>
+											</td>
+											<th class="th02">수수료</th>
+											<td class="th03 input_td">
+												<input type="text" name="" class="content_text w68"> %
+											</td>
+										</tr>
+										<tr>
+											<th class="th00 not_view"></th>
+											<th class="th02">자체 상품코드</th>
+											<td class="th03 input_td">
+												<!-- content_chk_limit 클래스는 글자수 체크할 때 사용 -->
+												<div class="content_chk_limit w400">
+													<!-- content_text_limit : 텍스트 박스, input_size : 입력한 글자수, limit_size : 제한 글자수 -->
+													<input type="text" name="" class="content_text content_text_limit w400">
+													<div class="content_text_size">
+														<span class="input_size">0</span>/<span class="limit_size">30</span>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">검색 키워드</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_chk_area">
+													<input type="checkbox" name="" value="" id="keyword_chk1">
+													<label for="keyword_chk1">체크시 기본 상품명이 검색 키워드에 추가됩니다.</label>
+												</div><br>
+												<!-- content_chk_limit 클래스는 글자수 체크할 때 사용 -->
+												<div class="content_chk_limit wall">
+													<!-- content_text_limit : 텍스트 박스, input_size : 입력한 글자수, limit_size : 제한 글자수 -->
+													<input type="text" name="" class="content_text content_text_limit wall">
+													<div class="content_text_size">
+														<span class="input_size">0</span>/<span class="limit_size">250</span>
+													</div>
+												</div>
+												<div class="content_table_explain">
+													<p class="content_explain">상품상세 페이지의 메타태그와 상품 검색시 키워드로 사용하실 수 있습니다.</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">상품 노출시간</th>
+											<td class="th01 input_td" colspan="3">
+												<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+												<div class="content_calendar">
+													<input type="text" name="" class="content_text">
+													<span class="content_calendar_btn"></span>
+												</div>
+												부터
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">상품 상태</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name9" value="" id="select_radio_name91" checked>
+													<label for="select_radio_name91">신상품</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name9" value="" id="select_radio_name92">
+													<label for="select_radio_name92">중고</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name9" value="" id="select_radio_name93">
+													<label for="select_radio_name93">반품</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name9" value="" id="select_radio_name94">
+													<label for="select_radio_name94">리퍼</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name9" value="" id="select_radio_name95">
+													<label for="select_radio_name95">전시</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name9" value="" id="select_radio_name96">
+													<label for="select_radio_name96">스크래치</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">상품 대표색상</th>
+											<td class="th01 input_td" colspan="3">
+												<ul class="goods_color_list cf">
+													<li>
+														<button type="button" class="goods_color_btn brown_btn" title="갈색">&nbsp;</button>
+													</li>
+													<li>
+														<button type="button" class="goods_color_btn red_btn" title="빨간색">&nbsp;</button>
+													</li>
+													<li>
+														<button type="button" class="goods_color_btn orange_btn" title="주황색">&nbsp;</button>
+													</li>
+													<li>
+														<button type="button" class="goods_color_btn tangerine_btn" title="귤색">&nbsp;</button>
+													</li>
+													<li>
+														<button type="button" class="goods_color_btn yellow_btn" title="노란색">&nbsp;</button>
+													</li>
+													<li>
+														<button type="button" class="goods_color_btn yellow_green_btn" title="연두색">&nbsp;</button>
+													</li>
+													<li>
+														<button type="button" class="goods_color_btn green_btn" title="초록색">&nbsp;</button>
+													</li>
+													<li>
+														<button type="button" class="goods_color_btn khaki_btn" title="카키색">&nbsp;</button>
+													</li>
+													<li>
+														<button type="button" class="goods_color_btn sky_blue_btn" title="하늘색">&nbsp;</button>
+													</li>
+													<li>
+														<button type="button" class="goods_color_btn blue_btn" title="파란색">&nbsp;</button>
+													</li>
+													<li>
+														<button type="button" class="goods_color_btn navy_btn" title="남색">&nbsp;</button>
+													</li>
+													<li>
+														<button type="button" class="goods_color_btn pink_btn" title="분홍색">&nbsp;</button>
+													</li>
+													<li>
+														<button type="button" class="goods_color_btn white_btn" title="흰색">&nbsp;</button>
+													</li>
+													<li>
+														<button type="button" class="goods_color_btn dove_grey_btn" title="연한회색">&nbsp;</button>
+													</li>
+													<li>
+														<button type="button" class="goods_color_btn gray_btn" title="회색">&nbsp;</button>
+													</li>
+													<li>
+														<button type="button" class="goods_color_btn black_btn" title="검정색">&nbsp;</button>
+													</li>
+												</ul>
+												<div class="input_bottom_td">
+													<div class="content_table_txt">
+														<span class="text_bold">선택된 색상</span>
+													</div>
+													<ul class="goods_color_list sel_goods_color_list cf">
+														<li>
+															<button type="button" class="goods_color_btn brown_btn" title="갈색">&nbsp;</button>
+															<button type="button" class="goods_color_close_btn"><img src="../img/color_close_btn.png" alt="color_close_btn"></button>
+														</li>
+														<li>
+															<button type="button" class="goods_color_btn red_btn" title="빨간색">&nbsp;</button>
+															<button type="button" class="goods_color_close_btn"><img src="../img/color_close_btn.png" alt="color_close_btn"></button>
+														</li>
+														<li>
+															<button type="button" class="goods_color_btn orange_btn" title="주황색">&nbsp;</button>
+															<button type="button" class="goods_color_close_btn"><img src="../img/color_close_btn.png" alt="color_close_btn"></button>
+														</li>
+														<li>
+															<button type="button" class="goods_color_btn tangerine_btn" title="귤색">&nbsp;</button>
+															<button type="button" class="goods_color_close_btn"><img src="../img/color_close_btn.png" alt="color_close_btn"></button>
+														</li>
+														<li>
+															<button type="button" class="goods_color_btn yellow_btn" title="노란색">&nbsp;</button>
+															<button type="button" class="goods_color_close_btn"><img src="../img/color_close_btn.png" alt="color_close_btn"></button>
+														</li>
+														<li>
+															<button type="button" class="goods_color_btn yellow_green_btn" title="연두색">&nbsp;</button>
+															<button type="button" class="goods_color_close_btn"><img src="../img/color_close_btn.png" alt="color_close_btn"></button>
+														</li>
+														<li>
+															<button type="button" class="goods_color_btn green_btn" title="초록색">&nbsp;</button>
+															<button type="button" class="goods_color_close_btn"><img src="../img/color_close_btn.png" alt="color_close_btn"></button>
+														</li>
+														<li>
+															<button type="button" class="goods_color_btn khaki_btn" title="카키색">&nbsp;</button>
+															<button type="button" class="goods_color_close_btn"><img src="../img/color_close_btn.png" alt="color_close_btn"></button>
+														</li>
+														<li>
+															<button type="button" class="goods_color_btn sky_blue_btn" title="하늘색">&nbsp;</button>
+															<button type="button" class="goods_color_close_btn"><img src="../img/color_close_btn.png" alt="color_close_btn"></button>
+														</li>
+														<li>
+															<button type="button" class="goods_color_btn blue_btn" title="파란색">&nbsp;</button>
+															<button type="button" class="goods_color_close_btn"><img src="../img/color_close_btn.png" alt="color_close_btn"></button>
+														</li>
+														<li>
+															<button type="button" class="goods_color_btn navy_btn" title="남색">&nbsp;</button>
+															<button type="button" class="goods_color_close_btn"><img src="../img/color_close_btn.png" alt="color_close_btn"></button>
+														</li>
+														<li>
+															<button type="button" class="goods_color_btn pink_btn" title="분홍색">&nbsp;</button>
+															<button type="button" class="goods_color_close_btn"><img src="../img/color_close_btn.png" alt="color_close_btn"></button>
+														</li>
+														<li>
+															<button type="button" class="goods_color_btn white_btn" title="흰색">&nbsp;</button>
+															<button type="button" class="goods_color_close_btn"><img src="../img/color_close_btn.png" alt="color_close_btn"></button>
+														</li>
+														<li>
+															<button type="button" class="goods_color_btn dove_grey_btn" title="연한회색">&nbsp;</button>
+															<button type="button" class="goods_color_close_btn"><img src="../img/color_close_btn.png" alt="color_close_btn"></button>
+														</li>
+														<li>
+															<button type="button" class="goods_color_btn gray_btn" title="회색">&nbsp;</button>
+															<button type="button" class="goods_color_close_btn"><img src="../img/color_close_btn.png" alt="color_close_btn"></button>
+														</li>
+														<li>
+															<button type="button" class="goods_color_btn black_btn" title="검정색">&nbsp;</button>
+															<button type="button" class="goods_color_close_btn"><img src="../img/color_close_btn2.png" alt="color_close_btn2"></button>
+														</li>
+													</ul>
+													<div class="content_table_explain">
+														<p class="content_explain">대표색상은 상품 검색시에 사용되며 <a href="#">기본설정&gt;기본 정책&gt;코드 관리</a>에서 추가할 수 있습니다.</p>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+                            
+                            <!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item">
+                                <div class="content_table_top cf">
+                                	<p class="content_table_tit">
+                                		이미지 설정
+                                		<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+                                	</p>
+								</div>
+                                
+                                <div class="content_table_area">
+									<table class="content_table content_table_col4">
+										<colgroup>
+											<col class="th00">
+											<col class="th01">
+											<col class="th02">
+											<col class="th03">
+										</colgroup>
+										<tr>
+											<th class="th00">저장소 선택</th>
+											<td class="th01 input_td" colspan="3">
+												<select name="" class="content_select">
+													<option value="">저장소선택</option>
+													<option value="기본경로">기본경로</option>
+													<option value="URL직접입력">URL직접입력</option>
+												</select>
+												<div class="content_table_explain">
+													<p class="content_explain">저장소 관리는 <a href="#">기본설정&gt;기본 정책&gt;파일 저장소 관리</a>에서 가능합니다.</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">저장 경로</th>
+											<td class="th01 input_td"  colspan="3">
+												<div class="content_table_txt text_bold">
+													/www/jingolf012_godomall_com/data/goods/코드1/코드2/코드3/상품코드/
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+                            
+                            <!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item">
+                                <div class="content_table_top cf">
+                                	<p class="content_table_tit">
+                                		결제 정보
+                                		<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+                                	</p>
+								</div>
+                                
+                                <div class="content_table_area">
+                                	<!-- content_outer_table 클래스는 내용 안에 테이블이 있을 경우 추가 -->
+									<table class="content_table content_table_col4 content_outer_table">
+										<colgroup>
+											<col class="th00">
+											<col class="th01">
+											<col class="th02">
+											<col class="th03">
+										</colgroup>
+										<tr>
+											<th class="th00">결제수단 설정</th>
+											<td class="th01 input_td" colspan="3">
+												<!-- 테이블 안에 테이블 start -->
+												<div class="content_inner_table">
+													<!-- 콘텐츠 테이블 start -->
+													<table class="content_table content_table_col2">
+														<colgroup>
+															<col class="th00">
+															<col class="th01">
+														</colgroup>
+														<tr>
+															<th class="th00">
+																<div class="content_radio_area">
+																	<input type="radio" name="radio_name10" value="" id="select_radio_name101" checked>
+																	<label for="select_radio_name101">통합설정</label>
+																</div>
+															</th>
+															<td class="th01 input_td">
+																<div class="content_table_txt">
+																	<a href="#">기본설정&gt;결제정책&gt;결제 수단 설정</a>에서 설정한 기준에 따름
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<th class="th00">
+																<div class="content_radio_area">
+																	<input type="radio" name="radio_name10" value="" id="select_radio_name102">
+																	<label for="select_radio_name102">개별설정</label>
+																</div>
+															</th>
+															<td class="th01 input_td">
+																<div class="content_chk_area">
+																	<input type="checkbox" name="" value="" id="payment_chk1">
+																	<label for="payment_chk1">무통장 사용</label>
+																</div>
+																<div class="content_chk_area">
+																	<input type="checkbox" name="" value="" id="payment_chk2">
+																	<label for="payment_chk2">PG결제 사용</label>
+																</div>
+																<div class="content_chk_area">
+																	<input type="checkbox" name="" value="" id="payment_chk3">
+																	<label for="payment_chk3">마일리지 사용</label>
+																</div>
+																<div class="content_chk_area">
+																	<input type="checkbox" name="" value="" id="payment_chk4">
+																	<label for="payment_chk4">예치금 사용</label>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<!-- 콘텐츠 테이블 end -->
+												</div>
+												<!-- 테이블 안에 테이블 end -->
+												<div class="content_table_explain">
+													<p class="content_explain">상품의 개별결제수단을 설정하는 경우 선택된 결제수단으로만 상품 구매가 가능합니다.<br>신용카드 가맹점인 경우, 결제수단을 현금으로만 제한하는 것은 상품권 등 법적으로 신용카드 거래가 제한되는 특정한 상품의 판매를 위한 용도로만 사용하세요.<br>일반 상품에 신용카드 거래를 제한하게 되면, 여신전문금융업법 위반이 되어 처벌 받을수 있습니다.</p>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+                            
+                            <!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item">
+                                <div class="content_table_top cf">
+                                	<p class="content_table_tit">
+                                		추가 정보
+                                		<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+                                	</p>
+								</div>
+                                
+                                <div class="content_table_area">
+                                	<!-- content_outer_table 클래스는 내용 안에 테이블이 있을 경우 추가 -->
+									<table class="content_table content_table_col4 content_outer_table">
+										<colgroup>
+											<col class="th00">
+											<col class="th01">
+											<col class="th02">
+											<col class="th03">
+										</colgroup>
+										<tr>
+											<th class="th00">유통사</th>
+											<td class="th01 input_td" colspan="3">
+												<input type="text" name="" class="content_text">
+												<button type="button" class="content_btn">유통사 선택</button>
+												<button type="button" class="content_btn add_icon_btn">유통사 추가</button>
+												<div class="m10"></div>
+												<div class="content_chk_area">
+													<input type="checkbox" name="" value="" id="del_chk1">
+													<label for="del_chk1">체크시 삭제</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">유통사 상품명</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_chk_area">
+													<input type="checkbox" name="" value="" id="name_chk1">
+													<label for="name_chk1">체크시 기본 상품명이 유통사 상품명에 추가됩니다.</label>
+												</div>
+												<!-- content_chk_limit 클래스는 글자수 체크할 때 사용 -->
+												<div class="content_chk_limit wall">
+													<!-- content_text_limit : 텍스트 박스, input_size : 입력한 글자수, limit_size : 제한 글자수 -->
+													<input type="text" name="" class="content_text content_text_limit wall">
+													<div class="content_text_size">
+														<span class="input_size">0</span>/<span class="limit_size">250</span>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">원산지</th>
+											<td class="th01 input_td">
+												<!-- content_chk_limit 클래스는 글자수 체크할 때 사용 -->
+												<div class="content_chk_limit w400">
+													<!-- content_text_limit : 텍스트 박스, input_size : 입력한 글자수, limit_size : 제한 글자수 -->
+													<input type="text" name="" class="content_text content_text_limit w400">
+													<div class="content_text_size">
+														<span class="input_size">0</span>/<span class="limit_size">30</span>
+													</div>
+												</div>
+											</td>
+											<th class="th02">제조사</th>
+											<td class="th03 input_td">
+												<!-- content_chk_limit 클래스는 글자수 체크할 때 사용 -->
+												<div class="content_chk_limit w400">
+													<!-- content_text_limit : 텍스트 박스, input_size : 입력한 글자수, limit_size : 제한 글자수 -->
+													<input type="text" name="" class="content_text content_text_limit w400">
+													<div class="content_text_size">
+														<span class="input_size">0</span>/<span class="limit_size">30</span>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">HS코드</th>
+											<td class="th01 input_td" colspan="3">
+												<select name="" class="content_select">
+													<option value="대한민국">대한민국</option>
+													<option value="미국">미국</option>
+													<option value="중국">중국</option>
+													<option value="일본">일본</option>
+												</select>
+												<button type="button" class="content_btn">HS코드 선택</button>
+												<input type="text" name="" class="content_text">
+												<button type="button" class="content_btn add_icon_btn">추가</button>
+												<!-- add_item_area 클래스는 추가되는 항목을 나타낸다 -->
+												<div class="add_item_area">
+													<select name="" class="content_select">
+														<option value="대한민국">대한민국</option>
+														<option value="미국">미국</option>
+														<option value="중국">중국</option>
+														<option value="일본">일본</option>
+													</select>
+													<button type="button" class="content_btn">HS코드 선택</button>
+													<input type="text" name="" class="content_text">
+													<button type="button" class="content_btn del_icon_btn">삭제</button>
+												</div>
+												<div class="content_table_explain">
+													<p class="content_explain">추가 버튼을 이용하여 국가별 HS코드를 추가 입력할 수 있습니다.</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">제조일</th>
+											<td class="th01 input_td">
+												<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+												<div class="content_calendar">
+													<input type="text" name="" class="content_text">
+													<span class="content_calendar_btn"></span>
+												</div>
+											</td>
+											<th class="th02">출시일</th>
+											<td class="th03 input_td">
+												<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+												<div class="content_calendar">
+													<input type="text" name="" class="content_text">
+													<span class="content_calendar_btn"></span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">유효일자</th>
+											<td class="th01 input_td">
+												<div class="content_table_block_txt">
+													시작일 / 종료일
+												</div>
+												<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+												<div class="content_calendar">
+													<input type="text" name="" class="content_text">
+													<span class="content_calendar_btn"></span>
+												</div>
+												<span class="m5">~</span>
+												<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+												<div class="content_calendar">
+													<input type="text" name="" class="content_text">
+													<span class="content_calendar_btn"></span>
+												</div>
+											</td>
+											<th class="th02">QR코드 노출상태</th>
+											<td class="th03 input_td">
+												<div class="content_table_explain">
+													<p class="content_explain">QR코드 사용 여부를 확인해 주세요.</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">구매가능 회원등급</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name11" value="" id="select_radio_name111" checked>
+													<label for="select_radio_name111">전체 (회원+비회원)</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name11" value="" id="select_radio_name112">
+													<label for="select_radio_name112">회원전용 (비회원제외)</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name11" value="" id="select_radio_name113">
+													<label for="select_radio_name113">특정회원등급</label>
+												</div>
+												<button type="button" class="content_btn">회원등급 선택</button>
+												<div class="content_table_select_item">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="words_chk1">
+														<label for="words_chk1">구매불가 고객 가격 대체문구 사용</label>
+													</div>
+													<!-- content_chk_limit 클래스는 글자수 체크할 때 사용 -->
+													<div class="content_chk_limit w400">
+														<!-- content_text_limit : 텍스트 박스, input_size : 입력한 글자수, limit_size : 제한 글자수 -->
+														<input type="text" name="" class="content_text content_text_limit w400">
+														<div class="content_text_size">
+															<span class="input_size">0</span>/<span class="limit_size">30</span>
+														</div>
+													</div>
+												</div>
+												<div class="input_bottom_td">
+													<div class="content_table_txt">
+														<span class="text_bold m10">선택된 회원등급</span>
+														<span class="m10">
+															진골프
+															<button type="button" class="item_close_btn">
+																<img src="../img/color_close_btn.png" alt="color_close_btn">
+															</button>
+														</span>
+														<span class="m10">
+															진골프2
+															<button type="button" class="item_close_btn">
+																<img src="../img/color_close_btn.png" alt="color_close_btn">
+															</button>
+														</span>
+													</div>
+												</div>
+												<div class="content_table_explain">
+													<p class="content_explain">구매불가 고객 가격 대체문구 사용"에 체크 및 내용 입력 시, 구매가 불가능한 고객들을 대상으로 가격 대신 해당 문구가 노출됩니다.</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">성인인증</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name12" value="" id="select_radio_name121" checked>
+													<label for="select_radio_name121">사용안함</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name12" value="" id="select_radio_name122">
+													<label for="select_radio_name122">사용함</label>
+												</div>
+												<div class="content_table_select_item">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="confirm_chk1">
+														<label for="confirm_chk1">미인증 고객 상품 노출함</label>
+													</div>
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="confirm_chk2">
+														<label for="confirm_chk2">미인증 고객 상품 이미지 노출함</label>
+													</div>
+												</div>
+												<div class="content_table_explain">
+													<p class="content_explain">해당 상품의 상세페이지 접근시 성인인증확인 인트로 페이지가 출력되며, 진열 이미지는 19금 이미지로 대체되어 보여집니다.<br>성인인증 기능은 별도의 인증 서비스 신청완료 후 이용 가능합니다.<br><a href="#">휴대폰인증 설정 바로가기 아이핀인증 설정 바로가기</a></p>
+													<p class="content_explain">구 실명인증 서비스는 성인인증 수단으로 연결되지 않습니다.</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">접근권한</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name13" value="" id="select_radio_name131" checked>
+													<label for="select_radio_name131">전체 (회원+비회원)</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name13" value="" id="select_radio_name132">
+													<label for="select_radio_name132">회원전용 (비회원제외)</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name13" value="" id="select_radio_name133">
+													<label for="select_radio_name133">특정회원등급</label>
+												</div>
+												<button type="button" class="content_btn">회원등급 선택</button>
+												<div class="content_table_select_item">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="exposure_chk1">
+														<label for="exposure_chk1">접근불가 고객 상품 노출함</label>
+													</div>
+												</div>
+												<div class="input_bottom_td">
+													<div class="content_table_txt">
+														<span class="text_bold m10">선택된 회원등급</span>
+														<span class="m10">
+															진골프
+															<button type="button" class="item_close_btn">
+																<img src="../img/color_close_btn.png" alt="color_close_btn">
+															</button>
+														</span>
+														<span class="m10">
+															진골프2
+															<button type="button" class="item_close_btn">
+																<img src="../img/color_close_btn.png" alt="color_close_btn">
+															</button>
+														</span>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">추가항목</th>
+											<td class="th01 input_td" colspan="3">
+												<button type="button" class="content_btn add_icon_btn">항목 추가</button>
+												<div class="m10"></div>
+												<span class="content_explain">상품특성에 맞게 항목을 추가할 수 있습니다 (예. 감독, 저자, 출판사, 유통사, 상품영문명 등)</span>
+												<!-- 테이블 안에 테이블 start -->
+												<div class="content_inner_table">
+													<!-- 콘텐츠 리스트 테이블 start -->
+													<table class="content_list_table">
+														<colgroup>
+															<col class="th00" width="10%">
+															<col class="th01" width="15%">
+															<col class="th02" width="*">
+															<col class="th03" width="10%">
+														</colgroup>
+														<thead class="thead">
+															<tr>
+																<th class="th00">순서</th>
+																<th class="th01">항목</th>
+																<th class="th02">내용</th>
+																<th class="th03">삭제</th>
+															</tr>
+														</thead>
+														<tbody class="tbody">
+															<tr>
+																<td class="th00">1</td>
+																<td class="th01">
+																	<input type="text" class="content_text">
+																</td>
+																<td class="th02">
+																	<input type="text" class="content_text wall">
+																</td>
+																<td class="th03">
+																	<button type="button" class="content_btn del_icon_btn">삭제</button>
+																</td>
+															</tr>
+															<!-- add_item_area 클래스는 추가되는 항목을 나타낸다 -->
+															<tr class="add_item_area">
+																<td class="th00">2</td>
+																<td class="th01">
+																	<input type="text" class="content_text">
+																</td>
+																<td class="th02">
+																	<input type="text" class="content_text wall">
+																</td>
+																<td class="th03">
+																	<button type="button" class="content_btn del_icon_btn">삭제</button>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+													<!-- 콘텐츠 리스트 테이블 end -->
+												</div>
+												<!-- 테이블 안에 테이블 end -->
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">필수정보 선택</th>
+											<td class="th01 input_td" colspan="3">
+												<button type="button" class="content_btn">필수정보 선택</button>
+												<button type="button" class="content_btn add_icon_btn">필수정보 추가</button>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">KC인증 표시 여부</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name14" value="" id="select_radio_name141" checked>
+													<label for="select_radio_name141">사용함</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name14" value="" id="select_radio_name142">
+													<label for="select_radio_name142">사용안함</label>
+												</div>
+												<button type="button" class="content_btn">예시화면</button>
+												<div class="content_table_explain">
+													<p class="content_explain">안전관리대상 제품은 안전인증 등의 표시(KC 인증마크 및 인증번호)를 소비자가 확인할 수 있도록 상품 상세페이지 내 표시해야 합니다.<br><a href="#">국가기술표준원(KATS) 제품안전정보센터</a>에서 인증대상 품목여부를 확인하여 등록하여 주세요.</p>
+												</div>
+												<div class="input_bottom_td">
+													<div class="content_search">
+														<select name="" class="content_select">
+															<option value="">선택</option>
+															<option value="[어린이제품] 공급자적합성확인">[어린이제품] 공급자적합성확인</option>
+															<option value="[어린이제품] 안전인증">[어린이제품] 안전인증</option>
+															<option value="[어린이제품] 안전확인">[어린이제품] 안전확인</option>
+															<option value="[방송통신기자재] 잠정인증">[방송통신기자재] 잠정인증</option>
+															<option value="[방송통신기자재] 적합등록">[방송통신기자재] 적합등록</option>
+														</select>
+														<input type="text" class="content_text w400" placeholder="인증번호 입력 시, - 포함하여 입력하세요.">
+													</div>
+													<div class="content_table_explain">
+														<p class="content_explain">인증번호가 없는 공급자적합성확인 대상의 경우, 별도로 입력하지 않아도 무관하나 제품명, 모델명, 제조업자명 또는 수입업자명을 소비자가 확인할 수 있도록 상세페이지 내 표시해야 합니다.<br><a href="#">전기용품 및 생활용품 안전관리법 가이드라인</a>의 내용을 확인해 주세요.</p>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">항목추가</th>
+											<td class="th01 input_td" colspan="3">
+												<button type="button" class="content_btn four_icon_btn">4칸 항목 추가</button>
+												<button type="button" class="content_btn two_icon_btn">2칸 항목 추가</button>
+												<div class="m10"></div>
+												<span class="content_explain">항목과 내용 란에 아무 내용도 입력하지 않으면 저장되지 않습니다.</span>
+												<!-- 테이블 안에 테이블 start -->
+												<div class="content_inner_table">
+													<!-- 콘텐츠 리스트 테이블 start -->
+													<table class="content_list_table">
+														<colgroup>
+															<col class="th00" width="15%">
+															<col class="th01" width="30%">
+															<col class="th02" width="15%">
+															<col class="th03" width="30%">
+															<col class="th04" width="10%">
+														</colgroup>
+														<thead class="thead">
+															<tr>
+																<th class="th00">항목</th>
+																<th class="th01">내용</th>
+																<th class="th02">항목</th>
+																<th class="th03">내용</th>
+																<th class="th04">삭제</th>
+															</tr>
+														</thead>
+														<tbody class="tbody">
+															<tr class="four_item_area">
+																<td class="th00">
+																	<input type="text" class="content_text">
+																</td>
+																<td class="th01">
+																	<input type="text" class="content_text wall">
+																</td>
+																<td class="th02">
+																	<input type="text" class="content_text">
+																</td>
+																<td class="th03">
+																	<input type="text" class="content_text wall">
+																</td>
+																<td class="th04">
+																	<button type="button" class="content_btn del_icon_btn">삭제</button>
+																</td>
+															</tr>
+															<tr class="two_item_area">
+																<td class="th00">
+																	<input type="text" class="content_text">
+																</td>
+																<td class="th01" colspan="3">
+																	<input type="text" class="content_text wall">
+																</td>
+																<td class="th04">
+																	<button type="button" class="content_btn del_icon_btn">삭제</button>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+													<!-- 콘텐츠 리스트 테이블 end -->
+												</div>
+												<!-- 테이블 안에 테이블 end -->
+											</td>
+										</tr>
+									</table>
+								</div>
+                            	
+                            	<div class="content_explain_area cf">
+									<p class="content_explain">공정거래위원회에서 공고한 전자상거래법 상품정보제공 고시에 관한 내용을 필독해 주세요! <a href="#">내용 확인 &gt;</a></p>
+									<p class="content_explain">전자상거래법에 의거하여 판매 상품의 필수 (상세) 정보 등록이 필요합니다.<br><a href="#">품목별 상품정보고시 내용보기</a>를 참고하여 상품필수 정보를 등록하여 주세요.</p>
+									<p class="content_explain">전기용품 및 생활용품 판매 시 "전기용품 및 생활용품 안전관리법"에 관한 내용을 필독해 주세요! <a href="#">내용 확인 &gt;</a></p>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+                            
+                            <!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item">
+                                <div class="content_table_top cf">
+                                	<p class="content_table_tit">
+                                		판매 정보
+                                		<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+                                	</p>
+								</div>
+                                
+                                <div class="content_table_area">
+									<table class="content_table content_table_col4">
+										<colgroup>
+											<col class="th00">
+											<col class="th01">
+											<col class="th02">
+											<col class="th03">
+										</colgroup>
+										<tr>
+											<th class="th00">과세/면세</th>
+											<td class="th01 input_td">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name15" value="" id="select_radio_name151" checked>
+													<label for="select_radio_name151">
+														과세
+														<select name="" class="content_select">
+															<option value="">세율</option>
+															<option value="10">10</option>
+														</select>
+														%
+													</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name15" value="" id="select_radio_name152">
+													<label for="select_radio_name152">면세</label>
+												</div>
+											</td>
+											<th class="th02">상품 무게/용량</th>
+											<td class="th03 input_td">
+												무게 <input type="text" name="" class="content_text w68"> g<br>
+												용량 <input type="text" name="" class="content_text w68"> ㎖
+												<div class="content_table_explain">
+													<p class="content_explain">입력값이 0 인 경우 쇼핑몰 상세 페이지에 노출 되지 않습니다.</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">도서공연비 소득공제 상품 적용 여부</th>
+											<td class="th01 input_td"  colspan="3">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name16" value="" id="select_radio_name161" checked>
+													<label for="select_radio_name161">미적용</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name16" value="" id="select_radio_name162">
+													<label for="select_radio_name162">적용</label>
+												</div>
+												<div class="content_table_explain">
+													<p class="content_explain">PG사와 소득공제 대상 사업자로 계약이 되어있는 경우 ‘적용’으로 선택해주세요.<br>도서공연비 소득공제 상품은 일반상품과 네이버 페이로 함께 결제가 불가합니다. (네이버 페이 정책 참조)</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">판매 재고</th>
+											<td class="th01 input_td">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name17" value="" id="select_radio_name171" checked>
+													<label for="select_radio_name171">무한정 판매</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name17" value="" id="select_radio_name172">
+													<label for="select_radio_name172">재고량에 따름</label>
+												</div>
+											</td>
+											<th class="th02">상품 재고</th>
+											<td class="th03 input_td">
+												<input type="text" name="" class="content_text w68"> 개
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">묶음주문 단위</th>
+											<td class="th01 input_td">
+												<div class="content_table_sel_txt">
+													<select name="" class="content_select">
+														<option value="옵션기준">옵션기준</option>
+														<option value="상품기준">상품기준</option>
+													</select>
+													<input type="text" name="" class="content_text w68">
+													개 단위로 주문 및 장바구니에 담김
+												</div>
+											</td>
+											<th class="th02">품절 상태</th>
+											<td class="th03 input_td">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name18" value="" id="select_radio_name181" checked>
+													<label for="select_radio_name181">정상</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name18" value="" id="select_radio_name182">
+													<label for="select_radio_name182">품절 (수동)</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">구매수량 설정</th>
+											<td class="th01 input_td"  colspan="3">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name19" value="" id="select_radio_name191" checked>
+													<label for="select_radio_name191">제한없음</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name19" value="" id="select_radio_name192">
+													<label for="select_radio_name192">
+														<select name="" class="content_select">
+															<option value="옵션기준">옵션기준</option>
+															<option value="상품기준">상품기준</option>
+															<option value="ID기준">ID기준</option>
+														</select>
+														최소 구매 수량 : 
+														<input type="text" name="" class="content_text w68">
+														개 / 최대 구매 수량 : 
+														<input type="text" name="" class="content_text w68">
+														개
+													</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">판매기간</th>
+											<td class="th01 input_td"  colspan="3">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name20" value="" id="select_radio_name201" checked>
+													<label for="select_radio_name201">제한없음</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name20" value="" id="select_radio_name202">
+													<label for="select_radio_name202">시작일 / 종료일</label>
+												</div>
+												<div class="content_table_select_item">
+													<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+													<div class="content_calendar">
+														<input type="text" name="" class="content_text">
+														<span class="content_calendar_btn"></span>
+													</div>
+													<span class="m5">~</span>
+													<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+													<div class="content_calendar">
+														<input type="text" name="" class="content_text">
+														<span class="content_calendar_btn"></span>
+													</div>
+													<ul class="content_date_range cf">
+														<li class="active">
+															<input type="radio" name="radio_date1" value="" id="select_radio_date11" checked>
+															<label for="select_radio_date11">오늘</label>
+														</li>
+														<li>
+															<input type="radio" name="radio_date1" value="" id="select_radio_date12">
+															<label for="select_radio_date12">7일</label>
+														</li>
+														<li>
+															<input type="radio" name="radio_date1" value="" id="select_radio_date13">
+															<label for="select_radio_date13">15일</label>
+														</li>
+														<li>
+															<input type="radio" name="radio_date1" value="" id="select_radio_date14">
+															<label for="select_radio_date14">1개월</label>
+														</li>
+														<li>
+															<input type="radio" name="radio_date1" value="" id="select_radio_date15">
+															<label for="select_radio_date15">3개월</label>
+														</li>
+														<li>
+															<input type="radio" name="radio_date1" value="" id="select_radio_date16">
+															<label for="select_radio_date16">1년</label>
+														</li>
+													</ul>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">재입고 알림</th>
+											<td class="th01 input_td"  colspan="3">
+												<div class="content_chk_area">
+													<input type="checkbox" name="" value="" id="restock_chk1">
+													<label for="restock_chk1">상품 재입고 알림 사용</label>
+												</div>
+												<div class="content_table_explain">
+													<p class="content_explain">상품/옵션 품절시 쇼핑몰 상세페이지에 재입고 알림신청 버튼이 노출됩니다.<br>SMS 발송내용 수정은 <a href="#">회원&gt;SMS관리&gt;개별/전체 SMS 발송</a>에서 가능합니다.</p>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+                            
+                            <!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item">
+                                <div class="content_table_top cf">
+                                	<p class="content_table_tit">
+                                		마일리지 설정
+                                		<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+                                	</p>
+								</div>
+                                
+                                <div class="content_table_area">
+									<table class="content_table content_table_col4">
+										<colgroup>
+											<col class="th00">
+											<col class="th01">
+											<col class="th02">
+											<col class="th03">
+										</colgroup>
+										<tr>
+											<th class="th00">지급방법 선택</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name21" value="" id="select_radio_name211" checked>
+													<label for="select_radio_name211">통합설정</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name21" value="" id="select_radio_name212">
+													<label for="select_radio_name212">개별설정</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">대상 선택</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name22" value="" id="select_radio_name221" checked>
+													<label for="select_radio_name221">전체회원</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name22" value="" id="select_radio_name222">
+													<label for="select_radio_name222">특정회원등급</label>
+												</div>
+												<button type="button" class="content_btn">회원등급 선택</button>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">금액 설정</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_table_block_txt">
+													구매 금액의 0.5%를 마일리지로 지급
+												</div>
+												<div class="content_table_sel_txt">
+													구매금액의 
+													<input type="text" name="" class="content_text w68">
+													<select name="" class="content_select">
+														<option value="%">%</option>
+														<option value="원">원</option>
+													</select>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+                            	
+                            	<div class="content_explain_area cf">
+									<p class="content_explain">통합설정 <a href="#">회원&gt;마일리지/예치금 관리&gt;마일리지 지급설정</a>에서 설정한 기준에 따름 : 구매 금액의 0.5%를 마일리지로 지급<br>구매금액 <a href="#">회원&gt;마일리지/예치금 관리&gt;마일리지 기본설정</a>에서 설정한 기준에 따름 : 판매가+옵션가+상품할인가+회원할인가+쿠폰할인가<br>절사기준 <a href="#">기본설정&gt;기본정책&gt;금액/단위 기준설정</a>에서 설정한 기준에 따름 : 0.1원 단위로 버림</p>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+                            
+                            <!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item">
+                                <div class="content_table_top cf">
+                                	<p class="content_table_tit">
+                                		상품 할인/혜택 설정
+                                		<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+                                	</p>
+								</div>
+                                
+                                <div class="content_table_area">
+                                	<!-- content_outer_table 클래스는 내용 안에 테이블이 있을 경우 추가 -->
+									<table class="content_table content_table_col4 content_outer_table">
+										<colgroup>
+											<col class="th00">
+											<col class="th01">
+											<col class="th02">
+											<col class="th03">
+										</colgroup>
+										<tr>
+											<th class="th00">적용방법</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name23" value="" id="select_radio_name231" checked>
+													<label for="select_radio_name231">개별설정</label>
+												</div>
+												
+												<!-- 테이블 안에 테이블 start -->
+												<div class="content_inner_table">
+													<!-- 콘텐츠 테이블 start -->
+													<table class="content_table content_table_col2">
+														<colgroup>
+															<col class="th00">
+															<col class="th01">
+														</colgroup>
+														<tr>
+															<th class="th00" colspan="2">상품 할인 설정</th>
+														</tr>
+														<tr>
+															<th class="th00">사용여부</th>
+															<td class="th01 input_td">
+																<div class="content_radio_area">
+																	<input type="radio" name="radio_name24" value="" id="select_radio_name241" checked>
+																	<label for="select_radio_name241">사용안함</label>
+																</div>
+																<div class="content_radio_area">
+																	<input type="radio" name="radio_name24" value="" id="select_radio_name242">
+																	<label for="select_radio_name242">사용함</label>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<th class="th00">진행유형</th>
+															<td class="th01 input_td">
+																<div class="content_radio_area">
+																	<input type="radio" name="radio_name25" value="" id="select_radio_name251" checked>
+																	<label for="select_radio_name251">제한 없음</label>
+																</div><br>
+																<div class="content_radio_area">
+																	<input type="radio" name="radio_name25" value="" id="select_radio_name252">
+																	<label for="select_radio_name252">신상품 할인</label>
+																</div>
+																<div class="content_table_select_item2">
+																	<div class="content_table_sel_txt">
+																		상품 등록일 부터
+																		<input type="text" name="" class="content_text w68">
+																		<select name="" class="content_select">
+																			<option value="일">일</option>
+																			<option value="시간">시간</option>
+																		</select>
+																		까지
+																	</div>
+																</div>
+																<div class="content_radio_area">
+																	<input type="radio" name="radio_name25" value="" id="select_radio_name253">
+																	<label for="select_radio_name253">특정기간 할인</label>
+																</div>
+																<div class="content_table_select_item2">
+																	<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+																	<div class="content_calendar">
+																		<input type="text" name="" class="content_text">
+																		<span class="content_calendar_btn"></span>
+																	</div>
+																	<span class="m5">~</span>
+																	<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+																	<div class="content_calendar">
+																		<input type="text" name="" class="content_text">
+																		<span class="content_calendar_btn"></span>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<th class="th00">할인금액 기준</th>
+															<td class="th01 input_td">
+																<div class="content_chk_area">
+																	<input type="checkbox" name="" value="" id="discount_chk1">
+																	<label for="discount_chk1">판매가</label>
+																</div>
+																+&nbsp;&nbsp;&nbsp;(&nbsp;&nbsp;&nbsp;
+																<div class="content_chk_area">
+																	<input type="checkbox" name="" value="" id="discount_chk2">
+																	<label for="discount_chk2">옵션가</label>
+																</div>
+																<div class="content_chk_area">
+																	<input type="checkbox" name="" value="" id="discount_chk3">
+																	<label for="discount_chk3">텍스트옵션가</label>
+																</div>
+																)
+															</td>
+														</tr>
+														<tr>
+															<th class="th00">대상 선택</th>
+															<td class="th01 input_td">
+																<div class="content_radio_area">
+																	<input type="radio" name="radio_name26" value="" id="select_radio_name261" checked>
+																	<label for="select_radio_name261">전체(회원+비회원)</label>
+																</div>
+																<div class="content_radio_area">
+																	<input type="radio" name="radio_name26" value="" id="select_radio_name262">
+																	<label for="select_radio_name262">회원전용(비회원제외)</label>
+																</div>
+																<div class="content_radio_area">
+																	<input type="radio" name="radio_name26" value="" id="select_radio_name263">
+																	<label for="select_radio_name263">특정회원등급</label>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<th class="th00">금액 설정</th>
+															<td class="th01 input_td">
+																<div class="content_table_sel_txt">
+																	구매금액의 
+																	<input type="text" name="" class="content_text w68">
+																	<select name="" class="content_select">
+																		<option value="%">%</option>
+																		<option value="원">원</option>
+																	</select>
+																</div>
+																
+																<!-- 테이블 안에 테이블 start -->
+																<div class="content_inner_table">
+																	<!-- 콘텐츠 리스트 테이블 start -->
+																	<table class="content_list_table">
+																		<colgroup>
+																			<col class="th00" width="30%">
+																			<col class="th01" width="*">
+																		</colgroup>
+																		<thead class="thead">
+																			<tr>
+																				<th class="th00">회원등급</th>
+																				<th class="th01">할인금액</th>
+																			</tr>
+																		</thead>
+																		<tbody class="tbody">
+																			<tr>
+																				<td class="th00">
+																					<select name="" class="content_select">
+																						<option value="">회원등급선택</option>
+																					</select>
+																				</td>
+																				<td class="th01">
+																					<div class="content_table_sel_txt">
+																						구매금액의 
+																						<input type="text" name="" class="content_text w68">
+																						<select name="" class="content_select">
+																							<option value="%">%</option>
+																							<option value="원">원</option>
+																						</select>
+																					</div>
+																					<button type="button" class="content_btn add_icon_btn">추가</button>
+																				</td>
+																			</tr>
+																			<!-- add_item_area 클래스는 추가되는 항목을 나타낸다 -->
+																			<tr class="add_item_area">
+																				<td class="th00">
+																					<select name="" class="content_select">
+																						<option value="">회원등급선택</option>
+																					</select>
+																				</td>
+																				<td class="th01">
+																					<div class="content_table_sel_txt">
+																						구매금액의 
+																						<input type="text" name="" class="content_text w68">
+																						<select name="" class="content_select">
+																							<option value="%">%</option>
+																							<option value="원">원</option>
+																						</select>
+																					</div>
+																					<button type="button" class="content_btn del_icon_btn">삭제</button>
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																	<!-- 콘텐츠 리스트 테이블 end -->
+																</div>
+																<!-- 테이블 안에 테이블 end -->
+															</td>
+														</tr>
+													</table>
+													<!-- 콘텐츠 테이블 end -->
+													
+													<div class="content_table_explain">
+														<p class="content_explain">절사기준 [기본설정&gt;기본정책&gt;금액/단위 기준설정]에서 설정한 기준에 따름 : 0.1원 단위로 버림</p>
+													</div>
+												</div>
+												<!-- 테이블 안에 테이블 end -->
+												
+												<!-- 테이블 안에 테이블 start -->
+												<div class="content_inner_table">
+													<!-- 콘텐츠 테이블 start -->
+													<table class="content_table content_table_col2">
+														<colgroup>
+															<col class="th00">
+															<col class="th01">
+														</colgroup>
+														<tr>
+															<th class="th00" colspan="2">혜택 제외 설정</th>
+														</tr>
+														<tr>
+															<th class="th00">제외 혜택 선택</th>
+															<td class="th01 input_td">
+																<div class="content_chk_area">
+																	<input type="checkbox" name="" value="" id="exclude_chk1">
+																	<label for="exclude_chk1">회원 추가 할인혜택 적용 제외</label>
+																</div><br>
+																<div class="content_chk_area">
+																	<input type="checkbox" name="" value="" id="exclude_chk2">
+																	<label for="exclude_chk2">회원 중복 할인혜택 적용 제외</label>
+																</div><br>
+																<div class="content_chk_area">
+																	<input type="checkbox" name="" value="" id="exclude_chk3">
+																	<label for="exclude_chk3">회원 추가 마일리지 적립 적용 제외</label>
+																</div><br>
+																<div class="content_chk_area">
+																	<input type="checkbox" name="" value="" id="exclude_chk4">
+																	<label for="exclude_chk4">상품쿠폰 할인/적립 혜택 적용 제외</label>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<th class="th00">제외 대상 선택</th>
+															<td class="th01 input_td">
+																<div class="content_radio_area">
+																	<input type="radio" name="radio_name27" value="" id="select_radio_name271" checked>
+																	<label for="select_radio_name271">전체회원</label>
+																</div>
+																<div class="content_radio_area">
+																	<input type="radio" name="radio_name27" value="" id="select_radio_name272">
+																	<label for="select_radio_name272">특정회원등급</label>
+																</div>
+																<button type="button" class="content_btn">회원등급 선택</button>
+																<div class="input_bottom_td">
+																	<div class="content_table_txt">
+																		<span class="text_bold m10">선택된 회원등급</span>
+																		<span class="m10">
+																			진골프
+																			<button type="button" class="item_close_btn">
+																				<img src="../img/color_close_btn.png" alt="color_close_btn">
+																			</button>
+																		</span>
+																		<span class="m10">
+																			진골프2
+																			<button type="button" class="item_close_btn">
+																				<img src="../img/color_close_btn.png" alt="color_close_btn">
+																			</button>
+																		</span>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<!-- 콘텐츠 테이블 end -->
+													
+													<div class="content_table_explain">
+														<p class="content_explain">상품 할인 설정의 진행유형 및 기간과 상관없이 별도 설정이 가능합니다.</p>
+													</div>
+												</div>
+												<!-- 테이블 안에 테이블 end -->
+											</td>
+										</tr>
+									</table>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+                            
+                             <!-- 콘텐츠 테이블 start -->
+                            <section class="content_main_item">
+                                <div class="content_table_top cf">
+                                	<p class="content_table_tit">
+                                		텍스트 옵션 / 추가상품 설정
+                                		<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+                                	</p>
+								</div>
+                                
+                                <div class="content_table_area">
+									<table class="content_table content_table_col4">
+										<colgroup>
+											<col class="th00">
+											<col class="th01">
+											<col class="th02">
+											<col class="th03">
+										</colgroup>
+										<tr>
+											<th class="th00">텍스트 옵션</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name28" value="" id="select_radio_name281" checked>
+													<label for="select_radio_name281">사용함</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name28" value="" id="select_radio_name282">
+													<label for="select_radio_name282">사용안함</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">추가상품</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name29" value="" id="select_radio_name291" checked>
+													<label for="select_radio_name291">사용함</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name29" value="" id="select_radio_name292">
+													<label for="select_radio_name292">사용안함</label>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+                            </section>
+                            <!-- 콘텐츠 테이블 end -->
+						</form>
+                    </div>
+                </div>
+            </div>
+           
+            <!-- footer -->
+            <footer class="footer">
+                <h1 class="not_view">footer</h1>
+                
+                <p>© HN : Corp All Rights Reserved.</p>
+            </footer>
+		</div>
+	</body>
+</html>
