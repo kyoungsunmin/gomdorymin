@@ -2570,7 +2570,7 @@ footer.footer>p {
 
 
 /************************************************
-					claim - 진
+					jin - claim
 *************************************************/
 
 /* set */
@@ -2653,6 +2653,10 @@ footer.footer>p {
     background:#f6f6f6;
     color:#555;
     padding:0;
+}
+.content_main .cl_table2 .content_chk_area input[type="checkbox"] + label:before{
+    top:0;
+    left:3px;
 }
 .content_main .sel_small{
     min-width:auto;
