@@ -294,19 +294,19 @@
                     <p class="aside_list_tit on">CS/클레임관리</p>
                     <ul class="aside_sub_list cf">
                         <li>
-                            <a href="#">문의내용수집</a>
+                            <a href="claim_inquiry_collect.html">문의내용수집</a>
                         </li>
                         <li>
-                            <a href="#">문의내용처리</a>
+                            <a href="claim_inquiry_proc.html">문의내용처리</a>
                         </li>
                         <li>
-                            <a href="#">CS클레임수집</a>
+                            <a href="claim_cs_collect.html">CS클레임수집</a>
                         </li>
                         <li>
-                            <a href="#">CS클레임처리</a>
+                            <a href="claim_cs_handle.html">CS클레임처리</a>
                         </li>
                         <li class="active">
-                            <a href="#">클레임관리처리</a>
+                            <a href="claim_cs_proc.html">클레임관리처리</a>
                         </li>
                     </ul>
                 </li>
@@ -346,15 +346,15 @@
                             <div class="content_table_area">
                                 <table class="content_table content_table_col4">
                                     <colgroup>
-                                        <col width="10%">
-                                        <col>
-                                        <col width="10%">
-                                        <col>
+                                        <col class="th00" width="10%">
+                                        <col class="th01">
+                                        <col class="th02" width="10%">
+                                        <col class="th03">
                                     </colgroup>
                                     <tbody class="tbody">
                                         <tr>
                                             <th class="th00">일자</th>
-                                            <td colspan="3" class="th01 input_td">
+                                            <td class="th01" colspan="3" class="th01 input_td">
                                               
                                                 <select name="" class="content_select">
                                                     <option value="주문수집일" selected="">주문수집일</option>
@@ -374,9 +374,9 @@
                                                     </span>
                                                 </div>
                                                 
-                                                <input type="button" name="" id="" class="bn_w bn" value="오늘">
-                                                <input type="button" name="" id="" class="bn_w bn" value="일주일">
-                                                <input type="button" name="" id="" class="bn_w bn" value="이번달">
+                                                <input type="button" name="" id="" class="content_btn" value="오늘">
+                                                <input type="button" name="" id="" class="content_btn" value="일주일">
+                                                <input type="button" name="" id="" class="content_btn" value="이번달">
                                             </td>
                                         </tr>
                                         <tr>
@@ -496,7 +496,7 @@
                                                     <option value="mall_name">쇼핑몰명</option>
                                                 </select>
                                                 <input type="text" name="search_str" class="content_text" size="25" value="">
-                                                <input type="button" class="bn bn_w" id="sms_btn" value="SMS">
+                                                <input type="button" class="content_btn" id="sms_btn" value="SMS">
                                             </td>
                                         </tr>
                                     </tbody>
@@ -521,7 +521,7 @@
                             <option value="002">현재 페이지만</option>
                             <option value="003">전체 자료</option>
                         </select>
-                        <input type="button" name="s" id="saveExcel" value="Excel 저장" class="bn bn_w">
+                        <input type="button" name="s" id="saveExcel" value="Excel 저장" class="content_btn">
                     </div>
                 </div>
                 
@@ -532,39 +532,40 @@
                     </div>
 
                     <div class="content_list_table_area">
-                        <table class="content_list_table cl_table2">
+                        <table class="content_list_table much_list_table">
                             <colgroup>
-                                <col width="4%">
-                                <col width="4%">
-                                <col width="13%">
-                                <col width="8%">
-                                <col width="8%">
-                                <col>
-                                <col width="19%">
-                                <col>
-                                <col>
-                                <col>
-                                <col>
+                                <col class="th00" width="4%">
+                                <col class="th01" width="4%">
+                                <col class="th02" width="13%">
+                                <col class="th03" width="7%">
+                                <col class="th04" width="8%">
+                                <col class="th05" width="8%">
+                                <col class="th06" width="18%">
+                                <col class="th07" width="8%">
+                                <col class="th08">
+                                <col class="th09" width="10%">
+                                <col class="th10">
+                                <col class="th11" width="10%">
                             </colgroup>
                             <thead class="thead">
                                 <tr>
-                                    <th scope="col">No.</th>
-                                    <th scope="col">
+                                    <th class="th00" scope="col">No.</th>
+                                    <th class="th01" scope="col">
                                         <div class="content_chk_area">
                                             <input type="checkbox" name="all_chk" value="" id="all_chk">
                                             <label for="all_chk"></label>
                                         </div>
                                     </th>
-                                    <th scope="col">x솔루션주문번호<br>쇼핑몰주문번호<br>클레임처리</th>
-                                    <th scope="col">배송상태</th>
-                                    <th scope="col">쇼핑몰<br>매입처<br>연동ID</th>
-                                    <th scope="col">주문자<br>연락처<br>SMS발송</th>
-                                    <th scope="col">상품명<br>x솔루션상품코드(옵션)<br>자사상품코드/모델</th>
-                                    <th scope="col">수취인<br>연락처<br>SMS발송</th>
-                                    <th scope="col">수량<br>판매가</th>
-                                    <th scope="col">클레임수집일<br>클레임요청<br>클레임처리중<br>클레임처리완료</th>
-                                    <th scope="col">처리자</th>
-                                    <th scope="col">
+                                    <th class="th02" scope="col">x솔루션주문번호<br>쇼핑몰주문번호<br>클레임처리</th>
+                                    <th class="th03" scope="col">배송상태</th>
+                                    <th class="th04" scope="col">쇼핑몰<br>매입처<br>연동ID</th>
+                                    <th class="th05" scope="col">주문자<br>연락처<br>SMS발송</th>
+                                    <th class="th06" scope="col">상품명<br>x솔루션상품코드(옵션)<br>자사상품코드/모델</th>
+                                    <th class="th07" scope="col">수취인<br>연락처<br>SMS발송</th>
+                                    <th class="th08" scope="col">수량<br>판매가</th>
+                                    <th class="th09" scope="col">클레임수집일<br>클레임요청<br>클레임처리중<br>클레임처리완료</th>
+                                    <th class="th10" scope="col">처리자</th>
+                                    <th class="th11" scope="col">
                                         수동접수클레임<br>
                                         자동수집클레임<br>
                                         CS접수메모내역
@@ -573,56 +574,55 @@
                             </thead>
                             <tbody class="tbody">
                                 <tr>
-                                    <td>1</td>
-                                    <td>
+                                    <td class="th00">1</td>
+                                    <td class="th01">
                                         <div class="content_chk_area">
                                             <input type="checkbox" name="" value="" id="">
                                             <label for=""></label>
                                         </div>
                                     </td>
-                                    <td>
-                                        <a href="" onclick="window.open(this.href, '', 'width=980, height=600, scrollbars=yes');return false;" class="">a65465612</a>
+                                    <td class="th02">
+                                        <a href="" class="">a65465612</a>
                                         <br>
                                         59591344<br>
-                                        <a href="" onclick="window.open(this.href, '', 'width=1000, height=800, scrollbars=yes'); return false;" class="bn bn_wh bn_small">클레임/메모접수</a>
+                                        <button class="content_btn bn_small">클레임/메모접수</button>
                                     </td>
-                                    <td>
+                                    <td class="th03">
                                         <span>발주확인</span>
                                     </td>
-                                    <td>
+                                    <td class="th04">
                                         <a href="">
                                             <img width="40" src="../img/ico_mall11.gif">
                                         </a><br>
                                         (주)크리에이티브락<br>
                                         (karin)
                                     </td>
-                                    <td>
+                                    <td class="th05">
                                         홍길동<br>
                                         010-1234-1234
                                         <br>
-                                        <a onclick="" class="bn bn_w">SMS</a>
+                                        <button class="content_btn bn_small">SMS</button>
                                     </td>
-                                    <td class="t_left">
+                                    <td class="th06 t_left">
                                         <a href="">뉴에이스 기능성 골프 카라 반팔티셔츠 4종 택1</a><br>
                                         prd119961743 (8014레드 / 110)<br>
                                         <span>/ 8012-15</span>
                                     </td>
-                                    <td>
+                                    <td class="th07">
                                         홍길동<br>
                                         010-1234-1234
                                         <br>
-                                        <a onclick="" class="bn bn_w">SMS</a>
+                                        <button class="content_btn bn_small">SMS</button>
                                     </td>
-                                    <td class="t_right">
+                                    <td class="th08 t_right">
                                         1<br>
                                         9,900
                                     </td>
-                                    <td>
+                                    <td class="th09">
                                         2020-06-02 18:03:09 <br>
                                     </td>
-                                    <td>
-                                    </td>
-                                    <td>
+                                    <td class="th10"></td>
+                                    <td class="th11">
                                         <span>주문번호 : 1326546545</span>
                                     </td>
                                 </tr>
