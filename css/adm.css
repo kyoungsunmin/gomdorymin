@@ -2226,7 +2226,6 @@ footer.footer>p {
 	line-height: 1.2em;
 }
 
-
 /************************************************
 
 					minkis - content
@@ -2269,6 +2268,35 @@ footer.footer>p {
 	background: none;
 	padding: 0 27px 0 10px;
 }
+.content_main .item_close_btn {
+	vertical-align: text-bottom;
+}
+.content_main .four_icon_btn,
+.content_main .two_icon_btn {
+	background-color: #2b4f66;
+}
+.content_main .four_icon_btn:before {
+	content: '';
+	width: 49px;
+	height: 15px;
+	display: inline-block;
+	vertical-align: text-bottom;
+	background: url('../adm/img/four_btn_icon.png') no-repeat center;
+	margin-right: 5px;
+}
+.content_main .two_icon_btn:before {
+	content: '';
+	width: 25px;
+	height: 15px;
+	display: inline-block;
+	vertical-align: text-bottom;
+	background: url('../adm/img/two_btn_icon.png') no-repeat center;
+	margin-right: 5px;
+}
+.content_main .four_icon_btn:hover,
+.content_main .two_icon_btn:hover {
+	background-color: #1b3442;
+}
 .content_main .content_explain.not_explain {
 	margin: 5px 0;
 	text-indent: 0;
@@ -2279,6 +2307,12 @@ footer.footer>p {
 	height: 0;
 	display: none;
 	margin-right: 0;
+}
+.content_main .content_table tr td .input_bottom_td .m10 {
+	vertical-align: text-bottom;
+}
+.content_main .content_table .content_table_select_item2 {
+	margin-left: 1.923em;
 }
 
 /************************************************
@@ -2535,11 +2569,8 @@ footer.footer>p {
 }
 
 
-
 /************************************************
-
-					jin - claim
-
+					claim - 진
 *************************************************/
 
 /* set */
@@ -2623,10 +2654,6 @@ footer.footer>p {
     color:#555;
     padding:0;
 }
-.content_main .cl_table2 .content_chk_area input[type="checkbox"] + label:before{
-    top:0;
-    left:3px;
-}
 .content_main .sel_small{
     min-width:auto;
 }
@@ -2681,7 +2708,6 @@ footer.footer>p {
 
 
 /* claim_inquiry_proc */
-}
 #claim_inquiry_proc select{
     float:left;
     margin-right:5px;
@@ -2720,5 +2746,4 @@ footer.footer>p {
         margin: auto;
     }
 }
-
 
