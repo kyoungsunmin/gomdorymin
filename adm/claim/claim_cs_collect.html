@@ -294,395 +294,396 @@
                     <p class="aside_list_tit on">CS/클레임관리</p>
                     <ul class="aside_sub_list cf">
                         <li>
-                            <a href="#">문의내용수집</a>
+                            <a href="claim_inquiry_collect.html">문의내용수집</a>
                         </li>
                         <li>
-                            <a href="#">문의내용처리</a>
+                            <a href="claim_inquiry_proc.html">문의내용처리</a>
                         </li>
                         <li class="active">
-                            <a href="#">CS클레임수집</a>
+                            <a href="claim_cs_collect.html">CS클레임수집</a>
                         </li>
                         <li>
-                            <a href="#">CS클레임처리</a>
+                            <a href="claim_cs_handle.html">CS클레임처리</a>
                         </li>
                         <li>
-                            <a href="#">클레임관리처리</a>
+                            <a href="claim_cs_proc.html">클레임관리처리</a>
                         </li>
                     </ul>
                 </li>
             </ul>
         </aside>
 
-        <!-- content -->
-        <div class="content_area" id="claim_cs_collect">
-            <div class="content_top">
-                CS/클레임관리 &gt; CS/클레임관리 &gt; CS클레임수집
+    <!-- content -->
+    <div class="content_area" id="claim_cs_collect">
+        <div class="content_top">
+            CS/클레임관리 &gt; CS/클레임관리 &gt; CS클레임수집
+        </div>
+
+        <div class="content_main">
+            <!-- 콘텐츠 타이틀 start -->
+            <div class="content_header cf">
+                <div class="content_header_txt">
+                    <p class="tit">
+                        CS클레임수집
+                        <a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+                    </p>
+                </div>
+            </div>
+            <!-- 콘텐츠 타이틀 end -->
+
+            <!-- 도움말 콘텐츠 start -->
+            <div class="content_advice_area">
+                <p class="text_list">상품 및 주문정보, 배송 등의 기본적인 문의에 대해 발생된 건을 수집하는 화면입니다.</p>
+                <p class="text_list">쇼핑몰별 또는 일괄로 수집처리 되며, 해당 건을 클릭(또는 C/S연동관리 페이지에서 검색)하시고 답변 처리할 수 있습니다.</p>
+            </div>
+            <!-- 도움말 콘텐츠 end -->
+
+            <form name="" method="" action="">
+                <!-- 검색 테이블 start -->
+                <div class="content_search_area">
+                    <!-- 콘텐츠 테이블 start -->
+                    <section class="content_main_item">
+                        <div class="content_table_area">
+                            <table class="content_table content_table_col4">
+                                <colgroup>
+                                    <col class="th00">
+                                    <col class="th01">
+                                </colgroup>
+                                <tbody class="tbody">
+                                    <tr>
+                                        <th class="th00">기간검색</th>
+                                        <td class="th01 input_td">
+                                            <div class="date_box">
+                                                <span class="input-date">
+                                                    <input type="text" id="st_date" name="st_date" class="calendar" value="2020-08-03">
+                                                    <img class="" src="../img/calendar_icon.png" alt="Select date" title="Select date">
+                                                </span>
+                                                <p>부터</p>
+                                                <span class="input-date">
+                                                  <input type="text" id="la_date" name="la_date" class="calendar" value="2020-08-04">
+                                                  <img class="" src="../img/calendar_icon.png" alt="Select date" title="Select date">
+                                                </span>
+                                            </div>
+
+                                            <input type="button" name="" id="" class="content_btn" value="오늘">
+                                            <input type="button" name="" id="" class="content_btn" value="일주일">
+                                            <input type="button" name="" id="" class="content_btn" value="이번달">
+
+                                            <div class="content_chk_area"><input type="checkbox" name="cs_stat" id="cs_stat" value="통계보기"><label for="cs_stat">통계보기</label></div>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <!-- 콘텐츠 테이블 end -->
+                </div>
+                <!-- 검색 테이블 end -->
+            </form>
+
+            <!-- 콘텐츠 리스트 테이블 start -->
+            <section class="content_main_item">
+                <div class="content_list_table_header cf">
+                </div>
+
+                <div class="content_list_table_area">
+                    <table class="content_list_table white_list_table">
+                        <colgroup>
+                            <col class="th00" width="5%">
+                            <col class="th01" width="5%">
+                            <col class="th02" width="*%">
+                            <col class="th03" width="8%">
+                            <col class="th04" width="8%">
+                            <col class="th05" width="8%">
+                            <col class="th06" width="8%">
+                        </colgroup>
+
+                        <thead class="thead">
+                            <tr>
+                               <th class="th00" scope="col">No.</th>
+                                <th class="th01" scope="col">
+                                    <div class="content_chk_area">
+                                        <input type="checkbox" name="all_chk" value="" id="all_chk">
+                                        <label for="all_chk"></label>
+                                    </div>
+                                </th>
+                                <th class="th02" scope="col">쇼핑몰</th>
+                                <th class="th03" scope="col">3일전</th>
+                                <th class="th04" scope="col">2일전</th>
+                                <th class="th05" scope="col">1일전</th>
+                                <th class="th06" scope="col">오늘</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+
+                        <tr>
+                            <td class="th00">1</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall1" id="mall1" value="옥션"><label for="mall1"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall1.gif" alt="(주)옥션"> &nbsp;&nbsp;(주)옥션</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">2</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall2" id="mall2" value="인터파크"><label for="mall2"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall2.gif" alt="(주)인터파크"> &nbsp;&nbsp;(주)인터파크</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">3</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall3" id="mall3" value="11번가"><label for="mall3"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall3.gif" alt="11번가"> &nbsp;&nbsp;11번가</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">4</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall4" id="mall4" value="AK몰"><label for="mall4"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall4.gif" alt="AK몰"> &nbsp;&nbsp;AK몰</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">5</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall5" id="mall5" value="GS홈쇼핑"><label for="mall5"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall5.gif" alt="GS홈쇼핑"> &nbsp;&nbsp;GS홈쇼핑</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">6</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall6" id="mall6" value="jtbcgolf"><label for="mall6"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall6.gif" alt="jtbcgolf"> &nbsp;&nbsp;jtbcgolf</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">7</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall7" id="mall7" value="SBS골프숍"><label for="mall7"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall7.gif" alt="SBS골프숍"> &nbsp;&nbsp;SBS골프숍</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">8</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall8" id="mall8" value="고도몰"><label for="mall8"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall8.gif" alt="고도몰"> &nbsp;&nbsp;고도몰</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">9</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall9" id="mall9" value="골핑"><label for="mall9"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall9.gif" alt="골핑"> &nbsp;&nbsp;골핑</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">10</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall10" id="mall10" value="롯데아이몰"><label for="mall10"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall10.gif" alt="롯데아이몰"> &nbsp;&nbsp;롯데아이몰</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">11</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall11" id="mall11" value="베네피아"><label for="mall11"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall11.gif" alt="베네피아"> &nbsp;&nbsp;베네피아</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">12</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall12" id="mall12" value="스마트스코어"><label for="mall12"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall12.gif" alt="스마트스코어"> &nbsp;&nbsp;스마트스코어</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">13</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall13" id="mall13" value="스마트스토어"><label for="mall13"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall13.gif" alt="스마트스토어"> &nbsp;&nbsp;스마트스토어</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">14</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall14" id="mall14" value="신세계닷컴2.0"><label for="mall14"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall14.gif" alt="신세계닷컴2.0"> &nbsp;&nbsp;신세계닷컴2.0</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">15</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall15" id="mall15" value="아이스타일24(주)"><label for="mall15"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall15.gif" alt="아이스타일24(주)"> &nbsp;&nbsp;아이스타일24(주)</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">16</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall16" id="mall16" value="아이스탁몰"><label for="mall16"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall16.gif" alt="아이스탁몰"> &nbsp;&nbsp;아이스탁몰</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">17</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall17" id="mall17" value="위메프"><label for="mall17"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall17.gif" alt="위메프"> &nbsp;&nbsp;위메프</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">18</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall18" id="mall18" value="위메프 파트너2.0"><label for="mall18"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall18.gif" alt="위메프 파트너2.0"> &nbsp;&nbsp;위메프 파트너2.0</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">19</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall19" id="mall19" value="이마트"><label for="mall19"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall19.gif" alt="이마트"> &nbsp;&nbsp;이마트</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">20</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall20" id="mall20" value="지마켓"><label for="mall20"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall20.gif" alt="지마켓"> &nbsp;&nbsp;지마켓</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">21</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall21" id="mall21" value="쿠팡"><label for="mall21"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall21.gif" alt="쿠팡"> &nbsp;&nbsp;쿠팡</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">22</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall22" id="mall22" value="티몬"><label for="mall22"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall22.gif" alt="티몬"> &nbsp;&nbsp;티몬</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+                        <tr>
+                            <td class="th00">23</td>
+                            <td class="th01">
+                                <div class="content_chk_area"><input type="checkbox" name="mall23" id="mall23" value="하프클럽"><label for="mall23"></label></div>
+                            </td>
+                            <td class="th02 t_left"><img class="mall_icon"src="../img/ico_mall23.gif" alt="하프클럽"> &nbsp;&nbsp;하프클럽</td>
+                            <td class="th03 t_right"><a href="#">0개</a></td>
+                            <td class="th04 t_right"><a href="#">0개</a></td>
+                            <td class="th05 t_right"><a href="#">0개</a></td>
+                            <td class="th06 t_right"><a href="#">0개</a></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <!-- 콘텐츠 리스트 테이블 end -->
+
+            <div id="inquiry_bottom_btn" class="t_center m_t_20">
+                <input type="button" name="inquery_btn" value="클레임수집" class="content_btn bn_big">
+                <input type="button" name="sel_all" value="전체선택" class="content_btn bn_big">
             </div>
 
-            <div class="content_main">
-                <!-- 콘텐츠 타이틀 start -->
-                <div class="content_header cf">
-                    <div class="content_header_txt">
-                        <p class="tit">
-                            CS클레임수집
-                            <a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
-                        </p>
-                    </div>
-                </div>
-                <!-- 콘텐츠 타이틀 end -->
-
-                <!-- 도움말 콘텐츠 start -->
-                <div class="content_advice_area">
-                    <p class="text_list">상품 및 주문정보, 배송 등의 기본적인 문의에 대해 발생된 건을 수집하는 화면입니다.</p>
-                    <p class="text_list">쇼핑몰별 또는 일괄로 수집처리 되며, 해당 건을 클릭(또는 C/S연동관리 페이지에서 검색)하시고 답변 처리할 수 있습니다.</p>
-                </div>
-                <!-- 도움말 콘텐츠 end -->
-
-                <form name="" method="" action="">
-                    <!-- 검색 테이블 start -->
-                    <div class="content_search_area">
-                        <!-- 콘텐츠 테이블 start -->
-                        <section class="content_main_item">
-                            <div class="content_table_area">
-                                <table class="content_table content_table_col4">
-                                    <colgroup>
-                                        <col class="th00">
-                                        <col>
-                                    </colgroup>
-                                    <tbody class="tbody">
-                                        <tr>
-                                            <th class="th00">기간검색</th>
-                                            <td class="input_td">
-                                                <div class="date_box">
-                                                    <span class="input-date">
-                                                        <input type="text" id="st_date" name="st_date" class="calendar" value="2020-08-03">
-                                                        <img class="" src="../img/calendar_icon.png" alt="Select date" title="Select date">
-                                                    </span>
-                                                    <p>부터</p>
-                                                    <span class="input-date">
-                                                      <input type="text" id="la_date" name="la_date" class="calendar" value="2020-08-04">
-                                                      <img class="" src="../img/calendar_icon.png" alt="Select date" title="Select date">
-                                                    </span>
-                                                </div>
-                                                
-                                                <input type="button" name="" id="" class="bn_w bn" value="오늘">
-                                                <input type="button" name="" id="" class="bn_w bn" value="일주일">
-                                                <input type="button" name="" id="" class="bn_w bn" value="이번달">
-                                                
-                                                <div class="content_chk_area"><input type="checkbox" name="cs_stat" id="cs_stat" value="통계보기"><label for="cs_stat">통계보기</label></div>
-                                                
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </section>
-                        <!-- 콘텐츠 테이블 end -->
-                    </div>
-                    <!-- 검색 테이블 end -->
-                </form>
-
-                <!-- 콘텐츠 리스트 테이블 start -->
-                <section class="content_main_item">
-                    <div class="content_list_table_header cf">
-                    </div>
-
-                    <div class="content_list_table_area">
-                        <table class="content_list_table cl_table2">
-                            <colgroup>
-                                <col width="8%">
-                                <col width="8%">
-                                <col width="35%">
-                                <col>
-                                <col>
-                                <col>
-                                <col>
-                            </colgroup>
-                            <thead class="thead">
-                                <tr>
-                                    <th scope="col">No.</th>
-                                    <th scope="col">
-                                        <div class="content_chk_area">
-                                            <input type="checkbox" name="all_chk" value="" id="all_chk">
-                                            <label for="all_chk"></label>
-                                        </div>
-                                    </th>
-                                    <th scope="col">쇼핑몰</th>
-                                    <th scope="col">3일전</th>
-                                    <th scope="col">2일전</th>
-                                    <th scope="col">1일전</th>
-                                    <th scope="col">오늘</th>
-                                </tr>
-                            </thead>
-                            <tbody class="tbody">
-                            
-                            <tr>
-                                <td>1</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall1" id="mall1" value="옥션"><label for="mall1"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall1.gif" alt="(주)옥션"> &nbsp;&nbsp;(주)옥션</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall2" id="mall2" value="인터파크"><label for="mall2"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall2.gif" alt="(주)인터파크"> &nbsp;&nbsp;(주)인터파크</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall3" id="mall3" value="11번가"><label for="mall3"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall3.gif" alt="11번가"> &nbsp;&nbsp;11번가</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall4" id="mall4" value="AK몰"><label for="mall4"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall4.gif" alt="AK몰"> &nbsp;&nbsp;AK몰</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall5" id="mall5" value="GS홈쇼핑"><label for="mall5"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall5.gif" alt="GS홈쇼핑"> &nbsp;&nbsp;GS홈쇼핑</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall6" id="mall6" value="jtbcgolf"><label for="mall6"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall6.gif" alt="jtbcgolf"> &nbsp;&nbsp;jtbcgolf</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall7" id="mall7" value="SBS골프숍"><label for="mall7"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall7.gif" alt="SBS골프숍"> &nbsp;&nbsp;SBS골프숍</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall8" id="mall8" value="고도몰"><label for="mall8"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall8.gif" alt="고도몰"> &nbsp;&nbsp;고도몰</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>9</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall9" id="mall9" value="골핑"><label for="mall9"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall9.gif" alt="골핑"> &nbsp;&nbsp;골핑</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>10</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall10" id="mall10" value="롯데아이몰"><label for="mall10"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall10.gif" alt="롯데아이몰"> &nbsp;&nbsp;롯데아이몰</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>11</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall11" id="mall11" value="베네피아"><label for="mall11"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall11.gif" alt="베네피아"> &nbsp;&nbsp;베네피아</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>12</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall12" id="mall12" value="스마트스코어"><label for="mall12"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall12.gif" alt="스마트스코어"> &nbsp;&nbsp;스마트스코어</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>13</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall13" id="mall13" value="스마트스토어"><label for="mall13"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall13.gif" alt="스마트스토어"> &nbsp;&nbsp;스마트스토어</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>14</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall14" id="mall14" value="신세계닷컴2.0"><label for="mall14"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall14.gif" alt="신세계닷컴2.0"> &nbsp;&nbsp;신세계닷컴2.0</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>15</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall15" id="mall15" value="아이스타일24(주)"><label for="mall15"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall15.gif" alt="아이스타일24(주)"> &nbsp;&nbsp;아이스타일24(주)</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>16</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall16" id="mall16" value="아이스탁몰"><label for="mall16"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall16.gif" alt="아이스탁몰"> &nbsp;&nbsp;아이스탁몰</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>17</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall17" id="mall17" value="위메프"><label for="mall17"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall17.gif" alt="위메프"> &nbsp;&nbsp;위메프</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>18</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall18" id="mall18" value="위메프 파트너2.0"><label for="mall18"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall18.gif" alt="위메프 파트너2.0"> &nbsp;&nbsp;위메프 파트너2.0</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>19</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall19" id="mall19" value="이마트"><label for="mall19"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall19.gif" alt="이마트"> &nbsp;&nbsp;이마트</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>20</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall20" id="mall20" value="지마켓"><label for="mall20"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall20.gif" alt="지마켓"> &nbsp;&nbsp;지마켓</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>21</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall21" id="mall21" value="쿠팡"><label for="mall21"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall21.gif" alt="쿠팡"> &nbsp;&nbsp;쿠팡</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>22</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall22" id="mall22" value="티몬"><label for="mall22"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall22.gif" alt="티몬"> &nbsp;&nbsp;티몬</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            <tr>
-                                <td>23</td>
-                                <td>
-                                    <div class="content_chk_area"><input type="checkbox" name="mall23" id="mall23" value="하프클럽"><label for="mall23"></label></div>
-                                </td>
-                                <td class="t_left"><img class="mall_icon"src="../img/ico_mall23.gif" alt="하프클럽"> &nbsp;&nbsp;하프클럽</td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                                <td class="t_right"><a href="#" onclick="">0개</a></td>
-                            </tr>
-                            
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-                <!-- 콘텐츠 리스트 테이블 end -->
-                
-                <div id="inquiry_bottom_btn" class="t_center m_t_20">
-                    <input type="button" name="inquery_btn" value="클레임수집" class="bn bn_big">
-                    <input type="button" name="sel_all" value="전체선택" class="bn_w bn bn_big">
-                </div>
-                
-            </div>
-        </div><!-- content_area -->
+        </div>
+    </div><!-- content_area -->
     </div><!-- content_wrap -->
 
     <!-- footer -->
