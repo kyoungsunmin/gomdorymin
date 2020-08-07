@@ -294,19 +294,19 @@
                     <p class="aside_list_tit on">CS/클레임관리</p>
                     <ul class="aside_sub_list cf">
                         <li>
-                            <a href="#">문의내용수집</a>
+                            <a href="claim_inquiry_collect.html">문의내용수집</a>
                         </li>
                         <li>
-                            <a href="#">문의내용처리</a>
+                            <a href="claim_inquiry_proc.html">문의내용처리</a>
                         </li>
                         <li>
-                            <a href="#">CS클레임수집</a>
+                            <a href="claim_cs_collect.html">CS클레임수집</a>
                         </li>
                         <li class="active">
-                            <a href="#">CS클레임처리</a>
+                            <a href="claim_cs_handle.html">CS클레임처리</a>
                         </li>
                         <li>
-                            <a href="#">클레임관리처리</a>
+                            <a href="claim_cs_proc.html">클레임관리처리</a>
                         </li>
                     </ul>
                 </li>
@@ -346,15 +346,15 @@
                             <div class="content_table_area">
                                 <table class="content_table content_table_col4">
                                     <colgroup>
-                                        <col width="10%">
-                                        <col width="47%">
-                                        <col width="10%">
-                                        <col>
+                                        <col class="th00" width="10%">
+                                        <col class="th01" width="47%">
+                                        <col class="th02" width="10%">
+                                        <col class="th03">
                                     </colgroup>
                                     <tbody class="tbody">
                                         <tr>
                                             <th class="th00">일자</th>
-                                            <td colspan="3" class="th01 input_td">
+                                            <td class="th01" colspan="3" class="th01 input_td">
                                                 <div class="date_box">
                                                     <span class="input-date">
                                                         <input type="text" id="st_date" name="st_date" class="calendar" value="2020-08-03">
@@ -367,14 +367,14 @@
                                                     </span>
                                                 </div>
                                                 
-                                                <input type="button" name="" id="" class="bn_w bn" value="오늘">
-                                                <input type="button" name="" id="" class="bn_w bn" value="일주일">
-                                                <input type="button" name="" id="" class="bn_w bn" value="이번달">
+                                                <input type="button" name="" id="" class="content_btn" value="오늘">
+                                                <input type="button" name="" id="" class="content_btn" value="일주일">
+                                                <input type="button" name="" id="" class="content_btn" value="이번달">
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">정렬</th>
-                                            <td>
+                                            <th class="th00" scope="row">정렬</th>
+                                            <td class="th01">
                                                 <select class="content_select" name="sort_field">
                                                     <option value="receipt_date" selected="">접수일</option>
                                                     <option value="handing_date">처리일</option>
@@ -395,8 +395,8 @@
                                                     <option value="1000">1000 </option>
                                                 </select>
                                             </td>
-                                            <th>선택사항</th>
-                                            <td>
+                                            <th class="th02">선택사항</th>
+                                            <td class="th03">
                                                 <select class="content_select" name="mall_id">
                                                     <option value="">쇼핑몰 선택</option>
                                                     <option value="mall1">(주)옥션</option>
@@ -435,8 +435,8 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                           <th>검색항목</th>
-                                            <td>
+                                            <th class="th00">검색항목</th>
+                                            <td class="th01">
                                                 <select class="content_select" name="search_field">
                                                     <option value="receipt_user_name" selected="">주문자명</option>
                                                     <option value="order_id">쇼핑몰 주문번호</option>
@@ -446,8 +446,8 @@
                                                 </select>
                                                 <input type="text" name="search_str" class="content_text" size="25" value="">
                                             </td>
-                                            <th>클레임유형</th>
-                                            <td id="cs_handle_type">
+                                            <th class="th02">클레임유형</th>
+                                            <td class="th03" id="cs_handle_type">
                                                
                                             <select class="content_select" name="input_type">
                                                 <option value="">수집여부</option>
@@ -504,7 +504,7 @@
                             <option value="002">현재 페이지만</option>
                             <option value="003">전체 자료</option>
                         </select>
-                        <input type="button" name="s" id="saveExcel" value="Excel 저장" class="bn bn_w">
+                        <input type="button" name="s" id="saveExcel" value="Excel 저장" class="content_btn">
                     </div>
                 </div>
                 
@@ -515,135 +515,121 @@
                     </div>
 
                     <div class="content_list_table_area">
-                        <table class="content_list_table cl_table2">
+                        <table class="content_list_table much_list_table">
                             <colgroup>
-                                <col width="4%">
-                                <col width="4%">
-                                <col wdith="10%">
-                                <col width="5%">
-                                <col width="7%">
-                                <col width="5%">
-                                <col width="15%">
-                                <col width="6%">
-                                <col>
-                                <col>
-                                <col width="6%">
-                                <col width="6%">
-                                <col width="6%">
+                                <col class="th00" width="4%">
+                                <col class="th01" width="4%">
+                                <col class="th02" width="8%">
+                                <col class="th03" width="5%">
+                                <col class="th04" width="9%">
+                                <col class="th05" width="5%">
+                                <col class="th06" width="*%">
+                                <col class="th07" width="8%">
+                                <col class="th08" width="8%">
+                                <col class="th09" width="5%">
+                                <col class="th10" width="8%">
+                                <col class="th11" width="8%">
+                                <col class="th12" width="8%">
                             </colgroup>
                             <thead class="thead">
                                 <tr>
-                                    <th scope="col">No.</th>
-                                    <th scope="col">
+                                    <th class="th00" scope="col">No.</th>
+                                    <th class="th01" scope="col">
                                         <div class="content_chk_area">
                                             <input type="checkbox" name="all_chk" value="" id="all_chk">
                                             <label for="all_chk"></label>
                                         </div>
                                     </th>
-                                    <th scope="col">X솔루션<br>주문번호<br>주문일자</th>
-                                    <th scope="col">쇼핑몰</th>
-                                    <th scope="col">고객사</th>
-                                    <th scope="col">매입처</th>
-                                    <th scope="col">상품명</th>
-                                    <th scope="col">주문자명<br>수취인명</th>
-                                    <th scope="col">접수자<br>접수일</th>
-                                    <th scope="col">처리자<br>처리일</th>
-                                    <th scope="col">배송상태</th>
-                                    <th scope="col">사유</th>
-                                    <th scope="col">내역보기</th>
+                                    <th class="th02" scope="col">X솔루션<br>주문번호<br>주문일자</th>
+                                    <th class="th03" scope="col">쇼핑몰</th>
+                                    <th class="th04" scope="col">고객사</th>
+                                    <th class="th05" scope="col">매입처</th>
+                                    <th class="th06" scope="col">상품명</th>
+                                    <th class="th07" scope="col">주문자명<br>수취인명</th>
+                                    <th class="th08" scope="col">접수자<br>접수일</th>
+                                    <th class="th09" scope="col">처리자<br>처리일</th>
+                                    <th class="th10" scope="col">배송상태</th>
+                                    <th class="th11" scope="col">사유</th>
+                                    <th class="th12" scope="col">내역보기</th>
                                 </tr>
                             </thead>
                             <tbody class="tbody">
                                 <tr>
-                                    <td>1</td>
-                                    <td>
+                                    <td class="th00">1</td>
+                                    <td class="th01">
                                         <div class="content_chk_area">
                                             <input type="checkbox" name="claim_id" value="" id="claim_id">
                                             <label for="claim_id"></label>
                                         </div>
                                     </td>
-                                    <td>
+                                    <td class="th02">
                                         32452435342<br>
-                                        <a href="" class="" onclick="">12345425345</a><br>
+                                        <a href="" class="">12345425345</a><br>
                                         2020-08-02<br>
                                         송장전송완료
                                         <br>
-                                        <a href="" onclick="window.open(this.href, '', 'width=1000, height=800, scrollbars=yes'); return false;" class="bn">클레임</a>
+                                        <button class="content_btn">클레임</button>
                                     </td>
-                                    <td>
-                                        <a href="">
-                                            <img width="40" src="../img/ico_mall21.gif">
-                                        </a>
+                                    <td class="th03">
+                                        <img width="40" src="../img/ico_mall21.gif">
                                     </td>
-
-                                    <td>
+                                    <td class="th04">
                                         <a href="">(주)크리에이티브락</a>
                                     </td>
-                                    <td></td>
-                                    <td class="t_left">
+                                    <td class="th05"></td>
+                                    <td class="th06 t_left">
                                         마스터베어 MBPM2028 여름 남성 골프바지 골프웨어 남자 정장바지,MBPM2028 아이보리/32
                                     </td>
-                                    <td>
+                                    <td class="th07">
                                         홍길동
                                     </td>
-                                    <td>
+                                    <td class="th08">
                                         홍길동<br>2020-08-06 08:47:32
                                     </td>
-                                    <td>
-                                    </td>
-                                    <td></td>
-                                    <td>
-                                        반품<br>자동수집
-                                    </td>
-                                    <td>
-                                        <a href="" onclick="window.open(this.href, '', 'width=1000, height=800, scrollbars=yes'); return false;" class="bn">내역보기</a>
+                                    <td class="th09"></td>
+                                    <td class="th10"></td>
+                                    <td class="th11">반품<br>자동수집</td>
+                                    <td class="th12">
+                                        <button class="content_btn bn_wh">내역보기</button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
-                                    <td>
+                                    <td class="th00">2</td>
+                                    <td class="th01">
                                         <div class="content_chk_area">
                                             <input type="checkbox" name="claim_id" value="" id="claim_id">
                                             <label for="claim_id"></label>
                                         </div>
                                     </td>
-                                    <td>
+                                    <td class="th02">
                                         32452435342<br>
                                         <a href="" class="" onclick="">12345425345</a><br>
                                         2020-08-02<br>
                                         송장전송완료
                                         <br>
-                                        <!--팝업-->
-                                        <a href="" onclick="window.open(this.href, '', 'width=1000, height=800, scrollbars=yes'); return false;" class="bn">클레임</a>
+                                        <button class="content_btn">클레임</button>
                                     </td>
-                                    <td>
-                                        <a href="">
-                                            <img width="40" src="../img/ico_mall21.gif">
-                                        </a>
+                                    <td class="th03">
+                                        <img width="40" src="../img/ico_mall21.gif">
                                     </td>
-
-                                    <td>
+                                    <td class="th04">
                                         <a href="">(주)크리에이티브락</a>
                                     </td>
-                                    <td></td>
-                                    <td class="t_left">
+                                    <td class="th05"></td>
+                                    <td class="th06 t_left">
                                         마스터베어 MBPM2028 여름 남성 골프바지 골프웨어 남자 정장바지,MBPM2028 아이보리/32
                                     </td>
-                                    <td>
+                                    <td class="th07">
                                         홍길동
                                     </td>
-                                    <td>
+                                    <td class="th08">
                                         홍길동<br>2020-08-06 08:47:32
                                     </td>
-                                    <td>
-                                        x솔루션<br>2020-08-07 08:47:32
-                                    </td>
-                                    <td>반품완료</td>
-                                    <td>
-                                    </td>
-                                    <td>
-                                       <!--팝업-->
-                                        <a href="" onclick="window.open(this.href, '', 'width=1000, height=800, scrollbars=yes'); return false;" class="bn">내역보기</a>
+                                    <td class="th09">x솔루션<br>2020-08-07 08:47:32</td>
+                                    <td class="th10">반품완료</td>
+                                    <td class="th11"></td>
+                                    <td class="th12">
+                                        <button class="content_btn bn_wh">내역보기</button>
                                     </td>
                                 </tr>
                             </tbody>
