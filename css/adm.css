@@ -2612,7 +2612,6 @@ footer.footer>p {
     padding:0 15px;
     font-size:14px;
     font-weight:bold;
-    background:#ff3600;
 }
 .content_main .bn_small{
     height:23px;
@@ -2622,8 +2621,8 @@ footer.footer>p {
 .content_main .bn_on{
     background:#2b4f66;
 }
-.content_main .bn_g{
-    background:#666;
+.content_main .bn_red{
+    background:#ff3600 !important;
 }
 .content_main .bn_wh{
     background:#fff;
@@ -2675,6 +2674,12 @@ footer.footer>p {
 }
 .content_main .sel_small{
     min-width:auto;
+}
+.content_main .w150{
+    width:150px;
+}
+.content_main .td_text input{
+    margin-right:10px;
 }
 
 
