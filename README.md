@@ -17,14 +17,14 @@
 
 - 재고관리
 1. 재고코드관리 : inventory_stock_code
-1-1. 입고관리 : inventory_stockin_manage
-2. 입고관리(일반) : inventory_stockin_basic
-3. 출고관리(일반) : inventory_stockout_basic
-4. 입고관리(회수) : inventory_stockin_back
-5. 출고관리(주문) : inventory_stockout_order
-6. 입고현황조회 : inventory_stockin_check
-7. 출고현황조회 : inventory_stockout_check
-8. 재고현황조회 : inventory_stock_check
-9. 재고현황조회2 : inventory_stock_check2
-10. 재고조사(실사) : inventory_stock_sb
-11. 재고조사(대조) : inventory_stock_compare
+2. 입고관리 : inventory_stockin_manage
+3. 입고관리(일반) : inventory_stockin_basic
+4. 출고관리(일반) : inventory_stockout_basic
+5. 입고관리(회수) : inventory_stockin_back
+6. 출고관리(주문) : inventory_stockout_order
+7. 입고현황조회 : inventory_stockin_check
+8. 출고현황조회 : inventory_stockout_check
+9. 재고현황조회 : inventory_stock_check
+10. 재고현황조회2 : inventory_stock_check2
+11. 재고조사(실사) : inventory_stock_sb
+12. 재고조사(대조) : inventory_stock_compare
