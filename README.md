@@ -17,7 +17,7 @@
 
 - 재고관리
 1. 재고코드관리 : inventory_stock_code
-2-?. 입고관리 : inventory_stockin_manage
+2_?. 입고관리 : inventory_stockin_manage
 2. 입고관리(일반) : inventory_stockin_basic
 3. 출고관리(일반) : inventory_stockout_basic
 4. 입고관리(회수) : inventory_stockin_back
