@@ -2602,7 +2602,7 @@ footer.footer>p {
 
 /************************************************
 
-					jin - claim
+				jin - set, claim
 
 *************************************************/
 
@@ -2638,24 +2638,33 @@ footer.footer>p {
     -webkit-appearance: auto;
     appearance:auto !important;
 }
-.t_left {
+.t_left{
     text-align: left !important;
 }
-.t_right {
+.t_right{
     text-align: right !important;
 }
-.t_center {
+.t_center{
     text-align: center !important;
 }
-.m_t_20 {
+.t_red{
+    color:red !important;
+}
+.t_blue{
+    color:blue !important;
+}
+.t_green{
+    color:green !important;
+}
+.m_t_20{
     margin-top: 20px;
 }
-.txt_data {
+.txt_data{
     overflow: hidden;
     margin-top: 20px;
     width: 100%;
 }
-.txt_data > p {
+.txt_data > p{
     float: left;
     font-size:13px;
     margin-top:10px;
@@ -2664,7 +2673,7 @@ footer.footer>p {
     font-weight: bold;
     color:#ff3600;
 }
-.txt_data > div {
+.txt_data > div{
     float: right;
 }
 .content_main .white_list_table tr th{
@@ -2680,6 +2689,13 @@ footer.footer>p {
 }
 .content_main .td_text input{
     margin-right:10px;
+}
+.content_main .th_normal{
+    font-weight:normal;
+    font-size:0.9em;
+}
+.content_main .content_list_table tr th.bdr_left{
+    border-left:1px solid #8d8d8d;
 }
 
 
@@ -2771,3 +2787,17 @@ footer.footer>p {
     }
 }
 
+
+/************************************************
+
+				jin - inventory, statistics
+
+*************************************************/
+
+#inventory_stockout_order .content_table .th03 .content_chk_area label{
+    margin-right:10px;
+}
+
+#statistics_daily .text_red{
+    color:#ff3600;
+}
