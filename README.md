@@ -28,3 +28,13 @@
 10. 재고현황조회2 : inventory_stock_check2
 11. 재고조사(실사) : inventory_stock_sb
 12. 재고조사(대조) : inventory_stock_compare
+
+- 통계관리
+1. 일별매출현황 : statistics_daily
+2. 월별매출현황 : statistics_monthly
+3. 쇼핑몰별매출현황 : statistics_mall
+4. 매입처별매출현황 : statistics_partner
+5. 카테고리별매출현황 : statistics_category
+6. 상품별매출현황 : statistics_product
+7. 일별연동통계 : statistics_join_daily
+8. 마케팅보드 : statistics_board
