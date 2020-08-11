@@ -1168,7 +1168,8 @@ footer.footer>p {
 .content_main .content_list_table .thead tr th {
 	height: 2.77em;
 }
-.content_main .content_list_table .thead tr:first-child th {
+.content_main .content_list_table .thead tr:first-child th,
+.content_main .content_list_table .thead tr:first-child td {
 	border-top: none;
 }
 .content_main .content_list_table.much_list_table tr th {
@@ -1178,7 +1179,7 @@ footer.footer>p {
 	height: 3.538em;
 	text-align: center;
 	vertical-align: middle;
-	border-top: 1px solid #8d8d8d !important;
+	border-top: 1px solid #8d8d8d;
 	border-left: 1px solid #8d8d8d;
 	background-color: #ffffff;
 	color: #6d6d6d;
@@ -1189,6 +1190,12 @@ footer.footer>p {
 }
 .content_main .content_list_table tr td:first-child {
 	border-left: none;
+}
+.content_main .content_list_table .tbody tr td {
+	border-top: 1px solid #8d8d8d !important;
+}
+.content_main .content_list_table colgroup + .tbody tr:first-child td {
+	border-top: none !important;
 }
 .content_main .content_list_table tr.selected td {
 	background-color: #ffeee9;
@@ -2228,7 +2235,7 @@ footer.footer>p {
 
 /************************************************
 
-					minkis - content
+					minks - content
 
 *************************************************/
 .content_main .content_table .content_chk_limit.w400 {
@@ -2308,11 +2315,52 @@ footer.footer>p {
 	display: none;
 	margin-right: 0;
 }
+.content_main .text_list {
+	display: block;
+    margin-left: calc(1em + 2px);
+    text-indent: calc(-1em - 2px);
+}
+.content_main .text_list:before {
+	content: '';
+	width: 2px;
+	height: 2px;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #6d6d6d;
+	margin: 0 calc(0.5em - 1px);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+}
 .content_main .content_table tr td .input_bottom_td .m10 {
 	vertical-align: text-bottom;
 }
 .content_main .content_table .content_table_select_item2 {
 	margin-left: 1.923em;
+}
+.content_main .content_table tr td.img_td img,
+.content_main .content_list_table tr td.img_td img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+.content_main .content_list_table tr td .content_list_table_txt {
+	font-size: 11px;
+	margin: 5px 0;
+}
+.content_main .content_list_table tr td .content_list_table_img {
+	margin: 5px 0;
+}
+.content_main .content_list_table tr.bundle_tr td {
+	background-color: #f6f6f6;
+}
+.content_main .content_list_table tr.bundle_tr .content_text,
+.content_main .content_list_table tr.bundle_tr .content_select {
+	margin: 2px 0;
+}
+.content_main .content_search_area .content_table tr td .content_search .content_select + .content_text {
+	max-width: calc(100% - 160px);
 }
 
 /************************************************
@@ -2329,21 +2377,9 @@ footer.footer>p {
 					minkis - content custom
 
 *************************************************/
-/* goods_goods_list */
-.content_goods_goods_list .content_list_table td.img_td img {
-	width: auto;
-	height: auto;
-	max-width: 100%;
-}
-
 /* goods_goods_register */
 .content_goods_goods_register .content_table td.img_td {
 	padding: 0;
-}
-.content_goods_goods_register .content_table td.img_td img {
-	width: auto;
-	height: auto;
-	max-width: 100%;
 }
 .content_goods_goods_register .goods_img_list {
 	width: 100%;
@@ -2555,13 +2591,6 @@ footer.footer>p {
 	z-index: 9;
 }
 
-/* goods_goods_list */
-.content_goods_bulletin_item .content_list_table td.img_td img {
-	width: auto;
-	height: auto;
-	max-width: 100%;
-}
-
 /* goods_adop_register_popup */
 .content_goods_adop_register_popup .content_table:not(.content_table_col2) tr th,
 .content_goods_adop_register_popup .content_table:not(.content_table_col2) tr td {
@@ -2575,6 +2604,27 @@ footer.footer>p {
 }
 .content_goods_adop_register_popup .content_table .content_inner_table .content_table {
 	border: none;
+}
+
+/* goods_excel_massregister */
+.content_goods_excel_massregister .content_table tr th {
+	text-align: center;
+}
+.content_goods_excel_massregister .content_table tr td {
+	vertical-align: top;
+}
+.content_goods_excel_massregister .content_table tr td .text_list {
+	line-height: 1.5em;
+}
+
+/* goods_basic_information */
+.content_goods_basic_information .content_list_table tr td.th04 .content_text {
+	margin: 2px 0;
+}
+
+/* goods_option_manage */
+.content_goods_option_manage .content_list_table tr.option_tr td {
+	background-color: #f6f6f6;
 }
 
 @media screen and (max-width: 1600px) {
@@ -2602,7 +2652,7 @@ footer.footer>p {
 
 /************************************************
 
-				jin - set, claim
+					jin - set, claim
 
 *************************************************/
 
@@ -2789,9 +2839,7 @@ footer.footer>p {
 
 
 /************************************************
-
 				jin - inventory, statistics
-
 *************************************************/
 
 #inventory_stockout_order .content_table .th03 .content_chk_area label{
@@ -2801,3 +2849,4 @@ footer.footer>p {
 #statistics_daily .text_red{
     color:#ff3600;
 }
+
