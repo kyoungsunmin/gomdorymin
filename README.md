@@ -1,6 +1,30 @@
 # gomdorymin
 
+- 기본설정
+1. 쇼핑몰 등록 관리 : basic_mall_list
+2. 고객사 카테고리 설정 : basic_client_category
+3. 쇼핑몰 카테고리 매핑 : basic_category_mapping
+4. 입점사 정보 관리 : basic_store_information
+5. 공급사 정보 관리 : basic_supplier_information
+6. 쇼핑몰 SCM 로그인 : basic_scm_login
 
+- 상품관리
+1. 상품 조회/수정 : goods_goods_list
+2. 신규 상품 등록 : goods_goods_register
+3. 품목고시 일괄 등록 및 수정 : goods_bulletin_item
+4. 추가 옵션 관리 : goods_add_option
+5. 쇼핑몰별 판매가 조회/수정 : goods_saleprice_list
+6. 쇼핑몰별 판매가 등록 : goods_saleprice_register
+7. 쇼핑몰별 옵션 매치 : goods_option_match
+8. 상품 엑셀 대량 등록 : goods_excel_massregister
+9. 상품 기본 정보 수정 : goods_basic_information
+10. 상품 판매 상태 수정 : goods_sale_state.html
+11. 상품 정보 통합 수정 : goods_merge_information
+12. 옵션 관리 코드 변경 : goods_option_manage
+13. 상품 삭제/복원 관리 : goods_delete_restore
+14. 상품 수정 이력 현황 : goods_modify_history
+15. 공유 상품 조회/복사 : goods_share_copy
+16. 공유 상품 품절 관리 : goods_share_soldout
 
 - C/S클레임관리
 1. 문의수집 : claim_inquiry_collect
