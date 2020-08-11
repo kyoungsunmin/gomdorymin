@@ -2652,7 +2652,7 @@ footer.footer>p {
 
 /************************************************
 
-					jin - set, claim
+				jin - set, claim
 
 *************************************************/
 
@@ -2698,13 +2698,7 @@ footer.footer>p {
     text-align: center !important;
 }
 .t_red{
-    color:red !important;
-}
-.t_blue{
-    color:blue !important;
-}
-.t_green{
-    color:green !important;
+    color:#ff3600 !important;
 }
 .m_t_20{
     margin-top: 20px;
@@ -2839,14 +2833,11 @@ footer.footer>p {
 
 
 /************************************************
+
 				jin - inventory, statistics
+
 *************************************************/
 
 #inventory_stockout_order .content_table .th03 .content_chk_area label{
     margin-right:10px;
 }
-
-#statistics_daily .text_red{
-    color:#ff3600;
-}
-
