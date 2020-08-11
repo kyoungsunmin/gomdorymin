@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>NHmall</title>
+		<meta name="description" content="NHmall">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="../img/logo_favicon.ico">
+		<link rel="apple-touch-icon" href="../img/logo_favicon.ico">
+		
+		<link href="../../css/reset.css" type="text/css" rel="stylesheet">
+		<link href="../../css/font.css" type="text/css" rel="stylesheet">
+		<link href="../../css/adm.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="../../js/jquery-1.11.1.min.js"></script>
+		<script src="../../js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="../../js/jquery-migrate-1.4.1.min.js"></script>
+		<script src="../../js/function.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap">            
+            <div class="content_popup_wrap">                
+                <!-- content -->
+                <div class="content_popup_area">                    
+                    <div class="content_main">
+                    	<!-- 콘텐츠 타이틀 start -->
+                    	<div class="content_header cf">
+							<div class="content_header_txt">
+								<p class="tit">
+									상품 수집
+									<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+								</p>
+							</div>
+						</div>
+                    	<!-- 콘텐츠 타이틀 end -->
+                    	
+                    	<!-- 도움말 콘텐츠 start -->
+						<div class="content_advice_area">
+							<p class="text_list">지마켓,싸이마켓,H-Mall의 상품수집은 해당 SCM에서 다운로드한 엑셀파일을 찾아보기로 선택한 후 [상품수집]을 클릭합니다.</p>
+							<p class="text_list">옥션,고도몰의 상품수집은 해당 SCM의 ID와 PW를 입력한 후 [상품수집]을 클릭합니다.</p>
+							<p class="text_list">각 사이트의 정보수집 후 옵션/카테고리/배송정보등은 데이터가 정확하지 않을 가능성이 있으므로 사용자가 체크하셔야 합니다.</p>
+							<p class="text_list">작업이 완료되면 임시리스트 버튼을 클릭하여 확인하시면 됩니다.</p>
+							<p class="text_list">옥션의 경우 상품수집건수는 1500건으로 제한합니다.</p>
+							<p class="text_list">H몰의 경우 2007년에 등록한 상품에 한해서만 적용이 됩니다.</p>
+						</div>
+					    <!-- 도움말 콘텐츠 end -->
+                    	
+                    	<form id="" name="" method="" action="">                	
+							<!-- 콘텐츠 테이블 start -->
+							<section class="content_main_item">
+								<div class="content_table_area">
+									<table class="content_table content_table_col2">
+										<colgroup>
+											<col class="th00">
+											<col class="th01">
+										</colgroup>
+										<tr>
+											<th class="th00">유통사 선택</th>
+											<td class="th01 input_td">
+												<select name="" class="content_select">
+													<option value="">선택하세요</option>
+													<option value="(주)옥션">(주)옥션</option>
+													<option value="지마켓">지마켓</option>
+													<option value="(주)인터파크">(주)인터파크</option>
+													<option value="11번가">11번가</option>
+													<option value="HMALL">HMALL</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">자료입력</th>
+											<td class="th01 input_td">
+												<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+												<div class="content_file_area">
+													<label for="upload_file1" class="content_file_btn">찾아보기</label>
+													<input type="file" name="" id="upload_file1">
+													<input type="text" class="content_text content_file_name" disabled>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">비밀번호</th>
+											<td class="th01 input_td">
+												<input type="password" name="" class="content_text">
+											</td>
+										</tr>
+									</table>
+								</div>
+							</section>
+							<!-- 콘텐츠 테이블 end -->
+							
+							<!-- 팝업 버튼 start -->
+							<div class="content_popup_btn">
+								<input type="submit" class="btn" value="상품 수집">
+								<input type="button" class="btn2" value="닫기" onclick="window.close();">
+							</div>
+							<!-- 팝업 버튼 end -->
+						</form>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</body>
+</html>

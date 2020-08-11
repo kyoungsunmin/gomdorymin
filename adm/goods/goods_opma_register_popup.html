@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>NHmall</title>
+		<meta name="description" content="NHmall">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="../img/logo_favicon.ico">
+		<link rel="apple-touch-icon" href="../img/logo_favicon.ico">
+		
+		<link href="../../css/reset.css" type="text/css" rel="stylesheet">
+		<link href="../../css/font.css" type="text/css" rel="stylesheet">
+		<link href="../../css/adm.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="../../js/jquery-1.11.1.min.js"></script>
+		<script src="../../js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="../../js/jquery-migrate-1.4.1.min.js"></script>
+		<script src="../../js/function.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap">            
+            <div class="content_popup_wrap">                
+                <!-- content -->
+                <div class="content_popup_area">                    
+                    <div class="content_main">
+                    	<!-- 콘텐츠 타이틀 start -->
+                    	<div class="content_header cf">
+							<div class="content_header_txt">
+								<p class="tit">
+									옵션 매치 등록하기
+									<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+								</p>
+							</div>
+						</div>
+                    	<!-- 콘텐츠 타이틀 end -->
+                    	
+                    	<!-- 도움말 콘텐츠 start -->
+						<div class="content_advice_area">
+							<p class="text_list">옵션 매치를 적용할 쇼핑몰을 선택하셔야 합니다.</p>
+							<p class="text_list">대상 옵션값 : 상품의 옵션 값으로 등록된 내용입니다.</p>
+							<p class="text_list">바꿀 옵션값 : 대상옵션값의 내용을 선택된 쇼핑몰에 등록하고자 하는 값으로 입력하시면 됩니다.</p>
+							<p class="text_list">옵션구분 : 상품등록/수정화면중 옵션정보란에서 옵션의 세가지 타입중 (옵션1,옵션2,옵션3)에 수정하시고자 하는 해당 타입의 항목의 옵션구분을 선택해주세요.</p>
+							<p class="text_list"><span class="text_red">옥션2.0, 지마켓 2.0인 경우, 옵션1,옵션2,옵션3 구분 없이 옵션명(옵션제목)에 대해 수정합니다.</span></p>
+							<p class="text_list"><span class="text_blue">CJ, 신세계, 패션플러스, LG패션, 오가게</span> 쇼핑몰인 경우 항목 검색이 가능합니다.</p>
+						</div>
+					    <!-- 도움말 콘텐츠 end -->
+                    	
+                    	<form id="" name="" method="" action="">                	
+							<!-- 콘텐츠 테이블 start -->
+							<section class="content_main_item">
+								<div class="content_table_area">
+									<table class="content_table content_table_col2">
+										<colgroup>
+											<col class="th00">
+											<col class="th01">
+										</colgroup>
+										<tr>
+											<th class="th00">쇼핑몰 선택</th>
+											<td class="th01 input_td">
+												<select name="" class="content_select">
+													<option value="쇼핑몰선택">쇼핑몰선택</option>
+													<option value="(주)옥션">(주)옥션</option>
+													<option value="(주)인터파크">(주)인터파크</option>
+													<option value="11번가">11번가</option>
+													<option value="AK몰">AK몰</option>
+													<option value="GS홈쇼핑">GS홈쇼핑</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00" rowspan="2">옵션 구분</th>
+											<td class="th01 input_td">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name1" value="" id="select_radio_name11" checked>
+													<label for="select_radio_name11">옵션1</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name1" value="" id="select_radio_name12">
+													<label for="select_radio_name12">옵션2</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name1" value="" id="select_radio_name13">
+													<label for="select_radio_name13">옵션3</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00 not_view"></th>
+											<td class="th01 input_td">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name2" value="" id="select_radio_name21" checked>
+													<label for="select_radio_name21">옵션명(옵션제목)</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name2" value="" id="select_radio_name22">
+													<label for="select_radio_name22">옵션항목</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">대상 옵션값</th>
+											<td class="th01 input_td">
+												<input type="text" name="" class="content_text">
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">바꿀 옵션값</th>
+											<td class="th01 input_td">
+												<input type="text" name="" class="content_text">
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">사용여부</th>
+											<td class="th01 input_td">
+												<select name="" class="content_select">
+													<option value="Y">사용</option>
+													<option value="N">사용안함</option>
+												</select>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</section>
+							<!-- 콘텐츠 테이블 end -->
+							
+							<!-- 팝업 버튼 start -->
+							<div class="content_popup_btn">
+								<input type="submit" class="btn" value="등록">
+								<input type="button" class="btn2" value="닫기" onclick="window.close();">
+							</div>
+							<!-- 팝업 버튼 end -->
+						</form>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</body>
+</html>

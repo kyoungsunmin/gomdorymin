@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>NHmall</title>
+		<meta name="description" content="NHmall">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="../img/logo_favicon.ico">
+		<link rel="apple-touch-icon" href="../img/logo_favicon.ico">
+		
+		<link href="../../css/reset.css" type="text/css" rel="stylesheet">
+		<link href="../../css/font.css" type="text/css" rel="stylesheet">
+		<link href="../../css/adm.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="../../js/jquery-1.11.1.min.js"></script>
+		<script src="../../js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="../../js/jquery-migrate-1.4.1.min.js"></script>
+		<script src="../../js/function.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap">            
+            <div class="content_popup_wrap">                
+                <!-- content -->
+                <div class="content_popup_area">                    
+                    <div class="content_main">                    	
+                    	<form id="" name="" method="" action="">                	
+							<!-- 콘텐츠 테이블 start -->
+							<section class="content_main_item">
+								<div class="content_table_area">
+									<table class="content_table content_table_col2">
+										<colgroup>
+											<col class="th00">
+											<col class="th01">
+										</colgroup>
+										<tr>
+											<th class="th00">쇼핑몰 선택</th>
+											<td class="th01 input_td">
+												<select name="" class="content_select">
+													<option value="쇼핑몰선택">쇼핑몰선택</option>
+													<option value="(주)옥션">(주)옥션</option>
+													<option value="(주)인터파크">(주)인터파크</option>
+													<option value="11번가">11번가</option>
+													<option value="AK몰">AK몰</option>
+													<option value="GS홈쇼핑">GS홈쇼핑</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">절상하 선택</th>
+											<td class="th01 input_td">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name1" value="" id="select_radio_name11" checked>
+													<label for="select_radio_name11">10원단위 절상</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name1" value="" id="select_radio_name12">
+													<label for="select_radio_name12">10원단위 절사</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name1" value="" id="select_radio_name13">
+													<label for="select_radio_name13">100원단위 절상</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name1" value="" id="select_radio_name14">
+													<label for="select_radio_name14">100원단위 절사</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">가격인상하 (정액)</th>
+											<td class="th01 input_td">
+												<input type="text" name="" class="content_text w68"> 원
+												<div class="m10"></div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name2" value="" id="select_radio_name21" checked>
+													<label for="select_radio_name21">올림</label>
+												</div>
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name2" value="" id="select_radio_name22">
+													<label for="select_radio_name22">내림</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">가격인상하 (정률)</th>
+											<td class="th01 input_td">
+												<input type="text" name="" class="content_text w68"> %
+											</td>
+										</tr>
+										<tr>
+											<th class="th00">구분자 입력</th>
+											<td class="th01 input_td">
+												<input type="text" name="" class="content_text">
+											</td>
+										</tr>
+									</table>
+								</div>
+								
+								<div class="content_explain_area cf">
+									<p class="content_explain"><span class="text_bold">절상하선택(판매가의 단위 설정 항목) : </span><br>대부분 사이트에서 10원 단위 판매가는 등록 자체가 안되는 경우가 있습니다.</p>
+									<p class="content_explain"><span class="text_bold">가격인상하(정액)(판매가 일괄 금액 변경 항목) : </span><br>판매가를 일률적으로 올려야 하는 경우 사용하시면 됩니다. 예] 2,500원 올림으로 선택하면, 저장할 상품이 일괄 판매가에서 2,500원 올려서 반영됩니다.</p>
+									<p class="content_explain"><span class="text_bold">가격인상하(정률) : </span><br>판매가 대비 정률인상하를 적용하고자 할때 사용하시면 됩니다. 예] 5% 입력할 경우 10,000 -&gt; 10,500원 , -5% 입력할 경우 10,000 -&gt; 9,500으로 적용됩니다.</p>
+									<p class="content_explain"><span class="text_bold">구분자</span>는 작업을 진행하는 사용자가 임의로 편리하게 기록하고, 상품연동시 구분자 검색을 통해 해당 작업자가 관리/구분 할 수 있는 용도로 사용합니다.(예:영희작업,070601,..)</p>
+									<p class="content_explain"><span class="text_bold">가격인상하(정액)와 가격인상하(정률)은 동시 사용이 불가합니다.</span></p>
+								</div>
+							</section>
+							<!-- 콘텐츠 테이블 end -->
+							
+							<!-- 팝업 버튼 start -->
+							<div class="content_popup_btn">
+								<input type="submit" class="btn" value="등록">
+								<input type="button" class="btn2" value="닫기" onclick="window.close();">
+							</div>
+							<!-- 팝업 버튼 end -->
+						</form>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</body>
+</html>
