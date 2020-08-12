@@ -2627,6 +2627,11 @@ footer.footer>p {
 	background-color: #f6f6f6;
 }
 
+/* goods_interlock_grre_register_popup */
+.content_goods_interlock_grre_register_popup .content_table .tbody>tr>th + td {
+	border-left: 1px solid #bfbfbf;
+}
+
 @media screen and (max-width: 1600px) {
     .content_goods_goods_register .goods_img_list>li {
 		/*width: 12.24%;*/
@@ -2652,7 +2657,7 @@ footer.footer>p {
 
 /************************************************
 
-				jin - set
+					jin - set
 
 *************************************************/
 
@@ -2705,7 +2710,13 @@ footer.footer>p {
     text-align: center !important;
 }
 .t_red{
-    color:#ff3600 !important;
+    color:red !important;
+}
+.t_blue{
+    color:blue !important;
+}
+.t_green{
+    color:green !important;
 }
 .m_t_20{
     margin-top: 20px;
@@ -2748,7 +2759,6 @@ footer.footer>p {
 .content_main .content_list_table tr th.bdr_left{
     border-left:1px solid #8d8d8d;
 }
-
 
 /* pager */
 .pager_ul{
@@ -2814,6 +2824,7 @@ footer.footer>p {
     margin-bottom:10px
 }
 
+
 /* content_titbox */
 .content_titbox{
     width:100%;
@@ -2837,6 +2848,7 @@ footer.footer>p {
     position: relative;
     bottom:40px;
 }
+
 
 /* 달력 날짜 선택 */
 .date_box {
@@ -2865,7 +2877,6 @@ footer.footer>p {
 .date_box p{
     display:inline;
 }
-
 
 
 /************************************************
@@ -2920,7 +2931,6 @@ footer.footer>p {
 }
 
 
-
 /* inventory */
 
 #inventory_stockout_order .content_table .th03 .content_chk_area label{
@@ -2936,3 +2946,4 @@ footer.footer>p {
         margin: auto;
     }
 }
+
