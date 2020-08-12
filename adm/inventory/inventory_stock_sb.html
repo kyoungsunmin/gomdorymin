@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>NHmall</title>
+    <meta name="description" content="NHmall">
+    <meta name="author" content="minks">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="../img/logo_favicon.ico">
+    <link rel="apple-touch-icon" href="../img/logo_favicon.ico">
+
+    <link href="../../css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../../css/font.css" type="text/css" rel="stylesheet">
+    <link href="../../css/adm.css" type="text/css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!--[if gte IE 9]>
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <![endif]-->
+
+    <!--[if !IE]>--> 
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <!--<![endif]-->
+
+    <script src="../../js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../../js/function.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+    <!-- header -->
+    <header class="header">
+        <h1 class="not_view">header</h1>
+
+        <div class="header_top cf">
+            <div class="top_logo">
+                <a href="../index.html"><img src="../img/top_logo.png" alt="top_logo"></a>
+            </div>
+
+            <ul class="top_menu cf">
+                <li class="top_menu_item">
+                    <!-- top_menu_drop 클래스 안의 top_menu_drop_tit 클릭시 top_menu_drop_area 보이기/숨기기 -->
+                    <div class="top_menu_drop">
+                        <p class="top_menu_drop_tit">전체관리자(poirao)</p>
+                        <div class="top_menu_drop_area">
+                            <ul class="top_menu_drop_list cf">
+                                <li>
+                                    <a href="#" class="cf">
+                                        <div class="left_item">
+                                            운영자정보
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="cf">
+                                        <div class="left_item">
+                                            로그아웃
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" onclick="openLayer('topBell');"><img src="../img/top_bell_icon.png" alt="top_bell_icon" class="top_bell"></a>
+                </li>
+                <li class="top_menu_item">
+                    <div class="top_menu_drop">
+                        <p class="top_menu_drop_tit">
+                            <img src="../img/top_new_icon.png" alt="top_new_icon" class="top_new">
+                            주문현황
+                            <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                        </p>
+                        <div class="top_menu_drop_area top_gray_tit">
+                            <ul class="top_menu_drop_list cf">
+                                <li class="tit">
+                                    <div class="left_item">
+                                        주문상태설정
+                                    </div>
+                                    <div class="right_item">
+                                        <a href="javascript:void(0);" onclick="openLayer('topOrder');"><img src="../img/top_setting_icon.png" alt="top_setting_icon"></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="cf">
+                                        <div class="left_item">
+                                            입금대기
+                                        </div>
+                                        <div class="right_item">
+                                            <span>0</span> 건
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="cf">
+                                        <div class="left_item">
+                                            결제완료
+                                        </div>
+                                        <div class="right_item">
+                                            <span>0</span> 건
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="cf">
+                                        <div class="left_item">
+                                            상품준비중
+                                        </div>
+                                        <div class="right_item">
+                                            <span>0</span> 건
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="cf">
+                                        <div class="left_item">
+                                            배송중
+                                        </div>
+                                        <div class="right_item">
+                                            <span>0</span> 건
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="cf">
+                                        <div class="left_item">
+                                            배송완료
+                                        </div>
+                                        <div class="right_item">
+                                            <span>0</span> 건
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="cf">
+                                        <div class="left_item">
+                                            반품접수
+                                        </div>
+                                        <div class="right_item">
+                                            <span>0</span> 건
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="cf">
+                                        <div class="left_item">
+                                            교환접수
+                                        </div>
+                                        <div class="right_item">
+                                            <span>0</span> 건
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="cf">
+                                        <div class="left_item">
+                                            환불접수
+                                        </div>
+                                        <div class="right_item">
+                                            <span>0</span> 건
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="top_menu_item">
+                    <div class="top_menu_drop">
+                        <p class="top_menu_drop_tit">
+                            자주쓰는메뉴
+                            <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                        </p>
+                        <div class="top_menu_drop_area top_gray_tit">
+                            <ul class="top_menu_drop_list cf">
+                                <li class="tit">
+                                    <div class="left_item">
+                                        메뉴설정
+                                    </div>
+                                    <div class="right_item">
+                                        <a href="javascript:void(0);" onclick="openLayer('topMenu');"><img src="../img/top_setting_icon.png" alt="top_setting_icon"></a>
+                                    </div>
+                                </li>
+                                <li class="empty">
+                                    <div class="center_item">
+                                        자주쓰는 메뉴를<br>설정해주세요.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="top_menu_item">
+                    <div class="top_menu_drop">
+                        <p class="top_menu_drop_tit">
+                            더보기
+                            <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                        </p>
+                        <div class="top_menu_drop_area">
+                            <ul class="top_menu_drop_list cf">
+                                <li>
+                                    <a href="#" class="cf">
+                                        <div class="left_item">
+                                            마이HN
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="cf">
+                                        <div class="left_item">
+                                            메뉴얼
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="cf">
+                                        <div class="left_item">
+                                            사이트맵
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="top_menu_item">
+                    <div class="top_search">
+                        <form id="" name="" method="" action="" class="cf">
+                            <input type="text" name="" class="top_search_input" placeholder="메뉴검색">
+                            <input type="submit" class="top_search_btn">
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- nav -->
+        <nav class="nav">
+            <h2 class="not_view">nav</h2>
+
+            <ul class="nav_list cf">
+                <li>
+                    <a href="#">기본설정</a>
+                </li>
+                <li>
+                    <a href="#">상품관리</a>
+                </li>
+                <li>
+                    <a href="#">상품연동관리</a>
+                </li>
+                <li>
+                    <a href="#">주문/배송관리</a>
+                </li>
+                <li>
+                    <a href="#">입점업체관리</a>
+                </li>
+                <li>
+                    <a href="#">공급사관리</a>
+                </li>
+                <li>
+                    <a href="#">CS/클레임관리</a>
+                </li>
+                <li>
+                    <a href="#">정산관리</a>
+                </li>
+                <li class="active">
+                    <a href="#">재고관리</a>
+                </li>
+                <li>
+                    <a href="#">통계관리</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="fk_header"></div>
+
+    <div class="content_wrap cf">
+        <!-- aside -->
+        <aside class="aside">
+            <h1 class="not_view">aside</h1>
+
+            <div class="aside_top">
+                <img src="../img/inventory_menu_icon.png" alt="">
+                <p>재고관리</p>
+            </div>
+
+            <ul class="aside_list cf">
+                <li>
+                    <p class="aside_list_tit on">재고관리</p>
+                    <ul class="aside_sub_list cf">
+                        <li>
+                            <a href="inventory_stock_code.html">재고코드관리</a>
+                        </li>
+                        <li>
+                            <a href="inventory_stockin_manage.html">입고관리</a>
+                        </li>
+                        <li>
+                            <a href="inventory_stockin_basic.html">입고관리(일반)</a>
+                        </li>
+                        <li>
+                            <a href="inventory_stockout_basic.html">출고관리(일반)</a>
+                        </li>
+                        <li>
+                            <a href="inventory_stockin_back.html">입고관리(회수)</a>
+                        </li>
+                        <li>
+                            <a href="inventory_stockout_order.html">출고관리(주문)</a>
+                        </li>
+                        <li>
+                            <a href="inventory_stockin_check.html">입고현황조회</a>
+                        </li>
+                        <li>
+                            <a href="inventory_stockout_check.html">출고현황조회</a>
+                        </li>
+                        <li>
+                            <a href="inventory_stock_check.html">재고현황조회</a>
+                        </li>
+                        <li>
+                            <a href="inventory_stock_check2.html">재고현황조회&#8545;</a>
+                        </li>
+                        <li class="active">
+                            <a href="inventory_stock_sb.html">재고조사(실사)</a>
+                        </li>
+                        <li>
+                            <a href="inventory_stock_compare.html">재고조사(대조)</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- content -->
+        <div class="content_area" id="inventory_stock_sb">
+            <div class="content_top">
+                재고관리 &gt; 재고관리 &gt; 재고조사(실사)
+            </div>
+
+            <div class="content_main">
+                <!-- 콘텐츠 타이틀 start -->
+                <div class="content_header cf">
+                    <div class="content_header_txt">
+                        <p class="tit">
+                            재고조사(실사)
+                        </p>
+                    </div>
+                </div>
+                <!-- 콘텐츠 타이틀 end -->
+
+
+                <form name="" method="" action="">
+                    <!-- 검색 테이블 start -->
+                    <div class="content_search_area">
+                        <!-- 콘텐츠 테이블 start -->
+                        <section class="content_main_item">
+                            <div class="content_table_area">
+                                <table class="content_table">
+                                    <colgroup>
+                                        <col class="th00" width="10%">
+                                        <col class="th01">
+                                        <col class="th02" width="10%">
+                                        <col class="th03">
+                                    </colgroup>
+                                    <tbody class="tbody">
+                                        <tr>
+                                            <th class="th00">관리년/월</th>
+                                            <td class="th01 input_td">
+                                                <div class="date_box">
+                                                    <span class="input-date">
+                                                        <input type="text" id="st_date" name="st_date" class="calendar" value="2020-08-03">
+                                                        <img class="" src="../img/calendar_icon.png" alt="Select date" title="Select date">
+                                                    </span>
+                                                    <p>~</p>
+                                                    <span class="input-date">
+                                                      <input type="text" id="la_date" name="la_date" class="calendar" value="2020-08-04">
+                                                      <img class="" src="../img/calendar_icon.png" alt="Select date" title="Select date">
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <th class="th02">정렬순서</th>
+                                            <td class="th03 input_td">
+                                                <select class="content_select sel_small" name="" id="">
+                                                    <option value="">자료출력수</option>
+                                                    <option value="25" selected="">25</option>
+                                                    <option value="50">50</option>
+                                                    <option value="100">100</option>
+                                                    <option value="200">200</option>
+                                                    <option value="500">500</option>
+                                                    <option value="1000">1000</option>
+                                                </select>
+                                                <select class="content_select sel_small" name="" id="">
+                                                    <option value="상품ID">상품ID</option>
+                                                </select>
+                                                <select class="content_select sel_small" name="" id="">
+                                                    <option value="desc">내림차순</option>
+                                                    <option value="asc">오름차순</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th00">입/출고 등록일자</th>
+                                            <td class="th01 input_td" colspan="3">
+                                                <div class="date_box">
+                                                    <span class="input-date">
+                                                        <input type="text" id="st_date" name="st_date" class="calendar" value="2020-08-03">
+                                                        <img class="" src="../img/calendar_icon.png" alt="Select date" title="Select date">
+                                                    </span>
+                                                    <p>~</p>
+                                                    <span class="input-date">
+                                                      <input type="text" id="la_date" name="la_date" class="calendar" value="2020-08-04">
+                                                      <img class="" src="../img/calendar_icon.png" alt="Select date" title="Select date">
+                                                    </span>
+                                                </div>
+                                                <div class="content_chk_area">
+													<input type="checkbox" name="" value="" id="way_chk1">
+													<label for="way_chk1">입출고등록일자</label>
+												</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th00">상품분류</th>
+                                            <td class="th01 input_td" colspan="3">
+                                                <select name="" class="content_select">
+                                                    <option value="">대분류선택</option>
+                                                    <option value="대분류1">대분류1</option>
+                                                    <option value="대분류2">대분류2</option>
+                                                </select>
+                                                <select name="" class="content_select">
+                                                    <option value="">중분류선택</option>
+                                                    <option value="중분류1">중분류1</option>
+                                                    <option value="중분류2">중분류2</option>
+                                                </select>
+                                                <select name="" class="content_select">
+                                                    <option value="">소분류선택</option>
+                                                    <option value="소분류1">소분류1</option>
+                                                    <option value="소분류2">소분류2</option>
+                                                </select>
+                                                <select name="" class="content_select">
+                                                    <option value="">상세분류선택</option>
+                                                    <option value="상세분류1">상세분류1</option>
+                                                    <option value="상세분류2">상세분류2</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th00">선택사항</th>
+                                            <td class="th01 input_td" colspan="3">
+                                                <select class="content_select sel_small" name="" id="">
+                                                    <option value="">창고</option>
+                                                </select>
+                                                
+                                                <select class="content_select sel_small" name="" id="">
+                                                    <option value="">코드상태</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th00">검색항목</th>
+                                            <td class="th01 input_td" colspan="3">
+                                                <select class="content_select" name="">
+                                                    <option value="">조건선택</option>
+                                                    <option value="상품명">상품명</option>
+                                                    <option value="모델명">모델명</option>
+                                                </select>
+                                                <input type="text" name="search_str" class="content_text" size="25" value="">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <div class="search_btn_area">
+                                <input type="submit" class="search_btn" value="검색">
+                            </div>
+                        </section>
+                        <!-- 콘텐츠 테이블 end -->
+                    </div>
+                    <!-- 검색 테이블 end -->
+                </form>
+                
+        <!-- 콘텐츠 리스트 테이블 start -->
+        <section class="content_main_item">
+            <div class="content_list_table_header cf">
+                <div class="txt_data">
+                    <p>자료수: <span>0</span> 건</p>
+                    <div>
+                        <select class="content_select" name="">
+                            <option value="">엑셀출력범위</option>
+                            <option value="선택내용만">선택내용만</option>
+                            <option value="현재페이지만">현재페이지만</option>
+                            <option value="전체자료">전체자료</option>
+                        </select>
+                        <button type="button" class="content_btn add_btn">엑셀 저장</button>
+                        <button type="button" class="content_btn">재고조사</button>
+                        <button type="button" class="content_btn add_btn">검색자료</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content_list_table_area">
+                <table class="content_list_table much_list_table">
+                    <colgroup>
+                        <col class="th00" width="3%">
+                        <col class="th01" width="3%">
+                        <col class="th02" width="4%">
+                        <col class="th03">
+                        <col class="th04" width="10%">
+                        <col class="th05" width="6%">
+                        <col class="th06" width="6%">
+                        <col class="th07">
+                        <col class="th08">
+                        <col class="th09">
+                        <col class="th10">
+                        <col class="th11">
+                        <col class="th12">
+                        <col class="th13">
+                        <col class="th14">
+                        <col class="th15">
+                        <col class="th16">
+                        <col class="th17">
+                        <col class="th18">
+                        <col class="th19">
+                        <col class="th20">
+                        <col class="th21">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="th00" rowspan="2">No.</th>
+                            <th class="th01" rowspan="2"><div class="content_chk_area"><input type="checkbox" name="" value="" id="all_chk"><label for="all_chk"></label></div></th>
+                            <th class="th02" rowspan="2">창고</th>
+                            <th class="th03" rowspan="2">상품코드</th>
+                            <th class="th04" rowspan="2">상품명</th>
+                            <th class="th05" rowspan="2">옵션상세명칭</th>
+                            <th class="th06" rowspan="2">바코드</th>
+                            <th class="th07" colspan="3">전월재고</th>
+                            <th class="th10" colspan="3">당월입고</th>
+                            <th class="th13" colspan="3">당월출고</th>
+                            <th class="th16" colspan="3">현재고</th>
+                            <th class="th19" rowspan="2">최종입고일</th>
+                            <th class="th20" rowspan="2">최종출고일</th>
+                            <th class="th21" rowspan="2">코드상태</th>
+                        </tr>
+                        <tr>
+                            <th class="th07 bdr_left">합계</th>
+                            <th class="th08">가용</th>
+                            <th class="th09">불용</th>
+                            <th class="th10">합계</th>
+                            <th class="th11">가용</th>
+                            <th class="th12">불용</th>
+                            <th class="th13">합계</th>
+                            <th class="th14">가용</th>
+                            <th class="th15">불용</th>
+                            <th class="th16">합계</th>
+                            <th class="th17">가용</th>
+                            <th class="th18">불용</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="th00">1</td>
+                            <td class="th01"><div class="content_chk_area"><input type="checkbox" name="" value="" id="chk"><label for="chk"></label></div></td>
+                            <td class="th02"></td>
+                            <td class="th03 t_right"></td>
+                            <td class="th04"></td>
+                            <td class="th05"></td>
+                            <td class="th06"></td>
+                            <td class="th07"></td>
+                            <td class="th08"></td>
+                            <td class="th09"></td>
+                            <td class="th10"></td>
+                            <td class="th11"></td>
+                            <td class="th12"></td>
+                            <td class="th13"></td>
+                            <td class="th14"></td>
+                            <td class="th15"></td>
+                            <td class="th16"></td>
+                            <td class="th17"></td>
+                            <td class="th18"></td>
+                            <td class="th19"></td>
+                            <td class="th20"></td>
+                            <td class="th21"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- 콘텐츠 리스트 테이블 end -->
+                
+        </div>
+        </div><!-- content_area -->
+    </div><!-- content_wrap -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <h1 class="not_view">footer</h1>
+
+        <p>© HN : Corp All Rights Reserved.</p>
+    </footer>
+</div>
+</body>
+</html>
