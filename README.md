@@ -26,6 +26,22 @@
 15. 공유 상품 조회/복사 : goods_share_copy
 16. 공유 상품 품절 관리 : goods_share_soldout
 
+- 공급사관리
+1. 공급사 관리 : scm_list
+2. 공급사 게시글 관리 : scm_list_board
+3. 공급사 수수료 관리 : scm_list_comission
+4. 상품 승인 관리 : scm_product_apply
+5. 추가상품 승인 관리 : scm_product_add
+7. 통합 정산 관리 : scm_adjust_total
+8. 정산관리 : scm_adjust_list
+9. 수기 정산 요청 : scm_adjust_manual
+10. 주문 상품 정산 요청 : scm_adjust_order
+11. 배송비 정산 요청: scm_adjust_delivery
+12. 정산 후 주문 상품 환불 정산 : scm_after_order
+13. 정산 후 배송비 환불 정산 : scm_after_delivery
+14. 발행 내역 리스트 : scm_tax_list
+15. 수수료 계산서 발급 관리 : scm_tax_commission
+
 - C/S클레임관리
 1. 문의수집 : claim_inquiry_collect
 2. 문의내용처리 : claim_inquiry_proc
