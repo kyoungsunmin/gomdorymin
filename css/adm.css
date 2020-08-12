@@ -2652,11 +2652,18 @@ footer.footer>p {
 
 /************************************************
 
-				jin - set, claim
+				jin - set
 
 *************************************************/
 
 /* set */
+.content_main .content_list_table_footer{
+    margin-top:10px;
+}
+.content_main .content_right_area{
+    float: right;
+    clear: both;
+}
 .content_main .bn_big{
     height:40px;
     padding:0 15px;
@@ -2743,6 +2750,94 @@ footer.footer>p {
 }
 
 
+/* pager */
+.pager_ul{
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-family:sans-serif;
+    font-size:13px
+}
+.pager_ul .pager_li{
+    display:inline;
+    color:#555;
+    margin:0 2px;
+    padding:3px 8px 5px;
+    cursor:pointer;
+}
+.pager_ul .active{
+    font-weight:bold;
+    color:#fff;
+    background:#555;
+}
+.pager_first, .pager_prev, .pager_next, .pager_last{
+    font-size:1.5em;
+}
+
+
+/* content_graph */
+.content_graph{
+    margin-top:50px;
+    width:100%;
+}
+.content_graph .content_graph_area {
+    clear: both;
+    height: 300px;
+    margin-bottom:50px;
+}
+.content_graph .content_graph_area .content_graph1{
+    width:70%;
+    height: 100%;
+    border:1px solid #bbb;
+    float:left;
+}
+.content_graph .content_graph_area .content_graph1_txt{
+    width:28%;
+    margin-left:2%;
+    float:left;
+}
+.content_graph .content_graph_area .content_graph1_txt .graph_txt_box{
+    padding:15px;
+    height:140px;
+    margin-bottom:20px;
+    border:1px solid #bbb;
+    box-sizing: border-box;
+    font-size:14px;
+}
+.content_graph .content_graph_area .content_graph1_txt .graph_txt_box .graph_txt_box_tit{
+    font-weight:bold;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.content_graph .content_graph_area .content_graph1_txt .graph_txt_box p{
+    text-align:right;
+    margin-bottom:10px
+}
+
+/* content_titbox */
+.content_titbox{
+    width:100%;
+    border-bottom:1px solid #bbb;
+    margin-bottom:30px;
+    clear: both;
+}
+.content_titbox h2{
+    width:240px;
+    padding:10px 5px;
+    background:#f3f3f3;
+    text-align:center;
+    border:1px solid #bbb;
+    border-bottom:0;
+    font-weight: bold;
+    font-size:14px;
+    color:#555;
+}
+.content_titbox .content_titbox_btn{
+    float:right;
+    position: relative;
+    bottom:40px;
+}
+
 /* 달력 날짜 선택 */
 .date_box {
     display:inline;
@@ -2772,7 +2867,16 @@ footer.footer>p {
 }
 
 
-/* claim_inquiry_collect */
+
+/************************************************
+
+				jin - sub
+
+*************************************************/
+
+
+/* claim */
+
 #claim_inquiry_collect .content_list_table_header,
 #claim_inquiry_proc .content_list_table_header,
 #claim_cs_collect .content_list_table_header,
@@ -2789,9 +2893,6 @@ footer.footer>p {
 #claim_inquiry_collect #inquiry_bottom_btn .bn_w{
     margin-left:10px;
 }
-
-
-/* claim_inquiry_proc */
 #claim_inquiry_proc select{
     float:left;
     margin-right:5px;
@@ -2804,13 +2905,9 @@ footer.footer>p {
     top:5px;
     left:5px;
 }
-
-/* claim_cs_collect */
 #claim_cs_collect #cs_stat + label{
     left:10px;
 }
-
-/* claim_cs_handle */
 #claim_cs_handle #cs_handle_type .content_select{
     min-width:auto;
 }
@@ -2824,20 +2921,18 @@ footer.footer>p {
 
 
 
+/* inventory */
+
+#inventory_stockout_order .content_table .th03 .content_chk_area label{
+    margin-right:10px;
+}
+
+
+/**** media ****/
+
 @media screen and (max-width: 1700px) {
     #claim_inquiry_proc .content_list_table thead .content_select{
         display:block;
         margin: auto;
     }
-}
-
-
-/************************************************
-
-				jin - inventory, statistics
-
-*************************************************/
-
-#inventory_stockout_order .content_table .th03 .content_chk_area label{
-    margin-right:10px;
 }
