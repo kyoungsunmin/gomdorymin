@@ -285,7 +285,7 @@
             <h1 class="not_view">aside</h1>
 
             <div class="aside_top">
-                <img src="../img/claim_menu_icon.png" alt="basic_menu_icon">
+                <img src="../img/claim_menu_icon.png" alt="">
                 <p>CS/클레임관리</p>
             </div>
 
@@ -382,11 +382,11 @@
                                         <tr>
                                             <th scope="row">정렬</th>
                                             <td>
-                                                <select class="content_select" name="sort" id="sort">
+                                                <select class="content_select" name="" id="">
                                                     <option value="desc">내림차순</option>
                                                     <option value="asc">오름차순</option>
                                                 </select>
-                                                <select class="content_select" name="company_scale" id="scale">
+                                                <select class="content_select" name="" id="">
                                                     <option value="">자료출력수</option>
                                                     <option value="25" selected="">25 </option>
                                                     <option value="50">50 </option>
@@ -430,22 +430,18 @@
                                                 <option value="mall22">티몬</option>
                                                 <option value="mall23">하프클럽</option>
                                             </select>
-                                            <select class="content_select" name="partner_id">
+                                            <select class="content_select" name="">
                                                 <option value="">매입처선택</option>
-                                                <option value="partner_id_self">매입처선택없음</option>
-                                                <option value="">에이프릴17 </option>
-                                                <option value="">이엔클럽 </option>
-                                                <option value="">진골프 </option>
-                                                <option value="">크리에이티브락 </option>
+                                                <option value="매입처선택없음">매입처선택없음</option>
                                             </select>
 
-                                            <select class="content_select" name="input_type" disabled="true">
+                                            <select class="content_select" name="" disabled="true">
                                                 <option value="">클레임수집유형</option>
-                                                <option value="001">자동수집</option>
-                                                <option value="002">수동접수</option>
+                                                <option value="자동수집">자동수집</option>
+                                                <option value="수동접수">수동접수</option>
                                             </select>
 
-                                            <select class="content_select" name="delivery_status">
+                                            <select class="content_select" name="">
                                                 <option value="">배송상태</option>
                                                 <option value="001">신규주문</option>
                                                 <option value="002">발주확인</option>
@@ -469,7 +465,7 @@
                                                 <option value="020">A/S처리완료</option>
                                             </select>
 
-                                            <select class="content_select sel_small" name="confirm_chk" disabled="true">
+                                            <select class="content_select sel_small" name="" disabled="true">
                                                 <option value="">창고</option>
                                                 <option value="Y">체크</option>
                                                 <option value="N">미체크</option>
@@ -480,20 +476,20 @@
                                         <tr>
                                             <th scope="row">검색</th>
                                             <td colspan="3">
-                                                <select class="content_select" name="search_field">
-                                                    <option value="user_name">주문자명</option>
-                                                    <option value="user_id">주문자ID</option>
-                                                    <option value="receive">수취인명</option>
-                                                    <option value="receive_cel">핸드폰번호</option>
-                                                    <option value="delivery_invoice">송장번호</option>
-                                                    <option value="id">샵링커 주문번호</option>
-                                                    <option value="order_id">쇼핑몰 주문번호</option>
-                                                    <option value="customer_user_id">쇼핑몰 아이디</option>
-                                                    <option value="mall_product_id">쇼핑몰 상품번호</option>
-                                                    <option value="product_id">샵링커상품번호</option>
-                                                    <option value="partner_product_id">고객사상품코드</option>
-                                                    <option value="product_name">상품명</option>
-                                                    <option value="mall_name">쇼핑몰명</option>
+                                                <select class="content_select" name="">
+                                                    <option value="주문자명">주문자명</option>
+                                                    <option value="주문자ID">주문자ID</option>
+                                                    <option value="수취인명">수취인명</option>
+                                                    <option value="핸드폰번호">핸드폰번호</option>
+                                                    <option value="송장번호">송장번호</option>
+                                                    <option value="샵링커 주문번호">샵링커 주문번호</option>
+                                                    <option value="쇼핑몰 주문번호">쇼핑몰 주문번호</option>
+                                                    <option value="쇼핑몰 아이디">쇼핑몰 아이디</option>
+                                                    <option value="쇼핑몰 상품번호">쇼핑몰 상품번호</option>
+                                                    <option value="샵링커 상품번호">샵링커상품번호</option>
+                                                    <option value="고객사상품코드">고객사상품코드</option>
+                                                    <option value="상품명">상품명</option>
+                                                    <option value="쇼핑몰명">쇼핑몰명</option>
                                                 </select>
                                                 <input type="text" name="search_str" class="content_text" size="25" value="">
                                                 <input type="button" class="content_btn" id="sms_btn" value="SMS">
@@ -512,23 +508,22 @@
                     <!-- 검색 테이블 end -->
                 </form>
                 
-                <div class="txt_data">
-                    <p>자료수: <span>0</span> 건</p>
-                    <div>
-                        <select class="content_select" name="excel_range" id="excel_range">
-                            <option value="">엑셀출력범위</option>
-                            <option value="001">선택 내용만</option>
-                            <option value="002">현재 페이지만</option>
-                            <option value="003">전체 자료</option>
-                        </select>
-                        <input type="button" name="s" id="saveExcel" value="Excel 저장" class="content_btn">
-                    </div>
-                </div>
-                
                 
                 <!-- 콘텐츠 리스트 테이블 start -->
                 <section class="content_main_item">
                     <div class="content_list_table_header cf">
+                        <div class="txt_data">
+                            <p>자료수: <span>0</span> 건</p>
+                            <div>
+                                <select class="content_select" name="">
+                                    <option value="">엑셀출력범위</option>
+                                    <option value="선택내용만">선택내용만</option>
+                                    <option value="현재페이지만">현재페이지만</option>
+                                    <option value="전체자료">전체자료</option>
+                                </select>
+                                <button type="button" class="content_btn add_btn">엑셀 저장</button>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="content_list_table_area">
