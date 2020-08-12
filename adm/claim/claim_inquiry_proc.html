@@ -285,7 +285,7 @@
             <h1 class="not_view">aside</h1>
 
             <div class="aside_top">
-                <img src="../img/claim_menu_icon.png" alt="basic_menu_icon">
+                <img src="../img/claim_menu_icon.png" alt="">
                 <p>CS/클레임관리</p>
             </div>
 
@@ -294,19 +294,19 @@
                     <p class="aside_list_tit on">CS/클레임관리</p>
                     <ul class="aside_sub_list cf">
                         <li>
-                            <a href="#">문의내용수집</a>
+                            <a href="claim_inquiry_collect.html">문의내용수집</a>
                         </li>
                         <li class="active">
-                            <a href="#">문의내용처리</a>
+                            <a href="claim_inquiry_proc.html">문의내용처리</a>
                         </li>
                         <li>
-                            <a href="#">CS클레임수집</a>
+                            <a href="claim_cs_collect.html">CS클레임수집</a>
                         </li>
                         <li>
-                            <a href="#">CS클레임처리</a>
+                            <a href="claim_cs_handle.html">CS클레임처리</a>
                         </li>
                         <li>
-                            <a href="#">클레임관리처리</a>
+                            <a href="claim_cs_proc.html">클레임관리처리</a>
                         </li>
                     </ul>
                 </li>
@@ -351,10 +351,10 @@
                             <div class="content_table_area">
                                 <table class="content_table content_table_col4">
                                     <colgroup>
-                                        <col width="10%">
-                                        <col width="43%">
-                                        <col width="10%">
-                                        <col>
+                                        <col class="th00" width="10%">
+                                        <col class="th01" width="43%">
+                                        <col class="th02" width="10%">
+                                        <col class="th03">
                                     </colgroup>
                                     <tbody class="tbody">
                                         <tr>
@@ -372,24 +372,23 @@
                                                     </span>
                                                 </div>
                                                 
-                                                <input type="button" name="" id="" class="bn_w bn" value="오늘">
-                                                <input type="button" name="" id="" class="bn_w bn" value="일주일">
-                                                <input type="button" name="" id="" class="bn_w bn" value="이번달">
+                                                <input type="button" name="" id="" class="content_btn" value="오늘">
+                                                <input type="button" name="" id="" class="content_btn" value="일주일">
+                                                <input type="button" name="" id="" class="content_btn" value="이번달">
                                             </td>
                                             
-                                            <th scope="row">정렬</th>
-                                            <td>
-                                                <select class="content_select" name="sort_field">
-                                                    <option value="receipt_date" selected="">접수일</option>
-                                                    <option value="handing_date">처리일</option>
-                                                    <option value="order_id">주문번호</option>
-                                                    <option value="prodct_id">주문번호</option>
+                                            <th class="th02" scope="row">정렬</th>
+                                            <td class="th03 input_td">
+                                                <select class="content_select" name="">
+                                                    <option value="접수일" selected="">접수일</option>
+                                                    <option value="처리일">처리일</option>
+                                                    <option value="주문번호">주문번호</option>
                                                 </select>
-                                                <select class="content_select" name="sort" id="sort">
+                                                <select class="content_select" name="" id="">
                                                     <option value="desc">내림차순</option>
                                                     <option value="asc">오름차순</option>
                                                 </select>
-                                                <select class="content_select" name="company_scale" id="scale">
+                                                <select class="content_select" name="" id="">
                                                     <option value="">자료출력수</option>
                                                     <option value="25" selected="">25 </option>
                                                     <option value="50">50 </option>
@@ -401,8 +400,8 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>선택사항</th>
-                                            <td>
+                                            <th class="th00">선택사항</th>
+                                            <td class="th01">
                                                 <select class="content_select" name="mall_id">
                                                     <option value="">쇼핑몰 선택</option>
                                                     <option value="mall1">(주)옥션</option>
@@ -429,38 +428,34 @@
                                                     <option value="mall22">티몬</option>
                                                     <option value="mall23">하프클럽</option>
                                                 </select>
-                                                <select class="content_select" name="partner_id">
+                                                <select class="content_select" name="">
                                                     <option value="">매입처선택</option>
-                                                    <option value="partner_id_self">매입처선택없음</option>
-                                                    <option value="">에이프릴17 </option>
-                                                    <option value="">이엔클럽 </option>
-                                                    <option value="">진골프 </option>
-                                                    <option value="">크리에이티브락 </option>
+                                                    <option value="매입처선택없음">매입처선택없음</option>
                                                 </select>
                                             </td>
-                                            <th>유형</th>
-                                            <td>
-                                                <select class="content_select" name="cs_type" id="cs_type">
+                                            <th class="th02">유형</th>
+                                            <td class="th03">
+                                                <select class="content_select" name="" id="">
                                                     <option value="">CS유형</option>
-                                                    <option value="">해피콜 </option>
-                                                    <option value="">A/S관련 </option>
-                                                    <option value="">교환관련 </option>
-                                                    <option value="">반품관련 </option>
-                                                    <option value="">배송관련 </option>
-                                                    <option value="">상품관련 </option>
-                                                    <option value="">이용관련 </option>
-                                                    <option value="">입금관련 </option>
-                                                    <option value="">취소관련 </option>
-                                                    <option value="">환불관련 </option>
-                                                    <option value="">정산관련 </option>
-                                                    <option value="">품절관련 </option>
-                                                    <option value="">기타 </option>
-                                                    <option value="">맞교환(유료) </option>
-                                                    <option value="">맞교환(무료) </option>
-                                                    <option value="">CS연동 </option>
-                                                    <option value="">상품평 </option>
-                                                    <option value="">1:1문의(쪽지) </option>
-                                                    <option value="">긴급메세지 </option>
+                                                    <option value="해피콜">해피콜 </option>
+                                                    <option value="A/S관련">A/S관련</option>
+                                                    <option value="교환관련">교환관련</option>
+                                                    <option value="반품관련">반품관련</option>
+                                                    <option value="배송관련">배송관련</option>
+                                                    <option value="상품관련">상품관련</option>
+                                                    <option value="이용관련">이용관련</option>
+                                                    <option value="입금관련">입금관련</option>
+                                                    <option value="취소관련">취소관련</option>
+                                                    <option value="환불관련">환불관련</option>
+                                                    <option value="정산관련">정산관련</option>
+                                                    <option value="품절관련">품절관련</option>
+                                                    <option value="기타">기타</option>
+                                                    <option value="맞교환(유료)">맞교환(유료)</option>
+                                                    <option value="맞교환(무료)">맞교환(무료)</option>
+                                                    <option value="CS연동">CS연동</option>
+                                                    <option value="상품평">상품평</option>
+                                                    <option value="1:1문의(쪽지)">1:1문의(쪽지)</option>
+                                                    <option value="긴급메세지">긴급메세지</option>
                                                 </select>
 
                                                 <div class="content_chk_area"><input type="checkbox" name="err_msg_chk" id="err_msg_chk" value="err_msg"><label for="err_msg_chk">실패메세지</label></div>
@@ -468,14 +463,14 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>검색항목 선택</th>
-                                            <td colspan="3">
-                                                <select class="content_select" name="search_field">
-                                                    <option value="receipt_user_name" selected="">주문자명</option>
-                                                    <option value="order_id">쇼핑몰 주문번호</option>
-                                                    <option value="product_id">상품번호</option>
-                                                    <option value="user_id">쇼핑몰 아이디</option>
-                                                    <option value="product_name">상품명</option>
+                                            <th class="th00">검색항목 선택</th>
+                                            <td class="th01" colspan="3">
+                                                <select class="content_select" name="">
+                                                    <option value="주문자명" selected="">주문자명</option>
+                                                    <option value="쇼핑몰 주문번호">쇼핑몰 주문번호</option>
+                                                    <option value="상품번호">상품번호</option>
+                                                    <option value="쇼핑몰 아이디">쇼핑몰 아이디</option>
+                                                    <option value="상품명">상품명</option>
                                                 </select>
                                                 <input type="text" name="search_str" class="content_text" size="25" value="">
                                             </td>
@@ -493,83 +488,81 @@
                     <!-- 검색 테이블 end -->
                 </form>
                 
-                <div class="txt_data">
-                    <p>자료수: <span>0</span> 건</p>
-                    <div>
-                        <select class="content_select" name="excel_range" id="excel_range">
-                            <option value="">엑셀출력범위</option>
-                            <option value="001">선택 내용만</option>
-                            <option value="002">현재 페이지만</option>
-                            <option value="003">전체 자료</option>
-                        </select>
-                        <input type="button" name="s" id="saveExcel" value="Excel 저장" class="bn bn_w">
-                        <input type="button" name="s1" id="btn_overall" class="bn" value="일괄저장 및 전송">
-                        <input type="button" name="s2" id="btn_unsend_all" class="bn" value="일괄미송신저장">
-                    </div>
-                </div>
-                
-                
                 <!-- 콘텐츠 리스트 테이블 start -->
                 <section class="content_main_item">
                     <div class="content_list_table_header cf">
+                        <div class="txt_data">
+                            <p>자료수: <span>0</span> 건</p>
+                            <div>
+                                <select class="content_select" name="">
+                                    <option value="">엑셀출력범위</option>
+                                    <option value="선택내용만">선택내용만</option>
+                                    <option value="현재페이지만">현재페이지만</option>
+                                    <option value="전체자료">전체자료</option>
+                                </select>
+                                <button type="button" class="content_btn add_btn">엑셀 저장</button>
+                                <button type="button" class="content_btn">일괄저장 및 전송</button>
+                                <button type="button" class="content_btn">일괄미송신저장</button>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="content_list_table_area">
-                        <table class="content_list_table cl_table2">
+                        <table class="content_list_table much_list_table">
                             <colgroup>
-                                <col width="5%">
-                                <col width="7%">
-                                <col wdith="12%">
-                                <col>
-                                <col width="10%">
-                                <col>
-                                <col width="7%">
-                                <col width="17%">
-                                <col width="14%">
-                                <col width="7%">
-                                <col width="">
+                                <col class="th00" width="5%">
+                                <col class="th01" width="7%">
+                                <col class="th02" wdith="12%">
+                                <col class="th03">
+                                <col class="th04" width="10%">
+                                <col class="th05">
+                                <col class="th06" width="7%">
+                                <col class="th07" width="17%">
+                                <col class="th08" width="14%">
+                                <col class="th09" width="7%">
+                                <col class="th10">
                             </colgroup>
                             <thead class="thead">
                                 <tr>
-                                    <th scope="col">No.</th>
-                                    <th scope="col">
+                                    <th class="th00">No.</th>
+                                    <th class="th01">
                                         <div class="content_chk_area">
                                             <input type="checkbox" name="all_chk" value="" id="all_chk">
                                             <label for="all_chk"></label>
                                         </div>
                                     </th>
-                                    <th scope="col">주문번호</th>
-                                    <th scope="col">쇼핑몰ID<br>쇼핑몰</th>
-                                    <th scope="col">상품명</th>
-                                    <th scope="col">제목</th>
-                                    <th scope="col">접수자<br>접수일</th>
-                                    <th scope="col">문의내용</th>
-                                    <th scope="col">
+                                    <th class="th02">주문번호</th>
+                                    <th class="th03">쇼핑몰ID<br>쇼핑몰</th>
+                                    <th class="th04">상품명</th>
+                                    <th class="th05">제목</th>
+                                    <th class="th06">접수자<br>접수일</th>
+                                    <th class="th07">문의내용</th>
+                                    <th class="th08">
                                         <select class="content_select" name="con_form" class="w150px" onchange="">
                                             <option value="">답변유형선택</option>
                                         </select>
-                                        <a href="" onclick="" class="bn bn_small">추가</a>
-                                        <a href="" onclick="" class="bn bn_small">삭제</a>
+                                        <a href="" onclick="" class="content_btn bn_small">추가</a>
+                                        <a href="" onclick="" class="content_btn bn_small">삭제</a>
                                     </th>
-                                    <th scope="col">답변선택<br>CS유형<br>처리결과</th>
-                                    <th scope="col">처리자<br>처리일</th>
+                                    <th class="th09">답변선택<br>CS유형<br>처리결과</th>
+                                    <th class="th10">처리자<br>처리일</th>
                                 </tr>
                             </thead>
                             <tbody class="tbody">
                                 <tr>
-                                    <td>1</td>
-                                    <td>
+                                    <td class="th00">1</td>
+                                    <td class="th01">
                                         <div class="content_chk_area"><input type="checkbox" name="" id="" value=""><label for=""></label></div>
                                     </td>
-                                    <td>A123245322</td>
-                                    <td>쇼핑몰 ID</td>
-                                    <td>상품명</td>
-                                    <td>제목</td>
-                                    <td>2020-08-05</td>
-                                    <td>문의내용</td>
-                                    <td>답변유형선택</td>
-                                    <td>처리결과</td>
-                                    <td>2020-08-05</td>
+                                    <td class="th02">A123245322</td>
+                                    <td class="th03">쇼핑몰 ID</td>
+                                    <td class="th04">상품명</td>
+                                    <td class="th05">제목</td>
+                                    <td class="th06">2020-08-05</td>
+                                    <td class="th07">문의내용</td>
+                                    <td class="th08">답변유형선택</td>
+                                    <td class="th09">처리결과</td>
+                                    <td class="th10">2020-08-05</td>
                                 </tr>
                             </tbody>
                         </table>
