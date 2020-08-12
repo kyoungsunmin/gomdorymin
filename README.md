@@ -31,7 +31,7 @@
 2. 공급사 게시글 관리 : scm_list_board
 3. 공급사 수수료 관리 : scm_list_comission
 4. 상품 승인 관리 : scm_product_apply
-5. 추가상품 승인 관리 : scm_product_add
+5. 추가 상품 승인 관리 : scm_product_add
 7. 통합 정산 관리 : scm_adjust_total
 8. 정산관리 : scm_adjust_list
 9. 수기 정산 요청 : scm_adjust_manual
