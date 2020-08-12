@@ -302,10 +302,10 @@
                         <li>
                             <a href="claim_cs_collect.html">CS클레임수집</a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="claim_cs_handle.html">CS클레임처리</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="claim_cs_proc.html">클레임관리처리</a>
                         </li>
                     </ul>
@@ -316,7 +316,7 @@
         <!-- content -->
         <div class="content_area" id="claim_cs_handle">
             <div class="content_top">
-                CS/클레임관리 &gt; CS/클레임관리 &gt; CS클레임처리
+                CS/클레임관리 &gt; CS/클레임관리 &gt; 클레임관리처리
             </div>
 
             <div class="content_main">
@@ -324,7 +324,7 @@
                 <div class="content_header cf">
                     <div class="content_header_txt">
                         <p class="tit">
-                            CS클레임처리
+                            클레임관리처리
                             <a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
                         </p>
                     </div>
@@ -333,8 +333,8 @@
 
                 <!-- 도움말 콘텐츠 start -->
                 <div class="content_advice_area">
-                    <p class="text_list">[교환, 환불 등의 결제 및 클레임 문의에 대해 처리하는 화면입니다.</p>
-                    <p class="text_list">클레임 연동관리에서 쇼핑몰별 발생되는 클레임 건을 수집 후 처리할 수 있습니다.</p>
+                    <p class="text_list">등록된 주문의 클레임을 관리/처리하는 화면입니다.</p>
+                    <p class="text_list">고객 발송 SMS는 홈페이지에서 충전(1건=20원)하시거나, 부가기능(SMS발송)에서 충전후 편리하게 사용할 수 있습니다.</p>
                 </div>
                 <!-- 도움말 콘텐츠 end -->
 
@@ -347,15 +347,22 @@
                                 <table class="content_table content_table_col4">
                                     <colgroup>
                                         <col class="th00" width="10%">
-                                        <col class="th01" width="47%">
+                                        <col class="th01">
                                         <col class="th02" width="10%">
                                         <col class="th03">
                                     </colgroup>
                                     <tbody class="tbody">
                                         <tr>
                                             <th class="th00">일자</th>
-                                            <td class="th01 input_td" colspan="3">
-                                                <div class="date_box">
+                                            <td class="th01" colspan="3" class="th01 input_td">
+                                              
+                                                <select name="" class="content_select">
+                                                    <option value="주문수집일" selected="">주문수집일</option>
+                                                    <option value="클레임수집일">클레임수집일</option>
+                                                    <option value="클레임접수일">클레임접수일</option>
+                                                </select>
+                                              
+                                               <div class="date_box">
                                                     <span class="input-date">
                                                         <input type="text" id="st_date" name="st_date" class="calendar" value="2020-08-03">
                                                         <img class="" src="../img/calendar_icon.png" alt="Select date" title="Select date">
@@ -373,107 +380,119 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th class="th00">정렬</th>
-                                            <td class="th01 input_td">
-                                                <select class="content_select" name="">
-                                                    <option value="접수일" selected="">접수일</option>
-                                                    <option value="처리일">처리일</option>
-                                                    <option value="주문번호">주문번호</option>
-                                                </select>
+                                            <th scope="row">정렬</th>
+                                            <td>
                                                 <select class="content_select" name="" id="">
                                                     <option value="desc">내림차순</option>
                                                     <option value="asc">오름차순</option>
                                                 </select>
                                                 <select class="content_select" name="" id="">
                                                     <option value="">자료출력수</option>
-                                                    <option value="25" selected="">25</option>
-                                                    <option value="50">50</option>
-                                                    <option value="100">100</option>
-                                                    <option value="200">200</option>
-                                                    <option value="500">500</option>
-                                                    <option value="1000">1000</option>
+                                                    <option value="25" selected="">25 </option>
+                                                    <option value="50">50 </option>
+                                                    <option value="100">100 </option>
+                                                    <option value="200">200 </option>
+                                                    <option value="500">500 </option>
+                                                    <option value="1000">1000 </option>
                                                 </select>
                                             </td>
-                                            <th class="th02">선택사항</th>
-                                            <td class="th03 input_td">
-                                                <select class="content_select" name="mall_id">
-                                                    <option value="">쇼핑몰 선택</option>
-                                                    <option value="mall1">(주)옥션</option>
-                                                    <option value="mall2">(주)인터파크</option>
-                                                    <option value="mall3">11번가</option>
-                                                    <option value="mall4">AK몰</option>
-                                                    <option value="mall5">GS홈쇼핑</option>
-                                                    <option value="mall6">jtbcgolf</option>
-                                                    <option value="mall7">SBS골프숍</option>
-                                                    <option value="mall8">고도몰</option>
-                                                    <option value="mall9">골핑</option>
-                                                    <option value="mall10">롯데아이몰</option>
-                                                    <option value="mall11">베네피아</option>
-                                                    <option value="mall12">스마트스코어</option>
-                                                    <option value="mall13">스마트스토어</option>
-                                                    <option value="mall14">신세계닷컴2.0</option>
-                                                    <option value="mall15">아이스타일24(주)</option>
-                                                    <option value="mall16">아이스탁몰</option>
-                                                    <option value="mall17">위메프</option>
-                                                    <option value="mall18">위메프 파트너2.0</option>
-                                                    <option value="mall19">이마트</option>
-                                                    <option value="mall20">지마켓</option>
-                                                    <option value="mall21">쿠팡</option>
-                                                    <option value="mall22">티몬</option>
-                                                    <option value="mall23">하프클럽</option>
-                                                </select>
-                                                <select class="content_select" name="">
-                                                    <option value="매입처선택">매입처선택</option>
-                                                    <option value="매입처선택없음">매입처선택없음</option>
-                                                </select>
+                                            <th scope="row">접수자</th>
+                                            <td>
+                                                <input type="text" name="taker" size="30" value="" class="content_text">
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th class="th00">검색항목</th>
-                                            <td class="th01 input_td">
-                                                <select class="content_select" name="">
-                                                    <option value="주문자명" selected="">주문자명</option>
-                                                    <option value="쇼핑몰 주문번호">쇼핑몰 주문번호</option>
-                                                    <option value="상품번호">상품번호</option>
-                                                    <option value="쇼핑몰 아이디">쇼핑몰 아이디</option>
-                                                    <option value="상품명">상품명</option>
-                                                </select>
-                                                <input type="text" name="search_str" class="content_text" size="25" value="">
-                                            </td>
-                                            <th class="th02">클레임유형</th>
-                                            <td class="th03 input_td" id="cs_handle_type">
-                                               
+                                            <th scope="row">선택</th>
+                                            <td colspan="3">
+                                            <select class="content_select" name="mall_id">
+                                                <option value="">쇼핑몰 선택</option>
+                                                <option value="mall1">(주)옥션</option>
+                                                <option value="mall2">(주)인터파크</option>
+                                                <option value="mall3">11번가</option>
+                                                <option value="mall4">AK몰</option>
+                                                <option value="mall5">GS홈쇼핑</option>
+                                                <option value="mall6">jtbcgolf</option>
+                                                <option value="mall7">SBS골프숍</option>
+                                                <option value="mall8">고도몰</option>
+                                                <option value="mall9">골핑</option>
+                                                <option value="mall10">롯데아이몰</option>
+                                                <option value="mall11">베네피아</option>
+                                                <option value="mall12">스마트스코어</option>
+                                                <option value="mall13">스마트스토어</option>
+                                                <option value="mall14">신세계닷컴2.0</option>
+                                                <option value="mall15">아이스타일24(주)</option>
+                                                <option value="mall16">아이스탁몰</option>
+                                                <option value="mall17">위메프</option>
+                                                <option value="mall18">위메프 파트너2.0</option>
+                                                <option value="mall19">이마트</option>
+                                                <option value="mall20">지마켓</option>
+                                                <option value="mall21">쿠팡</option>
+                                                <option value="mall22">티몬</option>
+                                                <option value="mall23">하프클럽</option>
+                                            </select>
                                             <select class="content_select" name="">
-                                                <option value="">수집여부</option>
-                                                <option value="001">자동수집</option>
-                                                <option value="002">수동접수</option>
+                                                <option value="">매입처선택</option>
+                                                <option value="매입처선택없음">매입처선택없음</option>
+                                            </select>
+
+                                            <select class="content_select" name="" disabled="true">
+                                                <option value="">클레임수집유형</option>
+                                                <option value="자동수집">자동수집</option>
+                                                <option value="수동접수">수동접수</option>
                                             </select>
 
                                             <select class="content_select" name="">
-                                                <option value="">클레임유형</option>
-                                                <option value="A/S관련">A/S관련</option>
-                                                <option value="교환관련">교환관련</option>
-                                                <option value="반품관련">반품관련</option>
-                                                <option value="배송관련">배송관련</option>
-                                                <option value="상품관련">상품관련</option>
-                                                <option value="이용관련">이용관련</option>
-                                                <option value="입금관련">입금관련</option>
-                                                <option value="취소관련">취소관련</option>
-                                                <option value="환불관련">환불관련</option>
-                                                <option value="품절관련">품절관련</option>
-                                                <option value="해피콜">해피콜</option>
-                                                <option value="기타">기타</option>
+                                                <option value="">배송상태</option>
+                                                <option value="001">신규주문</option>
+                                                <option value="002">발주확인</option>
+                                                <option value="016">배송보류</option>
+                                                <option value="015">송장등록</option>
+                                                <option value="003">송장전송완료</option>
+                                                <option value="017">정산완료</option>
+                                                <option value="009">입금전취소</option>
+                                                <option value="010">배송전취소</option>
+                                                <option value="011">주문취소요청</option>
+                                                <option value="012">주문취소처리중</option>
+                                                <option value="013">주문취소완료</option>
+                                                <option value="004">교환요청</option>
+                                                <option value="014">교환처리중</option>
+                                                <option value="005">교환완료</option>
+                                                <option value="006">반품요청</option>
+                                                <option value="007">반품입고</option>
+                                                <option value="008">반품완료</option>
+                                                <option value="018">A/S요청</option>
+                                                <option value="019">A/S처리중</option>
+                                                <option value="020">A/S처리완료</option>
                                             </select>
-                                            <select class="content_select" name="">
-                                                <option value="">환불여부</option>
-                                                <option value="환불안함">환불안함</option>
-                                                <option value="환불함">환불함</option>
+
+                                            <select class="content_select sel_small" name="" disabled="true">
+                                                <option value="">창고</option>
+                                                <option value="Y">체크</option>
+                                                <option value="N">미체크</option>
                                             </select>
-                                                <div class="content_chk_area">
-                                                    <input type="checkbox" name="no_finish" value="" id="no_finish">
-                                                    <label for="no_finish">미처리건 보기</label>
-                                                </div>
-                                                
+                                            </td>
+                                        </tr>
+    
+                                        <tr>
+                                            <th scope="row">검색</th>
+                                            <td colspan="3">
+                                                <select class="content_select" name="">
+                                                    <option value="주문자명">주문자명</option>
+                                                    <option value="주문자ID">주문자ID</option>
+                                                    <option value="수취인명">수취인명</option>
+                                                    <option value="핸드폰번호">핸드폰번호</option>
+                                                    <option value="송장번호">송장번호</option>
+                                                    <option value="샵링커 주문번호">샵링커 주문번호</option>
+                                                    <option value="쇼핑몰 주문번호">쇼핑몰 주문번호</option>
+                                                    <option value="쇼핑몰 아이디">쇼핑몰 아이디</option>
+                                                    <option value="쇼핑몰 상품번호">쇼핑몰 상품번호</option>
+                                                    <option value="샵링커 상품번호">샵링커상품번호</option>
+                                                    <option value="고객사상품코드">고객사상품코드</option>
+                                                    <option value="상품명">상품명</option>
+                                                    <option value="쇼핑몰명">쇼핑몰명</option>
+                                                </select>
+                                                <input type="text" name="search_str" class="content_text" size="25" value="">
+                                                <input type="button" class="content_btn" id="sms_btn" value="SMS">
                                             </td>
                                         </tr>
                                     </tbody>
@@ -512,17 +531,16 @@
                             <colgroup>
                                 <col class="th00" width="4%">
                                 <col class="th01" width="4%">
-                                <col class="th02" width="8%">
-                                <col class="th03" width="5%">
-                                <col class="th04" width="9%">
-                                <col class="th05" width="5%">
-                                <col class="th06" width="*%">
+                                <col class="th02" width="13%">
+                                <col class="th03" width="7%">
+                                <col class="th04" width="8%">
+                                <col class="th05" width="8%">
+                                <col class="th06" width="18%">
                                 <col class="th07" width="8%">
-                                <col class="th08" width="8%">
-                                <col class="th09" width="5%">
-                                <col class="th10" width="8%">
-                                <col class="th11" width="8%">
-                                <col class="th12" width="8%">
+                                <col class="th08">
+                                <col class="th09" width="10%">
+                                <col class="th10">
+                                <col class="th11" width="10%">
                             </colgroup>
                             <thead class="thead">
                                 <tr>
@@ -533,17 +551,20 @@
                                             <label for="all_chk"></label>
                                         </div>
                                     </th>
-                                    <th class="th02" scope="col">X솔루션<br>주문번호<br>주문일자</th>
-                                    <th class="th03" scope="col">쇼핑몰</th>
-                                    <th class="th04" scope="col">고객사</th>
-                                    <th class="th05" scope="col">매입처</th>
-                                    <th class="th06" scope="col">상품명</th>
-                                    <th class="th07" scope="col">주문자명<br>수취인명</th>
-                                    <th class="th08" scope="col">접수자<br>접수일</th>
-                                    <th class="th09" scope="col">처리자<br>처리일</th>
-                                    <th class="th10" scope="col">배송상태</th>
-                                    <th class="th11" scope="col">사유</th>
-                                    <th class="th12" scope="col">내역보기</th>
+                                    <th class="th02" scope="col">x솔루션주문번호<br>쇼핑몰주문번호<br>클레임처리</th>
+                                    <th class="th03" scope="col">배송상태</th>
+                                    <th class="th04" scope="col">쇼핑몰<br>매입처<br>연동ID</th>
+                                    <th class="th05" scope="col">주문자<br>연락처<br>SMS발송</th>
+                                    <th class="th06" scope="col">상품명<br>x솔루션상품코드(옵션)<br>자사상품코드/모델</th>
+                                    <th class="th07" scope="col">수취인<br>연락처<br>SMS발송</th>
+                                    <th class="th08" scope="col">수량<br>판매가</th>
+                                    <th class="th09" scope="col">클레임수집일<br>클레임요청<br>클레임처리중<br>클레임처리완료</th>
+                                    <th class="th10" scope="col">처리자</th>
+                                    <th class="th11" scope="col">
+                                        수동접수클레임<br>
+                                        자동수집클레임<br>
+                                        CS접수메모내역
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody class="tbody">
@@ -551,78 +572,53 @@
                                     <td class="th00">1</td>
                                     <td class="th01">
                                         <div class="content_chk_area">
-                                            <input type="checkbox" name="claim_id" value="" id="claim_id">
-                                            <label for="claim_id"></label>
+                                            <input type="checkbox" name="" value="" id="">
+                                            <label for=""></label>
                                         </div>
                                     </td>
                                     <td class="th02">
-                                        32452435342<br>
-                                        <a href="" class="">12345425345</a><br>
-                                        2020-08-02<br>
-                                        송장전송완료
+                                        <a href="" class="">a65465612</a>
                                         <br>
-                                        <button class="content_btn">클레임</button>
+                                        59591344<br>
+                                        <button class="content_btn bn_small">클레임/메모접수</button>
                                     </td>
                                     <td class="th03">
-                                        <img width="40" src="../img/ico_mall21.gif">
+                                        <span>발주확인</span>
                                     </td>
                                     <td class="th04">
-                                        <a href="">(주)크리에이티브락</a>
+                                        <a href="">
+                                            <img width="40" src="../img/ico_mall11.gif">
+                                        </a><br>
+                                        (주)크리에이티브락<br>
+                                        (karin)
                                     </td>
-                                    <td class="th05"></td>
+                                    <td class="th05">
+                                        홍길동<br>
+                                        010-1234-1234
+                                        <br>
+                                        <button class="content_btn bn_small">SMS</button>
+                                    </td>
                                     <td class="th06 t_left">
-                                        마스터베어 MBPM2028 여름 남성 골프바지 골프웨어 남자 정장바지,MBPM2028 아이보리/32
+                                        <a href="">뉴에이스 기능성 골프 카라 반팔티셔츠 4종 택1</a><br>
+                                        prd119961743 (8014레드 / 110)<br>
+                                        <span>/ 8012-15</span>
                                     </td>
                                     <td class="th07">
-                                        홍길동
+                                        홍길동<br>
+                                        010-1234-1234
+                                        <br>
+                                        <button class="content_btn bn_small">SMS</button>
                                     </td>
-                                    <td class="th08">
-                                        홍길동<br>2020-08-06 08:47:32
+                                    <td class="th08 t_right">
+                                        1<br>
+                                        9,900
                                     </td>
-                                    <td class="th09"></td>
+                                    <td class="th09">
+                                        2020-06-02 18:03:09 <br>
+                                    </td>
                                     <td class="th10"></td>
-                                    <td class="th11">반품<br>자동수집</td>
-                                    <td class="th12">
-                                        <button class="content_btn bn_wh">내역보기</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="th00">2</td>
-                                    <td class="th01">
-                                        <div class="content_chk_area">
-                                            <input type="checkbox" name="claim_id" value="" id="claim_id">
-                                            <label for="claim_id"></label>
-                                        </div>
-                                    </td>
-                                    <td class="th02">
-                                        32452435342<br>
-                                        <a href="" class="" onclick="">12345425345</a><br>
-                                        2020-08-02<br>
-                                        송장전송완료
-                                        <br>
-                                        <button class="content_btn">클레임</button>
-                                    </td>
-                                    <td class="th03">
-                                        <img width="40" src="../img/ico_mall21.gif">
-                                    </td>
-                                    <td class="th04">
-                                        <a href="">(주)크리에이티브락</a>
-                                    </td>
-                                    <td class="th05"></td>
-                                    <td class="th06 t_left">
-                                        마스터베어 MBPM2028 여름 남성 골프바지 골프웨어 남자 정장바지,MBPM2028 아이보리/32
-                                    </td>
-                                    <td class="th07">
-                                        홍길동
-                                    </td>
-                                    <td class="th08">
-                                        홍길동<br>2020-08-06 08:47:32
-                                    </td>
-                                    <td class="th09">x솔루션<br>2020-08-07 08:47:32</td>
-                                    <td class="th10">반품완료</td>
-                                    <td class="th11"></td>
-                                    <td class="th12">
-                                        <button class="content_btn bn_wh">내역보기</button>
+                                    <td class="th11">
+                                        <span>주문번호 : 1326546545</span>
                                     </td>
                                 </tr>
                             </tbody>
