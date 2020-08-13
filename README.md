@@ -26,6 +26,16 @@
 15. 공유 상품 조회/복사 : goods_share_copy
 16. 공유 상품 품절 관리 : goods_share_soldout
 
+- 상품연동관리
+1. 쇼핑몰 그룹 정보 관리 : goods_interlock_group_list
+2. 쇼핑몰 개별 상품 등록 : goods_interlock_each_register
+3. 쇼핑몰 등록 실패 관리 : goods_interlock_register_fail
+4. 쇼핑몰 상품 조회/수정 : goods_interlock_inquiry_modify
+5. 쇼핑몰 상품 옵션 수정 : goods_interlock_option_modify
+6. 쇼핑몰 재등록/연장 관리 : goods_interlock_reregister_extend
+7. 쇼핑몰 코드 매칭 관리 : goods_interlock_code_match
+8. 쇼핑몰 공지사항 : goods_interlock_notice_list
+
 - 공급사관리
 1. 공급사 관리 : scm_list
 2. 공급사 게시글 관리 : scm_list_board
