@@ -250,7 +250,7 @@
                             <a href="../goods/goods_goods_list.html">상품관리</a>
                         </li>
                         <li>
-                            <a href="#">상품연동관리</a>
+                            <a href="../goods_interlock/goods_interlock_group_list.html">상품연동관리</a>
                         </li>
                         <li>
                             <a href="#">주문/배송관리</a>
@@ -572,185 +572,187 @@
 							<!-- 검색 테이블 end -->
 						</form>
                     	
-                    	<!-- 콘텐츠 리스트 테이블 start -->
-						<section class="content_main_item">
-							<div class="content_list_table_header cf">
-								<div class="content_left_txt">
-									자료수 <span>10</span>건
+                    	<form name="" method="" action="">
+							<!-- 콘텐츠 리스트 테이블 start -->
+							<section class="content_main_item">
+								<div class="content_list_table_header cf">
+									<div class="content_left_txt">
+										자료수 <span>10</span>건
+									</div>
+									<div class="content_right_select">
+										<select name="" class="content_select">
+											<option value="">엑셀출력범위</option>
+											<option value="선택내용만">선택내용만</option>
+											<option value="현재페이지만">현재페이지만</option>
+											<option value="전체자료">전체자료</option>
+										</select>
+										<button type="button" class="content_btn add_btn">엑셀 저장</button>
+										<button type="button" class="content_btn" onclick="location.href='goods_basic_information.html';">상품 일괄 수정</button>
+									</div>
 								</div>
-								<div class="content_right_select">
-									<select name="" class="content_select">
-										<option value="">엑셀출력범위</option>
-										<option value="선택내용만">선택내용만</option>
-										<option value="현재페이지만">현재페이지만</option>
-										<option value="전체자료">전체자료</option>
-									</select>
-									<button type="button" class="content_btn add_btn">엑셀 저장</button>
-									<button type="button" class="content_btn" onclick="location.href='goods_basic_information.html';">상품 일괄 수정</button>
-								</div>
-							</div>
 
-							<div class="content_list_table_area">
-								<table class="content_list_table">
-									<colgroup>
-										<col class="th00" width="5%">
-										<col class="th01" width="5%">
-										<col class="th02" width="10%">
-										<col class="th03" width="8%">
-										<col class="th04" width="*">
-										<col class="th05" width="10%">
-										<col class="th06" width="10%">
-										<col class="th07" width="10%">
-										<col class="th08" width="10%">
-										<col class="th09" width="10%">
-									</colgroup>
-									<thead class="thead">
-										<tr>
-											<th class="th00">
-												<div class="content_chk_area">
-													<input type="checkbox" name="" value="" id="all_chk">
-													<label for="all_chk"></label>
-												</div>
-											</th>
-											<th class="th01">No</th>
-											<th class="th02">애드위너 상품코드</th>
-											<th class="th03">매입처</th>
-											<th class="th04">상품명</th>
-											<th class="th05">변경사항</th>
-											<th class="th06">OLD</th>
-											<th class="th07">NEW</th>
-											<th class="th08">수정자</th>
-											<th class="th09">수정일자</th>
-										</tr>
-									</thead>
-									<tbody class="tbody">
-										<tr>
-											<td class="th00">
-												<div class="content_chk_area">
-													<input type="checkbox" name="" value="" id="chk15">
-													<label for="chk15"></label>
-												</div>
-											</td>
-											<td class="th01">5</td>
-											<td class="th02 img_td">
-												<a href="goods_goods_register.html">A0000005</a>
-												<div class="content_list_table_img"><img src="../img/top_setting_icon_.png"></div>
-											</td>
-											<td class="th03">매입처</td>
-											<td class="th04">상품명</td>
-											<td class="th05">변경사항</td>
-											<td class="th06">OLD</td>
-											<td class="th07">NEW</td>
-											<td class="th08">수정자</td>
-											<td class="th09">2020-00-00 00:00:00</td>
-										</tr>
-										<tr>
-											<td class="th00">
-												<div class="content_chk_area">
-													<input type="checkbox" name="" value="" id="chk14">
-													<label for="chk14"></label>
-												</div>
-											</td>
-											<td class="th01">4</td>
-											<td class="th02 img_td">
-												<a href="goods_goods_register.html">A0000004</a>
-												<div class="content_list_table_img"><img src="../img/top_setting_icon_.png"></div>
-											</td>
-											<td class="th03">매입처</td>
-											<td class="th04">상품명</td>
-											<td class="th05">변경사항</td>
-											<td class="th06">OLD</td>
-											<td class="th07">NEW</td>
-											<td class="th08">수정자</td>
-											<td class="th09">2020-00-00 00:00:00</td>
-										</tr>
-										<tr>
-											<td class="th00">
-												<div class="content_chk_area">
-													<input type="checkbox" name="" value="" id="chk13">
-													<label for="chk13"></label>
-												</div>
-											</td>
-											<td class="th01">3</td>
-											<td class="th02 img_td">
-												<a href="goods_goods_register.html">A0000003</a>
-												<div class="content_list_table_img"><img src="../img/top_setting_icon_.png"></div>
-											</td>
-											<td class="th03">매입처</td>
-											<td class="th04">상품명</td>
-											<td class="th05">변경사항</td>
-											<td class="th06">OLD</td>
-											<td class="th07">NEW</td>
-											<td class="th08">수정자</td>
-											<td class="th09">2020-00-00 00:00:00</td>
-										</tr>
-										<tr>
-											<td class="th00">
-												<div class="content_chk_area">
-													<input type="checkbox" name="" value="" id="chk12">
-													<label for="chk12"></label>
-												</div>
-											</td>
-											<td class="th01">2</td>
-											<td class="th02 img_td">
-												<a href="goods_goods_register.html">A0000002</a>
-												<div class="content_list_table_img"><img src="../img/top_setting_icon_.png"></div>
-											</td>
-											<td class="th03">매입처</td>
-											<td class="th04">상품명</td>
-											<td class="th05">변경사항</td>
-											<td class="th06">OLD</td>
-											<td class="th07">NEW</td>
-											<td class="th08">수정자</td>
-											<td class="th09">2020-00-00 00:00:00</td>
-										</tr>
-										<tr>
-											<td class="th00">
-												<div class="content_chk_area">
-													<input type="checkbox" name="" value="" id="chk11">
-													<label for="chk11"></label>
-												</div>
-											</td>
-											<td class="th01">1</td>
-											<td class="th02 img_td">
-												<a href="goods_goods_register.html">A0000001</a>
-												<div class="content_list_table_img"><img src="../img/top_setting_icon_.png"></div>
-											</td>
-											<td class="th03">매입처</td>
-											<td class="th04">상품명</td>
-											<td class="th05">변경사항</td>
-											<td class="th06">OLD</td>
-											<td class="th07">NEW</td>
-											<td class="th08">수정자</td>
-											<td class="th09">2020-00-00 00:00:00</td>
-										</tr>
-									</tbody>
-								</table>
+								<div class="content_list_table_area">
+									<table class="content_list_table">
+										<colgroup>
+											<col class="th00" width="5%">
+											<col class="th01" width="5%">
+											<col class="th02" width="10%">
+											<col class="th03" width="8%">
+											<col class="th04" width="*">
+											<col class="th05" width="10%">
+											<col class="th06" width="10%">
+											<col class="th07" width="10%">
+											<col class="th08" width="10%">
+											<col class="th09" width="10%">
+										</colgroup>
+										<thead class="thead">
+											<tr>
+												<th class="th00">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="all_chk">
+														<label for="all_chk"></label>
+													</div>
+												</th>
+												<th class="th01">No</th>
+												<th class="th02">애드위너 상품코드</th>
+												<th class="th03">매입처</th>
+												<th class="th04">상품명</th>
+												<th class="th05">변경사항</th>
+												<th class="th06">OLD</th>
+												<th class="th07">NEW</th>
+												<th class="th08">수정자</th>
+												<th class="th09">수정일자</th>
+											</tr>
+										</thead>
+										<tbody class="tbody">
+											<tr>
+												<td class="th00">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="chk15">
+														<label for="chk15"></label>
+													</div>
+												</td>
+												<td class="th01">5</td>
+												<td class="th02 img_td">
+													<a href="goods_goods_register.html">A0000005</a>
+													<div class="content_list_table_img"><img src="../img/top_setting_icon_.png"></div>
+												</td>
+												<td class="th03">매입처</td>
+												<td class="th04">상품명</td>
+												<td class="th05">변경사항</td>
+												<td class="th06">OLD</td>
+												<td class="th07">NEW</td>
+												<td class="th08">수정자</td>
+												<td class="th09">2020-00-00 00:00:00</td>
+											</tr>
+											<tr>
+												<td class="th00">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="chk14">
+														<label for="chk14"></label>
+													</div>
+												</td>
+												<td class="th01">4</td>
+												<td class="th02 img_td">
+													<a href="goods_goods_register.html">A0000004</a>
+													<div class="content_list_table_img"><img src="../img/top_setting_icon_.png"></div>
+												</td>
+												<td class="th03">매입처</td>
+												<td class="th04">상품명</td>
+												<td class="th05">변경사항</td>
+												<td class="th06">OLD</td>
+												<td class="th07">NEW</td>
+												<td class="th08">수정자</td>
+												<td class="th09">2020-00-00 00:00:00</td>
+											</tr>
+											<tr>
+												<td class="th00">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="chk13">
+														<label for="chk13"></label>
+													</div>
+												</td>
+												<td class="th01">3</td>
+												<td class="th02 img_td">
+													<a href="goods_goods_register.html">A0000003</a>
+													<div class="content_list_table_img"><img src="../img/top_setting_icon_.png"></div>
+												</td>
+												<td class="th03">매입처</td>
+												<td class="th04">상품명</td>
+												<td class="th05">변경사항</td>
+												<td class="th06">OLD</td>
+												<td class="th07">NEW</td>
+												<td class="th08">수정자</td>
+												<td class="th09">2020-00-00 00:00:00</td>
+											</tr>
+											<tr>
+												<td class="th00">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="chk12">
+														<label for="chk12"></label>
+													</div>
+												</td>
+												<td class="th01">2</td>
+												<td class="th02 img_td">
+													<a href="goods_goods_register.html">A0000002</a>
+													<div class="content_list_table_img"><img src="../img/top_setting_icon_.png"></div>
+												</td>
+												<td class="th03">매입처</td>
+												<td class="th04">상품명</td>
+												<td class="th05">변경사항</td>
+												<td class="th06">OLD</td>
+												<td class="th07">NEW</td>
+												<td class="th08">수정자</td>
+												<td class="th09">2020-00-00 00:00:00</td>
+											</tr>
+											<tr>
+												<td class="th00">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="chk11">
+														<label for="chk11"></label>
+													</div>
+												</td>
+												<td class="th01">1</td>
+												<td class="th02 img_td">
+													<a href="goods_goods_register.html">A0000001</a>
+													<div class="content_list_table_img"><img src="../img/top_setting_icon_.png"></div>
+												</td>
+												<td class="th03">매입처</td>
+												<td class="th04">상품명</td>
+												<td class="th05">변경사항</td>
+												<td class="th06">OLD</td>
+												<td class="th07">NEW</td>
+												<td class="th08">수정자</td>
+												<td class="th09">2020-00-00 00:00:00</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</section>
+							<!-- 콘텐츠 리스트 테이블 end -->
+
+							<!-- 페이징 start -->
+							<div class="content_page_list_area">
+								<ul class="content_page_list cf">
+									<li class="active">
+										<span>1</span>
+									</li>
+									<li>
+										<a href="#">2</a>
+									</li>
+									<li>
+										<a href="#">3</a>
+									</li>
+									<li>
+										<a href="#">4</a>
+									</li>
+									<li>
+										<a href="#">5</a>
+									</li>
+								</ul>
 							</div>
-						</section>
-						<!-- 콘텐츠 리스트 테이블 end -->
-                    	
-                    	<!-- 페이징 start -->
-						<div class="content_page_list_area">
-							<ul class="content_page_list cf">
-								<li class="active">
-									<span>1</span>
-								</li>
-								<li>
-									<a href="#">2</a>
-								</li>
-								<li>
-									<a href="#">3</a>
-								</li>
-								<li>
-									<a href="#">4</a>
-								</li>
-								<li>
-									<a href="#">5</a>
-								</li>
-							</ul>
-						</div>
-						<!-- 페이징 end -->
+							<!-- 페이징 end -->
+						</form>
                     </div>
                 </div>
             </div>

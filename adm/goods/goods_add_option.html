@@ -250,7 +250,7 @@
                             <a href="../goods/goods_goods_list.html">상품관리</a>
                         </li>
                         <li>
-                            <a href="#">상품연동관리</a>
+                            <a href="../goods_interlock/goods_interlock_group_list.html">상품연동관리</a>
                         </li>
                         <li>
                             <a href="#">주문/배송관리</a>
@@ -427,179 +427,203 @@
 							<!-- 검색 테이블 end -->
 						</form>
                     	
-                    	<!-- 콘텐츠 리스트 테이블 start -->
-						<section class="content_main_item">
-							<div class="content_list_table_header cf">
-								<div class="content_left_txt">
-									자료수 <span>10</span>건
+                    	<form name="" method="" action="">
+							<!-- 콘텐츠 리스트 테이블 start -->
+							<section class="content_main_item">
+								<div class="content_list_table_header cf">
+									<div class="content_left_txt">
+										자료수 <span>10</span>건
+									</div>
+									<div class="content_right_select">
+										<select name="" class="content_select">
+											<option value="">엑셀출력범위</option>
+											<option value="선택내용만">선택내용만</option>
+											<option value="현재페이지만">현재페이지만</option>
+											<option value="전체자료">전체자료</option>
+										</select>
+										<button type="button" class="content_btn add_btn">엑셀 저장</button>
+										<button type="button" class="content_btn" onclick="window.open('goods_adop_register_popup.html','adop_register','width=920,height=500,top=50,left=50,resizable=no,scrollbars=yes'); return false;">추가옵션 그룹추가</button>
+										<button type="button" class="content_btn" onclick="window.open('goods_adop_excel_popup.html','adop_excel','width=500,height=300,top=50,left=50,resizable=no,scrollbars=no'); return false;">엑셀 대량등록</button>
+									</div>
 								</div>
-								<div class="content_right_select">
-									<select name="" class="content_select">
-										<option value="">엑셀출력범위</option>
-										<option value="선택내용만">선택내용만</option>
-										<option value="현재페이지만">현재페이지만</option>
-										<option value="전체자료">전체자료</option>
-									</select>
-									<button type="button" class="content_btn add_btn">엑셀 저장</button>
-									<button type="button" class="content_btn" onclick="window.open('goods_adop_register_popup.html','adop_register','width=920,height=500,top=50,left=50,resizable=no,scrollbars=yes'); return false;">추가옵션 그룹추가</button>
-									<button type="button" class="content_btn" onclick="window.open('goods_adop_excel_popup.html','adop_excel','width=500,height=300,top=50,left=50,resizable=no,scrollbars=no'); return false;">엑셀 대량등록</button>
-								</div>
-							</div>
 
-							<div class="content_list_table_area">
-								<table class="content_list_table">
-									<colgroup>
-										<col class="th00" width="8%">
-										<col class="th01" width="8%">
-										<col class="th02" width="*">
-										<col class="th03" width="20%">
-										<col class="th04" width="10%">
-										<col class="th05" width="10%">
-										<col class="th06" width="10%">
-										<col class="th07" width="10%">
-									</colgroup>
-									<thead class="thead">
-										<tr>
-											<th class="th00" rowspan="2">No</th>
-											<th class="th01" rowspan="2">
-												<div class="content_chk_area">
-													<input type="checkbox" name="" value="" id="all_chk">
-													<label for="all_chk"></label>
-												</div>
-											</th>
-											<th class="th02" rowspan="2">추가옵션코드 / 쇼핑몰</th>
-											<th class="th03" rowspan="2">그룹명</th>
-											<th class="th04" colspan="4">관리</th>
-										</tr>
-										<tr>
-											<th class="th00 not_view"></th>
-											<th class="th04">상품추가</th>
-											<th class="th05">상품관리</th>
-											<th class="th06">복사</th>
-											<th class="th07">삭제</th>
-										</tr>
-									</thead>
-									<tbody class="tbody">
-										<tr>
-											<td class="th00">5</td>
-											<td class="th01">
-												<div class="content_chk_area">
-													<input type="checkbox" name="" value="" id="chk15">
-													<label for="chk15"></label>
-												</div>
-											</td>
-											<td class="th02">추가옵션코드 / 쇼핑몰</td>
-											<td class="th03">그룹명</td>
-											<td class="th04">
-												<button type="button" class="content_btn add_btn">상품추가</button>
-											</td>
-											<td class="th05">
-												<button type="button" class="content_btn">상품관리</button>
-											</td>
-											<td class="th06">
-												<button type="button" class="content_btn">복사</button>
-											</td>
-											<td class="th07">
-												<button type="button" class="content_btn del_btn">삭제</button>
-											</td>
-										</tr>
-										<tr>
-											<td class="th00">4</td>
-											<td class="th01">
-												<div class="content_chk_area">
-													<input type="checkbox" name="" value="" id="chk14">
-													<label for="chk14"></label>
-												</div>
-											</td>
-											<td class="th02">추가옵션코드 / 쇼핑몰</td>
-											<td class="th03">그룹명</td>
-											<td class="th04">
-												<button type="button" class="content_btn add_btn">상품추가</button>
-											</td>
-											<td class="th05">
-												<button type="button" class="content_btn">상품관리</button>
-											</td>
-											<td class="th06">
-												<button type="button" class="content_btn">복사</button>
-											</td>
-											<td class="th07">
-												<button type="button" class="content_btn del_btn">삭제</button>
-											</td>
-										</tr>
-										<tr>
-											<td class="th00">3</td>
-											<td class="th01">
-												<div class="content_chk_area">
-													<input type="checkbox" name="" value="" id="chk13">
-													<label for="chk13"></label>
-												</div>
-											</td>
-											<td class="th02">추가옵션코드 / 쇼핑몰</td>
-											<td class="th03">그룹명</td>
-											<td class="th04">
-												<button type="button" class="content_btn add_btn">상품추가</button>
-											</td>
-											<td class="th05">
-												<button type="button" class="content_btn">상품관리</button>
-											</td>
-											<td class="th06">
-												<button type="button" class="content_btn">복사</button>
-											</td>
-											<td class="th07">
-												<button type="button" class="content_btn del_btn">삭제</button>
-											</td>
-										</tr>
-										<tr>
-											<td class="th00">2</td>
-											<td class="th01">
-												<div class="content_chk_area">
-													<input type="checkbox" name="" value="" id="chk12">
-													<label for="chk12"></label>
-												</div>
-											</td>
-											<td class="th02">추가옵션코드 / 쇼핑몰</td>
-											<td class="th03">그룹명</td>
-											<td class="th04">
-												<button type="button" class="content_btn add_btn">상품추가</button>
-											</td>
-											<td class="th05">
-												<button type="button" class="content_btn">상품관리</button>
-											</td>
-											<td class="th06">
-												<button type="button" class="content_btn">복사</button>
-											</td>
-											<td class="th07">
-												<button type="button" class="content_btn del_btn">삭제</button>
-											</td>
-										</tr>
-										<tr>
-											<td class="th00">1</td>
-											<td class="th01">
-												<div class="content_chk_area">
-													<input type="checkbox" name="" value="" id="chk11">
-													<label for="chk11"></label>
-												</div>
-											</td>
-											<td class="th02">추가옵션코드 / 쇼핑몰</td>
-											<td class="th03">그룹명</td>
-											<td class="th04">
-												<button type="button" class="content_btn add_btn">상품추가</button>
-											</td>
-											<td class="th05">
-												<button type="button" class="content_btn">상품관리</button>
-											</td>
-											<td class="th06">
-												<button type="button" class="content_btn">복사</button>
-											</td>
-											<td class="th07">
-												<button type="button" class="content_btn del_btn">삭제</button>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+								<div class="content_list_table_area">
+									<table class="content_list_table">
+										<colgroup>
+											<col class="th00" width="8%">
+											<col class="th01" width="8%">
+											<col class="th02" width="*">
+											<col class="th03" width="20%">
+											<col class="th04" width="10%">
+											<col class="th05" width="10%">
+											<col class="th06" width="10%">
+											<col class="th07" width="10%">
+										</colgroup>
+										<thead class="thead">
+											<tr>
+												<th class="th00" rowspan="2">No</th>
+												<th class="th01" rowspan="2">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="all_chk">
+														<label for="all_chk"></label>
+													</div>
+												</th>
+												<th class="th02" rowspan="2">추가옵션코드 / 쇼핑몰</th>
+												<th class="th03" rowspan="2">그룹명</th>
+												<th class="th04" colspan="4">관리</th>
+											</tr>
+											<tr>
+												<th class="th00 not_view"></th>
+												<th class="th04">상품추가</th>
+												<th class="th05">상품관리</th>
+												<th class="th06">복사</th>
+												<th class="th07">삭제</th>
+											</tr>
+										</thead>
+										<tbody class="tbody">
+											<tr>
+												<td class="th00">5</td>
+												<td class="th01">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="chk15">
+														<label for="chk15"></label>
+													</div>
+												</td>
+												<td class="th02">추가옵션코드 / 쇼핑몰</td>
+												<td class="th03">그룹명</td>
+												<td class="th04">
+													<button type="button" class="content_btn add_btn">상품추가</button>
+												</td>
+												<td class="th05">
+													<button type="button" class="content_btn">상품관리</button>
+												</td>
+												<td class="th06">
+													<button type="button" class="content_btn">복사</button>
+												</td>
+												<td class="th07">
+													<button type="button" class="content_btn del_btn">삭제</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00">4</td>
+												<td class="th01">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="chk14">
+														<label for="chk14"></label>
+													</div>
+												</td>
+												<td class="th02">추가옵션코드 / 쇼핑몰</td>
+												<td class="th03">그룹명</td>
+												<td class="th04">
+													<button type="button" class="content_btn add_btn">상품추가</button>
+												</td>
+												<td class="th05">
+													<button type="button" class="content_btn">상품관리</button>
+												</td>
+												<td class="th06">
+													<button type="button" class="content_btn">복사</button>
+												</td>
+												<td class="th07">
+													<button type="button" class="content_btn del_btn">삭제</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00">3</td>
+												<td class="th01">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="chk13">
+														<label for="chk13"></label>
+													</div>
+												</td>
+												<td class="th02">추가옵션코드 / 쇼핑몰</td>
+												<td class="th03">그룹명</td>
+												<td class="th04">
+													<button type="button" class="content_btn add_btn">상품추가</button>
+												</td>
+												<td class="th05">
+													<button type="button" class="content_btn">상품관리</button>
+												</td>
+												<td class="th06">
+													<button type="button" class="content_btn">복사</button>
+												</td>
+												<td class="th07">
+													<button type="button" class="content_btn del_btn">삭제</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00">2</td>
+												<td class="th01">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="chk12">
+														<label for="chk12"></label>
+													</div>
+												</td>
+												<td class="th02">추가옵션코드 / 쇼핑몰</td>
+												<td class="th03">그룹명</td>
+												<td class="th04">
+													<button type="button" class="content_btn add_btn">상품추가</button>
+												</td>
+												<td class="th05">
+													<button type="button" class="content_btn">상품관리</button>
+												</td>
+												<td class="th06">
+													<button type="button" class="content_btn">복사</button>
+												</td>
+												<td class="th07">
+													<button type="button" class="content_btn del_btn">삭제</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00">1</td>
+												<td class="th01">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="chk11">
+														<label for="chk11"></label>
+													</div>
+												</td>
+												<td class="th02">추가옵션코드 / 쇼핑몰</td>
+												<td class="th03">그룹명</td>
+												<td class="th04">
+													<button type="button" class="content_btn add_btn">상품추가</button>
+												</td>
+												<td class="th05">
+													<button type="button" class="content_btn">상품관리</button>
+												</td>
+												<td class="th06">
+													<button type="button" class="content_btn">복사</button>
+												</td>
+												<td class="th07">
+													<button type="button" class="content_btn del_btn">삭제</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</section>
+							<!-- 콘텐츠 리스트 테이블 end -->
+
+							<!-- 페이징 start -->
+							<div class="content_page_list_area">
+								<ul class="content_page_list cf">
+									<li class="active">
+										<span>1</span>
+									</li>
+									<li>
+										<a href="#">2</a>
+									</li>
+									<li>
+										<a href="#">3</a>
+									</li>
+									<li>
+										<a href="#">4</a>
+									</li>
+									<li>
+										<a href="#">5</a>
+									</li>
+								</ul>
 							</div>
-						</section>
-						<!-- 콘텐츠 리스트 테이블 end -->
+							<!-- 페이징 end -->
+						</form>
                     </div>
                 </div>
             </div>
