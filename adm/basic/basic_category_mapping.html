@@ -250,7 +250,7 @@
                             <a href="../goods/goods_goods_list.html">상품관리</a>
                         </li>
                         <li>
-                            <a href="#">상품연동관리</a>
+                            <a href="../goods_interlock/goods_interlock_group_list.html">상품연동관리</a>
                         </li>
                         <li>
                             <a href="#">주문/배송관리</a>
@@ -473,155 +473,157 @@
 							<!-- 검색 테이블 end -->
 						</form>
                     	
-                    	<!-- 콘텐츠 리스트 테이블 start -->
-						<section class="content_main_item">
-							<div class="content_list_table_header cf">
-								<div class="content_left_txt">
-									자료수 <span>10</span>건
+                    	<form name="" method="" action="">
+							<!-- 콘텐츠 리스트 테이블 start -->
+							<section class="content_main_item">
+								<div class="content_list_table_header cf">
+									<div class="content_left_txt">
+										자료수 <span>10</span>건
+									</div>
+									<div class="content_right_select">
+										<select name="" class="content_select">
+											<option value="">쇼핑몰선택</option>
+											<option value="(주)옥션">(주)옥션</option>
+											<option value="(주)인터파크">(주)인터파크</option>
+											<option value="11번가">11번가</option>
+											<option value="AK몰">AK몰</option>
+											<option value="GS홈쇼핑">GS홈쇼핑</option>
+										</select>
+										<select name="" class="content_select">
+											<option value="">버전선택</option>
+											<option value="ESM 1.0">ESM 1.0</option>
+											<option value="ESM 2.0">ESM 2.0</option>
+										</select>
+										<button type="button" class="content_btn add_btn">카테고리 매치하기</button>
+									</div>
 								</div>
-								<div class="content_right_select">
-									<select name="" class="content_select">
-										<option value="">쇼핑몰선택</option>
-										<option value="(주)옥션">(주)옥션</option>
-										<option value="(주)인터파크">(주)인터파크</option>
-										<option value="11번가">11번가</option>
-										<option value="AK몰">AK몰</option>
-										<option value="GS홈쇼핑">GS홈쇼핑</option>
-									</select>
-									<select name="" class="content_select">
-										<option value="">버전선택</option>
-										<option value="ESM 1.0">ESM 1.0</option>
-										<option value="ESM 2.0">ESM 2.0</option>
-									</select>
-									<button type="button" class="content_btn add_btn">카테고리 매치하기</button>
-								</div>
-							</div>
 
-							<div class="content_list_table_area">
-								<table class="content_list_table">
-									<colgroup>
-										<col class="th00" width="8%">
-										<col class="th01" width="8%">
-										<col class="th02" width="*">
-										<col class="th03" width="10%">
-										<col class="th04" width="20%">
-										<col class="th05" width="10%">
-										<col class="th06" width="20%">
-										<col class="th07" width="10%">
-									</colgroup>
-									<thead class="thead">
-										<tr>
-											<th class="th00" rowspan="2">No</th>
-											<th class="th01" rowspan="2">
-												<div class="content_chk_area">
-													<input type="checkbox" name="" value="" id="all_chk">
-													<label for="all_chk"></label>
-												</div>
-											</th>
-											<th class="th02" rowspan="2">쇼핑몰</th>
-											<th class="th03" colspan="2">애드위너/고객사 카테고리</th>
-											<th class="th05" colspan="2">쇼핑몰 카테고리</th>
-											<th class="th07" rowspan="2">삭제</th>
-										</tr>
-										<tr>
-											<th class="th00 not_view"></th>
-											<th class="th03">코드</th>
-											<th class="th04">카테고리명</th>
-											<th class="th05">코드</th>
-											<th class="th06">카테고리명</th>
-										</tr>
-									</thead>
-									<tbody class="tbody">
-										<tr>
-											<td class="th00">5</td>
-											<td class="th01">
-												<div class="content_chk_area">
-													<input type="checkbox" name="" value="" id="chk15">
-													<label for="chk15"></label>
-												</div>
-											</td>
-											<td class="th02">쇼핑몰</td>
-											<td class="th03">고객사 카테고리 코드</td>
-											<td class="th04">고객사 카테고리명</td>
-											<td class="th05">쇼핑몰 카테고리코드</td>
-											<td class="th06">쇼핑몰 카테고리명</td>
-											<td class="th07">
-												<button type="button" class="content_btn del_btn">삭제</button>
-											</td>
-										</tr>
-										<tr>
-											<td class="th00">4</td>
-											<td class="th01">
-												<div class="content_chk_area">
-													<input type="checkbox" name="" value="" id="chk14">
-													<label for="chk14"></label>
-												</div>
-											</td>
-											<td class="th02">쇼핑몰</td>
-											<td class="th03">고객사 카테고리 코드</td>
-											<td class="th04">고객사 카테고리명</td>
-											<td class="th05">쇼핑몰 카테고리코드</td>
-											<td class="th06">쇼핑몰 카테고리명</td>
-											<td class="th07">
-												<button type="button" class="content_btn del_btn">삭제</button>
-											</td>
-										</tr>
-										<tr>
-											<td class="th00">3</td>
-											<td class="th01">
-												<div class="content_chk_area">
-													<input type="checkbox" name="" value="" id="chk13">
-													<label for="chk13"></label>
-												</div>
-											</td>
-											<td class="th02">쇼핑몰</td>
-											<td class="th03">고객사 카테고리 코드</td>
-											<td class="th04">고객사 카테고리명</td>
-											<td class="th05">쇼핑몰 카테고리코드</td>
-											<td class="th06">쇼핑몰 카테고리명</td>
-											<td class="th07">
-												<button type="button" class="content_btn del_btn">삭제</button>
-											</td>
-										</tr>
-										<tr>
-											<td class="th00">2</td>
-											<td class="th01">
-												<div class="content_chk_area">
-													<input type="checkbox" name="" value="" id="chk12">
-													<label for="chk12"></label>
-												</div>
-											</td>
-											<td class="th02">쇼핑몰</td>
-											<td class="th03">고객사 카테고리 코드</td>
-											<td class="th04">고객사 카테고리명</td>
-											<td class="th05">쇼핑몰 카테고리코드</td>
-											<td class="th06">쇼핑몰 카테고리명</td>
-											<td class="th07">
-												<button type="button" class="content_btn del_btn">삭제</button>
-											</td>
-										</tr>
-										<tr>
-											<td class="th00">1</td>
-											<td class="th01">
-												<div class="content_chk_area">
-													<input type="checkbox" name="" value="" id="chk11">
-													<label for="chk11"></label>
-												</div>
-											</td>
-											<td class="th02">쇼핑몰</td>
-											<td class="th03">고객사 카테고리 코드</td>
-											<td class="th04">고객사 카테고리명</td>
-											<td class="th05">쇼핑몰 카테고리코드</td>
-											<td class="th06">쇼핑몰 카테고리명</td>
-											<td class="th07">
-												<button type="button" class="content_btn del_btn">삭제</button>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</section>
-						<!-- 콘텐츠 리스트 테이블 end -->
+								<div class="content_list_table_area">
+									<table class="content_list_table">
+										<colgroup>
+											<col class="th00" width="8%">
+											<col class="th01" width="8%">
+											<col class="th02" width="*">
+											<col class="th03" width="10%">
+											<col class="th04" width="20%">
+											<col class="th05" width="10%">
+											<col class="th06" width="20%">
+											<col class="th07" width="10%">
+										</colgroup>
+										<thead class="thead">
+											<tr>
+												<th class="th00" rowspan="2">No</th>
+												<th class="th01" rowspan="2">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="all_chk">
+														<label for="all_chk"></label>
+													</div>
+												</th>
+												<th class="th02" rowspan="2">쇼핑몰</th>
+												<th class="th03" colspan="2">애드위너/고객사 카테고리</th>
+												<th class="th05" colspan="2">쇼핑몰 카테고리</th>
+												<th class="th07" rowspan="2">삭제</th>
+											</tr>
+											<tr>
+												<th class="th00 not_view"></th>
+												<th class="th03">코드</th>
+												<th class="th04">카테고리명</th>
+												<th class="th05">코드</th>
+												<th class="th06">카테고리명</th>
+											</tr>
+										</thead>
+										<tbody class="tbody">
+											<tr>
+												<td class="th00">5</td>
+												<td class="th01">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="chk15">
+														<label for="chk15"></label>
+													</div>
+												</td>
+												<td class="th02">쇼핑몰</td>
+												<td class="th03">고객사 카테고리 코드</td>
+												<td class="th04">고객사 카테고리명</td>
+												<td class="th05">쇼핑몰 카테고리코드</td>
+												<td class="th06">쇼핑몰 카테고리명</td>
+												<td class="th07">
+													<button type="button" class="content_btn del_btn">삭제</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00">4</td>
+												<td class="th01">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="chk14">
+														<label for="chk14"></label>
+													</div>
+												</td>
+												<td class="th02">쇼핑몰</td>
+												<td class="th03">고객사 카테고리 코드</td>
+												<td class="th04">고객사 카테고리명</td>
+												<td class="th05">쇼핑몰 카테고리코드</td>
+												<td class="th06">쇼핑몰 카테고리명</td>
+												<td class="th07">
+													<button type="button" class="content_btn del_btn">삭제</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00">3</td>
+												<td class="th01">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="chk13">
+														<label for="chk13"></label>
+													</div>
+												</td>
+												<td class="th02">쇼핑몰</td>
+												<td class="th03">고객사 카테고리 코드</td>
+												<td class="th04">고객사 카테고리명</td>
+												<td class="th05">쇼핑몰 카테고리코드</td>
+												<td class="th06">쇼핑몰 카테고리명</td>
+												<td class="th07">
+													<button type="button" class="content_btn del_btn">삭제</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00">2</td>
+												<td class="th01">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="chk12">
+														<label for="chk12"></label>
+													</div>
+												</td>
+												<td class="th02">쇼핑몰</td>
+												<td class="th03">고객사 카테고리 코드</td>
+												<td class="th04">고객사 카테고리명</td>
+												<td class="th05">쇼핑몰 카테고리코드</td>
+												<td class="th06">쇼핑몰 카테고리명</td>
+												<td class="th07">
+													<button type="button" class="content_btn del_btn">삭제</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="th00">1</td>
+												<td class="th01">
+													<div class="content_chk_area">
+														<input type="checkbox" name="" value="" id="chk11">
+														<label for="chk11"></label>
+													</div>
+												</td>
+												<td class="th02">쇼핑몰</td>
+												<td class="th03">고객사 카테고리 코드</td>
+												<td class="th04">고객사 카테고리명</td>
+												<td class="th05">쇼핑몰 카테고리코드</td>
+												<td class="th06">쇼핑몰 카테고리명</td>
+												<td class="th07">
+													<button type="button" class="content_btn del_btn">삭제</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</section>
+							<!-- 콘텐츠 리스트 테이블 end -->
+						</form>
                     </div>
                 </div>
             </div>
