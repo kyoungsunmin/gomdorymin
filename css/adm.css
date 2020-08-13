@@ -946,6 +946,7 @@ footer.footer>p {
 	vertical-align: middle;
 }
 .content_main .content_table .content_chk_limit {
+	max-width: 100%;
 	display: inline-block;
 	position: relative;
 }
@@ -2238,17 +2239,6 @@ footer.footer>p {
 					minks - content
 
 *************************************************/
-.content_main .content_table .content_chk_limit.w400 {
-	width: 100% !important;
-	max-width: 400px;
-}
-.content_main .content_table .content_chk_limit.wall {
-	width: 100% !important;
-	max-width: 100%;
-}
-.content_main .content_table .content_radio_area .content_btn {
-	margin: 0 0 0 2px;
-}
 .content_main .w120 {
 	width: 120px !important;
 }
@@ -2333,6 +2323,9 @@ footer.footer>p {
 	-ms-border-radius: 50%;
 	border-radius: 50%;
 }
+.content_main .content_table .content_radio_area .content_btn {
+	margin: 0 0 0 2px;
+}
 .content_main .content_table tr td .input_bottom_td .m10 {
 	vertical-align: text-bottom;
 }
@@ -2345,6 +2338,21 @@ footer.footer>p {
 	height: auto;
 	max-width: 100%;
 }
+.content_main .content_list_table tr.bundle_tr td {
+	background-color: #f6f6f6;
+}
+.content_main .content_list_table tr.bundle_tr .content_text,
+.content_main .content_list_table tr.bundle_tr .content_select {
+	margin: 2px 0;
+}
+.content_main .content_list_table tr.bundle_tr .content_chk_area,
+.content_main .content_list_table tr.bundle_tr .content_radio_area {
+	width: auto;
+}
+.content_main .content_list_table tr.bundle_tr .content_chk_area input[type="checkbox"] + label:before,
+.content_main .content_list_table tr.bundle_tr .content_radio_area input[type="radio"] + label:before {
+	top: 5px;
+}
 .content_main .content_list_table tr td .content_list_table_txt {
 	font-size: 11px;
 	margin: 5px 0;
@@ -2352,12 +2360,36 @@ footer.footer>p {
 .content_main .content_list_table tr td .content_list_table_img {
 	margin: 5px 0;
 }
-.content_main .content_list_table tr.bundle_tr td {
-	background-color: #f6f6f6;
+.content_main .content_list_table tr td .content_text {
+	padding: 0 5px;
 }
-.content_main .content_list_table tr.bundle_tr .content_text,
-.content_main .content_list_table tr.bundle_tr .content_select {
+.content_main .content_list_table tr td .content_select {
+	padding: 0 30px 0 5px;
+}
+.content_main .content_list_table tr td .content_number .content_text {
 	margin: 2px 0;
+}
+.content_main .content_list_table tr td .content_chk_limit {
+	max-width: 100%;
+	display: inline-block;
+	position: relative;
+}
+.content_main .content_list_table tr td .content_chk_limit .content_text {
+	padding-right: 35px;
+}
+.content_main .content_list_table tr td .content_chk_limit .content_text_size {
+	background-color: #ffeee9;
+	color: #6d6d6d;
+	font-size: 9px;
+	font-weight: 600;
+	padding: 0 2px;
+	position: absolute;
+	bottom: 1px;
+	right: 1px;
+	z-index: 3;
+}
+.content_main .content_list_table tr td .content_chk_limit .content_text_size .input_size {
+	color: #ff3600;
 }
 .content_main .content_search_area .content_table tr td .content_search .content_select + .content_text {
 	max-width: calc(100% - 160px);
@@ -2617,11 +2649,6 @@ footer.footer>p {
 	line-height: 1.5em;
 }
 
-/* goods_basic_information */
-.content_goods_basic_information .content_list_table tr td.th04 .content_text {
-	margin: 2px 0;
-}
-
 /* goods_option_manage */
 .content_goods_option_manage .content_list_table tr.option_tr td {
 	background-color: #f6f6f6;
@@ -2630,6 +2657,25 @@ footer.footer>p {
 /* goods_interlock_grre_register_popup */
 .content_goods_interlock_grre_register_popup .content_table .tbody>tr>th + td {
 	border-left: 1px solid #bfbfbf;
+}
+
+/* goods_interlock_each_register */
+.content_goods_interlock_each_register .content_list_table tr.bundle_tr td .text_blue {
+	margin: 5px 0 10px;
+}
+.content_goods_interlock_each_register .content_list_table tr.bundle_tr td .content_chk_area {
+	margin-left: 2px;
+}
+.content_goods_interlock_each_register .content_list_table tr .th02 .content_chk_area {
+	width: 16px;
+}
+.content_goods_interlock_each_register .content_list_table tr .th02 .content_chk_area input[type="checkbox"] + label:before {
+	top: 0;
+}
+
+/* goods_interlock_register_fail */
+.content_goods_interlock_register_fail .content_list_table tr td.th07 .content_chk_limit {
+	margin: 2px 0;
 }
 
 @media screen and (max-width: 1600px) {
