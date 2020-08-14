@@ -2703,13 +2703,17 @@ footer.footer>p {
 
 /************************************************
 
-					jin - set
+				jin - set
 
 *************************************************/
 
 /* set */
 .content_main .content_list_table_footer{
     margin-top:10px;
+}
+.content_main .content_list_table_footer span{
+    font-size:13px;
+    color:#555;
 }
 .content_main .content_right_area{
     float: right;
@@ -2756,16 +2760,31 @@ footer.footer>p {
     text-align: center !important;
 }
 .t_red{
-    color:red !important;
-}
-.t_blue{
-    color:blue !important;
-}
-.t_green{
-    color:green !important;
+    color:#ff3600 !important;
 }
 .m_t_20{
-    margin-top: 20px;
+    margin-top: 20px !important;
+}
+.m_b_20{
+    margin-bottom: 20px !important;
+}
+.m_r_20{
+    margin-right: 20px !important;
+}
+.m_l_20{
+    margin-left: 20px !important;
+}
+.bg_point1{
+    background: #e0e0e0 !important;
+}
+.bg_point2{
+    background: #dbf0e9 !important;
+}
+.bg_point3{
+    background: #f5efd8 !important;
+}
+.bg_point4{
+    background: #f0dbdb !important;
 }
 .txt_data{
     overflow: hidden;
@@ -2788,6 +2807,7 @@ footer.footer>p {
     background:#f6f6f6;
     color:#555;
     padding:0;
+    font-size:12px
 }
 .content_main .sel_small{
     min-width:auto;
@@ -2805,6 +2825,15 @@ footer.footer>p {
 .content_main .content_list_table tr th.bdr_left{
     border-left:1px solid #8d8d8d;
 }
+.content_main .frm_span{
+    font-weight:bold;
+    margin-right:5px;
+}
+.content_main .content_btn_sel_name {
+	max-width: calc(100% - 6em);
+	vertical-align: middle;
+}
+
 
 /* pager */
 .pager_ul{
@@ -2870,7 +2899,6 @@ footer.footer>p {
     margin-bottom:10px
 }
 
-
 /* content_titbox */
 .content_titbox{
     width:100%;
@@ -2894,7 +2922,6 @@ footer.footer>p {
     position: relative;
     bottom:40px;
 }
-
 
 /* 달력 날짜 선택 */
 .date_box {
@@ -2923,6 +2950,7 @@ footer.footer>p {
 .date_box p{
     display:inline;
 }
+
 
 
 /************************************************
@@ -2977,6 +3005,7 @@ footer.footer>p {
 }
 
 
+
 /* inventory */
 
 #inventory_stockout_order .content_table .th03 .content_chk_area label{
@@ -2992,4 +3021,3 @@ footer.footer>p {
         margin: auto;
     }
 }
-
