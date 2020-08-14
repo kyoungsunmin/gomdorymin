@@ -36,6 +36,22 @@
 7. 쇼핑몰 코드 매칭 관리 : goods_interlock_code_match
 8. 쇼핑몰 공지사항 : goods_interlock_notice_list
 
+- 입점업체관리
+1. 입점업체 관리 : business_list
+2. 입점업체 게시글 관리 : business_list_board
+3. 입점업체 수수료 관리 : business_list_comission
+4. 상품 승인 관리 : business_product_apply
+5. 추가 상품 승인 관리 : business_product_add
+6. 통합 정산 관리 : business_adjust_total
+7. 정산관리 : business_adjust_list
+8. 수기 정산 요청 : business_adjust_manual
+9. 주문 상품 정산 요청 : business_adjust_order
+10. 배송비 정산 요청: business_adjust_delivery
+11. 정산 후 주문 상품 환불 정산 : business_after_order
+12. 정산 후 배송비 환불 정산 : business_after_delivery
+13. 발행 내역 리스트 : business_tax_list
+14. 수수료 계산서 발급 관리 : business_tax_commission
+
 - 공급사관리
 1. 공급사 관리 : scm_list
 2. 공급사 게시글 관리 : scm_list_board
