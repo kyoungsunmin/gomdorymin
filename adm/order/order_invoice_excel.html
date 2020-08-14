@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>NHmall</title>
+		<meta name="description" content="NHmall">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="../img/logo_favicon.ico">
+		<link rel="apple-touch-icon" href="../img/logo_favicon.ico">
+		
+		<link href="../../css/reset.css" type="text/css" rel="stylesheet">
+		<link href="../../css/font.css" type="text/css" rel="stylesheet">
+		<link href="../../css/adm.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="../../js/jquery-1.11.1.min.js"></script>
+		<script src="../../js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="../../js/jquery-migrate-1.4.1.min.js"></script>
+		<script src="../../js/function.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap">
+            <!-- header -->
+            <header class="header">
+                <h1 class="not_view">header</h1>
+                
+                <div class="header_top cf">
+                    <div class="top_logo">
+                        <a href="../index.html"><img src="../img/top_logo.png" alt="top_logo"></a>
+                    </div>
+                    
+                    <ul class="top_menu cf">
+                        <li class="top_menu_item">
+                            <!-- top_menu_drop 클래스 안의 top_menu_drop_tit 클릭시 top_menu_drop_area 보이기/숨기기 -->
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">전체관리자(poirao)</p>
+                                <div class="top_menu_drop_area">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    운영자정보
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    로그아웃
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" onclick="openLayer('topBell');"><img src="../img/top_bell_icon.png" alt="top_bell_icon" class="top_bell"></a>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+                                    <img src="../img/top_new_icon.png" alt="top_new_icon" class="top_new">
+                                    주문현황
+                                    <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                                </p>
+                                <div class="top_menu_drop_area top_gray_tit">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li class="tit">
+                                            <div class="left_item">
+                                                주문상태설정
+                                            </div>
+                                            <div class="right_item">
+                                                <a href="javascript:void(0);" onclick="openLayer('topOrder');"><img src="../img/top_setting_icon.png" alt="top_setting_icon"></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    입금대기
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    결제완료
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    상품준비중
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    배송중
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    배송완료
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    반품접수
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    교환접수
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    환불접수
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+                                    자주쓰는메뉴
+                                    <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                                </p>
+                                <div class="top_menu_drop_area top_gray_tit">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li class="tit">
+                                            <div class="left_item">
+                                                메뉴설정
+                                            </div>
+                                            <div class="right_item">
+                                                <a href="javascript:void(0);" onclick="openLayer('topMenu');"><img src="../img/top_setting_icon.png" alt="top_setting_icon"></a>
+                                            </div>
+                                        </li>
+                                        <li class="empty">
+                                            <div class="center_item">
+                                                자주쓰는 메뉴를<br>설정해주세요.
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+                                    더보기
+                                    <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                                </p>
+                                <div class="top_menu_drop_area">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    마이HN
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    메뉴얼
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    사이트맵
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_search">
+                                <form id="" name="" method="" action="" class="cf">
+                                    <input type="text" name="" class="top_search_input" placeholder="메뉴검색">
+                                    <input type="submit" class="top_search_btn">
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- nav -->
+                <nav class="nav">
+                    <h2 class="not_view">nav</h2>
+                    
+                    <ul class="nav_list cf">
+                        <li>
+                            <a href="../basic/basic_mall_list.html">기본설정</a>
+                        </li>
+                        <li>
+                            <a href="../goods/goods_goods_list.html">상품관리</a>
+                        </li>
+                        <li>
+                            <a href="../goods_interlock/goods_interlock_group_list.html">상품연동관리</a>
+                        </li>
+                        <li class="active">
+                            <a href="../order/order_auto_collect.html">주문/배송관리</a>
+                        </li>
+                        <li>
+                            <a href="../business/business_list.html">입점업체관리</a>
+                        </li>
+                        <li>
+                            <a href="../scm/scm_list.html">공급사관리</a>
+                        </li>
+                        <li>
+                            <a href="../claim/claim_inquiry_collect.html">CS/클레임관리</a>
+                        </li>
+                        <li>
+                            <a href="../calculation/calculation_master.html">정산관리</a>
+                        </li>
+                        <li>
+                            <a href="../inventory/inventory_stock_code.html">재고관리</a>
+                        </li>
+                        <li>
+                            <a href="../statistics/statistics_daily.html">통계관리</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+			
+            <div class="fk_header"></div>
+            
+            <div class="content_wrap cf">
+                <!-- aside -->
+                <aside class="aside">
+                    <h1 class="not_view">aside</h1>
+                    
+                    <div class="aside_top">
+                        <img src="../img/order_menu_icon.png" alt="order_menu_icon">
+                        <p>주문/배송관리</p>
+                    </div>
+                    
+                    <ul class="aside_list cf">
+                        <li>
+							<p class="aside_list_tit on">주문/배송 관리</p>
+							<ul class="aside_sub_list cf">
+								<li>
+									<a href="order_auto_collect.html">주문서 자동수집 관리</a>
+								</li>
+								<li>
+									<a href="order_manual_register.html">주문서 수동 등록 (화면)</a>
+								</li>
+								<li>
+									<a href="order_excel_register.html">주문서 수동 등록 (엑셀)</a>
+								</li>
+								<li>
+									<a href="order_confirm_process.html">주문서 확인/처리</a>
+								</li>
+								<li>
+									<a href="order_modify_copy.html">주문서 수정/복사</a>
+								</li>
+								<li>
+									<a href="order_invoice_register.html">송장 등록 (화면)</a>
+								</li>
+								<li class="active">
+									<a href="order_invoice_excel.html">송장 등록 (엑셀)</a>
+								</li>
+								<li>
+									<a href="order_barcode_reading.html">바코드 리딩</a>
+								</li>
+								<li>
+									<a href="order_barcode_cancel.html">바코드 리딩 취소</a>
+								</li>
+								<li>
+									<a href="order_invoice_transmission.html">송장 송신 관리</a>
+								</li>
+								<li>
+									<a href="order_complete.html">정산 확정 관리</a>
+								</li>
+								<li>
+									<a href="order_stock.html">옵션 매칭 이력 관리</a>
+								</li>
+								<li>
+									<a href="order_option.html">옵션별 판매 현황</a>
+								</li>
+								<li>
+									<a href="order_delivery_mall.html">쇼핑몰별 배송 상태 조회</a>
+								</li>
+								<li>
+									<a href="order_delivery_partner.html">매입처별 배송 상태 조회</a>
+								</li>
+								<li>
+									<a href="order_check.html">주문 조회</a>
+								</li>
+							</ul>
+						</li>
+                    </ul>
+                </aside>
+                
+                <!-- content -->
+                <div class="content_area">
+                    <div class="content_top">
+                        주문/배송관리 &gt; 주문/배송 관리 &gt; 송장 등록 (엑셀)
+                    </div>
+                    
+                    <div class="content_main">
+                        <!-- 콘텐츠 타이틀 start -->
+						<div class="content_header cf">
+							<div class="content_header_txt">
+								<p class="tit">
+									송장 등록 (엑셀)
+									<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+								</p>
+							</div>
+							<div class="content_header_btn">
+								<input type="button" class="btn2" value="다시하기">
+								<input type="submit" class="btn" value="저장">
+							</div>
+						</div>
+						<!-- 콘텐츠 타이틀 end -->
+                    	
+                    	<!-- 도움말 콘텐츠 start -->
+						<div class="content_advice_area">
+							<p class="text_list">쇼핑몰에서 발생한 주문을 엑셀로 일괄 배송 처리하는 화면입니다.</p>
+							<p class="text_list">제공되는 샘플 양식에 의거 주문번호와 송장번호 등을 입력해 주셔야 합니다. 엑셀 순서를 조정해서 업로드 할 수도 있습니다.</p>
+							<p class="text_list">택배사를 일괄 업로드시에는 일괄적용 체크박스를 체크하시면 선택하신 택배사로 송장이 입력됩니다.</p>
+							<p class="text_list">‘송장용 엑셀자료 다운로드’ 버튼은 실제 배송처리중인 주문건의 자료를 샘플파일 형식으로 다운로드 하실 수 있습니다.</p>
+						</div>
+					    <!-- 도움말 콘텐츠 end -->
+                    	
+						<form name="" method="" action="">
+                    		<!-- 검색 테이블 start -->
+							<div class="content_search_area">
+								<!-- 콘텐츠 테이블 start -->
+								<section class="content_main_item">
+									<div class="content_table_area">
+										<table class="content_table content_table_col4">
+											<colgroup>
+												<col class="th00">
+												<col class="th01">
+												<col class="th02">
+												<col class="th03">
+											</colgroup>
+											<tbody class="tbody">
+												<tr>
+													<th class="th00">택배사</th>
+													<td class="th01 input_td">
+														<div class="content_search">
+															<select name="" class="content_select">
+																<option value="">택배사선택하세요</option>
+																<option value="ACI">ACI</option>
+																<option value="CJ GLS(HTH통합)">CJ GLS(HTH통합)</option>
+																<option value="CJ KOREA(Global)">CJ KOREA(Global)</option>
+																<option value="CJGLS">CJGLS</option>
+																<option value="CJGLS택배">CJGLS택배</option>
+															</select>
+															<div class="content_chk_area">
+																<input type="checkbox" name="" value="" id="delivery_chk1">
+																<label for="delivery_chk1">일괄택배사 적용</label>
+															</div>
+															<button type="button" class="content_btn">택배사 관리</button>
+															<a href="#"><img src="../img/manual_icon.png" alt="manual_icon" title="송장 등록 방법"></a>
+															<a href="#"><img src="../img/manual_icon.png" alt="manual_icon" title="크롬 쿠키 삭제"></a>
+															<a href="#"><img src="../img/manual_icon.png" alt="manual_icon" title="IE 쿠키 삭제"></a>
+														</div>
+													</td>
+													<th class="th02">엑셀자료 선택</th>
+													<td class="th03 input_td">
+														<select name="" class="content_select">
+															<option value="">엑셀선택여부</option>
+															<option value="애드위너송장입력폼">애드위너송장입력폼</option>
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<th class="th00">기간</th>
+													<td class="th01 input_td" colspan="3">
+														<div class="content_number">
+															<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+															<div class="content_calendar">
+																<input type="text" name="" class="content_text">
+																<span class="content_calendar_btn"></span>
+															</div>
+															<span class="m5">~</span>
+															<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+															<div class="content_calendar">
+																<input type="text" name="" class="content_text">
+																<span class="content_calendar_btn"></span>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th class="th00">엑셀폼 업로드</th>
+													<td class="th01 input_td" colspan="3">
+														<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+														<div class="content_file_area">
+															<label for="upload_file1" class="content_file_btn">찾아보기</label>
+															<input type="file" name="" id="upload_file1">
+															<input type="text" class="content_text content_file_name" disabled>
+														</div>
+														<button type="button" class="content_btn add_btn">저장</button>
+														<button type="button" class="content_btn">샘플파일 다운로드</button>
+														<button type="button" class="content_btn">송장용 엑셀 자료 다운로드</button>
+														<button type="button" class="content_btn">엑셀 순서관리</button>
+													</td>
+												</tr>																							
+											</tbody>
+										</table>
+									</div>
+									
+									<div class="content_explain_area cf">
+										<p class="content_explain">택배사옆의 일괄적용 체크박스를 체크하시면 선택하신 택배사로 송장이 입력됩니다.<br>"송장용 엑셀자료 다운로드" 버튼은 실제 발주확인인 주문건의 자료를 샘플파일 형식으로 다운로드 하실 수 있습니다.</p>
+										<p class="content_explain">
+											<span class="text_red text_bold">[주의] 엑셀파일이 업로드가 되지 않을 경우</span>
+											<span class="text_list">엑셀을 열고 파일(F) → 다른 이름으로 저장 (A) 선택</span>
+											<span class="text_list">Excel 97 - 2003 통합문서 (.xls) 로 선택</span>
+											<span class="text_list">다른 이름으로 저장한 파일을 업로드</span>
+										</p>
+										<p class="content_explain"><span class="text_red text_bold">[주의] 엑셀파일에 계산식은 사용하지 마십시오.</span><br>특히 가격부분에 계산식을 이용하면 0원으로 표기되어 등록되지 않습니다.<br>송장번호는 12자리 이상일경우에는 꼭 " ' "와 같이 조합하여 입력해주시기 바랍니다.(예: '000000000000)</p>
+										<p class="content_explain"><span class="text_red text_bold">[주의] 송장등록후 쇼핑몰의 송장반영은 주문연동관리&gt;송장송신관리에서 전송하셔야 반영됩니다.</span></p>
+									</div>
+								</section>
+								<!-- 콘텐츠 테이블 end -->
+							</div>
+							<!-- 검색 테이블 end -->
+						</form>
+                    	
+                    	<!-- 콘텐츠 테이블 start -->
+						<section class="content_main_item">
+							<div class="content_table_top cf">
+								<p class="content_table_tit">
+									항목 설명 및 엑셀 파일 필드순서 (필수)
+								</p>
+							</div>
+
+							<div class="content_table_area">
+								<!-- content_outer_table 클래스는 내용 안에 테이블이 있을 경우 추가 -->
+								<table class="content_table content_table_col2 content_outer_table">
+									<colgroup>
+										<col class="th00">
+										<col class="th01">
+									</colgroup>
+									<tr>
+										<th class="th00">주문번호</th>
+										<td class="th01 input_td">
+											<div class="content_table_txt">
+												애드위너 주문번호
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th class="th00">상품번호</th>
+										<td class="th01 input_td">
+											<div class="content_table_txt">
+												애드위너 상품코드
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th class="th00">택배사</th>
+										<td class="th01 input_td">
+											<!-- 테이블 안에 테이블 start -->
+											<div class="content_inner_table">
+												<!-- 콘텐츠 리스트 테이블 start -->
+												<table class="content_list_table">
+													<colgroup>
+														<col class="th00" width="150">
+														<col class="th01" width="*">
+													</colgroup>
+													<thead class="thead">
+														<tr>
+															<th class="th00">택배사 코드</th>
+															<th class="th01">택배사명</th>
+														</tr>
+													</thead>
+													<tbody class="tbody">
+														<tr>
+															<td class="th00">delv0097</td>
+															<td class="th01 text_left">ACI</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0094</td>
+															<td class="th01 text_left">CJ대한통운</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0085</td>
+															<td class="th01 text_left">GTX택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0098</td>
+															<td class="th01 text_left">TNT</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0100</td>
+															<td class="th01 text_left">UPS</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0086</td>
+															<td class="th01 text_left">sc로지스</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0096</td>
+															<td class="th01 text_left">국제등기</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0095</td>
+															<td class="th01 text_left">굿모닝택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0088</td>
+															<td class="th01 text_left">방문수령</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0083</td>
+															<td class="th01 text_left">백산물류</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0082</td>
+															<td class="th01 text_left">선경물류</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0084</td>
+															<td class="th01 text_left">영진물류</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0099</td>
+															<td class="th01 text_left">익스델</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0087</td>
+															<td class="th01 text_left">지산물류</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0102</td>
+															<td class="th01 text_left">지하철택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0089</td>
+															<td class="th01 text_left">퀵배송(퀵서비스)</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0093</td>
+															<td class="th01 text_left">한덱스</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0092</td>
+															<td class="th01 text_left">한진정기화물</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0101</td>
+															<td class="th01 text_left">합동택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0090</td>
+															<td class="th01 text_left">화물(가구직배송)</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0014</td>
+															<td class="th01 text_left">대한통운</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0010</td>
+															<td class="th01 text_left">한진택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0078</td>
+															<td class="th01 text_left">네덱스</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0012</td>
+															<td class="th01 text_left">옐로우캡</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0067</td>
+															<td class="th01 text_left">동부익스프레스</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0002</td>
+															<td class="th01 text_left">우체국</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0046</td>
+															<td class="th01 text_left">우체국택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0008</td>
+															<td class="th01 text_left">롯데택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0113</td>
+															<td class="th01 text_left">현대로지스틱스(국제특송)</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0001</td>
+															<td class="th01 text_left">HTH(삼성택배)</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0004</td>
+															<td class="th01 text_left">CJGLS택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0005</td>
+															<td class="th01 text_left">KGB택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0049</td>
+															<td class="th01 text_left">업체직송</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0006</td>
+															<td class="th01 text_left">로젠택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0024</td>
+															<td class="th01 text_left">사가와익스프레스</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0047</td>
+															<td class="th01 text_left">CJGLS</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0041</td>
+															<td class="th01 text_left">삼성택배(HTH)</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0063</td>
+															<td class="th01 text_left">CJGLS</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0054</td>
+															<td class="th01 text_left">KGB</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0009</td>
+															<td class="th01 text_left">KGB특급택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0104</td>
+															<td class="th01 text_left">delv0104</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0103</td>
+															<td class="th01 text_left">드림택배(구:KG로지스택배)</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0013</td>
+															<td class="th01 text_left">KT로지스</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0060</td>
+															<td class="th01 text_left">KT로직스택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0045</td>
+															<td class="th01 text_left">WPX택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0065</td>
+															<td class="th01 text_left">wpx택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0018</td>
+															<td class="th01 text_left">건영택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0026</td>
+															<td class="th01 text_left">경동택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0023</td>
+															<td class="th01 text_left">고려택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0032</td>
+															<td class="th01 text_left">국제특송</td>
+														</tr>
+														<tr>
+															<td class="th00">delv9999</td>
+															<td class="th01 text_left">기타</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0061</td>
+															<td class="th01 text_left">꼬모택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0050</td>
+															<td class="th01 text_left">뉴한국택배물류</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0031</td>
+															<td class="th01 text_left">대신택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0059</td>
+															<td class="th01 text_left">대신화물택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0027</td>
+															<td class="th01 text_left">동서택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0080</td>
+															<td class="th01 text_left">동원택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0070</td>
+															<td class="th01 text_left">로엑스택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0074</td>
+															<td class="th01 text_left">밀양화물</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0111</td>
+															<td class="th01 text_left">배송없음</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0044</td>
+															<td class="th01 text_left">벨익스프레스</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0019</td>
+															<td class="th01 text_left">벨익스프레스</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0073</td>
+															<td class="th01 text_left">부경물류</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0071</td>
+															<td class="th01 text_left">비즈메카</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0043</td>
+															<td class="th01 text_left">사가와택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0048</td>
+															<td class="th01 text_left">삼영택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0033</td>
+															<td class="th01 text_left">삼조택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0077</td>
+															<td class="th01 text_left">성훈물류</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0058</td>
+															<td class="th01 text_left">스마일택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0038</td>
+															<td class="th01 text_left">신세계</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0042</td>
+															<td class="th01 text_left">신세계택배(SEDEX)</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0064</td>
+															<td class="th01 text_left">쎄덱스택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0011</td>
+															<td class="th01 text_left">아주택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0020</td>
+															<td class="th01 text_left">양양택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0017</td>
+															<td class="th01 text_left">에버런택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0075</td>
+															<td class="th01 text_left">에이스물류</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0025</td>
+															<td class="th01 text_left">오렌지택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0039</td>
+															<td class="th01 text_left">용운통운</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0052</td>
+															<td class="th01 text_left">우편등기</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0079</td>
+															<td class="th01 text_left">이노지스택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0051</td>
+															<td class="th01 text_left">이클라인</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0015</td>
+															<td class="th01 text_left">이클라인택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0040</td>
+															<td class="th01 text_left">인로스</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0069</td>
+															<td class="th01 text_left">일반우편</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0021</td>
+															<td class="th01 text_left">일양택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0068</td>
+															<td class="th01 text_left">정안씨엘에스</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0056</td>
+															<td class="th01 text_left">제니엘택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0053</td>
+															<td class="th01 text_left">주코택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0030</td>
+															<td class="th01 text_left">중앙택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0034</td>
+															<td class="th01 text_left">쥬코택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0029</td>
+															<td class="th01 text_left">천일택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0057</td>
+															<td class="th01 text_left">코덱스택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0007</td>
+															<td class="th01 text_left">트라넷</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0016</td>
+															<td class="th01 text_left">편의점택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0072</td>
+															<td class="th01 text_left">평강물류</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0066</td>
+															<td class="th01 text_left">하나로택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0028</td>
+															<td class="th01 text_left">한국택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0081</td>
+															<td class="th01 text_left">한의사랑</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0037</td>
+															<td class="th01 text_left">해동청</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0036</td>
+															<td class="th01 text_left">현신택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0035</td>
+															<td class="th01 text_left">호남택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0076</td>
+															<td class="th01 text_left">호남화물</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0055</td>
+															<td class="th01 text_left">후다닥(퀵)</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0003</td>
+															<td class="th01 text_left">훼미리택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0114</td>
+															<td class="th01 text_left">동부대우전자</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0120</td>
+															<td class="th01 text_left">SLX택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0121</td>
+															<td class="th01 text_left">성원글로벌</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0122</td>
+															<td class="th01 text_left">HI택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0108</td>
+															<td class="th01 text_left">페덱스(FEDEX)</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0131</td>
+															<td class="th01 text_left">퍼레버택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0124</td>
+															<td class="th01 text_left">CU택배</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0134</td>
+															<td class="th01 text_left">롯데글로벌로지스</td>
+														</tr>
+														<tr>
+															<td class="th00">delv0135</td>
+															<td class="th01 text_left">풀앳홈</td>
+														</tr>
+													</tbody>
+												</table>
+												<!-- 콘텐츠 리스트 테이블 end -->
+											</div>
+											<!-- 테이블 안에 테이블 end -->
+										</td>
+									</tr>
+									<tr>
+										<th class="th00">송장번호</th>
+										<td class="th01 input_td">
+											<div class="content_table_txt">
+												' 와 숫자 조합으로 표기(예: '12345)
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</section>
+						<!-- 콘텐츠 테이블 end -->
+                    </div>
+                </div>
+            </div>
+           
+            <!-- footer -->
+            <footer class="footer">
+                <h1 class="not_view">footer</h1>
+                
+                <p>© HN : Corp All Rights Reserved.</p>
+            </footer>
+		</div>
+	</body>
+</html>
