@@ -36,6 +36,14 @@
 7. 쇼핑몰 코드 매칭 관리 : goods_interlock_code_match
 8. 쇼핑몰 공지사항 : goods_interlock_notice_list
 
+- 주문배송관리
+정산확정관리 : order_complete
+옵션 매칭 이력 관리 : order_stock
+옵션별 판매 현황 : order_option
+쇼핑몰별 배송 상태 조회 : order_delivery_mall
+매입처별 배송 상태 조회 : order_delivery_partner
+주문조회 : order_check
+
 - 입점업체관리
 1. 입점업체 관리 : business_list
 2. 입점업체 게시글 관리 : business_list_board
