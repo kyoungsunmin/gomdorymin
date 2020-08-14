@@ -37,11 +37,11 @@
 8. 쇼핑몰 공지사항 : goods_interlock_notice_list
 
 - 주문배송관리
-1. 주문서 자동수집 관리 : 
-2. 주문서 수동 등록 (화면) : 
-3. 주문서 수동 등록 (엑셀) : 
-4. 주문서 확인/처리 : 
-5. 주문서 수정/복사 : 
+1. 주문서 자동수집 관리 : order_auto_collect
+2. 주문서 수동 등록 (화면) : order_manual_register
+3. 주문서 수동 등록 (엑셀) : order_excel_register
+4. 주문서 확인/처리 : order_confirm_process
+5. 주문서 수정/복사 : order_modify_copy
 6. 송장 등록 (화면) : 
 7. 송장 등록 (엑셀) : 
 8. 바코드 리딩 : 
