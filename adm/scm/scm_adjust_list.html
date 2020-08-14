@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>NHmall</title>
+		<meta name="description" content="NHmall">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="../img/logo_favicon.ico">
+		<link rel="apple-touch-icon" href="../img/logo_favicon.ico">
+		
+		<link href="../../css/reset.css" type="text/css" rel="stylesheet">
+		<link href="../../css/font.css" type="text/css" rel="stylesheet">
+		<link href="../../css/adm.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="../../js/jquery-1.11.1.min.js"></script>
+		<script src="../../js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="../../js/jquery-migrate-1.4.1.min.js"></script>
+		<script src="../../js/function.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap">
+            <!-- header -->
+            <header class="header">
+                <h1 class="not_view">header</h1>
+                
+                <div class="header_top cf">
+                    <div class="top_logo">
+                        <a href="../index.html"><img src="../img/top_logo.png" alt="top_logo"></a>
+                    </div>
+                    
+                    <ul class="top_menu cf">
+                        <li class="top_menu_item">
+                            <!-- top_menu_drop 클래스 안의 top_menu_drop_tit 클릭시 top_menu_drop_area 보이기/숨기기 -->
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">전체관리자(poirao)</p>
+                                <div class="top_menu_drop_area">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    운영자정보
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    로그아웃
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" onclick="openLayer('topBell');"><img src="../img/top_bell_icon.png" alt="top_bell_icon" class="top_bell"></a>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+                                    <img src="../img/top_new_icon.png" alt="top_new_icon" class="top_new">
+                                    주문현황
+                                    <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                                </p>
+                                <div class="top_menu_drop_area top_gray_tit">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li class="tit">
+                                            <div class="left_item">
+                                                주문상태설정
+                                            </div>
+                                            <div class="right_item">
+                                                <a href="javascript:void(0);" onclick="openLayer('topOrder');"><img src="../img/top_setting_icon.png" alt="top_setting_icon"></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    입금대기
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    결제완료
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    상품준비중
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    배송중
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    배송완료
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    반품접수
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    교환접수
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    환불접수
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+                                    자주쓰는메뉴
+                                    <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                                </p>
+                                <div class="top_menu_drop_area top_gray_tit">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li class="tit">
+                                            <div class="left_item">
+                                                메뉴설정
+                                            </div>
+                                            <div class="right_item">
+                                                <a href="javascript:void(0);" onclick="openLayer('topMenu');"><img src="../img/top_setting_icon.png" alt="top_setting_icon"></a>
+                                            </div>
+                                        </li>
+                                        <li class="empty">
+                                            <div class="center_item">
+                                                자주쓰는 메뉴를<br>설정해주세요.
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+                                    더보기
+                                    <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                                </p>
+                                <div class="top_menu_drop_area">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    마이HN
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    메뉴얼
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    사이트맵
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_search">
+                                <form id="" name="" method="" action="" class="cf">
+                                    <input type="text" name="" class="top_search_input" placeholder="메뉴검색">
+                                    <input type="submit" class="top_search_btn">
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- nav -->
+                <nav class="nav">
+                    <h2 class="not_view">nav</h2>
+                    
+                    <ul class="nav_list cf">
+                        <li>
+                            <a href="../basic/basic_mall_list.html">기본설정</a>
+                        </li>
+                        <li>
+                            <a href="../goods/goods_goods_list.html">상품관리</a>
+                        </li>
+                        <li>
+                            <a href="../goods_interlock/goods_interlock_group_list.html">상품연동관리</a>
+                        </li>
+                        <li>
+                            <a href="../order/order_auto_collect.html">주문/배송관리</a>
+                        </li>
+                        <li>
+                            <a href="../business/business_list.html">입점업체관리</a>
+                        </li>
+                        <li class="active">
+                            <a href="../scm/scm_list.html">공급사관리</a>
+                        </li>
+                        <li>
+                            <a href="../claim/claim_inquiry_collect.html">CS/클레임관리</a>
+                        </li>
+                        <li>
+                            <a href="../calculation/calculation_master.html">정산관리</a>
+                        </li>
+                        <li>
+                            <a href="../inventory/inventory_stock_code.html">재고관리</a>
+                        </li>
+                        <li>
+                            <a href="../statistics/statistics_daily.html">통계관리</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+			
+            <div class="fk_header"></div>
+            
+            <div class="content_wrap cf">
+                <!-- aside -->
+                <aside class="aside">
+                    <h1 class="not_view">aside</h1>
+                    
+                    <div class="aside_top">
+                        <img src="../img/scm_menu_icon.png" alt="basic_menu_icon">
+                        <p>공급사관리</p>
+                    </div>
+                    
+                    <ul class="aside_list cf">
+                        <li>
+							<p class="aside_list_tit on">공급사 관리</p>
+							<ul class="aside_sub_list cf">
+								<li>
+									<a href="scm_list.html">공급사 관리</a>
+								</li>
+								<li>
+									<a href="scm_list_board.html">공급사 게시글 관리</a>
+								</li>
+								<li>
+									<a href="scm_list_comission.html">공급사 수수료 관리</a>
+								</li>
+							</ul>
+						</li>
+                        <li>
+							<p class="aside_list_tit on">공급사 상품 관리</p>
+							<ul class="aside_sub_list cf">
+								<li>
+									<a href="scm_product_apply.html">상품 승인 관리</a>
+								</li>
+								<li>
+									<a href="scm_product_add.html">추가 상품 승인 관리</a>
+								</li>
+							</ul>
+						</li>
+                        <li>
+							<p class="aside_list_tit on">공급사 정산 관리</p>
+							<ul class="aside_sub_list cf">
+								<li>
+									<a href="scm_adjust_total.html">통합 정산 관리</a>
+								</li>
+								<li class="active">
+									<a href="scm_adjust_list.html">정산관리</a>
+								</li>
+								<li>
+									<a href="scm_adjust_manual.html">수기 정산 요청</a>
+								</li>
+								<li>
+									<a href="scm_adjust_order.html">주문 상품 정산 요청</a>
+								</li>
+								<li>
+									<a href="scm_adjust_delivery.html">배송비 정산 요청</a>
+								</li>
+							</ul>
+						</li>
+                        <li>
+							<p class="aside_list_tit on">정산 후 환불</p>
+							<ul class="aside_sub_list cf">
+								<li>
+									<a href="scm_after_order.html">정산 후 주문 상품 환불 정산</a>
+								</li>
+								<li>
+									<a href="scm_after_delivery.html">정산 후 배송비 환불 정산</a>
+								</li>
+							</ul>
+						</li>
+                        <li>
+							<p class="aside_list_tit on">세금계산서</p>
+							<ul class="aside_sub_list cf">
+								<li>
+									<a href="scm_tax_list.html">발행 내역 리스트</a>
+								</li>
+								<li>
+									<a href="scm_tax_commission.html">수수료 계산서 발급 관리</a>
+								</li>
+							</ul>
+						</li>
+                    </ul>
+                </aside>
+                
+                <!-- content -->
+                <div class="content_area">
+                    <div class="content_top">
+                        공급사관리 &gt; 공급사관리 &gt; 정산관리
+                    </div>
+                    
+                    <div class="content_main">
+                        <!-- 콘텐츠 타이틀 start -->
+						<div class="content_header cf">
+							<div class="content_header_txt">
+								<p class="tit">
+									정산관리
+								</p>
+							</div>
+							<div class="content_header_btn">
+								<a href="scm_adjust_manual.html"><input type="button" class="btn2" value="수기등록"></a>
+							</div>
+						</div>
+						<!-- 콘텐츠 타이틀 end -->
+                    	
+                    	<form name="" method="" action="">
+                    		<!-- 검색 테이블 start -->
+							<div class="content_search_area">
+								<!-- 콘텐츠 테이블 start -->
+								<section class="content_main_item">
+								    <div class="content_table_top cf">
+                                	    <p class="content_table_tit">정산 검색</p>
+								    </div>
+									<div class="content_table_area">
+										<table class="content_table content_table_col4">
+										    <colgroup>
+                                                <col class="th00" width="10%">
+                                                <col class="th01">
+                                                <col class="th02" width="10%">
+                                                <col class="th03">
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th class="th00">공급사 구분</th>
+                                                <td class="th01" colspan="3">
+                                                    <div class="content_radio_area">
+                                                        <input type="radio" name="radio_name" value="" id="radio1" checked>
+                                                        <label for="radio1">전체</label>
+                                                    </div>
+                                                   <div class="content_radio_area">
+                                                        <input type="radio" name="radio_name" value="" id="radio2">
+                                                        <label for="radio2">본사</label>
+                                                    </div>
+                                                   <div class="content_radio_area">
+                                                        <input type="radio" name="radio_name" value="" id="radio3">
+                                                        <label for="radio3">공급사</label>
+                                                    </div>
+                                                    <button type="button" class="content_btn">공급사 선택</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="th00">정산타입</th>
+                                                <td class="th01" colspan="3">
+                                                    <div class="content_chk_area">
+                                                        <input type="checkbox" name="" value="" id="chk1" checked="">
+                                                        <label for="chk1">전체</label>
+                                                    </div>
+                                                    <div class="content_chk_area">
+                                                        <input type="checkbox" name="" value="" id="chk2">
+                                                        <label for="chk2">주문상품</label>
+                                                    </div>
+                                                    <div class="content_chk_area">
+                                                        <input type="checkbox" name="" value="" id="chk3">
+                                                        <label for="chk3">배송비</label>
+                                                    </div>
+                                                    <div class="content_chk_area">
+                                                        <input type="checkbox" name="" value="" id="chk4">
+                                                        <label for="chk4">정산후환불(주문상품)</label>
+                                                    </div>
+                                                    <div class="content_chk_area">
+                                                        <input type="checkbox" name="" value="" id="chk5">
+                                                        <label for="chk5">정산후환불(배송비)</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="th00">요청타입</th>
+                                                <td class="th01" colspan="3">
+                                                    <div class="content_chk_area">
+                                                        <input type="checkbox" name="" value="" id="chk6" checked="">
+                                                        <label for="chk6">전체</label>
+                                                    </div>
+                                                    <div class="content_chk_area">
+                                                        <input type="checkbox" name="" value="" id="chk7">
+                                                        <label for="chk7">일반</label>
+                                                    </div>
+                                                    <div class="content_chk_area">
+                                                        <input type="checkbox" name="" value="" id="chk8">
+                                                        <label for="chk8">수기</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="th00">정산상태</th>
+                                                <td class="th01" colspan="3">
+                                                    <div class="content_chk_area">
+                                                        <input type="checkbox" name="" value="" id="chk9" checked="">
+                                                        <label for="chk9">전체</label>
+                                                    </div>
+                                                    <div class="content_chk_area">
+                                                        <input type="checkbox" name="" value="" id="chk10">
+                                                        <label for="chk10">정산요청</label>
+                                                    </div>
+                                                    <div class="content_chk_area">
+                                                        <input type="checkbox" name="" value="" id="chk11">
+                                                        <label for="chk11">이월</label>
+                                                    </div>
+                                                    <div class="content_chk_area">
+                                                        <input type="checkbox" name="" value="" id="chk12">
+                                                        <label for="chk12">보류</label>
+                                                    </div>
+                                                    <div class="content_chk_area">
+                                                        <input type="checkbox" name="" value="" id="chk13">
+                                                        <label for="chk13">반려</label>
+                                                    </div>
+                                                    <div class="content_chk_area">
+                                                        <input type="checkbox" name="" value="" id="chk14">
+                                                        <label for="chk14">정산확정</label>
+                                                    </div>
+                                                    <div class="content_chk_area">
+                                                        <input type="checkbox" name="" value="" id="chk15">
+                                                        <label for="chk15">지급완료</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="th00">승인요청일</th>
+                                                <td class="th01" colspan="3">
+                                                    <div class="date_box">
+                                                        <span class="input-date">
+                                                            <input type="text" id="st_date" name="st_date" class="calendar" value="2020-08-03">
+                                                            <img class="" src="../img/calendar_icon.png" alt="Select date" title="Select date">
+                                                        </span>
+                                                        <p>~</p>
+                                                        <span class="input-date">
+                                                          <input type="text" id="la_date" name="la_date" class="calendar" value="2020-08-04">
+                                                          <img class="" src="../img/calendar_icon.png" alt="Select date" title="Select date">
+                                                        </span>
+                                                    </div>
+
+                                                    <input type="button" name="" id="" class="content_btn" value="오늘">
+                                                    <input type="button" name="" id="" class="content_btn" value="7일">
+                                                    <input type="button" name="" id="" class="content_btn" value="15일">
+                                                    <input type="button" name="" id="" class="content_btn" value="1개월">
+                                                    <input type="button" name="" id="" class="content_btn" value="3개월">
+                                                    <input type="button" name="" id="" class="content_btn" value="전체">
+                                                </td>
+                                            </tr>
+										</table>
+									</div>
+
+									<div class="search_btn_area">
+										<input type="submit" class="search_btn" value="검색">
+									</div>
+								</section>
+								<!-- 콘텐츠 테이블 end -->
+							</div>
+							<!-- 검색 테이블 end -->
+						</form>
+                    	
+                    	<!-- 콘텐츠 리스트 테이블 start -->
+						<section class="content_main_item">
+							<div class="content_list_table_header cf">
+								<div class="content_left_txt">
+									검색 <span>0</span>개 / 전체 <span>0</span>개
+								</div>
+								<div class="content_right_select">
+								    <select name="" class="content_select">
+								        <option value="" selected="">요청일↓</option>
+                                        <option value="">요청일↑</option>
+                                        <option value="">처리일↓</option>
+                                        <option value="">처리일↑</option>
+                                    </select>
+									<select name="" class="content_select">
+										<option value="" selected="">10개 보기</option>
+										<option value="">20개 보기</option>
+										<option value="">30개 보기</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="content_list_table_area">
+								<table class="content_list_table much_list_table">
+                                   <colgroup>
+										<col class="th00" width="3%">
+										<col class="th01" width="3%">
+										<col class="th02" width="9%">
+										<col class="th03" width="10%">
+										<col class="th04">
+										<col class="th05">
+										<col class="th06">
+										<col class="th07" width="9%">
+										<col class="th08">
+										<col class="th09">
+										<col class="th10" width="12%">
+										<col class="th11">
+										<col class="th12">
+									</colgroup>
+                                    <thead class="thead">
+                                    <tr>
+                                        <th class="th00"><div class="content_chk_area"><input type="checkbox" name="" value="" id="all_chk"><label for="all_chk"></label></div></th>
+                                        <th class="th01">No.</th>
+                                        <th class="th02">정산요청번호</th>
+                                        <th class="th03">요청일</th>
+                                        <th class="th04">공급사</th>
+                                        <th class="th05">정산타입</th>
+                                        <th class="th06">요청타입</th>
+                                        <th class="th07">판매(배송)금액</th>
+                                        <th class="th08">수수료</th>
+                                        <th class="th09">정산금액</th>
+                                        <th class="th10">요청자</th>
+                                        <th class="th11">정산상태</th>
+                                        <th class="th12">정산정보</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="tbody">
+                                        <tr>
+                                                <td class="th00"><div class="content_chk_area"><input type="checkbox" name="" value="" id="chk"><label for="chk"></label></div></td>
+                                                <td class="th01">1</td>
+                                                <td class="th02">1241241212</td>
+                                                <td class="th03">2020-08-06 21:04:35</td>
+                                                <td class="th04">test</td>
+                                                <td class="th05">일반</td>
+                                                <td class="th06">일반</td>
+                                                <td class="th07">0원</td>
+                                                <td class="th08">0원</td>
+                                                <td class="th09">0원</td>
+                                                <td class="th10">1/test/마스터</td>
+                                                <td class="th11">정산요청</td>
+                                                <td class="th12"><button type="button" class="content_btn bn_wh">상세정보</button></td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+							</div>
+							
+							<div class="content_list_table_footer">
+							    <span>선택한 정산을</span>
+							    <select name="" class="content_select">
+                                    <option value="" selected="">정산상태</option>
+                                    <option value="">정산확정</option>
+                                    <option value="">지급완료</option>
+                                    <option value="">이월</option>
+                                    <option value="">보류</option>
+                                    <option value="">반려</option>
+                                </select>
+							    <button type="button" class="content_btn bn_wh">일괄처리</button>
+							    
+							    <div class="content_right_area">
+							        <button type="button" class="content_btn add_btn">엑셀 저장</button>
+                                </div>
+							</div>
+							
+							<!-- 페이징 -->
+							<div class="pager">
+							    <ul class="pager_ul">
+                                   <li class="pager_li pager_first">«</li>
+                                   <li class="pager_li pager_prev">‹</li>
+                                    <li class="pager_li active">1</li>
+                                    <li class="pager_li">2</li>
+                                    <li class="pager_li">3</li>
+                                    <li class="pager_li">4</li>
+                                    <li class="pager_li">5</li>
+                                    <li class="pager_li">6</li>
+                                    <li class="pager_li">7</li>
+                                    <li class="pager_li">8</li>
+                                    <li class="pager_li">9</li>
+                                    <li class="pager_li">10</li>
+                                    <li class="pager_li pager_next">›</li>
+                                    <li class="pager_li pager_last">»</li>
+                                </ul>
+							</div>
+							
+						</section>
+						<!-- 콘텐츠 리스트 테이블 end -->
+                    </div>
+                </div>
+            </div>
+           
+            <!-- footer -->
+            <footer class="footer">
+                <h1 class="not_view">footer</h1>
+                
+                <p>© HN : Corp All Rights Reserved.</p>
+            </footer>
+		</div>
+	</body>
+</html>

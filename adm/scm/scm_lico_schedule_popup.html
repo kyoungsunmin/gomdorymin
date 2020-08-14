@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>NHmall</title>
+		<meta name="description" content="NHmall">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="../img/logo_favicon.ico">
+		<link rel="apple-touch-icon" href="../img/logo_favicon.ico">
+		
+		<link href="../../css/reset.css" type="text/css" rel="stylesheet">
+		<link href="../../css/font.css" type="text/css" rel="stylesheet">
+		<link href="../../css/adm.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="../../js/jquery-1.11.1.min.js"></script>
+		<script src="../../js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="../../js/jquery-migrate-1.4.1.min.js"></script>
+		<script src="../../js/function.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap">            
+            <div class="content_popup_wrap">                
+                <!-- content -->
+                <div class="content_popup_area much_popup_area">                    
+                    <div class="content_main">
+                    	<!-- 콘텐츠 타이틀 start -->
+                    	<div class="content_header cf">
+							<div class="content_header_txt">
+								<p class="tit">
+									공급사 수수료 일정 등록
+								</p>
+							</div>
+						</div>
+                       
+                    	<!-- 콘텐츠 타이틀 end -->
+                    	
+                    	<form id="" name="" method="" action="">
+							<!-- 콘텐츠 테이블 start -->
+							<section class="content_main_item">
+								<div class="content_table_top cf">
+                                	<p class="content_table_tit m_r_20">기본정보</p>
+                                	<div class="content_table_explain">
+                                        <span class="content_explain">공급사별 하루 하나의 수수료 일정만 등록 가능합니다.</span>
+                                    </div>
+								</div>
+								
+								<div class="content_table_area">
+								    <table class="content_table content_table_col4">
+                                        <colgroup>
+                                            <col class="th00" width="10%">
+                                            <col class="th01">
+                                            <col class="th02" width="10%">
+                                            <col class="th03">
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <th class="th00">공급사</th>
+                                            <td class="th01" colspan="3">
+                                            <div class="content_btn_sel_area">
+                                                <input type="text" class="content_text content_btn_sel_name" placeholder="공급사를 선택해주세요." disabled="">
+                                                <button type="button" class="content_btn">공급사 선택</button>
+                                            </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th00">판매수수료</th>
+                                            <td class="th01 input_td">
+                                            </td>
+                                            <th class="th02">배송비수수료</th>
+                                            <td class="th03 input_td">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th00">기간설정</th>
+                                            <td class="th01" colspan="3">
+                                                <div class="content_chk_area">
+													<input type="checkbox" name="" value="" id="chk">
+													<label for="chk">저장 시 바로 적용</label>
+												</div><br>
+                                               <div class="date_box">
+                                                    <span>종료일</span>
+                                                    <span class="input-date">
+                                                        <input type="text" id="st_date" name="st_date" class="calendar" value="">
+                                                        <img class="" src="../img/calendar_icon.png" alt="Select date" title="Select date">
+                                                    </span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+								</div>
+							</section>
+							<!-- 콘텐츠 테이블 end -->
+							
+							<!-- 콘텐츠 테이블 start -->
+							<section class="content_main_item">
+								<div class="content_table_top cf">
+                                	<p class="content_table_tit">상품 조건 설정</p>
+								</div>
+								
+								<div class="content_table_area">
+									<table class="content_table content_table_col4">
+										<colgroup>
+											<col class="th00" width="10%">
+											<col class="th01">
+										</colgroup>
+										<tr>
+											<th class="th00">적용 상품 선택</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_radio_area">
+													<input type="radio" name="radio_name" value="" id="select_radio_name1" checked="">
+													<label for="select_radio_name1">전체 상품</label>
+												</div>
+                                               <div class="content_radio_area">
+													<input type="radio" name="radio_name" value="" id="select_radio_name2">
+													<label for="select_radio_name2">특정 상품</label>
+												</div>
+                                               <div class="content_radio_area">
+													<input type="radio" name="radio_name" value="" id="select_radio_name3">
+													<label for="select_radio_name3">특정 브랜드</label>
+												</div>
+                                               <div class="content_radio_area">
+													<input type="radio" name="radio_name" value="" id="select_radio_name4">
+													<label for="select_radio_name4">특정 쿠폰</label>
+												</div>
+                                               <div class="content_radio_area">
+													<input type="radio" name="radio_name" value="" id="select_radio_name5">
+													<label for="select_radio_name5">특정 회원등급</label>
+												</div>
+											</td>
+										</tr>
+									</table>
+									
+									<div class="m_t_20">
+									    <table class="content_table content_table_col4">
+										<colgroup>
+											<col class="th00" width="10%">
+											<col class="th01">
+										</colgroup>
+										<tr>
+											<th class="th00">전체 상품</th>
+											<td class="th01 input_td" colspan="3">
+												<div class="content_table_explain">
+                                                    <p class="content_explain">
+                                                        전체 상품에 대해서 기본 정보에 설정된 기간동안 선택된 수수료를 적용하게 됩니다.
+                                                   </p>
+                                                    <p class="content_explain">
+                                                        단, 예외조건에 해당하는 상품은 상품에 설정된 수수료 / 배송비는 공급사의 기본 수수료가 적용됩니다.
+                                                    </p>
+                                                </div>
+											</td>
+										</tr>
+									</table>
+									</div>
+								</div>
+							</section>
+							<!-- 콘텐츠 테이블 end -->
+							
+							<!-- 콘텐츠 테이블 start -->
+							<section class="content_main_item">
+								<div class="content_table_top cf">
+                                	<p class="content_table_tit">예외 조건 설정</p>
+								</div>
+								
+								<div class="content_table_area">
+									<table class="content_table content_table_col2">
+										<colgroup>
+											<col class="th00">
+											<col class="th01">
+										</colgroup>
+										<tr>
+											<th class="th00">예외 조건</th>
+											<td class="th01 input_td">
+											    <div class="content_chk_area">
+													<input type="checkbox" name="" value="" id="chk2">
+													<label for="chk2">예외 상품</label>
+												</div>
+											    <div class="content_chk_area">
+													<input type="checkbox" name="" value="" id="chk3">
+													<label for="chk3">예외 브랜드</label>
+												</div>
+											    <div class="content_chk_area">
+													<input type="checkbox" name="" value="" id="chk4">
+													<label for="chk4">예외 쿠폰</label>
+												</div>
+											    <div class="content_chk_area">
+													<input type="checkbox" name="" value="" id="chk5">
+													<label for="chk5">예외 회원등급</label>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</section>
+							<!-- 콘텐츠 테이블 end -->
+							
+							<!-- 팝업 버튼 start -->
+							<div class="content_popup_btn">
+								<input type="submit" class="btn" value="저장">
+								<input type="button" class="btn2" value="다시작성">
+								<input type="button" class="btn2" value="닫기" onclick="window.close();">
+							</div>
+							<!-- 팝업 버튼 end -->
+						</form>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</body>
+</html>

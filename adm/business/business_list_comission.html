@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>NHmall</title>
+		<meta name="description" content="NHmall">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="../img/logo_favicon.ico">
+		<link rel="apple-touch-icon" href="../img/logo_favicon.ico">
+		
+		<link href="../../css/reset.css" type="text/css" rel="stylesheet">
+		<link href="../../css/font.css" type="text/css" rel="stylesheet">
+		<link href="../../css/adm.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="../../js/jquery-1.11.1.min.js"></script>
+		<script src="../../js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="../../js/jquery-migrate-1.4.1.min.js"></script>
+		<script src="../../js/function.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap">
+            <!-- header -->
+            <header class="header">
+                <h1 class="not_view">header</h1>
+                
+                <div class="header_top cf">
+                    <div class="top_logo">
+                        <a href="../index.html"><img src="../img/top_logo.png" alt="top_logo"></a>
+                    </div>
+                    
+                    <ul class="top_menu cf">
+                        <li class="top_menu_item">
+                            <!-- top_menu_drop 클래스 안의 top_menu_drop_tit 클릭시 top_menu_drop_area 보이기/숨기기 -->
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">전체관리자(poirao)</p>
+                                <div class="top_menu_drop_area">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    운영자정보
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    로그아웃
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" onclick="openLayer('topBell');"><img src="../img/top_bell_icon.png" alt="top_bell_icon" class="top_bell"></a>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+                                    <img src="../img/top_new_icon.png" alt="top_new_icon" class="top_new">
+                                    주문현황
+                                    <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                                </p>
+                                <div class="top_menu_drop_area top_gray_tit">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li class="tit">
+                                            <div class="left_item">
+                                                주문상태설정
+                                            </div>
+                                            <div class="right_item">
+                                                <a href="javascript:void(0);" onclick="openLayer('topOrder');"><img src="../img/top_setting_icon.png" alt="top_setting_icon"></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    입금대기
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    결제완료
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    상품준비중
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    배송중
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    배송완료
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    반품접수
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    교환접수
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    환불접수
+                                                </div>
+                                                <div class="right_item">
+                                                    <span>0</span> 건
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+                                    자주쓰는메뉴
+                                    <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                                </p>
+                                <div class="top_menu_drop_area top_gray_tit">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li class="tit">
+                                            <div class="left_item">
+                                                메뉴설정
+                                            </div>
+                                            <div class="right_item">
+                                                <a href="javascript:void(0);" onclick="openLayer('topMenu');"><img src="../img/top_setting_icon.png" alt="top_setting_icon"></a>
+                                            </div>
+                                        </li>
+                                        <li class="empty">
+                                            <div class="center_item">
+                                                자주쓰는 메뉴를<br>설정해주세요.
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+                                    더보기
+                                    <img src="../img/top_down_arrow.png" alt="top_down_arrow" class="top_down">
+                                </p>
+                                <div class="top_menu_drop_area">
+                                    <ul class="top_menu_drop_list cf">
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    마이HN
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    메뉴얼
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="cf">
+                                                <div class="left_item">
+                                                    사이트맵
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_search">
+                                <form id="" name="" method="" action="" class="cf">
+                                    <input type="text" name="" class="top_search_input" placeholder="메뉴검색">
+                                    <input type="submit" class="top_search_btn">
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- nav -->
+                <nav class="nav">
+                    <h2 class="not_view">nav</h2>
+                    
+                    <ul class="nav_list cf">
+                        <li>
+                            <a href="../basic/basic_mall_list.html">기본설정</a>
+                        </li>
+                        <li>
+                            <a href="../goods/goods_goods_list.html">상품관리</a>
+                        </li>
+                        <li>
+                            <a href="../goods_interlock/goods_interlock_group_list.html">상품연동관리</a>
+                        </li>
+                        <li>
+                            <a href="../order/order_auto_collect.html">주문/배송관리</a>
+                        </li>
+                        <li class="active">
+                            <a href="../business/business_list.html">입점업체관리</a>
+                        </li>
+                        <li>
+                            <a href="../scm/scm_list.html">공급사관리</a>
+                        </li>
+                        <li>
+                            <a href="../claim/claim_inquiry_collect.html">CS/클레임관리</a>
+                        </li>
+                        <li>
+                            <a href="../calculation/calculation_master.html">정산관리</a>
+                        </li>
+                        <li>
+                            <a href="../inventory/inventory_stock_code.html">재고관리</a>
+                        </li>
+                        <li>
+                            <a href="../statistics/statistics_daily.html">통계관리</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+			
+            <div class="fk_header"></div>
+            
+            <div class="content_wrap cf">
+                <!-- aside -->
+                <aside class="aside">
+                    <h1 class="not_view">aside</h1>
+                    
+                    <div class="aside_top">
+                        <img src="../img/business_menu_icon.png" alt="basic_menu_icon">
+                        <p>입점업체관리</p>
+                    </div>
+                    
+                    <ul class="aside_list cf">
+                        <li>
+							<p class="aside_list_tit on">입점업체 관리</p>
+							<ul class="aside_sub_list cf">
+								<li>
+									<a href="business_list.html">입점업체 관리</a>
+								</li>
+								<li>
+									<a href="business_list_board.html">입점업체 게시글 관리</a>
+								</li>
+								<li class="active">
+									<a href="business_list_comission.html">입점업체 수수료 관리</a>
+								</li>
+							</ul>
+						</li>
+                        <li>
+							<p class="aside_list_tit on">입점업체 상품 관리</p>
+							<ul class="aside_sub_list cf">
+								<li>
+									<a href="business_product_apply.html">상품 승인 관리</a>
+								</li>
+								<li>
+									<a href="business_product_add.html">추가 상품 승인 관리</a>
+								</li>
+							</ul>
+						</li>
+                        <li>
+							<p class="aside_list_tit on">입점업체 정산 관리</p>
+							<ul class="aside_sub_list cf">
+								<li>
+									<a href="business_adjust_total.html">통합 정산 관리</a>
+								</li>
+								<li>
+									<a href="business_adjust_list.html">정산관리</a>
+								</li>
+								<li>
+									<a href="business_adjust_manual.html">수기 정산 요청</a>
+								</li>
+								<li>
+									<a href="business_adjust_order.html">주문 상품 정산 요청</a>
+								</li>
+								<li>
+									<a href="business_adjust_delivery.html">배송비 정산 요청</a>
+								</li>
+							</ul>
+						</li>
+                        <li>
+							<p class="aside_list_tit on">정산 후 환불</p>
+							<ul class="aside_sub_list cf">
+								<li>
+									<a href="business_after_order.html">정산 후 주문 상품 환불 정산</a>
+								</li>
+								<li>
+									<a href="business_after_delivery.html">정산 후 배송비 환불 정산</a>
+								</li>
+							</ul>
+						</li>
+                        <li>
+							<p class="aside_list_tit on">세금계산서</p>
+							<ul class="aside_sub_list cf">
+								<li>
+									<a href="business_tax_list.html">발행 내역 리스트</a>
+								</li>
+								<li>
+									<a href="business_tax_commission.html">수수료 계산서 발급 관리</a>
+								</li>
+							</ul>
+						</li>
+                    </ul>
+                </aside>
+                
+                <!-- content -->
+                <div class="content_area">
+                    <div class="content_top">
+                        입점업체관리 &gt; 입점업체관리 &gt; 입점업체 수수료 관리
+                    </div>
+                    
+                    <div class="content_main">
+                        <!-- 콘텐츠 타이틀 start -->
+						<div class="content_header cf">
+							<div class="content_header_txt">
+								<p class="tit">
+									입점업체 수수료 관리
+								</p>
+							</div>
+							<div class="content_header_btn">
+								<input type="button" class="btn2" value="일정 등록" onclick="window.open('business_lico_schedule_popup.html','','width=1320,height=800,top=50,left=50,resizable=no,scrollbars=yes'); return false;">
+							</div>
+						</div>
+						<!-- 콘텐츠 타이틀 end -->
+                    	
+                    	<form name="" method="" action="">
+                    		<!-- 검색 테이블 start -->
+							<div class="content_search_area">
+								<!-- 콘텐츠 테이블 start -->
+								<section class="content_main_item">
+									<div class="content_table_area">
+										<table class="content_table content_table_col2">
+										    <colgroup>
+                                                <col class="th00" width="10%">
+                                                <col class="th01">
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th class="th00">검색어</th>
+                                                <td class="th01">
+                                                    <input type="text" name="search_str" value="" placeholder="입점업체 명을 입력해주세요." size="25" class="content_text">
+                                                    <button type="button" class="content_btn">입점업체 선택</button>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+										</table>
+									</div>
+
+									<div class="search_btn_area">
+										<input type="submit" class="search_btn" value="검색">
+									</div>
+								</section>
+								<!-- 콘텐츠 테이블 end -->
+							</div>
+							<!-- 검색 테이블 end -->
+						</form>
+                    	
+                    	<!-- 콘텐츠 리스트 테이블 start -->
+						<section class="content_main_item">
+
+							<!-- 달력 start -->
+							
+							<!-- 달력 end -->
+							
+							<div class="content_list_table_footer">
+							    <div class="content_table_explain">
+                                    <p class="content_explain">
+                                        입점업체 일정 등록 시 판매수수료와 배송비수수료를 개별로 설정한 경우 판매수수료와 배송비수수료가 “/(슬래시)”로 구분되어 표기됩니다. (10.00 / 10.00)<br>
+                                        &nbsp;배송비수수료가 “판매수수료 동일 적용“으로 설정된 경우 판매수수료 기준으로 한번만 표기됩니다. (10.00)<br>
+                                        &nbsp;입점업체 수수료 일정이 종료되면 상품에 등록된 수수료가 적용되며, 추가상품은 수수료 일정과 상관없이 상품에 등록된 수수료가 적용됩니다.
+                                   </p>
+                                </div>
+							</div>
+							
+						</section>
+						<!-- 콘텐츠 리스트 테이블 end -->
+                    </div>
+                </div>
+            </div>
+           
+            <!-- footer -->
+            <footer class="footer">
+                <h1 class="not_view">footer</h1>
+                
+                <p>© HN : Corp All Rights Reserved.</p>
+            </footer>
+		</div>
+	</body>
+</html>
