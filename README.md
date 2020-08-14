@@ -42,11 +42,11 @@
 3. 주문서 수동 등록 (엑셀) : order_excel_register
 4. 주문서 확인/처리 : order_confirm_process
 5. 주문서 수정/복사 : order_modify_copy
-6. 송장 등록 (화면) : 
-7. 송장 등록 (엑셀) : 
-8. 바코드 리딩 : 
-9. 바코드 리딩 취소 : 
-10. 송장 송신 관리 : 
+6. 송장 등록 (화면) : order_invoice_register
+7. 송장 등록 (엑셀) : order_invoice_excel
+8. 바코드 리딩 : order_barcode_reading
+9. 바코드 리딩 취소 : order_barcode_cancel
+10. 송장 송신 관리 : order_invoice_transmission
 11. 정산확정관리 : order_complete
 12. 옵션 매칭 이력 관리 : order_stock
 13. 옵션별 판매 현황 : order_option
