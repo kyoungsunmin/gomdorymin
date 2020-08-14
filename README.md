@@ -37,12 +37,22 @@
 8. 쇼핑몰 공지사항 : goods_interlock_notice_list
 
 - 주문배송관리
-정산확정관리 : order_complete
-옵션 매칭 이력 관리 : order_stock
-옵션별 판매 현황 : order_option
-쇼핑몰별 배송 상태 조회 : order_delivery_mall
-매입처별 배송 상태 조회 : order_delivery_partner
-주문조회 : order_check
+1. 주문서 자동수집 관리 : 
+2. 주문서 수동 등록 (화면) : 
+3. 주문서 수동 등록 (엑셀) : 
+4. 주문서 확인/처리 : 
+5. 주문서 수정/복사 : 
+6. 송장 등록 (화면) : 
+7. 송장 등록 (엑셀) : 
+8. 바코드 리딩 : 
+9. 바코드 리딩 취소 : 
+10. 송장 송신 관리 : 
+11. 정산확정관리 : order_complete
+12. 옵션 매칭 이력 관리 : order_stock
+13. 옵션별 판매 현황 : order_option
+14. 쇼핑몰별 배송 상태 조회 : order_delivery_mall
+15. 매입처별 배송 상태 조회 : order_delivery_partner
+16. 주문조회 : order_check
 
 - 입점업체관리
 1. 입점업체 관리 : business_list
