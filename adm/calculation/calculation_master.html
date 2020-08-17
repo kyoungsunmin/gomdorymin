@@ -466,25 +466,27 @@
                                     <tr>
                                         <th class="th00" scope="row">선택사항</th>
                                         <td class="th01" colspan="5">
-                                            <select class="content_select" name="">
-                                                <option value="">매입정산</option>
-                                                <option value="">일정산</option>
-                                                <option value="">주정산</option>
-                                                <option value="">보름정산</option>
-                                                <option value="">월정산</option>
-                                            </select>
-                                            <select class="content_select" name="">
-                                                <option value="" selected="">확정여부</option>
-                                                <option value="">확정</option>
-                                                <option value="">미확정</option>
-                                            </select>
+                                            <div class="content_search">
+												<select class="content_select" name="">
+													<option value="">매입정산</option>
+													<option value="">일정산</option>
+													<option value="">주정산</option>
+													<option value="">보름정산</option>
+													<option value="">월정산</option>
+												</select>
+												<select class="content_select" name="">
+													<option value="" selected="">확정여부</option>
+													<option value="">확정</option>
+													<option value="">미확정</option>
+												</select>
 
-                                            <select class="content_select" name="">
-                                                <option value="" selected="">계산서수취여부</option>
-                                                <option value="">계산서수취</option>
-                                                <option value="">계산서미수취</option>
-                                            </select>
-                                            <button class="content_btn">매입정산 마스터 생성처리</button>
+												<select class="content_select" name="">
+													<option value="" selected="">계산서수취여부</option>
+													<option value="">계산서수취</option>
+													<option value="">계산서미수취</option>
+												</select>
+												<button class="content_btn">매입정산 마스터 생성처리</button>
+											</div>
                                         </td>
                                     </tr>
                                     </tbody>
@@ -506,9 +508,9 @@
                 <!-- 콘텐츠 리스트 테이블 start -->
                 <section class="content_main_item">
                     <div class="content_list_table_header cf">
-                        <div class="txt_data">
-                            <p>자료수: <span>0</span> 건</p>
-                        </div>
+                        <div class="content_left_txt">
+							자료수: <span>0</span> 건
+						</div>
                     </div>
 
                     <div class="content_list_table_area">
@@ -525,7 +527,7 @@
                             <col class="th08">
                             <col class="th09">
                         </colgroup>
-                        <thead>
+                        <thead class="thead">
                             <tr>
                                 <th class="th00" scope="col">No.</th>
                                 <th class="th01" scope="col"><div class="content_chk_area"><input type="checkbox" name="" value="" id="all_chk"><label for="all_chk"></label></div></th>
@@ -539,7 +541,7 @@
                                 <th class="th09" scope="col">테이블3</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="tbody">
                             <tr>
                                 <td class="th00">1</td>
                                 <td class="th01"><div class="content_chk_area"><input type="checkbox" name="" value="" id="chk"><label for="chk"></label></div></td>

@@ -358,23 +358,29 @@
                                         <tr>
                                             <th class="th00" scope="row">검색기간</th>
                                             <td class="th01">
-                                                <select class="content_select" name="">
-                                                    <option value="배송(반품)완료일">배송(반품)완료일</option>
+                                                <select name="" class="content_select">
+													<option value="배송(반품)완료일">배송(반품)완료일</option>
                                                     <option value="주문수집일">주문수집일</option>
-                                                </select>
-                                                
-                                                <div class="date_box">
-                                                    <span class="input-date">
-                                                        <input type="text" id="st_date" name="st_date" class="calendar" value="2020-08-03">
-                                                        <img class="" src="../img/calendar_icon.png" alt="Select date" title="Select date">
-                                                    </span>
-                                                    <p>~</p>
-                                                    <span class="input-date">
-                                                      <input type="text" id="la_date" name="la_date" class="calendar" value="2020-08-04">
-                                                      <img class="" src="../img/calendar_icon.png" alt="Select date" title="Select date">
-                                                    </span>
-                                                </div>
-                                                <input type="button" name="" id="" class="content_btn" value="전월">
+												</select>
+												<div class="content_number">
+													<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+													<div class="content_calendar">
+														<input type="text" name="" class="content_text">
+														<span class="content_calendar_btn"></span>
+													</div>
+													<span class="m5">~</span>
+													<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+													<div class="content_calendar">
+														<input type="text" name="" class="content_text">
+														<span class="content_calendar_btn"></span>
+													</div>
+													<ul class="content_date_range cf">
+														<li class="active">
+															<input type="radio" name="radio_date1" value="" id="select_radio_date11" checked>
+															<label for="select_radio_date11">전월</label>
+														</li>
+													</ul>
+												</div>
                                             </td>
                                             <th class="th02" scope="row">자료수</th>
                                             <td class="th03">
@@ -414,9 +420,9 @@
         <!-- 콘텐츠 리스트 테이블 start -->
         <section class="content_main_item">
             <div class="content_list_table_header cf">
-                <div class="txt_data">
-                    <p>자료수: <span>0</span> 건</p>
-                </div>
+                <div class="content_left_txt">
+					자료수: <span>0</span> 건
+				</div>
                 <div class="content_right_select">
                     <button type="button" class="content_btn">매입정산 마스터 선택</button>
                     <button type="button" class="content_btn">매입정산 마스터 반영처리</button>
@@ -443,7 +449,7 @@
                         <col class="th12">
                         <col class="th13">
                     </colgroup>
-                    <thead>
+                    <thead class="thead">
                         <tr>
                             <th class="th00" scope="col">No.</th>
                             <th class="th01" scope="col"><div class="content_chk_area"><input type="checkbox" name="" value="" id="all_chk"><label for="all_chk"></label></div></th>
@@ -461,7 +467,7 @@
                             <th class="th13" scope="col">정산반영</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="tbody">
                         <tr>
                             <td class="th00">1</td>
                             <td class="th01"><div class="content_chk_area"><input type="checkbox" name="" value="" id="chk"><label for="chk"></label></div></td>

@@ -475,21 +475,23 @@
                                             </td>
                                             <th class="th02" scope="row">검색항목</th>
                                             <td class="th03" colspan="5">
-                                                <select class="content_select" name="">
-                                                    <option value="주문자명">주문자명</option>
-                                                    <option value="주문자ID">주문자ID</option>
-                                                    <option value="수취인명">수취인명</option>
-                                                    <option value="핸드폰번호">핸드폰번호</option>
-                                                    <option value="송장번호">송장번호</option>
-                                                    <option value="쇼핑몰 주문번호">쇼핑몰 주문번호</option>
-                                                    <option value="쇼핑몰 아이디">쇼핑몰 아이디</option>
-                                                    <option value="쇼핑몰 상품번호">쇼핑몰 상품번호</option>
-                                                    <option value="고객사상품코드">고객사상품코드</option>
-                                                    <option value="상품명">상품명</option>
-                                                    <option value="쇼핑몰명">쇼핑몰명</option>
-                                                    <option value="주문배송정보">주문배송정보</option>
-                                                </select>
-                                                <input class="content_text" type="text" name="search_str" value="">
+                                                <div class="content_search">
+													<select class="content_select" name="">
+														<option value="주문자명">주문자명</option>
+														<option value="주문자ID">주문자ID</option>
+														<option value="수취인명">수취인명</option>
+														<option value="핸드폰번호">핸드폰번호</option>
+														<option value="송장번호">송장번호</option>
+														<option value="쇼핑몰 주문번호">쇼핑몰 주문번호</option>
+														<option value="쇼핑몰 아이디">쇼핑몰 아이디</option>
+														<option value="쇼핑몰 상품번호">쇼핑몰 상품번호</option>
+														<option value="고객사상품코드">고객사상품코드</option>
+														<option value="상품명">상품명</option>
+														<option value="쇼핑몰명">쇼핑몰명</option>
+														<option value="주문배송정보">주문배송정보</option>
+													</select>
+													<input class="content_text" type="text" name="search_str" value="">
+												</div>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -508,18 +510,18 @@
         <!-- 콘텐츠 리스트 테이블 start -->
         <section class="content_main_item">
             <div class="content_list_table_header cf">
-                <div class="txt_data">
-                    <p>자료수: <span>0</span> 건</p>
-                    <div>
-                        <select class="content_select" name="" id="">
-                            <option value="">엑셀출력범위</option>
-                            <option value="">선택 내용만</option>
-                            <option value="">현재 페이지만</option>
-                            <option value="">전체 자료</option>
-                        </select>
-                        <input type="button" name="" id="" value="Excel 저장" class="content_btn">
-                    </div>
-                </div>
+                <div class="content_left_txt">
+					자료수: <span>0</span> 건
+				</div>
+				<div class="content_right_select">
+					<select class="content_select" name="" id="">
+						<option value="">엑셀출력범위</option>
+						<option value="">선택 내용만</option>
+						<option value="">현재 페이지만</option>
+						<option value="">전체 자료</option>
+					</select>
+					<input type="button" name="" id="" value="Excel 저장" class="content_btn">
+				</div>
             </div>
             
             <div class="content_list_table_area">
@@ -542,7 +544,7 @@
                         <col class="th14" width="6%">
                         <col class="th15" width="5%">
                     </colgroup>
-                    <thead>
+                    <thead class="thead">
                         <tr>
                             <th class="th00" scope="col">No.</th>
                             <th class="th01" scope="col"><div class="content_chk_area"><input type="checkbox" name="" value="" id="all_chk"><label for="all_chk"></label></div></th>
@@ -562,7 +564,7 @@
                             <th class="th15" scope="col">쇼핑몰명<br>연동ID</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="tbody">
                         <tr>
                             <td class="th00">1</td>
                             <td class="th01"><div class="content_chk_area"><input type="checkbox" name="" value="" id="chk"><label for="chk"></label></div></td>
