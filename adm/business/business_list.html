@@ -397,14 +397,16 @@
                                             <tr>
                                                 <th class="th00">검색어</th>
                                                 <td class="th01">
-                                                    <select class="content_select " id="" name="">
-                                                        <option value="통합검색">통합검색</option>
-                                                        <option value="입점업체명">입점업체명</option>
-                                                        <option value="입점업체코드">입점업체코드</option>
-                                                        <option value="사업자등록번호">사업자등록번호</option>
-                                                        <option value="대표자">대표자</option>
-                                                    </select>  
-                                                    <input type="text" name="search_str" value="" size="25" class="content_text">
+                                                    <div class="content_search">
+														<select class="content_select " id="" name="">
+															<option value="통합검색">통합검색</option>
+															<option value="입점업체명">입점업체명</option>
+															<option value="입점업체코드">입점업체코드</option>
+															<option value="사업자등록번호">사업자등록번호</option>
+															<option value="대표자">대표자</option>
+														</select>  
+														<input type="text" name="search_str" value="" size="25" class="content_text">
+													</div>
                                                 </td>
                                                 <th class="th02">상태</th>
                                                 <td class="th03">
@@ -562,9 +564,9 @@
                                 </div>
 							</div>
 							
-							<!-- 페이징 -->
-							<div class="pager">
-							    <ul class="pager_ul">
+							<!-- 페이징 start -->
+							<div class="content_page_list_area pager">
+								<ul class="pager_ul">
                                    <li class="pager_li pager_first">«</li>
                                    <li class="pager_li pager_prev">‹</li>
                                     <li class="pager_li active">1</li>
@@ -581,6 +583,7 @@
                                     <li class="pager_li pager_last">»</li>
                                 </ul>
 							</div>
+							<!-- 페이징 end -->
 							
 						</section>
 						<!-- 콘텐츠 리스트 테이블 end -->

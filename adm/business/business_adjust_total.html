@@ -412,26 +412,44 @@
                                             <tr>
                                                 <th class="th00">기간검색</th>
                                                 <td class="th01" colspan="3">
-                                                    <div class="date_box">
-                                                        <span class="input-date">
-                                                            <input type="text" id="st_date" name="st_date" class="calendar" value="2020-08-03">
-                                                            <img class="" src="../img/calendar_icon.png" alt="Select date" title="Select date">
-                                                        </span>
-                                                        <p>~</p>
-                                                        <span class="input-date">
-                                                          <input type="text" id="la_date" name="la_date" class="calendar" value="2020-08-04">
-                                                          <img class="" src="../img/calendar_icon.png" alt="Select date" title="Select date">
-                                                        </span>
-                                                    </div>
-
-                                                    <input type="button" name="" id="" class="content_btn" value="오늘">
-                                                    <input type="button" name="" id="" class="content_btn" value="7일">
-                                                    <input type="button" name="" id="" class="content_btn" value="15일">
-                                                    <input type="button" name="" id="" class="content_btn" value="1개월">
-                                                    <input type="button" name="" id="" class="content_btn" value="3개월">
-                                                    <input type="button" name="" id="" class="content_btn" value="전체">
+                                                    <div class="content_number">
+														<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+														<div class="content_calendar">
+															<input type="text" name="" class="content_text">
+															<span class="content_calendar_btn"></span>
+														</div>
+														<span class="m5">~</span>
+														<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+														<div class="content_calendar">
+															<input type="text" name="" class="content_text">
+															<span class="content_calendar_btn"></span>
+														</div>
+														<ul class="content_date_range cf">
+															<li class="active">
+																<input type="radio" name="radio_date1" value="" id="select_radio_date11" checked>
+																<label for="select_radio_date11">오늘</label>
+															</li>
+															<li>
+																<input type="radio" name="radio_date1" value="" id="select_radio_date12">
+																<label for="select_radio_date12">1개월</label>
+															</li>
+															<li>
+																<input type="radio" name="radio_date1" value="" id="select_radio_date13">
+																<label for="select_radio_date13">3개월</label>
+															</li>
+															<li>
+																<input type="radio" name="radio_date1" value="" id="select_radio_date14">
+																<label for="select_radio_date14">6개월</label>
+															</li>
+															<li>
+																<input type="radio" name="radio_date1" value="" id="select_radio_date15">
+																<label for="select_radio_date15">1년</label>
+															</li>
+														</ul>
+													</div>
                                                 </td>
                                             </tr>
+											</tbody>
 										</table>
 									</div>
 
