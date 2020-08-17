@@ -369,74 +369,97 @@
                                         <tr>
                                             <th class="th00">일자</th>
                                             <td class="th01 input_td">
-                                                <select name="" class="content_select sel_small">
-                                                    <option value="" selected="">등록일</option>
-                                                </select>
-                                              
-                                               <div class="date_box">
-                                                    <span class="input-date">
-                                                        <input type="text" id="st_date" name="st_date" class="calendar" value="2020-08-03">
-                                                        <img class="" src="../img/calendar_icon.png" alt="Select date" title="Select date">
-                                                    </span>
-                                                    <p>~</p>
-                                                    <span class="input-date">
-                                                      <input type="text" id="la_date" name="la_date" class="calendar" value="2020-08-04">
-                                                      <img class="" src="../img/calendar_icon.png" alt="Select date" title="Select date">
-                                                    </span>
-                                                </div>
-                                                
-                                                <input type="button" name="" id="" class="content_btn" value="오늘">
-                                                <input type="button" name="" id="" class="content_btn" value="이번달">
-                                                <input type="button" name="" id="" class="content_btn" value="3개월">
-                                                <input type="button" name="" id="" class="content_btn" value="6개월">
-                                                <input type="button" name="" id="" class="content_btn" value="1년">
+                                                <div class="content_search">
+													<select name="" class="content_select sel_small">
+														<option value="" selected="">등록일</option>
+													</select>
+													<div class="content_number">
+														<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+														<div class="content_calendar">
+															<input type="text" name="" class="content_text">
+															<span class="content_calendar_btn"></span>
+														</div>
+														<span class="m5">~</span>
+														<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+														<div class="content_calendar">
+															<input type="text" name="" class="content_text">
+															<span class="content_calendar_btn"></span>
+														</div>
+														<ul class="content_date_range cf">
+															<li class="active">
+																<input type="radio" name="radio_date1" value="" id="select_radio_date11" checked>
+																<label for="select_radio_date11">오늘</label>
+															</li>
+															<li>
+																<input type="radio" name="radio_date1" value="" id="select_radio_date12">
+																<label for="select_radio_date12">1개월</label>
+															</li>
+															<li>
+																<input type="radio" name="radio_date1" value="" id="select_radio_date13">
+																<label for="select_radio_date13">3개월</label>
+															</li>
+															<li>
+																<input type="radio" name="radio_date1" value="" id="select_radio_date14">
+																<label for="select_radio_date14">6개월</label>
+															</li>
+															<li>
+																<input type="radio" name="radio_date1" value="" id="select_radio_date15">
+																<label for="select_radio_date15">1년</label>
+															</li>
+														</ul>
+													</div>
+												</div>
                                             </td>
                                             <th class="th02">정렬순서</th>
                                             <td class="th03 input_td">
-                                                <select class="content_select sel_small" name="" id="">
-                                                    <option value="">자료출력수</option>
-                                                    <option value="25" selected="">25</option>
-                                                    <option value="50">50</option>
-                                                    <option value="100">100</option>
-                                                    <option value="200">200</option>
-                                                    <option value="500">500</option>
-                                                    <option value="1000">1000</option>
-                                                </select>
-                                                <select class="content_select sel_small" name="" id="">
-                                                    <option value="상품ID">상품ID</option>
-                                                </select>
-                                                <select class="content_select sel_small" name="" id="">
-                                                    <option value="desc">내림차순</option>
-                                                    <option value="asc">오름차순</option>
-                                                </select>
+                                                <div class="content_search">
+													<select class="content_select sel_small" name="" id="">
+														<option value="">자료출력수</option>
+														<option value="25" selected="">25</option>
+														<option value="50">50</option>
+														<option value="100">100</option>
+														<option value="200">200</option>
+														<option value="500">500</option>
+														<option value="1000">1000</option>
+													</select>
+													<select class="content_select sel_small" name="" id="">
+														<option value="상품ID">상품ID</option>
+													</select>
+													<select class="content_select sel_small" name="" id="">
+														<option value="desc">내림차순</option>
+														<option value="asc">오름차순</option>
+													</select>
+												</div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <th class="th00">선택사항</th>
                                             <td class="th01 input_td">
-                                                <select class="content_select sel_small" name="" id="">
-                                                    <option value="창고">창고</option>
-                                                </select>
-                                                
-                                                <select class="content_select sel_small" name="" id="">
-                                                    <option value="전표상태">전표상태</option>
-                                                </select>
-                                                
-                                                <select class="content_select sel_small" name="" id="">
-                                                    <option value="입고구분">입고구분</option>
-                                                </select>
-                                                
-                                                <select class="content_select sel_small" name="" id="">
-                                                    <option value="매입처(전표)">매입처(전표)</option>
-                                                </select>
-                                                
-                                                <select class="content_select sel_small" name="" id="">
-                                                    <option value="매입처(상품)">매입처(상품)</option>
-                                                </select>
-                                                
-                                                <select class="content_select sel_small" name="" id="">
-                                                    <option value="물류처">물류처</option>
-                                                </select>
+                                                <div class="content_search">
+													<select class="content_select sel_small" name="" id="">
+														<option value="창고">창고</option>
+													</select>
+
+													<select class="content_select sel_small" name="" id="">
+														<option value="전표상태">전표상태</option>
+													</select>
+
+													<select class="content_select sel_small" name="" id="">
+														<option value="입고구분">입고구분</option>
+													</select>
+
+													<select class="content_select sel_small" name="" id="">
+														<option value="매입처(전표)">매입처(전표)</option>
+													</select>
+
+													<select class="content_select sel_small" name="" id="">
+														<option value="매입처(상품)">매입처(상품)</option>
+													</select>
+
+													<select class="content_select sel_small" name="" id="">
+														<option value="물류처">물류처</option>
+													</select>
+												</div>
                                             </td>
                                             <th class="th02">선택검색</th>
                                             <td class="th03 input_td">
@@ -457,12 +480,14 @@
                                         <tr>
                                             <th class="th00">검색항목</th>
                                             <td class="th01 input_td">
-                                                <select class="content_select" name="">
-                                                    <option value="">조건선택</option>
-                                                    <option value="상품명">상품명</option>
-                                                    <option value="모델명">모델명</option>
-                                                </select>
-                                                <input type="text" name="search_str" class="content_text" size="25" value="">
+                                                <div class="content_search">
+													<select class="content_select" name="">
+														<option value="">조건선택</option>
+														<option value="상품명">상품명</option>
+														<option value="모델명">모델명</option>
+													</select>
+													<input type="text" name="search_str" class="content_text" size="25" value="">
+												</div>
                                             </td>
                                             <th class="th02">재고수량</th>
                                             <td class="th03 input_td">
@@ -487,16 +512,16 @@
         <!-- 콘텐츠 리스트 테이블 start -->
         <section class="content_main_item">
             <div class="content_list_table_header cf">
-                <div class="txt_data">
-                    <p>자료수: <span>0</span> 건</p>
-                    <div>
-                       <button type="button" class="content_btn">선택예정입출고반영</button>
-                       <button type="button" class="content_btn">선택예정입출고삭제</button>
-                       <button type="button" class="content_btn">선택입고확정</button>
-                       <button type="button" class="content_btn">선택삭제</button>
-                        <button type="button" class="content_btn add_btn">검색자료</button>
-                    </div>
-                </div>
+                <div class="content_left_txt">
+					자료수: <span>0</span> 건
+				</div>
+				<div class="content_right_select">
+					<button type="button" class="content_btn">선택예정입출고반영</button>
+				    <button type="button" class="content_btn">선택예정입출고삭제</button>
+				    <button type="button" class="content_btn">선택입고확정</button>
+				    <button type="button" class="content_btn">선택삭제</button>
+					<button type="button" class="content_btn add_btn">검색자료</button>
+				</div>
             </div>
             
             <div class="content_list_table_area">
