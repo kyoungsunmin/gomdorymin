@@ -2044,6 +2044,9 @@ footer.footer>p {
 
 /* IE6,7,8 */
 @media \0screen\,screen\9 {
+	.content_main .content_select {
+		padding: 0 30px 0 5px;
+	}
     .content_main .content_chk_area input[type="checkbox"] + label:before {
 		top: 3px;
 	}
@@ -2052,11 +2055,17 @@ footer.footer>p {
 	}
 	.content_main .content_explain .content_btn {
 		padding-left: 25px;
+	}
+	.content_main .content_explain.not_explain .content_btn {
+		padding-left: 10px;
 	}
 }
  
 /* IE9,10 */
 @media screen and (min-width:0\0){
+	.content_main .content_select {
+		padding: 0 30px 0 5px;
+	}
     .content_main .content_chk_area input[type="checkbox"] + label:before {
 		top: 3px;
 	}
@@ -2065,11 +2074,17 @@ footer.footer>p {
 	}
 	.content_main .content_explain .content_btn {
 		padding-left: 25px;
+	}
+	.content_main .content_explain.not_explain .content_btn {
+		padding-left: 10px;
 	}
 } 
 
 /* IE10+ */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.content_main .content_select {
+		padding: 0 30px 0 5px;
+	}
     .content_main .content_chk_area input[type="checkbox"] + label:before {
 		top: 3px;
 	}
@@ -2078,6 +2093,9 @@ footer.footer>p {
 	}
 	.content_main .content_explain .content_btn {
 		padding-left: 25px;
+	}
+	.content_main .content_explain.not_explain .content_btn {
+		padding-left: 10px;
 	}
 }
 
@@ -2720,6 +2738,21 @@ footer.footer>p {
 	margin: 10px auto 0;
 }
 
+/* inventory_stock_code */
+#inventory_stock_code .content_main .content_table .tbody>tr>th + th {
+	border-left: 1px solid #bfbfbf;
+}
+
+/* inventory_stockin_check */
+#inventory_stockin_check .content_main .content_table .tbody>tr>th + th {
+	border-left: 1px solid #bfbfbf;
+}
+
+/* inventory_stockout_order */
+#inventory_stockout_order .content_main .content_table .tbody>tr>th + th {
+	border-left: 1px solid #bfbfbf;
+}
+
 @media screen and (max-width: 1600px) {
     .content_goods_goods_register .goods_img_list>li {
 		/*width: 12.24%;*/
@@ -2977,13 +3010,15 @@ footer.footer>p {
 }
 .date_box .input-date input[type="text"] {
     width: 70px;
+	height: 1.769em;
     border: 0 none;
     text-align: left;
-    line-height: 22px;
+    line-height: 1.769em;
     vertical-align: middle;
     background-color: #fefefe;
     color: #555;
-    font-size: 11px;
+    font-size: 1em;
+	padding: 0 5px;
 }
 .date_box .input-date img{
     margin-bottom:2px;
@@ -3018,9 +3053,12 @@ footer.footer>p {
 #claim_inquiry_collect #inquiry_bottom_btn .bn_w{
     margin-left:10px;
 }
-#claim_inquiry_proc select{
+/*#claim_inquiry_proc select{
     float:left;
     margin-right:5px;
+}*/
+#claim_inquiry_proc .content_main .content_list_table.much_list_table tr th .content_select {
+	margin: 2px auto;
 }
 #claim_inquiry_proc #err_msg_chk + label{
     margin-left: 5px;
