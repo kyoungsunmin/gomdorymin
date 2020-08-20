@@ -1,12 +1,16 @@
 # gomdorymin
 
 - 기본설정
-1. 쇼핑몰 등록 관리 : basic_mall_list
-2. 고객사 카테고리 설정 : basic_client_category
-3. 쇼핑몰 카테고리 매핑 : basic_category_mapping
-4. 입점사 정보 관리 : basic_store_information
-5. 공급사 정보 관리 : basic_supplier_information
-6. 쇼핑몰 SCM 로그인 : basic_scm_login
+1. 쇼핑몰 등록관리 : basic_mall_list
+2. 쇼핑몰 SCM로그인 : basic_scm_login
+3. 쇼핑몰 카테고리 매핑 : basic_client_category
+4. 매입처 관리 : basic_store_information
+5. 매출처 관리 : basic_supplier_information
+6. 상품코드관리 : basic_goods_code
+7. 배송정책 : basic_delivery_policy
+8. 물류센터 관리 : basic_distribution_center
+9. 상품공유 관리 : basic_goods_share
+10. 쇼핑몰 환경설정 : basic_mall_config
 
 - 상품관리
 1. 상품 조회/수정 : goods_goods_list
