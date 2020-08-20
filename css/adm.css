@@ -2614,6 +2614,9 @@ footer.footer>p {
 .content_popup_area.little_much_popup_area {
 	min-width: 900px;
 }
+.content_popup_area.little_much_popup_area2 {
+	min-width: 600px;
+}
 .content_popup_area .content_main {
 	padding: 30px;
 }
