@@ -169,7 +169,7 @@
 								<li>
 									<a href="basic_client_category.html">쇼핑몰 카테고리 매핑</a>
 								</li>
-								<li class="active">
+								<li>
 									<a href="basic_store_information.html">매입처 관리</a>
 								</li>
 								<li>
@@ -181,7 +181,7 @@
 								<li>
 									<a href="basic_delivery_policy.html">배송정책</a>
 								</li>
-								<li>
+								<li class="active">
 									<a href="basic_distribution_center.html">문류센터 관리</a>
 								</li>
 								<li>
@@ -189,7 +189,7 @@
 								</li>
 								<li>
 									<a href="basic_mall_config.html">쇼핑몰 환경설정</a>
-								</li>
+								</li>	
 							</ul>
 						</li>
                     </ul>
@@ -208,7 +208,7 @@
                 <!-- content -->
                 <div class="content_area">
                     <div class="content_top">
-                        기본설정 &gt; 기본설정 &gt; 매입처 관리
+                        기본설정 &gt; 기본설정 &gt; 문류센터 관리
                     </div>
                     
                     <div class="content_main">
@@ -216,7 +216,7 @@
 						<div class="content_header cf">
 							<div class="content_header_txt">
 								<p class="tit">
-									매입처 관리
+									문류센터 관리
 								</p>
 							</div>
 						</div>
@@ -245,29 +245,18 @@
 														</div>
 														<div class="content_radio_area">
 															<input type="radio" name="radio_name1" value="" id="select_radio_name12">
-															<label for="select_radio_name12">대기</label>
+															<label for="select_radio_name12">사용함</label>
 														</div>
 														<div class="content_radio_area">
 															<input type="radio" name="radio_name1" value="" id="select_radio_name13">
-															<label for="select_radio_name13">거래중</label>
-														</div>
-														<div class="content_radio_area">
-															<input type="radio" name="radio_name1" value="" id="select_radio_name14">
-															<label for="select_radio_name14">중지예정</label>
-														</div>
-														<div class="content_radio_area">
-															<input type="radio" name="radio_name1" value="" id="select_radio_name15">
-															<label for="select_radio_name15">거래중지</label>
+															<label for="select_radio_name13">사용안함</label>
 														</div>
 													</td>
 													<th class="th02">정렬순서</th>
 													<td class="th03 input_td">
 														<div class="content_search">
 															<select name="" class="content_select">
-																<option value="매입처명">매입처명</option>
-																<option value="매입처ID">매입처ID</option>
-																<option value="최종접속일">최종접속일</option>
-																<option value="등록일">등록일</option>
+																<option value="가나다순">가나다순</option>
 															</select>
 															<select name="" class="content_select">
 																<option value="asc">오름차순</option>
@@ -286,23 +275,17 @@
 													</td>
 												</tr>
 												<tr>
-													<th class="th00">검색항목</th>
+													<th class="th00">검색조건</th>
 													<td class="th01 input_td" colspan="3">
 														<!-- content_search 클래스는 셀렉트박스 + 텍스트박스로 검색할 때 사용 -->
 														<div class="content_search">
 															<select name="" class="content_select">
 																<option value="">조건선택</option>
-																<option value="매입처명">매입처명</option>
-																<option value="매입처아이디">매입처아이디</option>
-																<option value="MD명">MD명</option>
-																<option value="대표자명">대표자명</option>
-																<option value="사업자등록번호">사업자등록번호</option>
-																<option value="담당자명">담당자명</option>
-																<option value="담당E-Mail">담당E-Mail</option>
-																<option value="주소">주소</option>
 															</select>
 															<input type="text" name="" class="content_text">
 															<input type="submit" class="content_btn search_btn" value="검색">
+															<input type="button" class="content_btn" value="신규등록">
+															<input type="button" class="content_btn" value="대량등록">
 														</div>
 													</td>
 												</tr>
@@ -319,27 +302,33 @@
 							<!-- 콘텐츠 리스트 테이블 start -->
 							<section class="content_main_item">
 								<div class="content_list_table_header cf">
+									<div class="content_left_btn">
+										<select name="" class="content_select">
+											<option value="사용중">사용중</option>
+										</select>
+										<button type="button" class="content_btn">일괄변경</button>
+									</div>
 									<div class="content_right_select">
 										<button type="button" class="content_btn" onclick="window.open('../menuform_popup.html','menuform','width=600,height=600,top=50,left=50,resizable=no,scrollbars=no'); return false;">메뉴구성</button>
-										<button type="button" class="content_btn hd_btn" onclick="window.open('basic_stin_register_popup.html','stin_register','width=1320,height=800,top=50,left=50,resizable=no,scrollbars=yes'); return false;">신규등록</button>
-										<button type="button" class="content_btn">변경</button>
-										<button type="button" class="content_btn">대량수정</button>
+										<button type="button" class="content_btn">엑셀</button>
 									</div>
 								</div>
 
 								<div class="content_list_table_area">
 									<table class="content_list_table">
 										<colgroup>
-											<col class="th00" width="8%">
-											<col class="th01" width="8%">
-											<col class="th02" width="10%">
+											<col class="th00" width="6%">
+											<col class="th01" width="6%">
+											<col class="th02" width="*">
 											<col class="th03" width="8%">
-											<col class="th04" width="10%">
-											<col class="th05" width="10%">
-											<col class="th06" width="*">
-											<col class="th07" width="10%">
+											<col class="th04" width="8%">
+											<col class="th05" width="8%">
+											<col class="th06" width="8%">
+											<col class="th07" width="8%">
 											<col class="th08" width="8%">
 											<col class="th09" width="8%">
+											<col class="th10" width="12%">
+											<col class="th11" width="8%">
 										</colgroup>
 										<thead class="thead">
 											<tr>
@@ -350,14 +339,16 @@
 														<label for="all_chk"></label>
 													</div>
 												</th>
-												<th class="th02">매입처명</th>
+												<th class="th02">물류센터</th>
 												<th class="th03">대표자명</th>
-												<th class="th04">사업자등록번호</th>
-												<th class="th05">매입처ID</th>
-												<th class="th06">주소</th>
-												<th class="th07">업체등록일</th>
-												<th class="th08">거래상태</th>
-												<th class="th09">사용여부</th>
+												<th class="th04">물류처 코드</th>
+												<th class="th05">회사전화</th>
+												<th class="th06">담당자명</th>
+												<th class="th07">이메일 주소</th>
+												<th class="th08">담당자 핸드폰</th>
+												<th class="th09">최초등록일</th>
+												<th class="th10">사용여부</th>
+												<th class="th11">복사</th>
 											</tr>
 										</thead>
 										<tbody class="tbody">
@@ -369,14 +360,23 @@
 														<label for="chk11"></label>
 													</div>
 												</td>
-												<td class="th02 text_left"><a href="javascript:void(0);" onclick="window.open('basic_stin_register_popup.html','stin_register','width=1320,height=800,top=50,left=50,resizable=no,scrollbars=yes'); return false;">SK그룹</a></td>
-												<td class="th03">최태원</td>
-												<td class="th04">111-22-3333</td>
-												<td class="th05">skmagic</td>
-												<td class="th06">Description</td>
-												<td class="th07">YY-XX-DD</td>
-												<td class="th08">거래중</td>
-												<td class="th09">사용중</td>
+												<td class="th02 text_left">SK그룹</td>
+												<td class="th03">일이삼</td>
+												<td class="th04">A000001</td>
+												<td class="th05">02-000-0000</td>
+												<td class="th06">홍길동</td>
+												<td class="th07">a@a.com</td>
+												<td class="th08">010-0000-0000</td>
+												<td class="th09">YY-XX-DD</td>
+												<td class="th10">
+													<select name="" class="content_select">
+														<option value="사용중">사용중</option>
+													</select>
+													<button type="button" class="content_btn">변경</button>
+												</td>
+												<td class="th11">
+													<button type="button" class="content_btn">복사</button>
+												</td>
 											</tr>
 											<tr>
 												<td class="th00">2</td>
@@ -386,14 +386,23 @@
 														<label for="chk12"></label>
 													</div>
 												</td>
-												<td class="th02 text_left"><a href="javascript:void(0);" onclick="window.open('basic_stin_register_popup.html','stin_register','width=1320,height=800,top=50,left=50,resizable=no,scrollbars=yes'); return false;">마이크로소프트</a></td>
-												<td class="th03">빌게이츠</td>
-												<td class="th04">111-22-3333</td>
-												<td class="th05">softicecream</td>
-												<td class="th06">Description</td>
-												<td class="th07">YY-XX-DD</td>
-												<td class="th08">거래종료</td>
-												<td class="th09">사용중</td>
+												<td class="th02 text_left">마이크로소프트</td>
+												<td class="th03">사오륙</td>
+												<td class="th04">A000002</td>
+												<td class="th05">052-000-0000</td>
+												<td class="th06">임꺽정</td>
+												<td class="th07">b@a.com</td>
+												<td class="th08">010-0000-0000</td>
+												<td class="th09">YY-XX-DD</td>
+												<td class="th10">
+													<select name="" class="content_select">
+														<option value="사용중">사용중</option>
+													</select>
+													<button type="button" class="content_btn">변경</button>
+												</td>
+												<td class="th11">
+													<button type="button" class="content_btn">복사</button>
+												</td>
 											</tr>
 											<tr>
 												<td class="th00">3</td>
@@ -403,14 +412,23 @@
 														<label for="chk13"></label>
 													</div>
 												</td>
-												<td class="th02 text_left"><a href="javascript:void(0);" onclick="window.open('basic_stin_register_popup.html','stin_register','width=1320,height=800,top=50,left=50,resizable=no,scrollbars=yes'); return false;">삼성전자</a></td>
-												<td class="th03">이건희</td>
-												<td class="th04">111-22-3333</td>
-												<td class="th05">3star</td>
-												<td class="th06">Description</td>
-												<td class="th07">YY-XX-DD</td>
-												<td class="th08">거래중</td>
-												<td class="th09">사용중</td>
+												<td class="th02 text_left">삼성전자</td>
+												<td class="th03">칠팔구</td>
+												<td class="th04">A000003</td>
+												<td class="th05">031-000-0000</td>
+												<td class="th06">성춘향</td>
+												<td class="th07">c@a.com</td>
+												<td class="th08">010-0000-0000</td>
+												<td class="th09">YY-XX-DD</td>
+												<td class="th10">
+													<select name="" class="content_select">
+														<option value="사용중">사용중</option>
+													</select>
+													<button type="button" class="content_btn">변경</button>
+												</td>
+												<td class="th11">
+													<button type="button" class="content_btn">복사</button>
+												</td>
 											</tr>
 										</tbody>
 									</table>

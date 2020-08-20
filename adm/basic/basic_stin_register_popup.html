@@ -41,7 +41,7 @@
                     	<div class="content_header cf">
 							<div class="content_header_txt">
 								<p class="tit">
-									입점사 정보 관리 - 신규/수정
+									매입처관리 - 신규/수정  
 									<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
 								</p>
 							</div>
@@ -65,53 +65,40 @@
 								</div>
 								
 								<div class="content_table_area">
-									<table class="content_table content_table_col4">
+									<table class="content_table">
 										<colgroup>
-											<col class="th00">
-											<col class="th01">
-											<col class="th02">
-											<col class="th03">
+											<col class="th00" width="12%">
+											<col class="th01" width="21%">
+											<col class="th02" width="12%">
+											<col class="th03" width="21%">
+											<col class="th04" width="12%">
+											<col class="th05" width="22%">
 										</colgroup>
 										<tr>
 											<th class="th00">
-												<span class="text_required">*</span> 입점사 ID
+												<span class="text_required">*</span> 매입처 ID
 											</th>
 											<td class="th01 input_td">
 												<!-- content_chk_overlap 클래스는 중복확인할 때 사용 -->
 												<div class="content_chk_overlap">
 													<input type="text" name="" class="content_text">
 													<button type="button" class="content_btn" onclick="window.open('basic_stin_idchk_popup.html','stin_idchk','width=500,height=350,top=50,left=50,resizable=no,scrollbars=yes'); return false;">중복확인</button>
-													<button type="button" class="content_btn">SMS</button>
+													<button type="button" class="content_btn" onclick="window.open('../sms_popup.html','sms','width=900,height=550,top=50,left=50,resizable=no,scrollbars=no'); return false;">SMS</button>
 												</div>
 											</td>
 											<th class="th02">
 												<span class="text_required">*</span> 비밀번호
 											</th>
 											<td class="th03 input_td">
-												<input type="password" name="" class="content_text"><br>
-												<div class="content_chk_area">
-													<input type="checkbox" name="" value="" id="pw_chk1">
-													<label for="pw_chk1">변경</label>
-												</div>
-												<!-- content_password 클래스는 비밀번호 입력할 때 사용 -->
-												<div class="content_password">
-													<span>비밀번호</span>
-													<input type="password" name="" class="content_text">
-												</div>
-												<div class="content_password">
-													<span>비밀번호확인</span>
-													<input type="password" name="" class="content_text">
-												</div>
+												<input type="password" name="" class="content_text">
 												<div class="content_table_explain">
 													<p class="content_explain">영문,숫자,특수문자 혼합하여 8자 이상 입력</p>
 												</div>
 											</td>
-										</tr>
-										<tr>
-											<th class="th00">
+											<th class="th04">
 												<span class="text_required">*</span> 진행여부
 											</th>
-											<td class="th01 input_td" colspan="3">
+											<td class="th05 input_td">
 												<select name="" class="content_select">
 													<option value="">진행여부</option>
 													<option value="거래중">거래중</option>
@@ -132,16 +119,18 @@
 								</div>
 								
 								<div class="content_table_area">
-									<table class="content_table content_table_col4">
+									<table class="content_table">
 										<colgroup>
-											<col class="th00">
-											<col class="th01">
-											<col class="th02">
-											<col class="th03">
+											<col class="th00" width="12%">
+											<col class="th01" width="21%">
+											<col class="th02" width="12%">
+											<col class="th03" width="21%">
+											<col class="th04" width="12%">
+											<col class="th05" width="22%">
 										</colgroup>
 										<tr>
 											<th class="th00">
-												<span class="text_required">*</span> 대표 카테고리
+												<span class="text_required">*</span> 대표카테고리
 											</th>
 											<td class="th01 input_td">
 												<select name="" class="content_select">
@@ -154,17 +143,15 @@
 												</select>
 											</td>
 											<th class="th02">
-												<span class="text_required">*</span> 입점사 마진율
+												<span class="text_required">*</span> 매입처 마진율
 											</th>
 											<td class="th03 input_td">
 												<input type="text" name="" class="content_text w68"> %
 											</td>
-										</tr>
-										<tr>
-											<th class="th00">
+											<th class="th04">
 												<span class="text_required">*</span> 배송형태
 											</th>
-											<td class="th01 input_td" colspan="3">
+											<td class="th05 input_td">
 												<select name="" class="content_select">
 													<option value="자사배송">자사배송</option>
 													<option value="타사배송">타사배송</option>
@@ -183,16 +170,20 @@
 								</div>
 								
 								<div class="content_table_area">
-									<table class="content_table content_table_col4">
+									<table class="content_table">
 										<colgroup>
-											<col class="th00">
-											<col class="th01">
-											<col class="th02">
-											<col class="th03">
+											<col class="th00" width="10%">
+											<col class="th01" width="15%">
+											<col class="th02" width="10%">
+											<col class="th03" width="15%">
+											<col class="th04" width="10%">
+											<col class="th05" width="15%">
+											<col class="th06" width="10%">
+											<col class="th07" width="15%">
 										</colgroup>
 										<tr>
 											<th class="th00">
-												<span class="text_required">*</span> 입점사명
+												<span class="text_required">*</span> 매입처명
 											</th>
 											<td class="th01 input_td">
 												<input type="text" name="" class="content_text">
@@ -203,36 +194,29 @@
 											<td class="th03 input_td">
 												<input type="text" name="" class="content_text">
 											</td>
-										</tr>
-										<tr>
-											<th class="th00">
-												<span class="text_required">*</span> 사업자등록번호
+											<th class="th04">
+												<span class="text_required">*</span> 사업자 등록번호
 											</th>
-											<td class="th01 input_td">
-												<!-- content_number 클래스는 여러 개의 번호만 입력할 경우 사용 -->
-												<div class="content_number">
-													<input type="text" name="" class="content_text w68">
-													<input type="text" name="" class="content_text w68">
-													<input type="text" name="" class="content_text w68">
-												</div>
+											<td class="th05 input_td">
+												<input type="text" name="" class="content_text">
 											</td>
-											<th class="th02">법인번호</th>
-											<td class="th03 input_td">
+											<th class="th06">법인번호</th>
+											<td class="th07 input_td">
 												<input type="text" name="" class="content_text">
 											</td>
 										</tr>
 										<tr>
 											<th class="th00">
-												<span class="text_required">*</span> 사업장 주소
+												<span class="text_required">*</span> 사업장주소
 											</th>
-											<td class="th01 input_td" colspan="3">
+											<td class="th01 input_td" colspan="7">
 												<!-- content_zipcode 클래스는 우편번호를 입력할 경우 사용 -->
 												<div class="content_zipcode">
 													<input type="text" name="" class="content_text w68">
-													<button type="button" class="content_btn" onclick="window.open('../zipcode_popup.html','zipcode','width=520,height=500,top=50,left=50,resizable=no,scrollbars=yes'); return false;">우편번호 찾기</button>
+													<button type="button" class="content_btn" onclick="window.open('../zipcode_popup.html','zipcode','width=520,height=500,top=50,left=50,resizable=no,scrollbars=yes'); return false;">우편번호</button>
 												</div>
 												<input type="text" name="" class="content_text w400">
-												<input type="text" name="" class="content_text w400">
+												<input type="text" name="" class="content_text">
 											</td>
 										</tr>
 										<tr>
@@ -248,12 +232,10 @@
 											<td class="th03 input_td">
 												<input type="text" name="" class="content_text">
 											</td>
-										</tr>
-										<tr>
-											<th class="th00">
+											<th class="th04">
 												<span class="text_required">*</span> 매입정산
 											</th>
-											<td class="th01 input_td">
+											<td class="th05 input_td">
 												<select name="" class="content_select">
 													<option value="">매입정산</option>
 													<option value="일정산">일정산</option>
@@ -262,8 +244,8 @@
 													<option value="월정산">월정산</option>
 												</select>
 											</td>
-											<th class="th02">회사유형</th>
-											<td class="th03 input_td">
+											<th class="th06">회사유형</th>
+											<td class="th07 input_td">
 												<select name="" class="content_select">
 													<option value="">회사유형</option>
 													<option value="법인사업자">법인사업자</option>
@@ -275,46 +257,20 @@
 										</tr>
 										<tr>
 											<th class="th00">URL</th>
-											<td class="th01 input_td" colspan="3">
+											<td class="th01 input_td">
 												<input type="text" name="" class="content_text w400">
 											</td>
-										</tr>
-										<tr>
-											<th class="th00">
+											<th class="th02">
 												<span class="text_required">*</span> 대표전화
 											</th>
-											<td class="th01 input_td">
-												<!-- content_number 클래스는 여러 개의 번호만 입력할 경우 사용 -->
-												<div class="content_number">
-													<select name="" class="content_select w68">
-														<option value="010">010</option>
-														<option value="011">011</option>
-														<option value="016">016</option>
-														<option value="017">017</option>
-														<option value="018">018</option>
-														<option value="019">019</option>
-													</select>
-													<input type="text" name="" class="content_text w68">
-													<input type="text" name="" class="content_text w68">
-												</div>
+											<td class="th03 input_td">
+												<input type="text" name="" class="content_text">
 											</td>
-											<th class="th02">
+											<th class="th04">
 												<span class="text_required">*</span> 팩스번호
 											</th>
-											<td class="th03 input_td">
-												<!-- content_number 클래스는 여러 개의 번호만 입력할 경우 사용 -->
-												<div class="content_number">
-													<select name="" class="content_select w68">
-														<option value="010">010</option>
-														<option value="011">011</option>
-														<option value="016">016</option>
-														<option value="017">017</option>
-														<option value="018">018</option>
-														<option value="019">019</option>
-													</select>
-													<input type="text" name="" class="content_text w68">
-													<input type="text" name="" class="content_text w68">
-												</div>
+											<td class="th05 input_td" colspan="3">
+												<input type="text" name="" class="content_text">
 											</td>
 										</tr>
 									</table>
@@ -325,24 +281,24 @@
 							<!-- 콘텐츠 테이블 start -->
 							<section class="content_main_item">
 								<div class="content_table_top cf">
-                                	<p class="content_table_tit">매장 부담 쿠폰 관리</p>
+                                	<p class="content_table_tit">매장부담 쿠폰관리</p>
 								</div>
 								
 								<div class="content_table_area">
-									<table class="content_table content_table_col4">
+									<table class="content_table content_table_col2">
 										<colgroup>
 											<col class="th00">
 											<col class="th01">
-											<col class="th02">
-											<col class="th03">
 										</colgroup>
 										<tr>
-											<th class="th00">매장 부담 쿠폰</th>
+											<th class="th00">매장부담쿠폰</th>
 											<td class="th01 input_td">
 												<input type="text" name="" class="content_text">
 											</td>
-											<th class="th02">매장 부담 쿠폰 기간</th>
-											<td class="th03 input_td">
+										</tr>
+										<tr>
+											<th class="th00">매장부담쿠폰기간</th>
+											<td class="th01 input_td">
 												<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
 												<div class="content_calendar">
 													<input type="text" name="" class="content_text">
@@ -357,12 +313,14 @@
 											</td>
 										</tr>
 										<tr>
-											<th class="th00">무료 배송 기준</th>
+											<th class="th00">무료배송기준</th>
 											<td class="th01 input_td">
 												<input type="text" name="" class="content_text">
 											</td>
-											<th class="th02">매장 부담 쿠폰 품번</th>
-											<td class="th03 input_td">
+										</tr>
+										<tr>
+											<th class="th00">매장부담쿠폰 품번</th>
+											<td class="th01 input_td">
 												<textarea name="" class="content_textarea" rows="5"></textarea>
 											</td>
 										</tr>
@@ -378,12 +336,14 @@
 								</div>
 								
 								<div class="content_table_area">
-									<table class="content_table content_table_col4">
+									<table class="content_table">
 										<colgroup>
-											<col class="th00">
-											<col class="th01">
-											<col class="th02">
-											<col class="th03">
+											<col class="th00" width="12%">
+											<col class="th01" width="21%">
+											<col class="th02" width="12%">
+											<col class="th03" width="21%">
+											<col class="th04" width="12%">
+											<col class="th05" width="22%">
 										</colgroup>
 										<tr>
 											<th class="th00">
@@ -404,16 +364,11 @@
 											</th>
 											<td class="th03 input_td">
 												<input type="text" name="" class="content_text">
-												<div class="content_table_explain">
-													<p class="content_explain">- 를 제외한 숫자만</p>
-												</div>
 											</td>
-										</tr>
-										<tr>
-											<th class="th00">
+											<th class="th04">
 												<span class="text_required">*</span> 예금주명
 											</th>
-											<td class="th01 input_td" colspan="3">
+											<td class="th05 input_td">
 												<input type="text" name="" class="content_text">
 											</td>
 										</tr>
@@ -429,25 +384,23 @@
 								</div>
 								
 								<div class="content_table_area">
-									<table class="content_table content_table_col4">
+									<table class="content_table content_table_col2">
 										<colgroup>
 											<col class="th00">
 											<col class="th01">
-											<col class="th02">
-											<col class="th03">
 										</colgroup>
 										<tr>
 											<th class="th00">
-												<span class="text_required">*</span> 사업장 주소
+												<span class="text_required">*</span> 사업장주소
 											</th>
-											<td class="th01 input_td" colspan="3">
+											<td class="th01 input_td">
 												<!-- content_zipcode 클래스는 우편번호를 입력할 경우 사용 -->
 												<div class="content_zipcode">
 													<input type="text" name="" class="content_text w68">
-													<button type="button" class="content_btn" onclick="window.open('../zipcode_popup.html','zipcode','width=520,height=500,top=50,left=50,resizable=no,scrollbars=yes'); return false;">우편번호 찾기</button>
+													<button type="button" class="content_btn" onclick="window.open('../zipcode_popup.html','zipcode','width=520,height=500,top=50,left=50,resizable=no,scrollbars=yes'); return false;">우편번호</button>
 												</div>
 												<input type="text" name="" class="content_text w400">
-												<input type="text" name="" class="content_text w400">
+												<input type="text" name="" class="content_text">
 											</td>
 										</tr>
 									</table>
@@ -462,12 +415,16 @@
 								</div>
 								
 								<div class="content_table_area">
-									<table class="content_table content_table_col4">
+									<table class="content_table">
 										<colgroup>
-											<col class="th00">
-											<col class="th01">
-											<col class="th02">
-											<col class="th03">
+											<col class="th00" width="10%">
+											<col class="th01" width="15%">
+											<col class="th02" width="10%">
+											<col class="th03" width="15%">
+											<col class="th04" width="10%">
+											<col class="th05" width="15%">
+											<col class="th06" width="10%">
+											<col class="th07" width="15%">
 										</colgroup>
 										<tr>
 											<th class="th00">
@@ -477,48 +434,22 @@
 												<input type="text" name="" class="content_text">
 											</td>
 											<th class="th02">
-												<span class="text_required">*</span> E-mail
+												<span class="text_required">*</span> E-Mail
 											</th>
 											<td class="th03 input_td">
 												<input type="text" name="" class="content_text">
 											</td>
-										</tr>
-										<tr>
-											<th class="th00">
+											<th class="th04">
 												<span class="text_required">*</span> 연락처
 											</th>
-											<td class="th01 input_td">
-												<!-- content_number 클래스는 여러 개의 번호만 입력할 경우 사용 -->
-												<div class="content_number">
-													<select name="" class="content_select w68">
-														<option value="010">010</option>
-														<option value="011">011</option>
-														<option value="016">016</option>
-														<option value="017">017</option>
-														<option value="018">018</option>
-														<option value="019">019</option>
-													</select>
-													<input type="text" name="" class="content_text w68">
-													<input type="text" name="" class="content_text w68">
-												</div>
+											<td class="th05 input_td">
+												<input type="text" name="" class="content_text">
 											</td>
-											<th class="th02">
+											<th class="th06">
 												<span class="text_required">*</span> 핸드폰번호
 											</th>
-											<td class="th03 input_td">
-												<!-- content_number 클래스는 여러 개의 번호만 입력할 경우 사용 -->
-												<div class="content_number">
-													<select name="" class="content_select w68">
-														<option value="010">010</option>
-														<option value="011">011</option>
-														<option value="016">016</option>
-														<option value="017">017</option>
-														<option value="018">018</option>
-														<option value="019">019</option>
-													</select>
-													<input type="text" name="" class="content_text w68">
-													<input type="text" name="" class="content_text w68">
-												</div>
+											<td class="th07 input_td">
+												<input type="text" name="" class="content_text">
 											</td>
 										</tr>
 									</table>
@@ -538,55 +469,33 @@
 								</div>
 								
 								<div class="content_table_area">
-									<table class="content_table content_table_col4">
+									<table class="content_table">
 										<colgroup>
-											<col class="th00">
-											<col class="th01">
-											<col class="th02">
-											<col class="th03">
+											<col class="th00" width="10%">
+											<col class="th01" width="15%">
+											<col class="th02" width="10%">
+											<col class="th03" width="15%">
+											<col class="th04" width="10%">
+											<col class="th05" width="15%">
+											<col class="th06" width="10%">
+											<col class="th07" width="15%">
 										</colgroup>
 										<tr>
 											<th class="th00">성명</th>
 											<td class="th01 input_td">
 												<input type="text" name="" class="content_text">
 											</td>
-											<th class="th02">E-mail</th>
+											<th class="th02">E-Mail</th>
 											<td class="th03 input_td">
 												<input type="text" name="" class="content_text">
 											</td>
-										</tr>
-										<tr>
-											<th class="th00">연락처</th>
-											<td class="th01 input_td">
-												<!-- content_number 클래스는 여러 개의 번호만 입력할 경우 사용 -->
-												<div class="content_number">
-													<select name="" class="content_select w68">
-														<option value="010">010</option>
-														<option value="011">011</option>
-														<option value="016">016</option>
-														<option value="017">017</option>
-														<option value="018">018</option>
-														<option value="019">019</option>
-													</select>
-													<input type="text" name="" class="content_text w68">
-													<input type="text" name="" class="content_text w68">
-												</div>
+											<th class="th04">연락처</th>
+											<td class="th05 input_td">
+												<input type="text" name="" class="content_text">
 											</td>
-											<th class="th02">핸드폰번호</th>
-											<td class="th03 input_td">
-												<!-- content_number 클래스는 여러 개의 번호만 입력할 경우 사용 -->
-												<div class="content_number">
-													<select name="" class="content_select w68">
-														<option value="010">010</option>
-														<option value="011">011</option>
-														<option value="016">016</option>
-														<option value="017">017</option>
-														<option value="018">018</option>
-														<option value="019">019</option>
-													</select>
-													<input type="text" name="" class="content_text w68">
-													<input type="text" name="" class="content_text w68">
-												</div>
+											<th class="th06">핸드폰번호</th>
+											<td class="th07 input_td">
+												<input type="text" name="" class="content_text">
 											</td>
 										</tr>
 									</table>
@@ -601,12 +510,16 @@
 								</div>
 								
 								<div class="content_table_area">
-									<table class="content_table content_table_col4">
+									<table class="content_table">
 										<colgroup>
-											<col class="th00">
-											<col class="th01">
-											<col class="th02">
-											<col class="th03">
+											<col class="th00" width="10%">
+											<col class="th01" width="15%">
+											<col class="th02" width="10%">
+											<col class="th03" width="15%">
+											<col class="th04" width="10%">
+											<col class="th05" width="15%">
+											<col class="th06" width="10%">
+											<col class="th07" width="15%">
 										</colgroup>
 										<tr>
 											<th class="th00">성명</th>
@@ -617,39 +530,13 @@
 											<td class="th03 input_td">
 												<input type="text" name="" class="content_text">
 											</td>
-										</tr>
-										<tr>
-											<th class="th00">연락처</th>
-											<td class="th01 input_td">
-												<!-- content_number 클래스는 여러 개의 번호만 입력할 경우 사용 -->
-												<div class="content_number">
-													<select name="" class="content_select w68">
-														<option value="010">010</option>
-														<option value="011">011</option>
-														<option value="016">016</option>
-														<option value="017">017</option>
-														<option value="018">018</option>
-														<option value="019">019</option>
-													</select>
-													<input type="text" name="" class="content_text w68">
-													<input type="text" name="" class="content_text w68">
-												</div>
+											<th class="th04">연락처</th>
+											<td class="th05 input_td">
+												<input type="text" name="" class="content_text">
 											</td>
-											<th class="th02">핸드폰번호</th>
-											<td class="th03 input_td">
-												<!-- content_number 클래스는 여러 개의 번호만 입력할 경우 사용 -->
-												<div class="content_number">
-													<select name="" class="content_select w68">
-														<option value="010">010</option>
-														<option value="011">011</option>
-														<option value="016">016</option>
-														<option value="017">017</option>
-														<option value="018">018</option>
-														<option value="019">019</option>
-													</select>
-													<input type="text" name="" class="content_text w68">
-													<input type="text" name="" class="content_text w68">
-												</div>
+											<th class="th06">핸드폰번호</th>
+											<td class="th07 input_td">
+												<input type="text" name="" class="content_text">
 											</td>
 										</tr>
 									</table>
@@ -660,7 +547,7 @@
 							<!-- 콘텐츠 테이블 start -->
 							<section class="content_main_item">
 								<div class="content_table_top cf">
-                                	<p class="content_table_tit">추가 설정 관리</p>
+                                	<p class="content_table_tit">추가설정 관리</p>
 								</div>
 								
 								<div class="content_table_area">
@@ -726,7 +613,7 @@
 							<!-- 콘텐츠 테이블 start -->
 							<section class="content_main_item">
 								<div class="content_table_top cf">
-                                	<p class="content_table_tit">입점사 페이지 정보</p>
+                                	<p class="content_table_tit">매입처페이지 정보</p>
 								</div>
 								
 								<div class="content_table_area">
@@ -746,11 +633,8 @@
 													<input type="file" name="" id="upload_file1">
 													<input type="text" class="content_text content_file_name" disabled>
 												</div>
-												<div class="content_table_explain">
-													<p class="content_explain">120 X 120</p>
-												</div>
 											</td>
-											<th class="th02">입점사 설명</th>
+											<th class="th02">매입처설명</th>
 											<td class="th03 input_td">
 												<div class="content_radio_area">
 													<input type="radio" name="radio_name1" value="" id="select_radio_name11" checked>
@@ -758,11 +642,11 @@
 												</div>
 												<div class="content_radio_area">
 													<input type="radio" name="radio_name1" value="" id="select_radio_name12">
-													<label for="select_radio_name12">텍스트 + html 형식</label>
+													<label for="select_radio_name12">텍스트 + HTML 형식</label>
 												</div>
 												<div class="content_radio_area">
 													<input type="radio" name="radio_name1" value="" id="select_radio_name13">
-													<label for="select_radio_name13">html 형식</label>
+													<label for="select_radio_name13">HTML 형식</label>
 												</div><br>
 												<textarea name="" class="content_textarea" rows="5"></textarea>
 											</td>

@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>NHmall</title>
+		<meta name="description" content="NHmall">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="../img/logo_favicon.ico">
+		<link rel="apple-touch-icon" href="../img/logo_favicon.ico">
+		
+		<link href="../../css/reset.css" type="text/css" rel="stylesheet">
+		<link href="../../css/font.css" type="text/css" rel="stylesheet">
+		<link href="../../css/adm.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="../../js/jquery-1.11.1.min.js"></script>
+		<script src="../../js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="../../js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="../../js/jquery-migrate-1.4.1.min.js"></script>
+		<script src="../../js/function.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap">
+            <!-- header -->
+            <header class="header">
+                <h1 class="not_view">header</h1>
+                
+                <div class="header_top cf">
+                    <div class="top_logo">
+                        <a href="../index.html"><img src="../img/top_logo.png" alt="top_logo"></a>
+                    </div>
+                    
+                    <ul class="top_menu cf">
+                        <li class="top_menu_item">
+                            <div class="top_scm_login">
+                                <select name="" class="top_scm_login_select">
+									<option value="">쇼핑몰 SCM 로그인</option>
+									<optgroup label="11번가">
+										<option value="11번가 아이디1">11번가 아이디1</option>
+									</optgroup>
+									<optgroup label="AK몰">
+										<option value="AK몰 아이디1">AK몰 아이디1</option>
+										<option value="AK몰 아이디2">AK몰 아이디2</option>
+									</optgroup>
+									<optgroup label="GS홈쇼핑">
+										<option value="GS홈쇼핑 아이디1">GS홈쇼핑 아이디1</option>
+										<option value="GS홈쇼핑 아이디2">GS홈쇼핑 아이디2</option>
+										<option value="GS홈쇼핑 아이디3">GS홈쇼핑 아이디3</option>
+									</optgroup>
+								</select>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+									<a href="#">고객센터</a>
+                            	</p>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+									<a href="#">메뉴얼</a>
+                            	</p>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+									<a href="#">긴급알림 <span>1</span></a>
+                            	</p>
+                            </div>
+                        </li>
+                        <li class="top_menu_item">
+                            <div class="top_menu_drop">
+                                <p class="top_menu_drop_tit">
+									<a href="#">미처리CS <span>10</span></a>
+                            	</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- nav -->
+                <nav class="nav">
+                    <h2 class="not_view">nav</h2>
+                    
+                    <ul class="nav_list cf">
+                        <li class="active">
+                            <a href="../basic/basic_mall_list.html">기본설정</a>
+                        </li>
+                        <li>
+                            <a href="../goods/goods_goods_list.html">상품관리</a>
+                        </li>
+                        <li>
+                            <a href="../order/order_auto_collect.html">주문/배송관리</a>
+                        </li>
+                        <li>
+                            <a href="../claim/claim_inquiry_collect.html">CS/클레임관리</a>
+                        </li>
+                        <li>
+                            <a href="#">회원관리</a>
+                        </li>
+                        <li>
+                            <a href="#">프로모션</a>
+                        </li>
+                        <li>
+                            <a href="../business/business_list.html">입점업체관리</a>
+                        </li>
+                        <li>
+                            <a href="#">디자인설정</a>
+                        </li>
+                        <li>
+                            <a href="../statistics/statistics_daily.html">통계관리</a>
+                        </li>
+                        <li>
+                            <a href="../calculation/calculation_master.html">정산관리</a>
+                        </li>
+                        <li>
+                            <a href="#">부가기능</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+			
+            <div class="fk_header"></div>
+            
+            <div class="content_wrap cf">
+                <!-- aside -->
+                <aside class="aside">
+                    <h1 class="not_view">aside</h1>
+                    
+                    <div class="aside_user">
+						<p class="user_business">㈜와이엠 인터내셔널</p>
+						<p class="user_name">접속자 (접속자 권한)</p>
+						<div class="user_btn">
+							<a href="#" class="user_move_btn">쇼핑몰go</a>
+							<a href="#" class="user_login_btn">로그아웃</a>
+						</div>
+					</div>
+                    
+                    <div class="aside_top">
+                        <img src="../img/basic_menu_icon.png" alt="basic_menu_icon">
+                        <p>기본설정</p>
+                    </div>
+                    
+                    <ul class="aside_list cf">
+                        <li>
+							<p class="aside_list_tit on">기본설정</p>
+							<ul class="aside_sub_list cf">
+								<li>
+									<a href="basic_mall_list.html">쇼핑몰 등록관리</a>
+								</li>
+								<li>
+									<a href="basic_scm_login.html">쇼핑몰 SCM로그인</a>
+								</li>
+								<li>
+									<a href="basic_client_category.html">쇼핑몰 카테고리 매핑</a>
+								</li>
+								<li>
+									<a href="basic_store_information.html">매입처 관리</a>
+								</li>
+								<li>
+									<a href="basic_supplier_information.html">매출처 관리</a>
+								</li>
+								<li>
+									<a href="basic_goods_code.html">상품코드관리</a>
+								</li>
+								<li>
+									<a href="basic_delivery_policy.html">배송정책</a>
+								</li>
+								<li>
+									<a href="basic_distribution_center.html">문류센터 관리</a>
+								</li>
+								<li>
+									<a href="basic_goods_share.html">상품공유 관리</a>
+								</li>
+								<li class="active">
+									<a href="basic_mall_config.html">쇼핑몰 환경설정</a>
+								</li>
+							</ul>
+						</li>
+                    </ul>
+                    
+                    <div class="aside_banner">
+                    	<div class="banner_slide">
+                    		<ul class="banner_slide_list cf">
+								<li>
+									<a href="#"><img src="../img/banner_img.png" alt="banner_img"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+                </aside>
+                
+                <!-- content -->
+                <div class="content_area">
+                    <div class="content_top">
+                        기본설정 &gt; 기본설정 &gt; 쇼핑몰 환경설정
+                    </div>
+                    
+                    <div class="content_main content_basic_mall_config">
+						<!-- 콘텐츠 타이틀 start -->
+						<div class="content_header cf">
+							<div class="content_header_txt">
+								<p class="tit">
+									쇼핑몰 환경설정
+								</p>
+							</div>
+						</div>
+						<!-- 콘텐츠 타이틀 end -->
+
+						<!-- 콘텐츠 탭 start -->
+						<section class="content_tab_area">
+							<!-- content_tab 클래스 안의 li 클릭시 tab-data 값과 동일한 tab-data 값을 가진 콘텐츠가 보인다 -->
+							<ul class="content_tab cf">
+								<li tab-data="tab1" class="active"><span>기본정보설정</span></li>
+								<li tab-data="tab2"><span>주문정책</span></li>
+								<li tab-data="tab3"><span>결제정책</span></li>
+							</ul>
+
+							<div class="content_tab_con" tab-data="tab1">
+								<form name="" method="" action="">
+									<!-- 콘텐츠 테이블 start -->
+									<section class="content_main_item">
+										<div class="content_table_top cf">
+											<p class="content_table_tit">쇼핑몰 기본 정보</p>
+										</div>
+
+										<div class="content_table_area">
+											<table class="content_table content_table_col4">
+												<colgroup>
+													<col class="th00">
+													<col class="th01">
+													<col class="th02">
+													<col class="th03">
+												</colgroup>
+												<tr>
+													<th class="th00">쇼핑몰명</th>
+													<td class="th01 input_td">
+														<input type="text" name="" class="content_text">
+													</td>
+													<th class="th02">파비콘 설정</th>
+													<td class="th03 input_td">
+														<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+														<div class="content_file_area">
+															<label for="upload_file1" class="content_file_btn">찾아보기</label>
+															<input type="file" name="" id="upload_file1">
+															<input type="text" class="content_text content_file_name" disabled>
+														</div>
+														<button type="button" class="content_btn del_btn">삭제</button>
+														<div class="content_table_explain">
+															<p class="content_explain">사이즈 16x16 pixel, 확장자 ico</p>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th class="th00">상단타이틀 설정</th>
+													<td class="th01 input_td">
+														<input type="text" name="" class="content_text">
+													</td>
+													<th class="th02">정렬순서</th>
+													<td class="th03 input_td">
+
+													</td>
+												</tr>
+											</table>
+										</div>
+									</section>
+									<!-- 콘텐츠 테이블 end -->
+
+									<!-- 콘텐츠 테이블 start -->
+									<section class="content_main_item">
+										<div class="content_table_top cf">
+											<p class="content_table_tit">회사 정보</p>
+										</div>
+
+										<div class="content_table_area">
+											<table class="content_table content_table_col4">
+												<colgroup>
+													<col class="th00">
+													<col class="th01">
+													<col class="th02">
+													<col class="th03">
+												</colgroup>
+												<tr>
+													<th class="th00">공급사코드 (ID)</th>
+													<td class="th01 input_td">
+														<div class="content_table_txt">default</div>
+													</td>
+													<th class="th02">거래처타입</th>
+													<td class="th03 input_td">
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name3" value="" id="select_radio_name31" checked>
+															<label for="select_radio_name31">마스터</label>
+														</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name3" value="" id="select_radio_name32">
+															<label for="select_radio_name32">입점업체</label>
+														</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name3" value="" id="select_radio_name33">
+															<label for="select_radio_name33">공급업체</label>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th class="th00">회사명</th>
+													<td class="th01 input_td">
+														<input type="text" name="" class="content_text">
+													</td>
+													<th class="th02">사업자등록번호</th>
+													<td class="th03 input_td">
+														<input type="text" name="" class="content_text">
+													</td>
+												</tr>
+												<tr>
+													<th class="th00">대표자명</th>
+													<td class="th01 input_td">
+														<input type="text" name="" class="content_text">
+													</td>
+													<th class="th02">과세유형</th>
+													<td class="th03 input_td">
+														<select name="" class="content_select">
+															<option value="">과세여부</option>
+															<option value="과세">과세</option>
+															<option value="면세">면세</option>
+															<option value="영수증여부">영수증여부</option>
+															<option value="비과세">비과세</option>
+															<option value="영세">영세</option>
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<th class="th00">업태</th>
+													<td class="th01 input_td">
+														<input type="text" name="" class="content_text">
+													</td>
+													<th class="th02">종목</th>
+													<td class="th03 input_td">
+														<input type="text" name="" class="content_text">
+													</td>
+												</tr>
+												<tr>
+													<th class="th00">대표전화</th>
+													<td class="th01 input_td">
+														<input type="text" name="" class="content_text">
+													</td>
+													<th class="th02">팩스번호</th>
+													<td class="th03 input_td">
+														<input type="text" name="" class="content_text">
+													</td>
+												</tr>
+												<tr>
+													<th class="th00">담당자</th>
+													<td class="th01 input_td">
+														<input type="text" name="" class="content_text">
+													</td>
+													<th class="th02">담당자연락처</th>
+													<td class="th03 input_td">
+														<input type="text" name="" class="content_text">
+													</td>
+												</tr>
+												<tr>
+													<th class="th00">사업장주소</th>
+													<td class="th01 input_td" colspan="3">
+														<!-- content_zipcode 클래스는 우편번호를 입력할 경우 사용 -->
+														<div class="content_zipcode">
+															<input type="text" name="" class="content_text w68">
+															<button type="button" class="content_btn" onclick="window.open('../zipcode_popup.html','zipcode','width=520,height=500,top=50,left=50,resizable=no,scrollbars=yes'); return false;">우편번호</button>
+														</div>
+														<input type="text" name="" class="content_text w400">
+														<input type="text" name="" class="content_text">
+													</td>
+												</tr>
+												<tr>
+													<th class="th00">출고지 주소</th>
+													<td class="th01 input_td" colspan="3">
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name1" value="" id="select_radio_name11" checked>
+															<label for="select_radio_name11">사업장 주소와 동일</label>
+														</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name1" value="" id="select_radio_name12">
+															<label for="select_radio_name12">주소등록</label>
+														</div>
+														<button type="button" class="content_btn">출고지관리</button>
+													</td>
+												</tr>
+												<tr>
+													<th class="th00">반품/교환지 주소</th>
+													<td class="th01 input_td" colspan="3">
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name2" value="" id="select_radio_name21" checked>
+															<label for="select_radio_name21">사업장 주소와 동일</label>
+														</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name2" value="" id="select_radio_name22">
+															<label for="select_radio_name22">주소등록</label>
+														</div>
+														<button type="button" class="content_btn">반품/교환지관리</button>
+													</td>
+												</tr>
+												<tr>
+													<th class="th00">통신판매업 신고번호</th>
+													<td class="th01 input_td">
+														<input type="text" name="" class="content_text">
+														<!-- 파일 업로드시 파일명 추출하려면 content_file_area 클래스 형식 그대로 사용 -->
+														<div class="content_file_area">
+															<label for="upload_file2" class="content_file_btn">찾아보기</label>
+															<input type="file" name="" id="upload_file2">
+															<input type="text" class="content_text content_file_name" disabled>
+														</div>
+													</td>
+													<th class="th02">배송지연 SMS 수신여부</th>
+													<td class="th03 input_td">
+														<select name="" class="content_select">
+															<option value="Y">Y</option>
+															<option value="N">N</option>
+														</select>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</section>
+									<!-- 콘텐츠 테이블 end -->
+
+									<!-- 콘텐츠 리스트 테이블 start -->
+									<section class="content_main_item">
+										<div class="content_table_top cf">
+											<p class="content_table_tit">카테고리별 마진정보</p>
+										</div>
+
+										<!-- fixed_header_table_area 클래스는 리스트 테이블의 헤더를 고정할 때 사용 -->
+										<div class="fixed_header_table_area">
+											<div class="content_list_table_area">
+												<table class="content_list_table">
+													<colgroup>
+														<col class="th00" width="8%">
+														<col class="th01" width="*">
+														<col class="th02" width="15%">
+													</colgroup>
+													<thead class="thead">
+														<tr>
+															<th class="th00" width="8%">
+																<div class="content_chk_area">
+																	<input type="checkbox" name="" value="" id="all_chk">
+																	<label for="all_chk"></label>
+																</div>
+															</th>
+															<th class="th01" width="*">카테고리 경로</th>
+															<th class="th02" width="15%">마진율 (%)</th>
+														</tr>
+													</thead>
+													<tbody class="tbody">
+														<tr>
+															<td class="th00">
+																<div class="content_chk_area">
+																	<input type="checkbox" name="" value="" id="chk11">
+																	<label for="chk11"></label>
+																</div>
+															</td>
+															<td class="th01 text_left">패션의류 &gt; 여성의류</td>
+															<td class="th02">15%</td>
+														</tr>
+														<tr>
+															<td class="th00">
+																<div class="content_chk_area">
+																	<input type="checkbox" name="" value="" id="chk12">
+																	<label for="chk12"></label>
+																</div>
+															</td>
+															<td class="th01 text_left">패션잡화 &gt; 가방(BAG)</td>
+															<td class="th02">30%</td>
+														</tr>
+														<tr>
+															<td class="th00">
+																<div class="content_chk_area">
+																	<input type="checkbox" name="" value="" id="chk13">
+																	<label for="chk13"></label>
+																</div>
+															</td>
+															<td class="th01 text_left">패션잡화 &gt; 신발</td>
+															<td class="th02">20%</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</section>
+									<!-- 콘텐츠 리스트 테이블 end -->
+
+									<!-- 콘텐츠 테이블 start -->
+									<section class="content_main_item">
+										<div class="content_table_top cf">
+											<p class="content_table_tit">정산 정보</p>
+										</div>
+
+										<div class="content_table_area">
+											<table class="content_table content_table_col4">
+												<colgroup>
+													<col class="th00">
+													<col class="th01">
+													<col class="th02">
+													<col class="th03">
+												</colgroup>
+												<tr>
+													<th class="th00">거래은행</th>
+													<td class="th01 input_td">
+														<select name="" class="content_select">
+															<option value="우리은행">우리은행</option>
+														</select>
+													</td>
+													<th class="th02">예금주</th>
+													<td class="th03 input_td">
+														<input type="text" name="" class="content_text">
+													</td>
+												</tr>
+												<tr>
+													<th class="th00">계좌번호</th>
+													<td class="th01 input_td">
+														<input type="text" name="" class="content_text">
+													</td>
+													<th class="th02">정산주기</th>
+													<td class="th03 input_td">
+														<select name="" class="content_select">
+															<option value="한달">한달</option>
+														</select>
+														<div class="content_table_explain">
+															<p class="content_explain">정산주기를 변경 시 ‘차월정산’부터 적용</p>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th class="th00">판매장려금</th>
+													<td class="th01 input_td" colspan="3">
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name4" value="" id="select_radio_name41" checked>
+															<label for="select_radio_name41">판매장려금 (1%)</label>
+														</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name4" value="" id="select_radio_name42">
+															<label for="select_radio_name42">광고비진행</label>
+														</div>
+														<div class="content_table_explain">
+															<p class="content_explain">판매장려금은 매출이 월(1~30일) 기준 100만원 이상 발생 시 자동으로 부가됩니다.</p>
+														</div>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</section>
+									<!-- 콘텐츠 테이블 end -->
+
+									<div class="content_botton_btn">
+										<input type="submit" class="btn" value="저장">
+									</div>
+								</form>
+							</div>
+
+							<div class="content_tab_con" tab-data="tab2">
+								<form name="" method="" action="">
+									<!-- 콘텐츠 테이블 start -->
+									<section class="content_main_item">
+										<div class="content_table_top cf">
+											<p class="content_table_tit">주문설정</p>
+										</div>
+
+										<div class="content_table_area">
+											<table class="content_table content_table_col4">
+												<colgroup>
+													<col class="th00">
+													<col class="th01">
+													<col class="th02">
+													<col class="th03">
+												</colgroup>
+												<tr>
+													<th class="th00">결제페이지 청약의사 재확인</th>
+													<td class="th01 input_td">
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name5" value="" id="select_radio_name51" checked>
+															<label for="select_radio_name51">사용함</label>
+														</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name5" value="" id="select_radio_name52">
+															<label for="select_radio_name52">사용안함</label>
+														</div>
+														<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+													</td>
+													<th class="th02">환불 진행 재확인</th>
+													<td class="th03 input_td">
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name6" value="" id="select_radio_name61" checked>
+															<label for="select_radio_name61">사용함</label>
+														</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name6" value="" id="select_radio_name62">
+															<label for="select_radio_name62">사용안함</label>
+														</div>
+														<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+													</td>
+												</tr>
+												<tr>
+													<th class="th00">자동구매확정</th>
+													<td class="th01 input_td">
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name7" value="" id="select_radio_name71" checked>
+															<label for="select_radio_name71">사용함</label>
+														</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name7" value="" id="select_radio_name72">
+															<label for="select_radio_name72">사용안함</label>
+														</div>
+														<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+													</td>
+													<th class="th02">안심번호 서비스 사용</th>
+													<td class="th03 input_td">
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name8" value="" id="select_radio_name81" checked>
+															<label for="select_radio_name81">사용함</label>
+														</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name8" value="" id="select_radio_name82">
+															<label for="select_radio_name82">사용안함</label>
+														</div>
+														<a href="#"><img src="../img/manual_icon.png" alt="manual_icon"></a>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</section>
+									<!-- 콘텐츠 테이블 end -->
+
+									<!-- 콘텐츠 테이블 start -->
+									<section class="content_main_item claim_exposure_item">
+										<div class="content_table_top cf">
+											<p class="content_table_tit">클레임 처리 기본 노출설정</p>
+										</div>
+
+										<div class="content_table_area">
+											<table class="content_table content_table_col2">
+												<colgroup>
+													<col class="th00">
+													<col class="th01">
+												</colgroup>
+												<tr>
+													<th class="th00">관리자 주문취소시</th>
+													<td class="th01 input_td">
+														<div class="content_table_txt">재고 수량 복원 설정</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name9" value="" id="select_radio_name91" checked>
+															<label for="select_radio_name91">복원함</label>
+														</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name9" value="" id="select_radio_name92">
+															<label for="select_radio_name92">복원안함</label>
+														</div><br>
+														<div class="content_table_txt">쿠폰 복원 설정</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name10" value="" id="select_radio_name101" checked>
+															<label for="select_radio_name101">복원함</label>
+														</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name10" value="" id="select_radio_name102">
+															<label for="select_radio_name102">복원안함</label>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th class="th00">관리자 교환접수시</th>
+													<td class="th01 input_td">
+														<div class="content_table_txt">교환취소 상품에 사용한 쿠폰 복원 여부</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name11" value="" id="select_radio_name111" checked>
+															<label for="select_radio_name111">복원함</label>
+														</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name11" value="" id="select_radio_name112">
+															<label for="select_radio_name112">복원안함</label>
+														</div><br>
+														<div class="content_table_txt">교환취소 상품의 사은품 지급여부</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name12" value="" id="select_radio_name121" checked>
+															<label for="select_radio_name121">지급함</label>
+														</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name12" value="" id="select_radio_name122">
+															<label for="select_radio_name122">지급안함</label>
+														</div><br>
+														<div class="content_table_txt">교환추가 상품에 적용된 마일리지 지급 여부</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name13" value="" id="select_radio_name131" checked>
+															<label for="select_radio_name131">지급함</label>
+														</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name13" value="" id="select_radio_name132">
+															<label for="select_radio_name132">지급안함</label>
+														</div><br>
+														<div class="content_table_txt">교환추가 상품에 적용된 쿠폰 마일리지 지급 여부</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name14" value="" id="select_radio_name141" checked>
+															<label for="select_radio_name141">지급함</label>
+														</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name14" value="" id="select_radio_name142">
+															<label for="select_radio_name142">지급안함</label>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th class="th00">관리자 환불완료시</th>
+													<td class="th01 input_td">
+														<div class="content_table_txt">재고 수량 복원 설정</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name15" value="" id="select_radio_name151" checked>
+															<label for="select_radio_name151">복원함</label>
+														</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name15" value="" id="select_radio_name152">
+															<label for="select_radio_name152">복원안함</label>
+														</div><br>
+														<div class="content_table_txt">쿠폰 복원 설정</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name16" value="" id="select_radio_name161" checked>
+															<label for="select_radio_name161">복원함</label>
+														</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name16" value="" id="select_radio_name162">
+															<label for="select_radio_name162">복원안함</label>
+														</div>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</section>
+									<!-- 콘텐츠 테이블 end -->
+
+									<div class="content_botton_btn">
+										<input type="submit" class="btn" value="저장">
+									</div>
+
+									<!-- 안내 콘텐츠 start -->
+									<div class="content_information_area">
+										<p class="con">
+											<span class="text_indent">자동배송완료 : 매일 약 오전 1시에 '배송일'을 기준으로 (설정값)일이 지난 주문의 상태를 '배송완료'로 일괄 변경합니다.</span>
+											<span class="text_indent">자동구매확정 : 매일 약 오전 1시에 '배송완료일'을 기준으로 (설정값)일이 지난 주문의 상태를 '구매확정'으로 일괄 변경합니다.</span>
+											<span class="text_indent">날짜 비교시 '배송일'과 '배송완료일'의 시간은 비교하지 않으며, 일자 기준으로만 비교하여 주문상태를 변경합니다.</span>
+										</p>
+									</div>
+									<!-- 안내 콘텐츠 end -->
+								</form>
+							</div>
+
+							<div class="content_tab_con" tab-data="tab3">
+								<form name="" method="" action="">
+									<!-- 콘텐츠 테이블 start -->
+									<section class="content_main_item payment_item">
+										<div class="content_table_top cf">
+											<p class="content_table_tit">결제수단설정</p>
+											<div class="content_table_right">
+												<button type="button" class="content_btn hd_btn">전자결제 (PG) 신청하기</button>
+											</div>
+										</div>
+
+										<div class="content_table_area">
+											<table class="content_table">
+												<colgroup>
+													<col class="th00" width="150">
+													<col class="th01" width="30%">
+													<col class="th02" width="30%">
+													<col class="th03" width="*">
+												</colgroup>
+												<thead class="thead">
+													<tr>
+														<th class="th00">카테고리 경로</th>
+														<th class="th01">결제수단</th>
+														<th class="th02">노출이름</th>
+														<th class="th03">사용설정</th>
+													</tr>
+												</thead>
+												<tbody class="tbody">
+													<tr>
+														<th class="th00" rowspan="5">일반 결제</th>
+														<td class="th01 input_td text_center">
+															<div class="content_table_txt">무통장 입금</div>
+														</td>
+														<td class="th02 input_td text_center">
+															<input type="text" name="" class="content_text">
+														</td>
+														<td class="th03 input_td text_center">
+															<div class="content_radio_area">
+																<input type="radio" name="radio_name17" value="" id="select_radio_name171" checked>
+																<label for="select_radio_name171">사용함</label>
+															</div>
+															<div class="content_radio_area">
+																<input type="radio" name="radio_name17" value="" id="select_radio_name172">
+																<label for="select_radio_name172">사용안함</label>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th class="th00 not_view"></th>
+														<td class="th01 input_td text_center">
+															<div class="content_table_txt">신용카드</div>
+														</td>
+														<td class="th02 input_td text_center">
+															<input type="text" name="" class="content_text">
+														</td>
+														<td class="th03 input_td text_center">
+															<div class="content_radio_area">
+																<input type="radio" name="radio_name18" value="" id="select_radio_name181" checked>
+																<label for="select_radio_name181">사용함</label>
+															</div>
+															<div class="content_radio_area">
+																<input type="radio" name="radio_name18" value="" id="select_radio_name182">
+																<label for="select_radio_name182">사용안함</label>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th class="th00 not_view"></th>
+														<td class="th01 input_td text_center">
+															<div class="content_table_txt">계좌이체</div>
+														</td>
+														<td class="th02 input_td text_center">
+															<input type="text" name="" class="content_text">
+														</td>
+														<td class="th03 input_td text_center">
+															<div class="content_radio_area">
+																<input type="radio" name="radio_name19" value="" id="select_radio_name191" checked>
+																<label for="select_radio_name191">사용함</label>
+															</div>
+															<div class="content_radio_area">
+																<input type="radio" name="radio_name19" value="" id="select_radio_name192">
+																<label for="select_radio_name192">사용안함</label>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th class="th00 not_view"></th>
+														<td class="th01 input_td text_center">
+															<div class="content_table_txt">가상계좌</div>
+														</td>
+														<td class="th02 input_td text_center">
+															<input type="text" name="" class="content_text">
+														</td>
+														<td class="th03 input_td text_center">
+															<div class="content_radio_area">
+																<input type="radio" name="radio_name20" value="" id="select_radio_name201" checked>
+																<label for="select_radio_name201">사용함</label>
+															</div>
+															<div class="content_radio_area">
+																<input type="radio" name="radio_name20" value="" id="select_radio_name202">
+																<label for="select_radio_name202">사용안함</label>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th class="th00 not_view"></th>
+														<td class="th01 input_td text_center">
+															<div class="content_table_txt">휴대폰</div>
+														</td>
+														<td class="th02 input_td text_center">
+															<input type="text" name="" class="content_text">
+														</td>
+														<td class="th03 input_td text_center">
+															<div class="content_radio_area">
+																<input type="radio" name="radio_name21" value="" id="select_radio_name211" checked>
+																<label for="select_radio_name211">사용함</label>
+															</div>
+															<div class="content_radio_area">
+																<input type="radio" name="radio_name21" value="" id="select_radio_name212">
+																<label for="select_radio_name212">사용안함</label>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</section>
+									<!-- 콘텐츠 테이블 end -->
+									
+									<div class="content_botton_btn">
+										<input type="submit" class="btn" value="저장">
+									</div>
+								</form>
+								
+								<form name="" method="" action="">	
+									<!-- 검색 테이블 start -->
+									<div class="content_search_area">
+										<!-- 콘텐츠 테이블 start -->
+										<section class="content_main_item">
+											<div class="content_table_top cf">
+												<p class="content_table_tit">무통장 입금 은행관리</p>
+											</div>
+											
+											<div class="content_table_area">
+												<table class="content_table content_table_col2">
+													<colgroup>
+														<col class="th00">
+														<col class="th01">
+													</colgroup>
+													<tbody class="tbody">
+														<tr>
+															<th class="th00">사용설정</th>
+															<td class="th01 input_td">
+																<div class="content_radio_area">
+																	<input type="radio" name="radio_name22" value="" id="select_radio_name221" checked>
+																	<label for="select_radio_name221">전체</label>
+																</div>
+																<div class="content_radio_area">
+																	<input type="radio" name="radio_name22" value="" id="select_radio_name222">
+																	<label for="select_radio_name222">사용</label>
+																</div>
+																<div class="content_radio_area">
+																	<input type="radio" name="radio_name22" value="" id="select_radio_name223">
+																	<label for="select_radio_name223">사용안함</label>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<th class="th00">검색조건</th>
+															<td class="th01 input_td">
+																<!-- content_search 클래스는 셀렉트박스 + 텍스트박스로 검색할 때 사용 -->
+																<div class="content_search">
+																	<select name="" class="content_select">
+																		<option value="">통합검색</option>
+																	</select>
+																	<input type="text" name="" class="content_text">
+																	<input type="submit" class="content_btn search_btn" value="검색">
+																	<input type="button" class="content_btn" value="무통장 입금 은행 등록">
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</section>
+										<!-- 콘텐츠 테이블 end -->
+									</div>
+									<!-- 검색 테이블 end -->
+								</form>
+								
+								<form name="" method="" action="">	
+									<!-- 콘텐츠 리스트 테이블 start -->
+									<section class="content_main_item">
+										<div class="content_list_table_header cf">
+											<div class="content_right_select">
+												<select name="" class="content_select">
+													<option value="등록일순">등록일순</option>
+												</select>
+												<select name="" class="content_select">
+													<option value="10">10개보기</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="content_list_table_area">
+											<table class="content_list_table">
+												<colgroup>
+													<col class="th00" width="8%">
+													<col class="th01" width="8%">
+													<col class="th02" width="12%">
+													<col class="th03" width="12%">
+													<col class="th04" width="*">
+													<col class="th05" width="15%">
+													<col class="th06" width="8%">
+													<col class="th07" width="10%">
+													<col class="th08" width="8%">
+												</colgroup>
+												<thead class="thead">
+													<tr>
+														<th class="th00">No</th>
+														<th class="th01">
+															<div class="content_chk_area">
+																<input type="checkbox" name="" value="" id="all_chk2">
+																<label for="all_chk2"></label>
+															</div>
+														</th>
+														<th class="th02">은행명</th>
+														<th class="th03">예금주명</th>
+														<th class="th04">계좌번호</th>
+														<th class="th05">치환코드</th>
+														<th class="th06">사용설정</th>
+														<th class="th07">등록일</th>
+														<th class="th08">수정</th>
+													</tr>
+												</thead>
+												<tbody class="tbody">
+													<tr>
+														<td class="th00">1</td>
+														<td class="th01">
+															<div class="content_chk_area">
+																<input type="checkbox" name="" value="" id="chk21">
+																<label for="chk21"></label>
+															</div>
+														</td>
+														<td class="th02">국민은행</td>
+														<td class="th03">와이엠</td>
+														<td class="th04">048401-04-143755</td>
+														<td class="th05">
+															<button type="button" class="content_btn">코드보기</button>
+															<button type="button" class="content_btn">복사</button>
+														</td>
+														<td class="th06">사용함</td>
+														<td class="th07">010-0000-0000</td>
+														<td class="th08">
+															<button type="button" class="content_btn mod_btn">수정</button>
+														</td>
+													</tr>
+													<tr>
+														<td class="th00">2</td>
+														<td class="th01">
+															<div class="content_chk_area">
+																<input type="checkbox" name="" value="" id="chk22">
+																<label for="chk22"></label>
+															</div>
+														</td>
+														<td class="th02">우리은행(기본)</td>
+														<td class="th03">에드위너</td>
+														<td class="th04">1002-130-819787</td>
+														<td class="th05">
+															<button type="button" class="content_btn">코드보기</button>
+															<button type="button" class="content_btn">복사</button>
+														</td>
+														<td class="th06">사용함</td>
+														<td class="th07">010-0000-0000</td>
+														<td class="th08">
+															<button type="button" class="content_btn mod_btn">수정</button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</section>
+									<!-- 콘텐츠 리스트 테이블 end -->
+								</form>
+							</div>
+						</section>
+                    </div>
+                </div>
+            </div>
+           
+            <!-- footer -->
+            <footer class="footer">
+                <h1 class="not_view">footer</h1>
+                
+                <p>© HN : Corp All Rights Reserved.</p>
+            </footer>
+		</div>
+	</body>
+</html>
