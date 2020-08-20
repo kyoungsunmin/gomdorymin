@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>NHmall</title>
+		<meta name="description" content="NHmall">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="img/logo_favicon.ico">
+		<link rel="apple-touch-icon" href="img/logo_favicon.ico">
+		
+		<link href="../css/reset.css" type="text/css" rel="stylesheet">
+		<link href="../css/font.css" type="text/css" rel="stylesheet">
+		<link href="../css/adm.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="../js/jquery-1.11.1.min.js"></script>
+		<script src="../js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="../js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="../js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="../js/jquery-migrate-1.4.1.min.js"></script>
+		<script src="../js/function.js"></script>
+	</head>
+
+	<body>
+		<div id="wrap">            
+            <div class="content_popup_wrap">                
+                <!-- content -->
+                <div class="content_popup_area">                    
+                    <div class="content_main content_sms_popup">
+                    	<form id="" name="" method="" action="">                	
+							<div class="sms_left">
+								<!-- content_chk_limit 클래스는 글자수 체크할 때 사용 -->
+								<div class="content_chk_limit wall">
+									<!-- content_text_limit : 텍스트 박스, input_size : 입력한 글자수, limit_size : 제한 글자수 -->
+									<textarea name="" class="content_textarea content_text_limit wall" rows="5"></textarea>
+									<div class="content_text_size">
+										<span class="input_size">0</span> 자
+									</div>
+								</div>
+								<button type="button" class="content_btn">메세지 선택</button><br>
+								<button type="submit" class="content_btn">SMS 보내기</button><br>
+								<button type="button" class="content_btn" onclick="window.open('sms_confirm_popup.html','sms_confirm','width=600,height=600,top=50,left=50,resizable=no,scrollbars=no'); return false;">발신번호 인증</button>
+							</div>
+							
+							<div class="sms_right">
+								<!-- 콘텐츠 테이블 start -->
+								<section class="content_main_item">
+									<div class="content_table_sub_top">
+										<p class="content_table_tit text_right">발송가능건수: <span>100</span> 건</p>
+									</div>
+									
+									<div class="content_table_area">
+										<table class="content_table">
+											<colgroup>
+												<col class="th00">
+												<col class="th01">
+											</colgroup>
+											<thead class="thead">
+												<tr>
+													<th class="th00">보내는 사람</th>
+													<th class="th01">받는 사람</th>
+												</tr>
+											</thead>
+											<tbody class="tbody">
+												<tr>
+													<td class="th00 text_center">
+														<!-- content_number 클래스는 여러 개의 번호만 입력할 경우 사용 -->
+														<div class="content_number">
+															<input type="text" name="" class="content_text w68">
+															<input type="text" name="" class="content_text w68">
+															<input type="text" name="" class="content_text w68">
+														</div><br>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name1" value="" id="select_radio_name11" checked>
+															<label for="select_radio_name11">즉시 발송하기</label>
+														</div>
+														<div class="content_radio_area">
+															<input type="radio" name="radio_name1" value="" id="select_radio_name12">
+															<label for="select_radio_name12">예약 발송하기</label>
+														</div><br>
+														<!-- content_calendar 클래스는 날짜 입력할 때 사용 -->
+														<div class="content_calendar">
+															<input type="text" name="" class="content_text">
+															<span class="content_calendar_btn"></span>
+														</div>
+														<!-- content_number 클래스는 여러 개의 번호만 입력할 경우 사용 -->
+														<div class="content_number">
+															<select name="" class="content_select">
+																<option value="01">01</option>
+																<option value="02">02</option>
+																<option value="03">03</option>
+																<option value="04">04</option>
+																<option value="05">05</option>
+																<option value="06">06</option>
+																<option value="07">07</option>
+																<option value="08">08</option>
+																<option value="09">09</option>
+																<option value="10">10</option>
+																<option value="11">11</option>
+																<option value="12">12</option>
+																<option value="13">13</option>
+																<option value="14">14</option>
+																<option value="15">15</option>
+																<option value="16">16</option>
+																<option value="17">17</option>
+																<option value="18">18</option>
+																<option value="19">19</option>
+																<option value="20">20</option>
+																<option value="21">21</option>
+																<option value="22">22</option>
+																<option value="23">23</option>
+																<option value="24">24</option>
+															</select>
+															<div class="m10">시</div>
+															<select name="" class="content_select">
+																<option value="01">01</option>
+																<option value="02">02</option>
+																<option value="03">03</option>
+																<option value="04">04</option>
+																<option value="05">05</option>
+																<option value="06">06</option>
+																<option value="07">07</option>
+																<option value="08">08</option>
+																<option value="09">09</option>
+																<option value="10">10</option>
+																<option value="11">11</option>
+																<option value="12">12</option>
+																<option value="13">13</option>
+																<option value="14">14</option>
+																<option value="15">15</option>
+																<option value="16">16</option>
+																<option value="17">17</option>
+																<option value="18">18</option>
+																<option value="19">19</option>
+																<option value="20">20</option>
+																<option value="21">21</option>
+																<option value="22">22</option>
+																<option value="23">23</option>
+																<option value="24">24</option>
+																<option value="25">25</option>
+																<option value="26">26</option>
+																<option value="27">27</option>
+																<option value="28">28</option>
+																<option value="29">29</option>
+																<option value="30">30</option>
+																<option value="31">31</option>
+																<option value="32">32</option>
+																<option value="33">33</option>
+																<option value="34">34</option>
+																<option value="35">35</option>
+																<option value="36">36</option>
+																<option value="37">37</option>
+																<option value="38">38</option>
+																<option value="39">39</option>
+																<option value="40">40</option>
+																<option value="41">41</option>
+																<option value="42">42</option>
+																<option value="43">43</option>
+																<option value="44">44</option>
+																<option value="45">45</option>
+																<option value="46">46</option>
+																<option value="47">47</option>
+																<option value="48">48</option>
+																<option value="49">49</option>
+																<option value="50">50</option>
+																<option value="51">51</option>
+																<option value="52">52</option>
+																<option value="53">53</option>
+																<option value="54">54</option>
+																<option value="55">55</option>
+																<option value="56">56</option>
+																<option value="57">57</option>
+																<option value="58">58</option>
+																<option value="59">59</option>
+															</select>
+															<div class="m10">분</div>
+														</div>
+													</td>
+													<td class="th01 text_center">
+														<!-- content_number 클래스는 여러 개의 번호만 입력할 경우 사용 -->
+														<div class="content_number">
+															<input type="text" name="" class="content_text w68">
+															<input type="text" name="" class="content_text w68">
+															<input type="text" name="" class="content_text w68">
+														</div><br>
+														<button type="button" class="content_btn">번호 추가</button>
+														<button type="button" class="content_btn">번호 삭제</button><br>
+														<select name="" class="content_select multiple_select" multiple="multiple">
+															<option value=""></option>
+														</select>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</section>
+								<!-- 콘텐츠 테이블 end -->
+								
+								<!-- 콘텐츠 테이블 start -->
+								<section class="content_main_item">
+									<div class="content_table_top cf">
+										<p class="content_table_tit">특수문자 입력</p>
+									</div>
+
+									<ul class="sms_character_list cf">
+										<li class="copy"><a href="#">☆</a></li>
+										<li class="copy"><a href="#">○</a></li>
+										<li class="copy"><a href="#">□</a></li>
+										<li class="copy"><a href="#">◎</a></li>
+										<li class="copy"><a href="#">★</a></li>
+										<li class="copy"><a href="#">●</a></li>
+										<li class="copy"><a href="#">■</a></li>
+										<li class="copy"><a href="#">⊙</a></li>
+										<li class="copy"><a href="#">☏</a></li>
+										<li class="copy"><a href="#">☎</a></li>
+										<li class="copy"><a href="#">◈</a></li>
+										<li class="copy"><a href="#">▣</a></li>
+										<li class="copy"><a href="#">◐</a></li>
+										<li class="copy"><a href="#">◑</a></li>
+										<li class="copy"><a href="#">☜</a></li>
+										<li class="copy"><a href="#">☞</a></li>
+										<li class="copy"><a href="#">◀</a></li>
+										<li class="copy"><a href="#">▶</a></li>
+										<li class="copy"><a href="#">▲</a></li>
+										<li class="copy"><a href="#">▼</a></li>
+										<li class="copy"><a href="#">♠</a></li>
+										<li class="copy"><a href="#">♣</a></li>
+										<li class="copy"><a href="#">♥</a></li>
+										<li class="copy"><a href="#">◆</a></li>
+										<li class="copy"><a href="#">◁</a></li>
+										<li class="copy"><a href="#">▷</a></li>
+										<li class="copy"><a href="#">△</a></li>
+										<li class="copy"><a href="#">▽</a></li>
+										<li class="copy"><a href="#">♤</a></li>
+										<li class="copy"><a href="#">♧</a></li>
+										<li class="copy"><a href="#">♡</a></li>
+										<li class="copy"><a href="#">◇</a></li>
+										<li class="copy"><a href="#">※</a></li>
+										<li class="copy"><a href="#">♨</a></li>
+										<li class="copy"><a href="#">♪</a></li>
+										<li class="copy"><a href="#">♭</a></li>
+										<li class="copy"><a href="#">♩</a></li>
+										<li class="copy"><a href="#">♬</a></li>
+										<li class="copy"><a href="#">㉿</a></li>
+										<li class="copy"><a href="#">㈜</a></li>
+										<li class="copy"><a href="#">①</a></li>
+										<li class="copy"><a href="#">②</a></li>
+										<li class="copy"><a href="#">③</a></li>
+										<li class="copy"><a href="#">④</a></li>
+										<li class="copy"><a href="#">⑥</a></li>
+										<li class="copy"><a href="#">⑦</a></li>
+										<li class="copy"><a href="#">⑧</a></li>
+										<li class="copy"><a href="#">⑨</a></li>
+										<li class="copy"><a href="#">®</a></li>
+										<li class="copy"><a href="#">￡</a></li>
+										<li class="copy"><a href="#">￥</a></li>
+										<li class="copy"><a href="#">€</a></li>
+										<li class="copy"><a href="#">『</a></li>
+										<li class="copy"><a href="#">』</a></li>
+										<li class="copy"><a href="#">▒</a></li>
+										<li class="copy"><a href="#">♬</a></li>
+										<li class="copy"><a href="#">＼</a></li>
+										<li class="copy"><a href="#">∑</a></li>
+										<li class="copy"><a href="#">™</a></li>
+										<li class="copy"><a href="#">℡</a></li>
+										<li class="copy"><a href="#">(</a></li>
+										<li class="copy"><a href="#">)</a></li>
+										<li class="copy"><a href="#">㎗</a></li>
+									</ul>
+								</section>
+								<!-- 콘텐츠 테이블 end -->
+							</div>
+						</form>
+							
+						<!-- 팝업 버튼 start -->
+						<div class="content_popup_btn">
+							<input type="button" class="btn2" value="닫기" onclick="window.close();">
+						</div>
+						<!-- 팝업 버튼 end -->
+                    </div>
+                </div>
+            </div>
+		</div>
+	</body>
+</html>
