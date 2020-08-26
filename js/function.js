@@ -38,8 +38,29 @@ $(function() {
             $('.mb_area .mb_box .top_menu_drop_list[drop-data="' + dropData + '"]').stop(true,true).show();
         }
     });
+	
+	//상위 메뉴 밑의 하위 메뉴 보이기/숨기기
+	$('nav.nav .nav_list>li').on("mouseover", function(evt) {
+		evt.preventDefault();
+        $('nav.nav .nav_list>li .nav_sub_list').css("display","none");
+        $(this).children('.nav_sub_list').css("display","block");
+        $(this).children('.nav_sub_list').stop(true,true).slideDown(200);
+	});
+	
+	$('nav.nav .nav_list>li').on("mouseleave", function(evt) {
+		evt.preventDefault();
+        $(this).children('.nav_sub_list').stop(true,true).slideUp(200);
+	});
     
     //상위 메뉴 밑의 하위 메뉴 보이기/숨기기
+	$('aside.aside .aside_list>li .aside_list_tit').each(function() {
+		if ($(this).hasClass("on")) {
+            $(this).next('.aside_sub_list').css("display","block");
+        } else {
+            $(this).next('.aside_sub_list').css("display","none");
+        }
+	});
+	
     $('aside.aside .aside_list>li .aside_list_tit').on("click", function(evt) {
         evt.preventDefault();
         if ($(this).hasClass("on")) {
