@@ -1,2 +1,50 @@
 @charset "utf-8"; 
 
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+@font-face {
+	font-family: 'NanumBarunGothic';
+	font-weight: 400;
+	src: url('../font/NanumBarunGothic.eot');
+	src: url('../font/NanumBarunGothic.eot?#iefix') format('embedded-opentype'),
+		 url('../font/NanumBarunGothic.woff') format('woff'),
+		 url('../font/NanumBarunGothic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NanumBarunGothic';
+	font-weight: 600;
+	src: url('../font/NanumBarunGothicBold.eot');
+	src: url('../font/NanumBarunGothicBold.eot?#iefix') format('embedded-opentype'),
+		 url('../font/NanumBarunGothicBold.woff') format('woff'),
+		 url('../font/NanumBarunGothicBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NanumGothic';
+	font-weight: 400;
+	src: url('../font/NanumGothicR.eot');
+	src: url('../font/NanumGothicR.eot?#iefix') format('embedded-opentype'),
+		 url('../font/NanumGothicR.woff') format('woff'),
+		 url('../font/NanumGothicR.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NanumGothic';
+	font-weight: 600;
+	src: url('../font/NanumGothicB.eot');
+	src: url('../font/NanumGothicB.eot?#iefix') format('embedded-opentype'),
+		 url('../font/NanumGothicB.woff') format('woff'),
+		 url('../font/NanumGothicB.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NanumGothic';
+	font-weight: 800;
+	src: url('../font/NanumGothicEB.eot');
+	src: url('../font/NanumGothicEB.eot?#iefix') format('embedded-opentype'),
+		 url('../font/NanumGothicEB.woff') format('woff'),
+		 url('../font/NanumGothicEB.ttf') format('truetype');
+}
+
