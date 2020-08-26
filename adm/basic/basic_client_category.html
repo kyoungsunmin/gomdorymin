@@ -38,14 +38,22 @@
                 <h1 class="not_view">header</h1>
                 
                 <div class="header_top cf">
-                    <div class="top_logo">
-                        <a href="../index.html"><img src="../img/top_logo.png" alt="top_logo"></a>
-                    </div>
-                    
-                    <ul class="top_menu cf">
-                        <li class="top_menu_item">
-                            <div class="top_scm_login">
-                                <select name="" class="top_scm_login_select">
+                    <div class="top_menu_area">
+						<ul class="top_menu cf">
+							<li class="top_menu_item">
+								<a href="#">고객센터</a>
+							</li>
+							<li class="top_menu_item">
+								<a href="#">메뉴얼</a>
+							</li>
+							<li class="top_menu_item">
+								<a href="#">긴급알림 <span class="notice_cnt">2</span></a>
+							</li>
+							<li class="top_menu_item">
+								<a href="#">미처리CS <span class="cs_cnt">3</span></a>
+							</li>
+							<li class="top_menu_item">
+								<select name="" class="top_scm_login_select">
 									<option value="">쇼핑몰 SCM 로그인</option>
 									<optgroup label="11번가">
 										<option value="11번가 아이디1">11번가 아이디1</option>
@@ -60,76 +68,350 @@
 										<option value="GS홈쇼핑 아이디3">GS홈쇼핑 아이디3</option>
 									</optgroup>
 								</select>
-                            </div>
-                        </li>
-                        <li class="top_menu_item">
-                            <div class="top_menu_drop">
-                                <p class="top_menu_drop_tit">
-									<a href="#">고객센터</a>
-                            	</p>
-                            </div>
-                        </li>
-                        <li class="top_menu_item">
-                            <div class="top_menu_drop">
-                                <p class="top_menu_drop_tit">
-									<a href="#">메뉴얼</a>
-                            	</p>
-                            </div>
-                        </li>
-                        <li class="top_menu_item">
-                            <div class="top_menu_drop">
-                                <p class="top_menu_drop_tit">
-									<a href="#">긴급알림 <span>1</span></a>
-                            	</p>
-                            </div>
-                        </li>
-                        <li class="top_menu_item">
-                            <div class="top_menu_drop">
-                                <p class="top_menu_drop_tit">
-									<a href="#">미처리CS <span>10</span></a>
-                            	</p>
-                            </div>
-                        </li>
-                    </ul>
+							</li>
+						</ul>
+					</div>
                 </div>
                 
                 <!-- nav -->
-                <nav class="nav">
+                <nav class="nav cf">
                     <h2 class="not_view">nav</h2>
+                    
+                    <div class="top_logo">
+                        <a href="../index.html"><img src="../img/top_logo.png" alt="top_logo"></a>
+                    </div>
                     
                     <ul class="nav_list cf">
                         <li class="active">
-                            <a href="../basic/basic_mall_list.html">기본설정</a>
+                            <p class="nav_list_tit">기본설정</p>
+                            <ul class="nav_sub_list cf">
+								<li>
+									<a href="../basic/basic_mall_list.html">쇼핑몰 등록관리</a>
+								</li>
+								<li>
+									<a href="../basic/basic_scm_login.html">쇼핑몰 SCM로그인</a>
+								</li>
+								<li class="active">
+									<a href="../basic/basic_client_category.html">쇼핑몰 카테고리 매핑</a>
+								</li>
+								<li>
+									<a href="../basic/basic_store_information.html">매입처 관리</a>
+								</li>
+								<li>
+									<a href="../basic/basic_supplier_information.html">매출처 관리</a>
+								</li>
+								<li>
+									<a href="../basic/basic_goods_code.html">상품코드관리</a>
+								</li>
+								<li>
+									<a href="../basic/basic_delivery_policy.html">배송정책</a>
+								</li>
+								<li>
+									<a href="../basic/basic_distribution_center.html">물류센터 관리</a>
+								</li>
+								<li>
+									<a href="../basic/basic_goods_share.html">상품공유 관리</a>
+								</li>
+								<li>
+									<a href="../basic/basic_mall_config.html">쇼핑몰 환경설정</a>
+								</li>
+							</ul>
                         </li>
                         <li>
-                            <a href="../goods/goods_goods_list.html">상품관리</a>
+                            <p class="nav_list_tit">상품관리</p>
+                            <ul class="nav_sub_list cf">
+								<li>
+									<a href="#">신규상품등록</a>
+								</li>
+								<li>
+									<a href="#">상품조회/수정</a>
+								</li>
+								<li>
+									<a href="#">상품일괄수정</a>
+								</li>
+								<li>
+									<a href="#">상품엑셀등록/수정</a>
+								</li>
+								<li>
+									<a href="#">상품이력조회</a>
+								</li>
+								<li>
+									<a href="#">공유상품조회/등록</a>
+								</li>
+								<li>
+									<a href="#">[연동]쇼핑몰그룹관리</a>
+								</li>
+								<li>
+									<a href="#">[연동]쇼핑몰 상품등록</a>
+								</li>
+								<li>
+									<a href="#">[연동]쇼핑몰 상품수정</a>
+								</li>
+								<li>
+									<a href="#">상품재고통합관리</a>
+								</li>
+							</ul>
                         </li>
                         <li>
-                            <a href="../order/order_auto_collect.html">주문/배송관리</a>
+                            <p class="nav_list_tit">주문/배송관리</p>
+                            <ul class="nav_sub_list cf">
+								<li>
+									<a href="#">주문자동수집관리</a>
+								</li>
+								<li>
+									<a href="#">주문서수동등록</a>
+								</li>
+								<li>
+									<a href="#">주문서확인/수정</a>
+								</li>
+								<li>
+									<a href="#">송장등록</a>
+								</li>
+								<li>
+									<a href="#">바코드관리</a>
+								</li>
+								<li>
+									<a href="#">송장송신관리</a>
+								</li>
+							</ul>
                         </li>
                         <li>
-                            <a href="../claim/claim_inquiry_collect.html">CS/클레임관리</a>
+                            <p class="nav_list_tit">CS/클레임관리</p>
+                            <ul class="nav_sub_list cf">
+								<li>
+									<a href="#">CS/클레임수집</a>
+								</li>
+								<li>
+									<a href="#">CS/클레임목록/처리</a>
+								</li>
+								<li>
+									<a href="#">주문CS메모관리</a>
+								</li>
+								<li>
+									<a href="#">쇼핑몰공지사항</a>
+								</li>
+								<li>
+									<a href="#">긴급 알리미</a>
+								</li>
+							</ul>
                         </li>
                         <li>
-                            <a href="#">회원관리</a>
+                            <p class="nav_list_tit">회원관리</p>
+                            <ul class="nav_sub_list cf">
+								<li>
+									<a href="#">회원리스트</a>
+								</li>
+								<li>
+									<a href="#">회원등록</a>
+								</li>
+								<li>
+									<a href="#">회원가입관리</a>
+								</li>
+								<li>
+									<a href="#">회원등급관리</a>
+								</li>
+								<li>
+									<a href="#">가입승인/등급변경</a>
+								</li>
+								<li>
+									<a href="#">회원정보이벤트등록</a>
+								</li>
+								<li>
+									<a href="#">휴면회원관리</a>
+								</li>
+								<li>
+									<a href="#">회원탈퇴/삭제</a>
+								</li>
+								<li>
+									<a href="#">SMS설정/발송</a>
+								</li>
+								<li>
+									<a href="#">SMS발송내역보기</a>
+								</li>
+								<li>
+									<a href="#">카카오알림톡 설정</a>
+								</li>
+								<li>
+									<a href="#">카카오알림톡 내역보기</a>
+								</li>
+							</ul>
                         </li>
                         <li>
-                            <a href="#">프로모션</a>
+                            <p class="nav_list_tit">프로모션</p>
+                            <ul class="nav_sub_list cf">
+								<li>
+									<a href="#">기획전리스트</a>
+								</li>
+								<li>
+									<a href="#">기획전등록</a>
+								</li>
+								<li>
+									<a href="#">기획전승인</a>
+								</li>
+								<li>
+									<a href="#">쿠폰기본설정</a>
+								</li>
+								<li>
+									<a href="#">쿠폰리스트</a>
+								</li>
+								<li>
+									<a href="#">쿠폰등록</a>
+								</li>
+								<li>
+									<a href="#">상품후기관리</a>
+								</li>
+								<li>
+									<a href="#">APP PUSH 설정</a>
+								</li>
+								<li>
+									<a href="#">APP PUSH 발송</a>
+								</li>
+								<li>
+									<a href="#">APP PUSH 내역보기</a>
+								</li>
+							</ul>
                         </li>
                         <li>
-                            <a href="../business/business_list.html">입점업체관리</a>
+                            <p class="nav_list_tit">입점업체관리</p>
+                            <ul class="nav_sub_list cf">
+								<li>
+									<a href="#">입점업체 리스트</a>
+								</li>
+								<li>
+									<a href="#">입점 승인/반려</a>
+								</li>
+								<li>
+									<a href="#">1</a>
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+								<li>
+									<a href="#">3</a>
+								</li>
+								<li>
+									<a href="#">4</a>
+								</li>
+								<li>
+									<a href="#">5</a>
+								</li>
+								<li>
+									<a href="#">6</a>
+								</li>
+							</ul>
                         </li>
                         <li>
-                            <a href="#">디자인설정</a>
+                            <p class="nav_list_tit">디자인설정</p>
+                            <ul class="nav_sub_list cf">
+								<li>
+									<a href="#">스킨 레이아웃 설정</a>
+								</li>
+								<li>
+									<a href="#">배너 그룹관리</a>
+								</li>
+								<li>
+									<a href="#">배너관리</a>
+								</li>
+								<li>
+									<a href="#">팝업창관리</a>
+								</li>
+								<li>
+									<a href="#">상품진열관리</a>
+								</li>
+								<li>
+									<a href="#">광고영역 가이드</a>
+								</li>
+							</ul>
                         </li>
                         <li>
-                            <a href="../statistics/statistics_daily.html">통계관리</a>
+                            <p class="nav_list_tit">통계관리</p>
+                            <ul class="nav_sub_list cf">
+								<li>
+									<a href="#">매출통계</a>
+								</li>
+								<li>
+									<a href="#">배송상태조회</a>
+								</li>
+								<li>
+									<a href="#">주문통계</a>
+								</li>
+								<li>
+									<a href="#">회원분석</a>
+								</li>
+								<li>
+									<a href="#">방문자분석</a>
+								</li>
+								<li>
+									<a href="#">카테고리 분석</a>
+								</li>
+								<li>
+									<a href="#">판매순위 분석</a>
+								</li>
+								<li>
+									<a href="#">검색어순위 분석</a>
+								</li>
+								<li>
+									<a href="#">페이지뷰 분석</a>
+								</li>
+								<li>
+									<a href="#">마일리지분석</a>
+								</li>
+							</ul>
                         </li>
                         <li>
-                            <a href="../calculation/calculation_master.html">정산관리</a>
+                            <p class="nav_list_tit">정산관리</p>
+                            <ul class="nav_sub_list cf">
+								<li>
+									<a href="#">정산통합관리</a>
+								</li>
+								<li>
+									<a href="#">입점사 판매대금정산</a>
+								</li>
+								<li>
+									<a href="#">입점사 배송비대금정산</a>
+								</li>
+								<li>
+									<a href="#">입점사 광고비대금정산</a>
+								</li>
+								<li>
+									<a href="#">쿠폰/마일리지 내역</a>
+								</li>
+								<li>
+									<a href="#">세금계산서 리스트</a>
+								</li>
+								<li>
+									<a href="#">세금계산서 발행</a>
+								</li>
+								<li>
+									<a href="#">정산대금 지급처리현황</a>
+								</li>
+							</ul>
                         </li>
                         <li>
-                            <a href="#">부가기능</a>
+                            <p class="nav_list_tit">부가기능</p>
+                            <ul class="nav_sub_list cf">
+								<li>
+									<a href="#">사용자등록/권한관리</a>
+								</li>
+								<li>
+									<a href="#">근태관리</a>
+								</li>
+								<li>
+									<a href="#">어드민 접속현황</a>
+								</li>
+								<li>
+									<a href="#">일정 관리</a>
+								</li>
+								<li>
+									<a href="#">퀵메뉴 설정</a>
+								</li>
+								<li>
+									<a href="#">이용방법 안내</a>
+								</li>
+								<li>
+									<a href="#">고객센터 1:1문의</a>
+								</li>
+							</ul>
                         </li>
                     </ul>
                 </nav>
@@ -142,67 +424,83 @@
                 <aside class="aside">
                     <h1 class="not_view">aside</h1>
                     
-                    <div class="aside_user">
-						<p class="user_business">㈜와이엠 인터내셔널</p>
-						<p class="user_name">접속자 (접속자 권한)</p>
-						<div class="user_btn">
-							<a href="#" class="user_move_btn">쇼핑몰go</a>
-							<a href="#" class="user_login_btn">로그아웃</a>
+                    <div class="aside_top">
+						<div class="aside_top_img" style="background-image: url('../img/member_img.png');"></div>
+						<div class="aside_top_big">(주)크리에이티브락</div>
+						<div class="aside_top_small">주현식(super user)</div>
+						<div class="aside_top_btn">
+							<a href="#" class="move_btn">쇼핑몰go</a>
+							<a href="#" class="member_btn">로그아웃</a>
 						</div>
 					</div>
                     
-                    <div class="aside_top">
-                        <img src="../img/basic_menu_icon.png" alt="basic_menu_icon">
-                        <p>기본설정</p>
-                    </div>
+					<div class="aside_list_top">Basic Menu</div>
                     
                     <ul class="aside_list cf">
                         <li>
-							<p class="aside_list_tit on">기본설정</p>
-							<ul class="aside_sub_list cf">
+                            <p class="aside_list_tit on"><img src="../img/menu_icon.png" alt="menu_icon"> 기본설정</p>
+                            <ul class="aside_sub_list cf">
 								<li>
-									<a href="basic_mall_list.html">쇼핑몰 등록관리</a>
+									<a href="../basic/basic_mall_list.html"><img src="../img/menu_icon.png" alt="menu_icon"> 쇼핑몰 등록관리</a>
 								</li>
 								<li>
-									<a href="basic_scm_login.html">쇼핑몰 SCM로그인</a>
+									<a href="../basic/basic_scm_login.html"><img src="../img/menu_icon.png" alt="menu_icon"> 쇼핑몰 SCM로그인</a>
 								</li>
 								<li class="active">
-									<a href="basic_client_category.html">쇼핑몰 카테고리 매핑</a>
+									<a href="../basic/basic_client_category.html"><img src="../img/menu_icon.png" alt="menu_icon"> 쇼핑몰 카테고리 매핑</a>
 								</li>
 								<li>
-									<a href="basic_store_information.html">매입처 관리</a>
+									<a href="../basic/basic_store_information.html"><img src="../img/menu_icon.png" alt="menu_icon"> 매입처 관리</a>
 								</li>
 								<li>
-									<a href="basic_supplier_information.html">매출처 관리</a>
+									<a href="../basic/basic_supplier_information.html"><img src="../img/menu_icon.png" alt="menu_icon"> 매출처 관리</a>
 								</li>
 								<li>
-									<a href="basic_goods_code.html">상품코드관리</a>
+									<a href="../basic/basic_goods_code.html"><img src="../img/menu_icon.png" alt="menu_icon"> 상품코드관리</a>
 								</li>
 								<li>
-									<a href="basic_delivery_policy.html">배송정책</a>
+									<a href="../basic/basic_delivery_policy.html"><img src="../img/menu_icon.png" alt="menu_icon"> 배송정책</a>
 								</li>
 								<li>
-									<a href="basic_distribution_center.html">문류센터 관리</a>
+									<a href="../basic/basic_distribution_center.html"><img src="../img/menu_icon.png" alt="menu_icon"> 물류센터 관리</a>
 								</li>
 								<li>
-									<a href="basic_goods_share.html">상품공유 관리</a>
+									<a href="../basic/basic_goods_share.html"><img src="../img/menu_icon.png" alt="menu_icon"> 상품공유 관리</a>
 								</li>
 								<li>
-									<a href="basic_mall_config.html">쇼핑몰 환경설정</a>
+									<a href="../basic/basic_mall_config.html"><img src="../img/menu_icon.png" alt="menu_icon"> 쇼핑몰 환경설정</a>
 								</li>
 							</ul>
-						</li>
+                        </li>
                     </ul>
                     
                     <div class="aside_banner">
-                    	<div class="banner_slide">
-                    		<ul class="banner_slide_list cf">
-								<li>
-									<a href="#"><img src="../img/banner_img.png" alt="banner_img"></a>
-								</li>
+                    	<div class="aside_banner_area">
+                    		<div class="aside_banner_arrow">
+								<a href="#" class="aside_banner_arrow_prev"><img src="../img/banner_prev_arrow.jpg" alt="banner_prev_arrow"></a>
+								<a href="#" class="aside_banner_arrow_next"><img src="../img/banner_next_arrow.jpg" alt="banner_next_arrow"></a>
+							</div>
+                    		<ul class="aside_banner_list cf">
+								<li style="background-image: url('../img/banner_img.jpg');"><a href="#"></a></li>
 							</ul>
 						</div>
 					</div>
+                	
+                	<!-- footer -->
+					<footer class="footer">
+						<h1 class="not_view">footer</h1>
+
+						<p class="aside_footer_txt">
+							경기도 하남시 미사대로550 현대지식산업센터 한강미사1차 A857, 858호<br>
+							TEL : 1544 – 5079<br>
+							FAX : 031-792-1696<br>
+							㈜에드위너 대표이사 : 구태형<br>
+							사업자등록번호 : 696-86-01672<br>
+							통신판매업신고번호:하남 제0000호<br><br>
+							COPYRIGHT@EDWINA Co., LTD.<br>
+							ALL RIGHTS RESERVED.
+						</p>
+					</footer>
                 </aside>
                 
                 <!-- content -->
@@ -552,13 +850,6 @@
                     </div>
                 </div>
             </div>
-           
-            <!-- footer -->
-            <footer class="footer">
-                <h1 class="not_view">footer</h1>
-                
-                <p>© HN : Corp All Rights Reserved.</p>
-            </footer>
 		</div>
 	</body>
 </html>
